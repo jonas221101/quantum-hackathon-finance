@@ -1,0 +1,869 @@
+arXiv:1806.06893v1 [quant-ph] 18 Jun 2018                                  Quantum Risk Analysis
+
+                                                                           Stefan Woerner1,  and Daniel J. Egger1
+
+                                                                                            1IBM Research ­ Zurich
+                                                                                              (Dated: June 20, 2018)
+
+                                              We present a quantum algorithm that analyzes risk more efficiently than Monte Carlo simulations
+                                           traditionally used on classical computers. We employ quantum amplitude estimation to evaluate risk
+                                           measures such as Value at Risk and Conditional Value at Risk on a gate-based quantum computer.
+                                           Additionally, we show how to implement this algorithm and how to trade off the convergence rate of
+                                           the algorithm and the circuit depth. The shortest possible circuit depth - growing polynomially in
+                                           the number of qubits representing the uncertainty - leads to a convergence rate of O(M -2/3). This
+                                           is already faster than classical Monte Carlo simulations which converge at a rate of O(M -1/2). If we
+                                           allow the circuit depth to grow faster, but still polynomially, the convergence rate quickly approaches
+                                           the optimum of O(M -1). Thus, for slowly increasing circuit depths our algorithm provides a near
+                                           quadratic speed-up compared to Monte Carlo methods. We demonstrate our algorithm using two
+                                           toy models. In the first model we use real hardware, such as the IBM Q Experience, to measure
+                                           the financial risk in a Treasury-bill (T-bill) faced by a possible interest rate increase. In the second
+                                           model, we simulate our algorithm to illustrate how a quantum computer can determine financial
+                                           risk for a two-asset portfolio made up of Government debt with different maturity dates. Both
+                                           models confirm the improved convergence rate over Monte Carlo methods. Using simulations, we
+                                           also evaluate the impact of cross-talk and energy relaxation errors.
+
+                                           I. INTRODUCTION                                             shown how amplitude estimation can be used to price
+                                                                                                       options with the Black-Scholes model [9, 10].
+                                              Risk management plays a central role in the financial
+                                           system. Value at risk (VaR) [1], a quantile of the loss        In Section II of this paper we show how to use ampli-
+                                           distribution, is a widely used risk metric. Examples of     tude estimation to calculate expectation, variance, VaR
+                                           use cases include the Basel III regulations under which     and CVaR of random distributions. Section III discusses
+                                           banks are required to perform stress tests using VaR [2]    how to construct the corresponding quantum circuits. In
+                                           and the calculation of haircuts applied to collateral used  Sections IV and V we show how to apply our algorithm
+                                           in security settelement systems [3]. A second important     to portfolios made up of debt issued by the United States
+                                           risk metric is conditional value at risk (CVaR, sometimes   Treasury (US Treasury), which as of December 2016 had
+                                           also called expected shortfall), defined as the expected    14.5 trillion USD in outstanding marketable debt held
+                                           loss for losses greater than VaR. By contrast to VaR,       by the public [11]. This debt is an actively traded asset
+                                           CVaR is more sensitive to extreme events in the tail of     class with typical daily volumes close to 500 billion USD
+                                           the loss distribution.                                      [12] and is regarded as high quality collateral [13]. Ad-
+                                                                                                       ditionally, government debt typically lacks some of the
+                                           Monte Carlo simulations are the method of choice to         more complex features that other types of fixed-income
+                                                                                                       securities have. These features make US Treasuries a
+                                           determine VaR and CVaR of a portfolio [1]. They are         highly relevant asset class to study whilst allowing us to
+                                                                                                       use simple models to illustrate our algorithm. In Section
+                                           done by building a model of the portfolio assets and com-   IV we introduce a very simple portfolio made up of one
+                                                                                                       T-Bill analyzed on a single period of a binomial tree. We
+                                           puting the aggregated value for M different realizations    demonstrate amplitude estimation and can approximate
+                                                                                                       the expected value of the T-Bill on a real quantum com-
+                                           of the model input parameters. VaR calculations are         puter. In Section V we show a more comprehensive two
+                                                                                                       asset portfolio and simulate the presented algorithms as-
+                                           computationally intensive since the width of the confi-     suming a perfect as well as a noisy quantum computer.
+                                                                                                       We discuss our results as well as next steps in Sec. VI.
+                                           dence interval scales as O  M  -  1  . Many different runs
+                                                                             2                                     II. QUANTUM RISK ANALYSIS
+
+                                           are needed to achieve a representative distribution of the     In this section, we introduce amplitude estimation and
+                                           portfolio value.                                            explain how it can be used to estimate properties of ran-
+                                                                                                       dom distributions such as risk measures.
+                                              Quantum computers process information using the
+                                           laws of quantum mechanics [4]. This has opened up              Suppose a unitary operator A acting on a register of
+                                           novel ways of addressing some problems, e.g. in quan-       (n + 1) qubits such that A |0 n+1 = 1 - a |0 n |0 +
+                                           tum chemistry [5], optimization [6], or machine learn-
+                                           ing [7]. Amplitude estimation is a quantum algorithm          a |1 n |1 for some normalized states |0 n and |1 n,
+                                           used to estimate an unknown parameter and converges
+                                           as O M -1 , which is a quadratic speed-up over classi-
+                                           cal algorithms like Monte Carlo [8]. It has already been
+
+                                           Electronic address: wor@zurich.ibm.com
+                                                                                                                                                                  2
+
+where a  [0, 1] is unknown. Amplitude estimation al-                                  for all i  {0, ..., N - 1}, acting on an ancilla qubit. Ap-
+lows the efficient estimation of a, i.e., the probability of                          plying F to | n |0 leads to the state
+measuring |1 in the last qubit [8]. This is done using an
+operator Q (formally introduced in Appendix A), based                                 N -1      1 - f (i)pi |i n |0            N -1     f (i)pi |i n |1 .
+on A, and Quantum Phase Estimation [14] to approx-
+imate certain eigenvalues of Q. This requires m addi-                                                                      +
+tional qubits and M = 2m applications of Q. The m
+qubits are first put into equal superposition by applying                             i=0                                  i=0
+
+Hadamard gates. Then, they are used to control differ-                                Now we can use amplitude estimation to approximate
+ent powers of Q. And last, after an inverse Quantum
+Fourier Transform has been applied, their state is mea-                               the probability of measuring |1 in the last qubit, which
+
+sured, see the circuit in Fig. 1. This results in an integer                          equals       N -1  pif  (i)  and     thus  also   E [f (X)].            Choos-
+y  {0, ..., M - 1}, which is classically mapped to the                                             i=0
+estimator a~ = sin2(y/M )  [0, 1]. The estimator a~ sat-                                                                                                            X
+isfies                                                                                ing   f (i)  =   i/(N - 1)        allows   us     to  estimate          E[  N -1  ]
+
+                                                                                      and hence E[X]. If we choose f (i) = i2/(N - 1)2 we
+
+                                                                                      can efficiently estimate E[X2] which yields the variance
+
+                                                                                      Var(X) = E[X2] - E[X]2. In the remainder of this sec-
+
+                                                                                      tion we extend this technique and show how to evaluate
+
+      |a - a~|  2                   a(1 -  a)         2                               risk measures such as VaR and CVaR.
+                                      M               M2
+                                                   +                           (1)       For a given confidence level   [0, 1], VaR(X) can be
+                                                                                      defined as the smallest value x  {0, ..., N - 1} such that
+
+                                  +    2      =    O    M -1  ,                (2)    P[X  x]  (1 - ). To find VaR(X) on a quantum
+                              M        M2                                             computer, we define the function fl(i) = 1 if i  l and
+                                                                                      fl(i) = 0 otherwise, where l  {0, ..., N - 1}. Applying
+with  probability        of   at    least    8  .     This represents a               Fl, i.e. the operator corresponding to fl, to | n |0 leads
+                                            2                                         to the state
+quadratic speedup compared to the O M -1/2 conver-
+
+gence rate of classical Monte Carlo methods [1].                                                    N-1 pi |i n |0 + l pi |i n |1 .
+
+                                                                                                                                                                  (5)
+
+(m - 1) |0 H                                            ·                                          i=l+1                   i=0
+
+                    ...                          ...                      ...         The probability of measuring |1 for the last qubit is
+      (j) |0 H                            ·                      Fm
+                                  ...                                                 l     pi     =   P[X         l].     Therefore, with a bisection
+                    ...                                                   ...         i=0
+                                                                                      search over l we can find the smallest level l such that
+
+                                                                                      P[X  l]  1 -  in at most n steps. The smallest
+
+      (0) |0 H ·                                                                      level l is equal to VaR(X). This allows us to estimate
+                                                                                      VaR(X) as before with accuracy O M -1 , which again
+      |0 n
+              A          Q20           Q2j            Q2m-1                           is a quadratic speedup compared to classical Monte Carlo
+                                  ···           ···
+      |0                                                                              methods.
+
+                                                                                      CVaR(X) is the conditional expectation of X re-
+
+                                                                                      stricted to {0, ..., l}, where we compute l = VaR(X)
+
+FIG. 1: Quantum circuit for amplitude estimation as intro-                            as before. To estimate CVaR we apply the operator F
+duced in [8]. H is the Hadamard gate and Fm denotes the                                                                                             i
+                                                                                      that  corresponds       to   the  function     f (i)   =     l   · fl (i)   to
+inverse Quantum Fourier Transform on m qubits.
+                                                                                      | n |0 , which leads to the state
+
+   We now explain how to use amplitude estimation to                                          N-1 pi |i n + l              1-        i  pi   |i  n     |0
+approximate the expected value of a random variable [15,                                                                             l
+16]. Suppose a quantum state                                                                  i=l +1                  i=0
+
+                         | n = N-1 pi |i n ,                                   (3)                                           l       i  pi     |i   n |1   .      (6)
+                                                                                                                                     l
+                                                                                                                        +
+                                    i=0
+                                                                                                                            i=0
+
+where the probability of measuring the state |i n is pi                               The probability of measuring |1 for the last qubit equals
+
+[0, 1], with  N -1       pi  =  1,  and    N  =    2n.  The   state  |i           is  l      i  pi  ,  which  we   approximate       using     amplitude          esti-
+              i=0                                                                     i=0   l
+                                                                               n
+one of the N possible realizations of a bounded discrete                              mation. However, we know that                     l    pi  does      not    sum
+                                                                                                                                        i=0
+                                                                                      up to one but to P[X  l] as evaluated during the VaR
+random variable X, which, for instance, can represent a
+                                                                                      estimation. Therefore we must normalize the probability
+discretized interest rate or the value of a portfolio.
+                                                                                      of measuring |1 to get
+We consider a function f : {0, ..., N - 1}  [0, 1] and
+
+a corresponding operator                                                                                                              l
+                                                                                                                                     i=0
+F : |i n |0  |i n 1 - f (i) |0 + f (i) |1 , (4)                                                    CVaR (X )       =         l   l]         i  pi.                (7)
+                                                                                                                        P[X                 l
+                                                                                                                                            3
+
+We also multiplied by l, otherwise we would estimate            Our contribution rests on the fact that an operator
+
+CVaR  X  . Even though we replace P[X  l] by an              P : |x n |0  |x n (cos(p(x)) |0 + sin(p(x)) |1 ), for a
+      l                                                                                                k
+                                                             given polynomial p(x) =                   j=0  pj xj   of  order  k,  can  be  ef-
+estimation, the error bound on CVaR, computed in Ap-
+                                                             ficiently constructed using multi- controlled Y-rotations,
+pendix C, shows that we still achieve a quadratic speed
+                                                             as illustrated in Fig. 2. Single qubit operations with
+up compared to classical Monte Carlo methods.
+                                                             n - 1 control qubits can be exactly constructed, e.g., us-
+We have shown how to calculate the expected value,           ing O(n) gates and O(n) ancillas or O(n2) gates without
+
+variance, VaR and CVaR of X. However, if we are in-          any ancillas. They can also be approximated with accu-
+
+stead interested in properties of g(X), for a given func-    racy > 0 using O(n log(1/ )) gates [28]. For simplicity,
+
+tion g : {0, ..., N - 1}  {0, ..., N - 1}, N = 2n , n  N,    we use O(n) gates and O(n) ancillas. Since the binary
+we can apply an operator G : |i n |0 n  |i n |g(i) n
+and use the previously introduced algorithms on the          variable representation of p, illustrated in Fig. 2, leads
+                                                             to at most nk terms, the operator P can be constructed
+second register. Alternatively, as long as we can effi-      using O(nk+1) gates and O(n) ancillas.
+ciently perform the bisection search on g(X)  l for
+l  {0, ..., N - 1}, we can spare the second register and           |q1                           ·               ·
+
+combine f and g and apply all algorithms directly.                 |q0                                           ·             ·
+
+                                                                   |0 Ry(c) Ry(4a + b) Ry(4a) Ry(a + b)
+
+                 III. QUANTUM CIRCUITS                       FIG. 2: Quantum circuit realizing |x n |0 
+                                                             |x n (cos(p(x)/2) |0 +sin(p(x)/2) |1 ) for p(x) = (ax2 +bx+c)
+   In this section, we show how the algorithms discussed     and x  {0, 1, 2, 3}. Exploiting x = (2q1 + q0) and qi2 = qi
+in Sec. II can be mapped to quantum circuits.                leads to p(x) = (4a + b)q1 + 4aq0q1 + (a + b)q0 + c, which can
+                                                             be directly mapped to a circuit. Ry denotes a Y-rotation.
+   We start with the construction of | n as introduced
+in Eq. (3), representing the probability distribution of        For every analytic function f , there exists a sequence of
+a random variable X mapped to {0, ..., N - 1}. In gen-
+eral, the best known upper bound for the number of gates     polynomials such that the approximation error converges
+required to create | n is O(2n) [17]. However, approxi-
+mations with polynomial complexity in n are possible for     exponentially fast to zero with increasing order of the
+many distributions, e.g., log-concave distributions [18].
+In the remainder of this section, we assume a given op-      polynomials [29]. Thus, for simplicity, we assume that f
+erator R such that R |0 n = | n.
+                                                             is a polynomial of order s.
+   If we are interested in properties of g(X), as discussed     If we can find a polynomial p(y) such that sin2(p(y)) =
+in the previous section, then, depending on g, we can
+use basic arithmetic operations to construct the operator    y, then we can set y = f (x), and the previous discus-
+G. Numerous quantum algorithms exist for arithmetic
+operations [19­23] as well as tools to translate classical   sion provides a way to construct the operator F . Since
+logic into quantum circuits [24, 25]. However, since the
+latter are not necessarily efficient, the development of     the expected value is linear, we may choose to estimate
+new and improved algorithms is ongoing research.
+                                                             E  c  f (X)    -  1  +     1     instead of E[f (X)] for a parameter
+   Approximating E[X] using amplitude estimation re-                           2        2
+quires the operator F for f (x) = x/(N - 1), defined in      c  (0, 1], and then map the result back to an estima-
+Eq. (4). In general, representing F for the expected value
+or for the CVaR either requires an exponential O(2n)         tor for E[f (X)]. The rationale behind this choice is that
+number of gates or additional ancillas to pre-compute        sin2                          1
+the (discretized) function f into qubits, using quantum            y  +  4     =  y  +     2  +     O(y3).    Thus, we want to find
+arithmetic, before applying the rotation [26]. The exact
+number of ancillas depends on the desired accuracy of        p(y) such that c        y  -     1     +  1  is  sufficiently    well  approxi-
+the approximation of F . Another approach consists of                                         2        2
+piecewise polynomial approximations of f [27]. However,      mated by sin2                       
+this also implies a significant overhead in terms of the                          cp(y)    +     4  .     Setting the two terms equal
+number of ancillas and gates. In the following, we show
+how to overcome these hurdles by approximating F with-       and solving for p(y) leads to
+out ancillas using polynomially many gates, at the cost
+of a lower - but still faster than classical - rate of con-        p(y)  =     1     sin-1             c  y   -  1      +  1   -        , (8)
+vergence. Note that the operator required for estimating                       c                                 2         2       4
+VaR is easier to construct and we can always achieve
+the optimal rate of convergence as discussed later in this   and we choose p(y) as a Taylor approximation of Eq.
+section.                                                     (8) around y = 1/2. Note that Eq. (8) defines an odd
+                                                             function around y = 1/2, and thus the even terms in the
+                                                             Taylor series equal zero. The Taylor approximation of
+                                                             order 2u + 1 leads to a maximal approximation error for
+                                                             Eq. (8) of
+
+                                                                                   c2u+3               +  O(c2u+5),                         (9)
+                                                                               (2u + 3)2u+1
+
+                                                             for all y  [0, 1], as shown in Appendix B.
+
+                                                                Now we consider the resulting polynomial p(f (x)) of
+
+                                                             order s(2u + 1). The number of gates required to con-
+                                                             struct the corresponding circuit scales as O ns(2u+1)+1 .
+                                                                                                                                               4
+
+The smallest scenario of interest is s = 1 and u = 0,                                       To estimate the CVaR, we apply the circuit Fl for l
+                                                                                         to an ancilla qubit and use this ancilla qubit as a con-
+i.e., both, f and p, are linear functions, which leads to a                              trol for the operator F used to estimate the expected
+                                                                                         value, but with a different normalization, as shown in
+circuit for F where the number of gates scales quadrati-
+                                                                                         Eq. (6). Based on the previous discussion, it follows
+cally as the number of qubits n representing | n grows
+linearly.                                                                                that amplitude estimation can then be used to approxi-
+                                                                                         mate CVaR(X) with the same trade-off between circuit
+   Thus, using amplitude estimation to estimate                                          depth and convergence rate as for the expected value.
+
+E  c(f (x)  -     1  )  +     1  leads to a maximal error
+                  2           2
+
+            +         c2u+3               +O  c2u+5 + M -2          ,     (10)
+        M         (2u + 3)2u+1
+                                                                                         IV. T-BILL ON A SINGLE PERIOD BINOMIAL
+where we ignore the higher order terms in the following.                                                                     TREE
+
+Since our estimation uses cf (x), we also need to analyze                                   Our first model consists of a zero coupon bond dis-
+the scaled error c , where > 0 denotes the resulting                                     counted at an interest rate r. We seek to find the value
+estimation error for E[f (X)]. Setting Eq. (10) equal to                                 of the bond today given that in the next time step there
+c and reformulating it leads to                                                          might be a r rise in r. The value of the bond with face
+                                                                                         value VF is
+                           c  -         c2u+3     =     .                 (11)
+                                    (2u + 3)2u+1     M
+                                                                                                   (1 - p)VF     pVF
+Maximizing the left-hand-side with respect to c, i.e. min-                               V  =      1 + r + r  +  1+r  = (1 - p)Vlow + pVhigh,  (13)
+
+imizing the       nu, mrebsuerltsofinrecqu=ired 2sa2mu1+p2le. sPMlugtgoinagchcievinetoa  where p and (1 - p) denote the probabilities of a constant
+target error
+                                                                                         interest rate and a rise, respectively. This model is the
+Eq. (11) gives
+                                                                                         first step of a binomial tree. Binomial trees can be used
+
+                                       1      1+     1                                   to price securities with a path dependency such as bonds
+                    2               2u +          2u+2     M
+                              1  -                      =     .           (12)           with embedded options [30].
+                                          3
+                                                                                         The simple scenario in Eq. (13) could correspond to a
+
+Translating this into a rate of convergence for the esti-                                market participant who bought a 1 year T-bill the day be-
+
+mation error with respect to the number of samples M                                     fore a Federal Open Markets Committee announcement
+
+leads to    = O M-               2u+2     . For u = 0, we get O        M  -  2  ,        and expects a r = 0.25%-points increase of the Federal
+                                 2u+3                                        3
+                                                                                         Funds Rate with a (1 - p) = 70% probability and no
+which is already better than the classical convergence
+                                                                                         change with a p = 30% probability [50].
+                        1
+rate of O      M  -     2     . For increasing u, the convergence rate                   We show how to calculate the value of the investor's
+
+quickly approaches the optimal rate of O M -1 .                                          T-bill using the IBM Q Experience by using amplitude
+
+   For the estimation of the expectation we exploited                                    estimation and mapping V to [0, 1] such that Vlow and
+                                                                                         Vhigh correspond to $0 and $1, respectively.
+sin2(y  +      )           y  +     1  .  For the variance we apply the
+            4                       2                                                       Here, we only need a single qubit to represent the un-
+same idea but use sin2(y)  y2. We employ this approx-
+                                                                                         certainty    and  sitnh-e1o(bjpe)c,tiavnedatnhdusw, eAh|0ave=A1=-Rpy|(0p+),
+imation to estimate the value of E f (X)2 and then,                                                   =2
+                                                                                         whpe|r1e  p
+together with the estimation for E [f (X)], we evaluate                                            .
+Var (f (X)) = E f (X)2 - E [f (X)]2. The resulting con-
+                                                                                            For the one-dimensional case, it can be easily seen
+vergence rate is again equal to O                 M-    2u+2     .                       that the amplitude estimation operator Q = AZAZ =
+                                                        2u+3
+
+   The previous discussion shows how to build quantum                                    Ry(2p), where Z denotes the corresponding Pauli op-
+                                                                                         erator [4]. We discuss this in more detail in Appendix
+circuits to estimate E[f (X)] and Var(f (X)) more effi-
+                                                                                         A. In particular, this implies Q2j = Ry(2j+1p), which
+ciently than possible classically. In the following, we ex-
+                                                                                         allows us to construct the amplitude estimation circuit ef-
+tend this to VaR and CVaR.
+   Suppose the state | n corresponding to the random                                     ficiently to approximate the parameter p = E[X] = 30%.
+
+variable X on {0, ..., N - 1} and a fixed l  {0, ..., N - 1}.                            Although a single period binomial tree is a very simple
+To estimate VaR, we need an operator Fl that maps
+|x n |0 to |x n |1 if x  l and to |x n |0 otherwise,                                     model, it is straight-forward to extend it to multi-period
+for all x  {0, ..., N - 1}. Then, for the fixed l, am-
+plitude estimation can be used to approximate P[X  l],                                   multi-nomial trees with path-dependent assets. Thus,
+as shown in Eq. (6). With (n + 1) ancillas, adder-circuits
+can be used to construct Fl using O(n) gates [21], and                                   it represents the smallest building block for interesting
+the resulting convergence rate is O M -1 . For a given
+level , a bisection search can find the smallest l such                                  scenarios of arbitrary complexity.
+that P[X  l]   in at most n steps, and we get
+l = VaR(X).                                                                                          Results from real quantum hardware
+
+                                                                                            We run several experiments in which we apply ampli-
+                                                                                         tude estimation with a different number of evaluation
+                                                                                                                                            5
+
+                                                                                           inverse QFT
+
+|0 H ·          ·                                                                              U2 · U3 · U3 · U3 · U3
+
+|0 H                       ·        ·                                                 U2 · U3 · U3                                U2
+
+|0 Ry           Ry Ry Ry Ry Ry                                 HH                     U3       U3                  U2
+
+|0 H                                          ·      · ·H·H·
+
+       Q operators                                             SWAP
+
+FIG. 3: Amplitude estimation circuit for the T-Bill problem with m = 3. Dashed boxes highlight from left to right: the
+controlled Q2j , the swap of two qubits, and the inverse QFT. The swap is needed to overcome the limited connectivity of the
+
+chip. U2 and U3 indicate single qubit rotations where the parameters are omitted; they are formally introduced in Appendix
+D. Note that the circuit could be further optimized, e.g., the adjoint CNOT gates at the beginning of the SWAP would cancel
+
+out, but we kept them for illustration.
+
+qubits m = 1, 2, 3, 4 corresponding to M = 2, 4, 8, 16                                1.0                                         m=1
+samples, respectively, to estimate p = [X]. This requires
+at most five qubits and can be implemented and run                                                                                M=2
+on the IBM Q 5 Yorktown (ibmqx2) quantum proces-
+sor with five qubits accessible via the IBM Q Experience                              0.5
+[31]. As disussed in Sec. II, the success probability of
+amplitude estimation is larger than 8/2, but not nec-                                 0.0
+essarily 100%, and the real hardware introduces addi-                                 0.8
+tional errors. Thus, we repeat every circuit 8192 times                                                                           m=2
+(i.e., the maximal number of shots in the IBM Q Experi-
+ence) to get a reliable estimate. This implies a constant                                                                         M=4
+overhead, which we ignore in the comparison of the al-
+gorithms. The quantum circuit for m = 3 compiled to                  Frequencies [%]  0.4
+the IBM Q 5 quantum processor is illustrated in Fig.
+3. The connectivity of the IBM Q 5 quantum processor,                                 0.0
+shown in Appendix G, requires swapping two qubits in                                  0.4
+the middle of the circuit between the application of the                                                                          m=3
+controlled Q operators and the inverse Quantum Fourier
+Transform. The results of the algorithm are illustrated                                                                           M=8
+in Fig. 4 where it can be seen that the most frequent
+estimator approaches the real value p and how the reso-                               0.2
+lution of the algorithm increases with m. The quantum
+algorithm presented in this paper outperforms the Monte                               0.0
+Carlo method already for M = 16 samples (i.e. m = 4                                   0.2
+evaluation qubits), which is the largest scenario we per-                                                                         m=4
+formed on the real hardware, see Fig. 5. The details of
+this convergence analysis are discussed in Appendix E.                                                                            M=16
+
+                                                                                      0.1
+
+                                                                                      0.0 0.0  0.2      0.4        0.6       0.8       1.0
+
+                                                                                                        Estimated values a~
+
+       V. TWO ASSET PORTFOLIO                                  FIG. 4: Results of running amplitude estimation on real hard-
+
+                                                               ware for m = 1, ..., 4 with 8192 shots each. The green bars
+
+   We now illustrate how to use our algorithm to calcu-        indicate the probability of the most frequent estimate and
+late the daily risk in a portfolio made up of one-year US
+Treasury bills and two-year US Treasury notes with face        the blue bars the probability of the other estimates. The
+values VF1 and VF2 , respectively. We chose a simple port-
+folio in order to put the focus on the amplitude estimation    red dashed lines indicate the target value of 30%. The gray
+algorithm applied to VaR. The portfolio is worth
+                                                               dashed lines show the probability of the second most frequent
+
+                                                               value to highlight the resulting contrast. The possible values
+
+                                                               are not equally distributed on the x-axis, since amplitude es-
+
+                                                               timation first returns a number y  {0, ..., M - 1} that is then
+
+                                                               classically mapped to a = sin2                y  .
+                                                                                                             M
+
+V  (r1, r2)  =   VF1    +   4   (1  cVF2      +  (1   VF2
+                1 + r1     i=1      + r2/2)i         + r2/2)4
+
+                                                     (14)
+                                                                                                                                                                  6
+
+                   20                                                                                                           Term [years]
+                  2-1                                                                                               0           10         20          30
+                  2-2                Quantum Algorithm                3M 1Y 3Y 7Y 20Y                       1.0                                            0.50
+Estimation Error  2-3                Monte Carlo Simulation      3M (a)
+                  2-4                                             1Y                                                 (b)
+                  2-521                                                                                     0.8                                Shift      0.25    Relative weight
+                                                                  3Y                                        0.6                                Twist      0.00
+                                                                                                            0.4                                Butterfly  -0.25
+                                                                  7Y                                        0.2
+
+                                                                 20Y                                                                                      -0.50
+
+                         22  23  24                  25      26        (c)                                                 (d)                              0.2
+                                                                                                                                                            0.0
+                             Number of Samples (M )              100 67.0                                                                                   -0.2
+                                                                                                                                                          1.0
+                                                                            91.8
+                                                                 Eigenvalue
+                                                                 10-1             96.1                                                                            Twist
+                                                                                Shift
+FIG. 5: Comparison of the convergence of the error of Monte                            Twist10-2         97.6
+Carlo simulation and our algorithm with respect to the num-                                   Butterfly         98.4 99.0
+ber of samples M . Although the quantum algorithm starts
+with a larger estimation error, for M  16 (m  4) the bet-        10-3 1 2 3 4 5 6 -1.0 -0.5 0.0                                                0.5
+ter convergence rate of the quantum algorithm takes over and
+the error stays below the Monte Carlo results. The green solid         Principal component number                                   Shift
+line shows the error for our real experiments using up to five
+qubits. The green dashed line shows how the estimation er-       FIG. 6: Daily change in the CMT rates. (a) Correlation
+ror would further decrease for experiments with six and seven    matrix. The high correlation between the rates can be ex-
+qubits, respectively.                                            ploited to reduce the dimension of the problem. (b) Shift,
+                                                                 Twist and Butterfly components expressed in terms of the
+where c is the coupon rate paid every six months by the          original constant maturity treasury rates. (c) Eigenvalues of
+two-year treasury note and r1 and r2 are the yield to            the principal components. The numbers show the cumulative
+maturity of the one-year bill and two-year note, respec-         explained variance. (d) Marginal distribution of the Shift vs
+tively. US Treasuries are usually assumed to be default          the Twist principal components.
+free [32]. The cash-flows are thus known ex ante and the
+changes in the interest rates are the primary risk factors.      T , related to ri by
+Therefore, a proper understanding of the yield curve suf-
+fices to model the risk in this portfolio. In this work                r1   =W                           S  =              0.703 -0.711        S    .     (15)
+we use the Constant Maturity Treasury (CMT) rates to                   r2                                T                 0.711 0.703         T
+model the uncertainty in r1 and r2, see Appendix F for
+a description of the data. To calculate the daily risk of        The correlation coefficient between shift and twist is
+our portfolio we study the difference in the CMT rates           -1%. We thus assume them to be independent and fit
+from one day to the next. These differences are highly           discrete distributions to each separately, see Fig. 8. We
+correlated (as are the initial CMT rates), see Fig. 6(a),        retained only the first two principal components to il-
+making it unnecessary to model them all when simulating          lustrate the use of principal component analysis despite
+more complex portfolios. A principal component analysis          the fact that, in this example, there is no dimensionality
+reveals that the first three principal components, named         reduction. Furthermore, this allows us to simulate our
+shift, twist and butterfly account for 96% of the variance       algorithm in a reasonable time on classical hardware by
+[33, 34], see Fig. 6(b)-(d). Therefore, when modeling a          keeping the number of required qubits low. We expect
+portfolio of US Treasury securities it suffices to study the     that all three components would be retained when run-
+distribution of these three factors. This dimensionality         ning this algorithm on real quantum hardware for larger
+reduction also lowers the amount of resources needed by          portfolios.
+our quantum algorithm.
+                                                                 A. Uncertainty representation in the quantum
+                                                                                              computer
+
+   To study the daily risk in the portfolio we write ri =           We use three qubits, denoted by q0, q1, q2, to repre-
+ri,0+ri where ri,0 is the yield to maturity observed today       sent the distribution of S, and two, denoted by q3, q4, for
+and the random variable ri follows the historical distri-        |Tar.eTAes=ncdoisdci3eu=ds0sbeydpiit,nTheS|iesc4t.aftIoeIrsI,S|thaSendpr=To,bwabh7ii=ilci0thycdapinis,Sttrh|iibuu8sttiaoannkdes
+                                                                 eight and four different values, respectively. We use more
+bution of the one day changes in the CMT rate with ma-           qubits for S than for T since the shift explains a larger
+                                                                 part of the variance. Additional qubits may be used to
+turity i. For our demonstration we set VF1 = VF2 = $100,
+r1,0 = 1.8%, r2,0 = 2.25%, and c = 2.5% in Eq. (14).             represent the probability distributions at a higher resolu-
+We perform a principal component analysis of r1 and
+r2 and retain only the shift S and twist T components.           tion. The qubits naturally represent integers via binary
+Figure 7 illustrates the historical data as well as S and
+                                                                                                                                                              7
+
+encoding and we apply the affine mappings                                                                    portfolio value V in terms of x and y, instead of r1 and
+                                                                                                             r2. For simplicity, we use a first order approximation
+                                            S = 0.0626 x - 0.2188,                              (16)
+
+                                            T = 0.0250 y - 0.0375.                              (17)         f~(x, y) = 203.5170 - 13.1896x - 1.8175y  (18)
+
+Here x  {0, ..., 7} and y  {0, ..., 3} denote the integer                                                    of V around the mid points x = 3.5 and y = 1.5. From a
+representations of S and T , respectively. Given the al-                                                     financial perspective, the first order approximation f~ of
+most perfect symmetry of the historical data we fit sym-                                                     V corresponds to studying the portfolio from the point
+metric distributions to it. The operator R that we define
+prepares a quantum state R |0 5, illustrated by the dots                                                     of view of its duration [35]. Higher order expansions, e.g.
+in Fig. 8, that represents the distributions of S and T ,
+up to the aforementioned affine mapping.                                                                     convexity could be considered at the cost of increased
+
+                                               0.5                                                           circuit depth.
+                                                                                                                To map the approximated value of the portfolio f~ to
+                                    r2 [%]     0.0
+                                                                                                             a function f with target set [0, 1] we compute f = (f~ -
+                                                                                                             f~min)/(f~max - f~min), where f~min = f~(7, 3) and f~max =
+                                                                                                             f~(0, 0), i.e., the minimum and maximum values f~ can
+                                                                                                             take for the considered values of x  {0, ..., 7} and y 
+                                                                                                             {0, ..., 3}. This leads to
+
+                                                                                                             f (x, y) = 1 - 0.1349x - 0.0186y.         (19)
+
+                                            -0.5                                                             The approach, illustrated in Fig. 2, allows us to construct
+                                               -0.5       0.0                0.5                             an operator F corresponding to f for a given scaling pa-
+                                                                                                             rameter c  (0, 1].
+                                                          r1 [%]
+
+FIG. 7: Historical constant maturity treasury rates (1-year                                                  C. Results from simulations of an ideal quantum
+against 2-years to maturity) as well as the resulting principal                                                                             computer
+components: shift (longer vector), and twist (shorter vector).
+
+Probability distribution  0.6                  |011 |100                                                0.6     We simulate the two-asset portfolio for different num-
+                               (a)                                                     |01 |10 (b)           bers m of sampling qubits to show the behavior of the ac-
+                                                                                                             curacy and convergence rate. We repeat this task twice,
+                          0.4                                                                           0.4  once for a processor with all-to-all connectivity and once
+                                                                                                             for a processor with a connectivity corresponding to the
+                          0.2       |010                   |101                                 |11 0.2      IBM Q 20 chip, see Appendix G. This highlights the over-
+                                                                  |110 |111                     0.050.0      head imposed by a realistic chip connectivity. For a num-
+                                    |000 |001    0                                |00    0        ·          ber M = 2m samples, we need a total of m+12 qubits for
+                                               Shift      0.1 0.2                      Twist                 expected value and VaR, and m + 13 qubits for CVaR.
+                          0.0 -0.2 -0.1                                      -0.05                           Five of these qubits are used to represent the distribution
+                                               ··                                                            of the interest rate changes, see Sec. V A, one qubit is
+(c) q2 : |0                         Ry (2 )               (d) q4 : |0                  Ry (4 )               needed to create the state in Eq. (4) used by amplitude
+       q1 : |0                      Ry (1 )                                                                  estimation, and six ancillas are needed to implement the
+       q0 : |0                      Ry (0 )                       q3 : |0              Ry (3 )               controlled Q operator. For CVaR we need one more an-
+                                                                                                             cilla for the comparison to the level l as discussed in Sec.
+FIG. 8: (a) 8-bin histogram of historical shift data (bars) as                                               III. Once the shift and twist distributions are loaded into
+well as fitted distribution (dashed line). (b) 4-bin histogram                                               the quantum computer, using the circuit shown in Fig.
+of historical twist data (bars) as well as fitted distribution                                               8(c) and (d), we apply the operator F to create the state
+(dashed line). In both cases the labels show the quantum state                                               defined in Eq. (4).
+that will occur with the corresponding probability. (c) and
+(d) show the quantum circuits used to load the distributions                                                    We compare the quantum estimation of risk to the ex-
+of (a) and (b), respectively, into the quantum computer.                                                     act 95% VaR level of $0.288. When taking into account
+                                                                                                             the mapping of Sec. V B, this classical VaR corresponds
+   B. Portfolio model on the quantum computer                                                                to 0.093, shown by the verticle line in Fig. 9. The quan-
+                                                                                                             tum estimation of risk rapidly approaches this value as
+   Next, we show how to construct the operator F to                                                          m is increased, see Fig. 9. With m = 5 sample qubits the
+translate the random variables x and y into a portfolio                                                      difference between the classical and quantum estimates
+value. Equations (14) through (17) allow us to define the                                                    is 9%. The number of CNOT gates needed to calculate
+                                                                                                             VaR approximately doubles each time a sample qubit is
+                                                                                                             added, see Tab. I, i.e. it scales as O(M ) with a resulting
+                                                                                                             error of O(M -1).
+                                                                                                   8
+
+               100             m=5                           exact            qubit gates [36­38]. Furthermore, our algorithm requires
+                     m=1          m=3
+Frequency [%]                                                                 the same order of magnitude in the number of single and
+                80               m=4
+                                                                              two-qubit gates, see Tab. I. Energy relaxation is sim-
+                60 m = 2                                                      ulated using a relaxation rate  such that after a time
+                                                                              t each qubit has a probability 1 - exp(-t) of relaxing
+               40                                                             to |0 [39]. We set the duration of the CNOT gates to
+                                                                              100 ns and assume that the single qubit gates are done
+               20                                                             instantly and are thus exempt from errors. We also in-
+
+                                                                              clude qubit-qubit cross-talk in our simulation by adding
+                                                                              a ZZ error-term in the generator of the CNOT gate
+
+               0          0.0  0.2         0.4  0.6          0.8    1.0       exp{-i(ZX + ZZ)/4}.  (20)
+
+                               Estimated value a~
+
+FIG. 9: VaR estimated through a simulation of a perfect                       Typical cross-resonance [40] CNOT gate rates are of the
+quantum computer. As the number of sample qubits m is                         order of 5 MHz whilst cross-talk on IBM Q chips are of
+increased the quantum estimated VaR approaches the classi-                    the order of -100 kHz [38]. We thus estimate a reason-
+cal value indicated by the vertical blue line. The dashed lines               able value of , i.e. the strength of the cross-talk, to be
+are intended as guides to the eye. The stars indicate the most                -2% and simulate its effect over the range [-3%, 0%].
+probable values.
+                                                                                 We illustrate the effect of these errors by computing
+TABLE I: Summary of the number of CNOT gates to estimate
+VaR as a function of m for a processor architecture featuring                 the expected value of the portfolio. Since the distribu-
+an all-to-all qubit connectivity and an architecture with a
+qubit connectivity corresponding to the IBM Q 20 Austin                       tions are symmetric around zero and mapped to the in-
+chip with 20 qubits.                                                          terval [0, 1] we expect a value of 0.5, i.e. from one day
+                                                                              to the next we do not expect a change in the portfo-
+m M #qubits                    all-to-all       #CX               overhead    lio value. This simulation is run with m = 2 sample
+                                     795        IBM Q 20                2.29  qubits since this suffices to exactly estimate 0.5. The al-
+12                 13                                                   2.49  gorithm is successful if it manages to identify 0.5 with
+                                   2'225              1'817             2.50
+24                 14              5'085              5'542             2.45  a probability greater than 50%. With our error model
+                                 10'803              12'691             2.50  this is achieved for relaxation rates r < 10-4 s-1 and
+38                 15            22'235              26'457                   cross-talk strength || < 1%, see Fig. 10(a)-(c), despite
+                                                     55'520                   the 4383 gates needed. A generous estimation of current
+4 16               16                                                         hardware capabilities with  = 10-4 s-1 (loosely based
+                                                                              on T1 = 100 µs) and  = -2%, shown as red lines in
+5 32               17                                                         Fig. 10, indicates that this simulation may be possible
+
+                                                                              in the near future as long as other error sources (such
+
+                                                                              as measurement error and unitary errors resulting from
+
+                                                                              improper gate calibrations) are kept under control.
+
+   We find that the connectivity of the IBM Q 20 chip                                                 VI. CONCLUSION
+increases the number of CNOT gates by a factor 2.5 when
+compared to a chip with all-to-all connectivity [51].                            We developed a quantum algorithm to estimate risk,
+                                                                              e.g. for portfolios of financial assets, resulting in a
+  D. Results from simulations of a noisy quantum                              quadratic speedup compared to classical Monte Carlo
+                                 computer                                     methods. The algorithm has been demonstrated on real
+                                                                              hardware for a small model and the scalability and im-
+   Computing risk for the two-asset portfolio requires a                      pact of noise has been studied using a more complex
+long circuit. However, it suffices for amplitude estimation                   model and simulation. Our approach is very flexible and
+to return the correct state with the highest probability,                     straight-forward to extend to other risk measures such as
+i.e. measurements do not need to yield this state with                        semi-variance.
+100% probability. We now run simulations with errors
+to investigate how much imperfections can be tolerated                           More qubits are needed to model realistic scenarios
+before the correct state can no longer be identified.                         and the errors of actual hardware need to be reduced.
+                                                                              Although the quadratic speedup can already be observed
+   We study the effect of two types of errors: energy relax-                  for a small number of samples, more is needed to achieve
+ation and cross-talk, where the latter is only considered                     a practical quantum advantage. In practice, Monte Carlo
+for two-qubit gates (CNOT gates). We believe this to                          simulations can be massively parallelized, which pushes
+be a sufficient approximation to capture the leading er-                      the border for a quantum advantage even higher.
+ror sources. Errors and gate times for single qubit gates
+are in general an order of magnitude lower than for two-                         Our simulations of the two-asset portfolio show that
+                                                                              circuit depth is limited for current hardware. In order to
+                                                                              perform the calculation of VaR for the two asset portfolio
+                                                                                                                                                                                       9
+
+                         0.0                                        (a)        100                        noisy hardware of the near future.
+                                                                                                             Another question that has only briefly been addressed
+                                                                               90
+                                                                                                          in this paper is the loading of considered random distri-
+                         -0.5                                                  80                         butions or stochastic processes. For auto-correlated pro-
+                                                                                                          cesses this can be rather costly and needs to be further
+Cross-talk strength [%]  -1.0                                                  70   Frequency of 0.5 [%]  investigated. Techniques known from classical Monte
+                                                                                                          Carlo, such as importance sampling [47], might be em-
+                                                                               60                         ployed here as well to improve the results or reduce the
+                                                                                                          circuit depth.
+
+                         -1.5                                                  50
+
+                                                                               40                                                    Acknowledgments
+
+                         -2.0                                                  30                            We want to thank Lior Horesh for his insights and the
+                                                                                                          stimulating discussions. IBM and IBM Q are trademarks
+                         -2.5                                                  20                         of International Business Machines Corporation, regis-
+                                                                                                          tered in many jurisdictions worldwide. Other product
+                                                                               10                         or service names may be trademarks or service marks of
+                                                                                                          IBM or other companies.
+                         -3.1001  103  105               107        109 0
+                         100
+                          80      Relaxation rate [1/s]
+
+Frequency of 0.5 [%]                   (b) (c)
+
+                         60                                                                                                    Appendix A: Q-Operator
+
+                         40                                                                                  For a given circuit A acting on n + 1 qubits, the cor-
+                                                                                                          responding Q-operator used in amplitude estimation is
+                         20                                                                               defined as [8]
+
+                         1001 103 105 107 109 -3.0            -2.0       -1.0       0.0                                   Q = A(I - 2 |0 n+1 0|n+1)A
+                                                                                                                                   (I - 2 |0 n |0 0|n 0|),
+                                  Relaxation rate [1/s]  Cross-talk strength [%]
+                                                                                                          where I denotes the identity operator. If n = 0, as
+FIG. 10: Results from noisy simulation for estimating the ex-                                             e.g. considered in Sec. IV, the reflections defining Q
+pected value of the two-asset portfolio using two evaluation                                              reduce to the Pauli Z-operators and Q simplifies to
+qubits. The perfect simulation returns 0.5 with 100%. This                                                AZAZ. In addition, if A = Ry() then it can be easily
+figure shows how the probability of measuring 0.5 decreases                                               seen that Q = Ry(2).
+with increasing noise: (a) shows the results for both, increas-
+ing cross-talk and increasing relaxation rate, (b) shows the                                                   Appendix B: Error bound for F approximation
+result for varying relaxation rate without cross-talk, and (c)
+shows the result for different cross-talk strengths without re-                                              Suppose p(x) denotes the Taylor approximation of Eq.
+laxation. The dashed red lines indicate the estimated state of                                            (8) of order (2u + 1). Then, the error bound is derived
+the currently available hardware.                                                                         from the next coefficient in the Taylor series (plus higher
+
+on real quantum hardware it is likely that qubit coher-                                                   order terms). Therefore, we analyze the Taylor series
+ence times will have to be increased by several orders
+of magnitude and that cross-talk will have to be further                                                               sin-1            y  +  1
+suppressed.                                                                                                                                   2
+
+   However, approximating, parallelizing, and decompos-                                                                                    u                   2u
+ing quantum phase estimation is ongoing research and                                                                   4                                       + 1)u!
+we expect significant improvements in this area not only                                                            =      +                 (2i - 1)     (2u          y2u+1     ,
+through hardware, but also algorithms [41­43]. This can
+also help to shorten the required circuit depths, and thus,                                                                      u=0 i=1
+to reduce the requirements on the hardware to achieve a
+quantum advantage. Circuit depth can also be short-                                                       for  y    [-  1  ,  +  1  ].  The Taylor series can be derived by
+ened by using a more versatile set of gates. For instance,                                                              2        2
+the ability to implement SWAP gates directly in hard-                                                     first taking the derivative, using the corresponding Taylor
+ware would circumvent the need to synthesize them us-
+ing CNOT gates [44, 45]. In addition, techniques such as                                                  series, and integrating the different terms independently.
+error mitigation [46] could be applied to cope with the
+                                                                                                          Replacing y by cy for c  (0, 1] and the fact that the
+                                                                                                                                                                1
+                                                                                                          extreme   values       are    assumed  for   y  =  ±  2  leads  to  a  bound
+
+                                                                                                          on the individual terms for a particular u given by
+
+                                                                                                               u                    (2u  +  2u       u!   c2u+1         c2u+1       ,
+                                                                                                                                            1)22u+1                  (2u + 1)2u
+                                                                                                                 (2i - 1)
+
+                                                                                                               i=1
+                                                                                                                              10
+
+where we used iu=1(2i - 1)  2u!. For a Taylor approx-                        the Bernoulli random variable. For p = 0.3 and a 95%
+imation of order 2u + 1, the error bound is given by the                     confidence level,the resulting confidence interval is given
+bound on the next Taylor coefficient in the series, i.e. for                 by [0.3 - 0.898/ M , 0.3 + 0.898/ M ].
+2u + 3.
+                                                                                For the quantum algorithm we exploit the error bound
+              Appendix C: CVaR Error Bound                                   given in Eq. (10). Although the exact value of p is
+                                                                             supposed to be unknown, we can use the estimated
+Since P[X  l] is replaced by an estimation, we can-                          value a~ to compute an error bound. The algorithm
+                                                                             results in an integer y which is classically mapped to
+not directly apply the amplitude estimation error bound                      a~ = sin2(y/M ), and we assume y is the most probable
+                                                                             result of the quantum algorithm. The theory says that
+for CVaR. Assume two unknowns A, B > 0 and their es-                         for a, defined through a = sin2(a), it holds that
+timates A~ = A + a, B~ = B + b > 0, where |a|, |b|                           a  [(y - 1)/M, (y + 1)/M ]. Then, the interval for
+                                                                         A~  a can be mapped to an interval for a, whose width
+for    >  0.  The   first  order  Taylor  approximation        of  A  -  B~  is compared to the confidence interval from the Monte
+                                                                   B         Carlo simulation. Since the mapping from y to a is
+with respect to a and b around zero can be used to                           non-linear, the error bound is not symmetric around a~
+                                                                             and we consider the maximum.
+derive
+                                                                                          Appendix F: Data used in this work
+        A  -  A~       1   a  -   A  b    1  1     +  A     ,         (C1)
+        B     B~       B          B       B           B                         In this work we use the Constant Maturity Treasury
+                                                                             rates obtained from the U.S. Department of the Treasury
+where we ignore higher order terms of a and .                                [48]. The data is made up of 1/4, 1/2, 1, 2, 3, 5, 7,
+              A     1                                                        10, 20 and 30 year rates resulting from an interpolation
+Setting       B  =  l  CVaR(X) and B = P[X  l                  ], multi-     of the daily yield curve obtained from the bid yield of
+                                                               leads to      actively traded treasury securities at market close. We
+plying everything      with   l   and   replacing     by                     only consider periods where all rates are available and
+                                                            M                ignore the others. In total, we use more than 5 000 data
+the following bound for the approximation error > 0 of                       points.
+
+CVaR (X ):                                                                    Appendix G: Topology of IBM Q 5 and IBM Q 20
+                                                                                                       quantum processor
+                       l + CVaR(X)                                    (C2)
+                           P[X  l] M                                  (C3)
+
+                       VaR(X      ) + CVaR(X       )     ,
+                                  1-                  M
+
+where again we omit higher order terms. Thus, the
+quantum estimation of CVaR also achieves a quadratic
+speedup compared to classical Monte Carlo methods.
+
+       Appendix D: U2, U3 single qubit rotations
+
+   In the following, we define the single qubit rotations,                      Figures 11 and 12 show the topologies of the IBM Q
+U2, U3, used in Fig. 3, and defined e.g. in [39]:                            5 [31] and IBM Q 20 [49] quantum processors. The lines
+                                                                             indicate the connectivity, i.e., the pairs of qubits that
+        U2(, ) =                        -ei                                  allow the application of CNOT gates.
+                           1/ 2              / 2
+                           ei/ 2 ei+i/ 2
+
+     U3(, , ) =              cos(/2) -ei sin(/2)                   .
+                           ei sin(/2) ei+i cos(/2)
+
+             Appendix E: Convergence Analysis                                FIG. 11: Topology of IBM Q 5 quantum processor.
+
+   For the Monte Carlo simulation we consider a 95%-
+confidence interval. To enable a fair comparison de-
+spite the small number of samples, we compute an op-
+timistic bound and assume the exact standard error
+
+   p(1 - p), where p denotes the success probability of
+                                                                11
+
+FIG. 12: Topology of IBM Q 20 quantum processor.
+
+ [1] P. Glasserman, P. Heidelberger, and P. Shahabuddin, in     [24] A. S. Green, P. L. Lumsdaine, N. J. Ross, P. Selinger,
+      Mastering Risk (2000), vol. 2, pp. 5­18.                        and B. Valiron (2013), arXiv:1304.3390.
+
+ [2] Basel Committee on Banking Supervision, Revisions to       [25] A. S. Green, P. L. Lumsdaine, N. J. Ross, P. Selinger,
+      the basel ii market risk framework (2009).                      and B. Valiron, in Lecture Notes in Computer Science
+                                                                      (including subseries Lecture Notes in Artificial Intelli-
+ [3] A. García Cañizares and R. Gençay, SSRN Electronic               gence and Lecture Notes in Bioinformatics) (2013), vol.
+      Journal (2006).                                                 7948 LNCS, pp. 110­124, ISBN 9783642389856, ISSN
+                                                                      03029743, arXiv:1304.5485.
+ [4] M. A. Nielsen and I. L. Chuang, Quantum Computation
+      and Quantum Information (2010), ISBN 9780511976667.       [26] K. Mitarai, M. Kitagawa, and K. Fujii (2018),
+                                                                      arXiv:1805.11250.
+ [5] A. Peruzzo, J. McClean, P. Shadbolt, M. H. Yung, X. Q.
+      Zhou, P. J. Love, A. Aspuru-Guzik, and J. L. O'Brien,     [27] T. Häner, M. Roetteler, and K. M. Svore (2018),
+      Nature Communications 5 (2014), ISSN 20411723.                  arXiv:1805.12445.
+
+ [6] N. Moll, P. Barkoutsos, L. S. Bishop, J. M. Chow,          [28] A. Barenco, C. H. Bennett, R. Cleve, D. P. Divincenzo,
+      A. Cross, D. J. Egger, S. Filipp, A. Fuhrer, J. M. Gam-         N. Margolus, P. Shor, T. Sleator, J. A. Smolin, and
+      betta, M. Ganzhorn, et al., arXiv:1710.01022 (2017).            H. Weinfurter, Physical Review A 52, 3457 (1995), ISSN
+                                                                      10502947, arXiv:9503016.
+ [7] J. Biamonte, P. Wittek, N. Pancotti, P. Rebentrost,
+      N. Wiebe, and S. Lloyd, Nature 549, 195 (2017), ISSN      [29] L. N. L. N. Trefethen, Approximation theory and approx-
+      14764687.                                                       imation practice (2013), ISBN 1611972396.
+
+ [8] G. Brassard, P. Hoyer, M. Mosca, and A. Tapp,              [30] F. Black, E. Derman, and W. Toy, Financial Analysts
+      arXiv:0005055 (2000).                                           Journal 46, 33 (1990), ISSN 0015198X.
+
+ [9] F. Black and M. Scholes, Journal of Political Economy      [31] IBM Q 5 (ibmqx2), https://github.com/QISKit/
+      81, 637 (1973).                                                 qiskit-backend-information/blob/master/
+                                                                      backends/yorktown/V1/README.md, accessed: 2018-
+[10] P. Rebentrost, B. Gupt, and T. R. Bromley (2018),                05-22.
+      arXiv:1805.00109.
+                                                                [32] S. Nippani, P. Liu, and C. T. Schulman, The Journal of
+[11] The Bureau of the fiscal service, Monthly statment of the        Financial and Quantitative Analysis 36, 251 (2001).
+      public debt of the united states (2017).
+                                                                [33] A. Colin, M. Cubilié, and F. Bardoux, The Journal of
+[12] Federal reserve bank of New York, US Treasury Trading            Performance Measurement 10 (2006).
+      Volume (2016).
+                                                                [34] P. Vannerem and A. S. Iyer, MSCI Barra Research In-
+[13] Federal Reserve Bank of New York, Federal reserve col-           sights (2010).
+      lateral guidelines (2018).
+                                                                [35] L. Martellini, P. Priaulet, and S. Priaulet, Fixed-Income
+[14] A. Y. Kitaev (1995), arXiv:9511026.                              Securities (Wiley and Sons, 2003), ISBN 0-470-85277-1.
+[15] D. S. Abrams and C. P. Williams (1999), arXiv:9908083.
+[16] A. Montanaro (2017), arXiv:1504.06987.                     [36] S. Sheldon, E. Magesan, J. M. Chow, and J. M. Gam-
+[17] M. Mottonen, J. J. Vartiainen, V. Bergholm, and M. M.            betta, Phys. Rev. A 93, 060302 (2016).
+
+      Salomaa, Quant. Inf. Comp. 5, 4 (2004), ISSN 15337146,    [37] S. Gustavsson, O. Zwier, J. Bylander, F. Yan, F. Yoshi-
+      0407010.                                                        hara, Y. Nakamura, T. P. Orlando, and W. D. Oliver,
+[18] L. Grover and T. Rudolph (2002), arXiv:0208112.                  Phys. Rev. Lett. 110, 040502 (2013).
+[19] V. Vedral, A. Barenco, and A. Ekert (1995),
+      arXiv:9511018v1.                                          [38] International Business Machines Corporation, IBM Q
+[20] T. G. Draper (2000), ISSN 16136829, arXiv:0008033.               Experience (2016), URL https://quantumexperience.
+[21] S. A. Cuccaro, T. G. Draper, S. A. Kutin, and D. P.              ng.bluemix.net/qx/experience.
+      Moulton (2004), arXiv:0410184.
+[22] T. G. Draper, S. A. Kutin, E. M. Rains, and K. M. Svore,   [39] Quantum Information Software Kit (QISKit) (2018),
+      pp. 1­21 (2004), ISSN 1533-7146, arXiv:0406142.                 URL https://qiskit.org/.
+[23] M. K. Bhaskar, S. Hadfield, A. Papageorgiou, and I. Pe-
+      tras (2015), ISSN 15337146, arXiv:1511.08253.             [40] C. Rigetti and M. Devoret, Phys. Rev. B 81, 134507
+                                                                      (2010).
+
+                                                                [41] M. Dobsicek, G. Johansson, V. Shumeiko, and
+                                                                12
+
+      G. Wendin, Science 2, 2 (2006), arXiv:0610214.                  Reviews: Computational Statistics 2, 54 (2010), ISSN
+[42] C. J. O'Loan, Journal of Physics A: Mathematical and             19395108.
+                                                                [48] U.S. Department of the Treasury, Daily treasury yield
+      Theoretical 43 (2010), ISSN 17518113, arXiv:0904.3426.          curve rates (2018).
+[43] K. M. Svore, M. B. Hastings, and M. Freedman, Quan-        [49] IBM Q 20, https://quantumexperience.ng.bluemix.
+                                                                      net/qx/devices, accessed: 2018-05-22.
+      tum Information & Computation 14, 306 (2014), ISSN        [50] The investor would also have to assume that there is
+      1533-7146, arXiv:1304.0741v1.                                   a perfect correlation between one year T-Bills and the
+[44] D. J. Egger, G. Ganzhorn, Marc Salis, A. Fuhrer,                 Federal Funds Rate. This situation also implies that the
+      P. Mueler, P. K. Barkoutsos, N. Moll, I. Tavernelli, and        market does not expect a change in the Federal Funds
+      S. Filipp (2018), arXiv:1804.04900.                             Rate to occur.
+[45] E. Sjöqvist, D. M. Tong, L. M. Andersson, B. Hessmo,       [51] These results are based on QISKit 0.5, future version
+      M. Johansson, and K. Singh, New J. Phys. 14 (2012).             might be able to further reduce the CNOT overhead,
+[46] A. Kandala, K. Temme, A. D. Corcoles, A. Mez-                    cf. [39]
+      zacapo, J. M. Chow, and J. M. Gambetta (2018),
+      arXiv:1805.04492.
+[47] S. T. Tokdar and R. E. Kass, Wiley Interdisciplinary
+

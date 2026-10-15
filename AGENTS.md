@@ -98,11 +98,59 @@ Source material lives in `Kontext/` (PDFs). This file = digest. Read this first,
 - Mandatory: Markowitz (1952); Qiskit Finance portfolio optimization tutorial; Ken French Data Library (data source); PennyLane QUBO + QAOA demos; Qamomile (cross-SDK bridge, model→backend flow).
 - Recommended: Ledoit & Wolf (2004); Herman et al. (2023); Stopfer & Wagner (2025/26) quantum portfolio benchmark; Sakuler et al. (2025) real-world quantum annealing test.
 - Further: Egger et al. (2020); Orús et al. (2019); Acharya et al. (2025) decomposition; Soloviev & Krompiec (2026) Pauli correlation encoding; Chang et al. (2026) quantum stochastic walks.
-- Out of scope: option pricing / amplitude estimation / quantum risk analysis papers.
+- Out of scope: option pricing papers. **Exception:** Woerner & Egger (2019) quantum risk analysis / amplitude estimation IS in scope for the task's risk route (see §3).
 
 ---
 
-## 3. Definition of done (per task)
+## 3. THE TASK: "Portfolio decisions under changing assumptions" (source: `Task/` photos)
+
+**Question:** when is keeping an existing portfolio vs changing it justified? Keep / accept proposal / pick new portfolio can each be defensible. Model must separate **binding restrictions** (loss tolerance, concentration limit) from **tradeable preferences** — do not hide everything in one score.
+
+**Setup**
+- Universe: 6 Ken French industry portfolios (from 10 Industry, value-weighted, monthly): `NoDur, Manuf, Enrgy, HiTec, Hlth, Utils`. US research portfolios, not stocks/ETFs.
+- Data: 120 months, Jan 2015 – Dec 2024. **Estimation window Jan 2015 – Dec 2019 (60 months)**, decision date 31 Dec 2019. Jan 2020 – Dec 2024 = held-out evaluation only. **No later data in initial estimates.**
+- Current portfolio: NoDur, Hlth, Utils, 1/3 each.
+- Supplied proposal: replace NoDur with HiTec.
+- **Supplied data: `Database/returns_6_industries_monthly.csv`** (verified, SHA-256 `083dbb43…`). Organiser reference notebook: `Database/Finance_Six_Industries_Verified.ipynb`. It solves all 3 routes, is probably AI-generated, so inspect it rather than adopt it. Review: `docs/routes.md` §−1.
+- 3 mandates (λ / loss threshold / tolerance / HiTec cap): growth 1 / 8% / 10% / 100%; balanced 5 / 5% / 10% / 35%; risk-sensitive 20 / 3% / 10% / 20%. Change penalty 0.002 × one-way turnover. Scenarios: 60 months at 1/60 each, plus return stress (HiTec −0.5pp) and covariance stress (corr 25% → +1).
+- Simplified holdings-change term allowed (reluctance to switch). Not a full trading-cost model — say so.
+- Laptop + local simulator enough. No hardware/accounts needed.
+- Mid-hackathon: we get an AI assistant's 5-minute answer → treat as baseline to inspect, not adopt. Situation will change (e.g. mandate threshold, input assumption) → pipeline must re-run fast and show what changed and why.
+
+**Problem explained in plain language, with per-mandate verdicts and break-evens: `docs/problem.md`. Deep dive per route + data review: `docs/routes.md`. Concrete solution paths, shared code backbone, timeline, roles: `docs/solution_paths.md`. What the paths mean + mandate types + quantum model catalog: `docs/paths_mandates_models.md`. Downloaded sources + index: `sources/README.md`.**
+
+**Pick ONE route** (each complete on its own):
+1. **Risk route** — fixed allocation; P(one-month loss > declared threshold) consistent with mandate? Use supplied discrete scenario table + amplitude-estimation starter (Qiskit, local sim). Scenario probabilities = modelling inputs, not derived from μ/Σ. Repeat under supplied alternative scenario settings. Breach → supports review, not a trade.
+   Deliver: working local example, documented state prep + event marking, estimated probability **with estimation uncertainty**, interpretation of what it does/doesn't establish.
+2. **Circuit-design route** — define small set of conditions from evidence; reversible circuit (CX, Toffoli/CCX) encoding their logic. Binding vs tradeable distinguished. Be honest: flag loaded after classical calc ≠ comparison done inside circuit.
+   Deliver: annotated circuit, input/output definitions, truth table, worked accepted + rejected financial cases.
+3. **Allocation route** — pick 3 of 6 industries (1/3 each, no shorts/borrowing). 6 binary vars → QUBO/Ising → QAOA or other justified quantum/quantum-inspired method on local sim. Only C(6,3)=20 portfolios → supplied exact enumerator = verification reference, not competition. If using a change penalty: explain meaning, verify binding restrictions respected.
+
+**Robustness (required):** never one run. Base case + ≥2 supplied changes. Separate changes from (a) financial assumptions, (b) mandate choices, (c) computational representation.
+- Risk: estimation-probability uncertainty vs scenario-model uncertainty.
+- Circuit: condition that fails vs evidence missing.
+- Allocation: are selected holdings stable when estimates / penalties / restrictions change? Unchanged conclusion also informative if test + limits explained.
+
+**Responsibility:** work with GTPP policy advisers (EU Finance domain sheet). Pick ONE institutional/responsibility question and build it **into model / circuit / sensitivity / recommendation**, not just the note. Options: evidence an investment committee or model-validation team needs; mandate condition binding vs preference; explaining financial-estimate uncertainty vs computational variation (shots, noise); external compute provider dependency.
+
+**Deliverables**
+- Defensible financial problem: decision, mandate, evidence, restrictions, assumptions, what counts as justified conclusion.
+- Concrete quantum contribution: reproducible implementation (or checkable circuit + truth table + cases).
+- Mandate + sensitivity result: base case, changes, what is stable, what explains change.
+- Findings note ≤ 2 pages.
+- **Decision log** (`docs/decisions.md`): variants tried/discarded and why, incl. where we did NOT follow an AI suggestion. AI use allowed — document where/how.
+- Responsibility note with GTPP advisers: issue that changed analysis, what's outside model, what's needed before real institution relies on it.
+- 5-min pitch + **A5 Decision Card**: one-sentence recommendation, who gains/loses, confidence + why, the one condition it should not be followed, what AI suggested vs what we did.
+
+**Assessment:** financial meaning, correctness of representation, traceability, changing assumptions, reproducibility/checkability, limitations + responsibility. Quantum calc alone not enough. Small transparent result > big unexplained one. **No quantum-advantage claims.**
+
+**EU policy context (GTPP sheet):** client = e.g. investment committee (internal pilot), model-validation team, or supervisor. Separate approvers / users / investors bearing losses. MiFID II suitability (fit client objectives, risk tolerance, loss capacity; switching needs cost-benefit). ESMA + national competent authority (e.g. BaFin). DORA: ICT risk + external compute providers. GDPR if personal data. AI Act only if system qualifies. Mandate vs internal limit vs binding rule vs guidance = different legal status. Variance/covariance miss liquidity risk.
+
+**Task sources:** Ken French 10 Industry data; Qiskit Finance portfolio tutorial; Woerner & Egger (2019) quantum risk analysis (arXiv 1806.06893); IBM CCXGate docs; Kop et al. (2024) responsible quantum innovation.
+
+---
+
+## 4. Definition of done (per task)
 1. Code runs from clean env, seeds fixed.
 2. Result checked vs brute force or exact solver on small instance.
 3. Feasibility of outputs checked.
