@@ -117,7 +117,7 @@ Source material lives in `Kontext/` (PDFs). This file = digest. Read this first,
 - Laptop + local simulator enough. No hardware/accounts needed.
 - Mid-hackathon: we get an AI assistant's 5-minute answer → treat as baseline to inspect, not adopt. Situation will change (e.g. mandate threshold, input assumption) → pipeline must re-run fast and show what changed and why.
 
-**Problem explained in plain language, with per-mandate verdicts and break-evens: `docs/problem.md`. Deep dive per route + data review: `docs/routes.md`. Concrete solution paths, shared code backbone, timeline, roles: `docs/solution_paths.md`. What the paths mean + mandate types + quantum model catalog: `docs/paths_mandates_models.md`. Downloaded sources + index: `sources/README.md`.**
+**Problem explained in plain language, with per-mandate verdicts and break-evens: `docs/problem.md`. Deep dive per route + data review: `docs/routes.md`. Concrete solution paths, shared code backbone, timeline, roles: `docs/solution_paths.md`. What the paths mean + mandate types + quantum model catalog: `docs/paths_mandates_models.md`. **Chosen client: German "gesetzliche Kapitalrente" public fund (mandates = age cohorts): `docs/client_germany.md`.** Downloaded sources + index: `sources/README.md`.**
 
 **Pick ONE route** (each complete on its own):
 1. **Risk route** — fixed allocation; P(one-month loss > declared threshold) consistent with mandate? Use supplied discrete scenario table + amplitude-estimation starter (Qiskit, local sim). Scenario probabilities = modelling inputs, not derived from μ/Σ. Repeat under supplied alternative scenario settings. Breach → supports review, not a trade.

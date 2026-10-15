@@ -1,0 +1,2805 @@
+Empfehlungen der
+Alterssicherungskommission
+-2-
+                                                    -3-
+
+Inhalt
+I. Vorwort............................................................................................................ 5
+II. Analyse ............................................................................................................ 9
+III. Empfehlungen............................................................................................... 14
+III.1 Kenngröße Gesamtversorgungsniveau........................................................... 14
+III.2 Renteneintritt, Rehabilitation und Prävention ................................................ 22
+III.3 Finanzierung der gesetzlichen Rentenversicherung ....................................... 36
+III.4 Vermeidung von Altersarmut ......................................................................... 45
+III.5 Einbeziehung weiterer Gruppen in die gesetzliche Rentenversicherung ....... 51
+III.6 Kapitalgedeckte Elemente.............................................................................. 59
+III.7 Digitalisierung und Verwaltungsmodernisierung........................................... 69
+Abkürzungsverzeichnis ........................................................................................... 73
+Anhang...................................................................................................................... 74
+Impressum ................................................................................................................ 79
+-4-
+                                                    -5-
+
+I. Vorwort
+
+Die demografische Alterung stellt die Alterssicherung in Deutschland vor
+tiefgreifende Herausforderungen. Dieser demografische Wandel lässt sich allenfalls
+gestalten, aber nicht durch Reformen aus der Welt schaffen. Immer weniger
+Beitragszahlende finanzieren die Alterssicherung einer wachsenden Zahl von
+Rentenbeziehenden. Damit treffen unterschiedliche, gleichermaßen berechtigte
+Interessen aufeinander: Menschen, die ihr Leben lang Beiträge in die gesetzliche
+Rentenversicherung (GRV) eingezahlt haben, erwarten zu Recht eine verlässliche
+Absicherung im Alter. Zugleich müssen Arbeitnehmende darauf vertrauen können,
+dass von ihrem Einkommen genügend zum Leben, Vorsorgen und Sparen bleibt.
+Gerade kleine und mittlere Einkommen geraten durch steigende Sozialabgaben
+zunehmend unter Druck. Denn der Finanzierungsbedarf steigt auch in der
+Kranken- und Pflegeversicherung. Auch Arbeitgeber stehen vor höheren
+Belastungen: In wirtschaftlich herausfordernden Zeiten sind wettbewerbsfähige
+Lohnnebenkosten entscheidend, um Investitionen, Wachstum und Arbeitsplätze in
+Deutschland zu sichern.
+
+Gleichzeitig ist die GRV eng mit dem Bundeshaushalt verwoben. Die GRV
+übernimmt gesamtgesellschaftliche Aufgaben, für die der Bund Zuschüsse leistet.
+Zugleich sollen die Bundesmittel ­ so der gesetzliche Auftrag ­ auch der
+Stabilisierung der GRV insgesamt dienen. Angesichts begrenzter finanzieller
+Spielräume stellt sich daher auch die Frage nach der Generationengerechtigkeit: Junge
+Menschen haben ein berechtigtes Interesse daran, dass der Staat ausreichend
+Spielräume für Zukunftsinvestitionen behält. Die Rentenpolitik steht damit im
+Zentrum eines Spannungsfeldes zwischen sozialer Sicherheit, wirtschaftlicher
+Leistungsfähigkeit und fiskalischer Verantwortung.
+
+Vor diesem Hintergrund war es das Ziel der Kommission, Vorschläge zu entwickeln,
+die eine verlässliche Absicherung im Alter gewährleisten, ohne die Beitragszahlenden
+sowie den Bundeshaushalt dauerhaft zu überfordern. Klar war dabei: Die
+Notwendigkeit von Reformen der Alterssicherung ist nicht Ausdruck einer
+fundamentalen Krise des bestehenden Systems, sondern dient dessen stetiger
+Anpassung an sich ändernde gesellschaftliche und wirtschaftliche
+Rahmenbedingungen. Nachhaltige Reformen verlangen allen Beteiligten
+Zugeständnisse ab. Aufbauend auf wissenschaftlicher Evidenz wurden deshalb
+unterschiedliche Reformansätze und Stellschrauben geprüft, um ein ausgewogenes
+und tragfähiges Gesamtpaket zu entwickeln.
+
+Bei ihrer Arbeit war die Kommission von der Zuversicht getragen, den
+Generationenvertrag auf neue und tragfähige Füße stellen zu können. Diese
+Zuversicht speist sich auch aus der Erfahrung, dass der Generationenvertrag abseits
+politischer Debatten im alltäglichen gesellschaftlichen Miteinander immer wieder
+                                                    -6-
+
+gelebt wird: Kinder wünschen sich Sicherheit im Alter für ihre Eltern; Eltern
+wünschen sich zugleich, dass ihre Kinder sich von ihrem Einkommen etwas aufbauen
+können und gute berufliche Perspektiven in Deutschland haben.
+
+Auftrag der Kommission war es, Vorschläge für den Zeitraum nach 2031 zu
+erarbeiten. Gerade in der Rentenpolitik ist zu berücksichtigen, dass Reformen ihre
+Wirkung häufig erst über lange Zeiträume hinweg entfalten; kurzfristige Kurswechsel
+sind kaum möglich. Nachhaltige Veränderungen erfordern daher einen langfristigen
+Blick und die Bereitschaft, strukturelle Herausforderungen frühzeitig anzugehen.
+
+Mit dem Ergebnis der Kommission ist es gelungen, Maßnahmen vorzuschlagen, die
+mittel- und langfristig zu einer besseren Absicherung im Alter beitragen, das
+Alterssicherungssystem insgesamt stabilisieren und die Lasten der demografischen
+Alterung gerechter zwischen den Generationen sowie zwischen den
+Bevölkerungsgruppen verteilen, die bislang nicht Teil der GRV sind. Die Vorschläge
+stärken die Anerkennung von Arbeit, unterstützen zielgerichtet Menschen mit sehr
+kleinen Renten und folgen dem Idealbild einer Erwerbstätigenversicherung, in die alle
+einzahlen.
+
+Klar ist zugleich: Reformen dieser Größenordnung sind nicht ohne zusätzliche
+Belastungen erreichbar. Wo zusätzliche Kosten entstehen, steht ihnen der Gewinn
+einer verlässlicheren und gerechteren Alterssicherung gegenüber. Und dort, wo neue
+Belastungen auftreten, war es das Ziel der Kommission, soziale Härten möglichst
+wirksam abzufedern und ausgewogene Lösungen zu finden.
+
+Zusammensetzung und Arbeitsweise der Kommission
+
+Die Reformvorschläge stellen ein Gesamtkonzept dar. Aufgrund unterschiedlicher
+Wechselwirkungen sind die Reformvorschläge aus Sicht der Kommission gemeinsam
+umzusetzen. Das gilt besonders für die Zusammenwirkungen aus der Einführung einer
+Kapitalrente, eines Übergangsfaktors und der Erhöhung des Nachhaltigkeitsfaktors
+sowie Veränderungen beim Renteneintritt und der Einbeziehung weiterer Gruppen in
+die GRV.
+
+Die 13 Mitglieder der Alterssicherungskommission waren ehrenamtlich und frei von
+Weisungen tätig. Zu einzelnen Empfehlungen gab es teilweise abweichende
+Meinungen.
+                                                    -7-
+
+Vorsitzende:
+· Prof. Dr. Constanze Janda (stellv. Vorsitzende Sozialbeirat, Rektorin Deutsche
+
+    Universität für Verwaltungswissenschaften Speyer)
+· Dr. Frank-Jürgen Weise (ehemaliger Vorstand der Bundesagentur für Arbeit,
+
+    Vorstandsvorsitzender)
+
+Stellvertretende Vorsitzende:
+· Dr. Florian Dorn MdB (CSU)
+· Annika Klose MdB (SPD)
+· Pascal Reddig MdB (CDU)
+
+Wissenschaftliche Mitglieder:
+· Prof. Dr. Peter Bofinger (VWL Universität Würzburg)
+· Prof. Dr. Tabea Bucher-Koenen (Universität Mannheim, Leiterin
+
+    Forschungsbereich Altersvorsorge und nachhaltige Finanzmärkte am Leibniz-
+    Zentrum für Europäische Wirtschaftsforschung Mannheim)
+· Prof. Dr. Georg Cremer (ehemaliger Generalsekretär Deutscher Caritasverband)
+· Prof. Dr. Camille Logeay (Hochschule für Technik und Wirtschaft Berlin, VWL
+    und quantitative Methoden)
+· Dr. Monika Queisser (Leiterin Abteilung Sozialpolitik OECD)
+· Prof. Jörg Rocholl, PhD (Präsident European School of Management and
+    Technology Berlin)
+· Prof. Dr. Silke Übelmesser (Lehrstuhl Finanzwissenschaft Universität Jena)
+· Prof. Dr. Martin Werding (Lehrstuhl für Sozialpolitik und öffentliche Finanzen
+    Ruhr-Universität Bochum; Sachverständigenrat Wirtschaft)
+
+Der Kommission stand zudem Gundula Roßbach (Präsidentin der Deutschen
+Rentenversicherung Bund (DRV Bund)) als beratendes Mitglied zur Seite.
+                                                    -8-
+
+Danksagung
+
+In insgesamt 19 Sitzungen, über 150 Stunden Sitzungszeit, unzähligen Anhörungen
+und Fachgesprächen wurde die Kommission durch eine Geschäftsstelle im
+Bundesministerium für Arbeit und Soziales (BMAS) unterstützt. Wir danken herzlich
+Herrn Jung, Herrn Dr. Gohl-Greenaway, Herrn Greb, Frau Harder, Frau von Hollen,
+Herrn Leven, Herrn Peglow, Frau Dr. Schrenker, Frau Sticherling, Frau Wagner und
+Frau Wittenhagen für ihre Arbeit und tatkräftige Unterstützung. Die Kommission
+dankt der Deutschen Bundesbank und der DRV Bund für die Bereitstellung von
+Berechnungen und Sachverstand, die den Beratungsprozess unterstützt haben. Ein
+besonderer Dank geht an Frau Dr. Frommert und Frau Dr. Brüggemann-Borck von
+der DRV Bund. Ein ausdrücklicher Dank gebührt auch den zahlreichen
+Sachverständigen, Verbänden, Wohlfahrtsorganisationen und Bürgerinnen und
+Bürgern, die uns wertvolle Impulse und Diskussionsanstöße gegeben haben.
+                                                    -9-
+
+II. Analyse
+
+Herausforderungen: Demografische Alterung und Arbeitsmarktentwicklung
+
+Die GRV bildet, auch wenn sie bisher nicht alle Erwerbstätigen umfasst, den zentralen
+Pfeiler der deutschen Alterssicherung: Aktive Beitragszahlende finanzieren die
+Renten der älteren Generation (Generationenvertrag). Sie soll auch künftig das stabile
+Fundament bleiben, auf das die betriebliche und private Altersvorsorge aufbauen.
+Angesichts großer Herausforderungen sind jedoch Reformen für das
+Alterssicherungssystem notwendig.
+
+Der demografische Wandel stellt die Alterssicherung vor große Herausforderungen.
+Die Bevölkerung in Deutschland altert zunehmend. Während der Altenquotient ­ die
+Anzahl der 67-Jährigen und Älteren je 100 Personen im Alter von 20 bis 66 Jahren ­
+im vergangenen Jahrzehnt von 30 auf 32 stieg, wird nach dieser demografischen
+Atempause ein deutlich stärkerer Anstieg erwartet: auf 38 im Jahr 2030 und auf 45 im
+Jahr 2040.1 Einer Person ab 67 Jahren würden damit nur noch gut zwei Personen im
+Erwerbsalter gegenüberstehen. Hauptursache für den verstärkten Anstieg bis Mitte
+der 2030er Jahre ist der Eintritt der geburtenstarken Babyboomer-Jahrgänge in das
+Rentenalter. Diese demografischen Veränderungen werden umlagefinanzierte
+Sicherungssysteme wie die GRV in den kommenden Jahrzehnten spürbar belasten.
+Zugleich dürfte die schrumpfende Erwerbsbevölkerung die wirtschaftliche Dynamik
+dämpfen.
+
+Entscheidend sind dabei das Erwerbspersonenpotenzial, dessen Entwicklung von der
+Erwerbsbeteiligung verschiedener Gruppen abhängt, sowie die tatsächliche
+Erwerbstätigkeit. Vor diesem Hintergrund gewinnen Maßnahmen zur stärkeren
+Erwerbsbeteiligung an Bedeutung, insbesondere bei Älteren, Frauen,
+Geringqualifizierten sowie Zugewanderten.
+
+Zwischen 2005 und 2019 nahm der Arbeitsmarkt eine sehr gute Entwicklung: Hier
+führte die sinkende Arbeitslosenquote ­ von 11,7 Prozent im Jahr 2005 auf
+fünf Prozent im Jahr 2019 ­ sowie die zusätzliche Steigerung des
+Erwerbspersonenpotenzials bei Frauen und Zuwanderung zu einer Stärkung der
+Finanzierungsbasis der GRV. Aufgrund der schwachen Konjunktur ist die
+Arbeitslosigkeit zuletzt jedoch wieder angestiegen und stagniert derzeit auf etwas
+höherem Niveau (2025: 6,3 Prozent). Verbesserungen im Bereich der
+Erwerbsbeteiligung von Frauen oder älteren Personen, Verbesserungen bei der
+Arbeitsmarktintegration von Geringqualifizierten oder eine kontinuierliche
+Zuwanderung können auch jetzt die künftige Entwicklung des
+
+1 16. Koordinierte Bevölkerungsvorausberechnung des Statistischen Bundesamts, mittlere Variante
+                                                   - 10 -
+
+Erwerbspersonenpotenzials stützen, sowie positive Effekte auf dem Arbeitsmarkt
+entfalten. In den kommenden Jahren wird jedoch erwartet, dass selbst eine gute
+Arbeitsmarktentwicklung die Effekte der erwarteten Bevölkerungsalterung nicht
+ausreichend kompensieren kann.
+
+Gesetzliche Rentenversicherung
+
+Nach einem Anstieg zu Beginn der 2000er Jahre sank der Beitragssatz der GRV von
+19,9 Prozent im Jahr 2007 auf 18,6 Prozent im Jahr 2018. Seitdem ist dieser Wert
+stabil geblieben. Das Rentenniveau (netto vor Steuern) verzeichnete einen Rückgang
+von 52,9 Prozent im Jahr 2000 auf aktuell 48 Prozent. Dieser Rückgang resultierte
+maßgeblich aus gesetzlich verankerten Dämpfungsfaktoren. Diese bewirkten, dass die
+Rentenanpassungen hinter der allgemeinen Lohnentwicklung zurückblieben. Der
+aktuelle Rentenwert stieg zwischen 2000 und 2025 in Ostdeutschland um 89 Prozent
+und in Westdeutschland um 64 Prozent, während sich die kumulierte Inflation auf
+61 Prozent und die kumulierte Lohnentwicklung auf 75 Prozent beliefen.
+
+Bundeszuschüsse, die der Sicherung der Funktions- und Leistungsfähigkeit der GRV
+dienen und mit denen nicht beitragsgedeckte Leistungen der GRV finanziert werden
+sollen, haben sich im Verhältnis zu den Gesamtausgaben, dem Bruttoinlandsprodukt
+und dem Bundeshaushalt stabil entwickelt. Seit 2003 ist hier sogar ein leicht sinkender
+Trend erkennbar. Aktuelle Vorausberechnungen lassen mittelfristig jedoch eine
+Trendumkehr erwarten.
+
+Zwischen Beitragssatz und Rentenniveau besteht bei gegebenen Bundeszuschüssen
+ein unauflösliches Spannungsverhältnis. Ungünstige Entwicklungen von Demografie
+oder Arbeitsmarkt machen im Rahmen eines umlagefinanzierten Rentensystems
+Anpassungen mindestens einer der beiden Größen erforderlich. Ein niedriger
+Beitragssatz und ein hohes Rentenniveau lassen sich dann nicht mehr gleichzeitig
+erreichen.
+
+Während in der Vergangenheit der Fokus auf ein konstantes Sicherungsniveau der
+gesetzlichen Renten gesetzt wurde, rückte ab 2001 mit der Einführung von
+Dämpfungsfaktoren in der Rentenanpassungsformel eine Begrenzung der
+Beitragssatzbelastung in den Vordergrund. Demografisch bedingte
+Finanzierungslasten sollten somit auf Beitragszahlende und Rentenbeziehende
+verteilt werden. Mit der Einführung von Haltelinien für das Sicherungsniveau in den
+Jahren 2018 und 2025 wurde eine erneute Neugewichtung vorgenommen. Die
+Haltelinien garantieren derzeit bis zum 1. Juli 2031 ein Rentenniveau von 48 Prozent
+und fordern vom Gesetzgeber, geeignete Maßnahmen vorzuschlagen, wenn bis 2031
+der Beitragssatz voraussichtlich 22 Prozent überschreitet.
+
+Modellrechnungen der DRV Bund zeigen, dass der Beitragssatz der GRV unter
+geltendem Recht von aktuell 18,6 Prozent bis 2031 voraussichtlich auf 20,2 Prozent
+                                                   - 11 -
+
+steigen wird (siehe Abbildung 1). Die für 2028 absehbare Beitragssatzsteigerung lässt
+sich auch durch ambitionierte Reformmaßnahmen kaum spürbar verändern, wenn
+nicht tiefgreifende Einschnitte bei den Leistungen sowie jüngsten rentenpolitischen
+Entscheidungen in Kauf genommen werden sollen. Nach dem Auslaufen der
+Haltelinie ergibt sich bis 2040 eine weitere Erhöhung auf 21,1 Prozent, mit einer
+vorübergehenden Stabilisierung zwischen 2035 und 2045, gefolgt von einem weiteren
+Anstieg auf 21,4 Prozent im Jahr 2050. Im Gegenzug wird das Sicherungsniveau nach
+2031 von 48 Prozent bis 2040 auf 46,4 Prozent sinken. Langfristig setzt sich dieser
+Abwärtstrend fort, auf 46,1 Prozent im Jahr 2050. Mit zunehmender Länge des
+Projektionszeitraums sind diese Modellrechnungen mit größerer Unsicherheit
+behaftet.
+
+Abbildung 1 Vorausberechnung der finanziellen Entwicklung der GRV unter
+                    geltendem Recht
+
+Quelle: Deutsche Rentenversicherung Bund (DRV Bund), Frühjahrsfinanzschätzung 2026
+
+Im Vergleich der OECD-Länder liegen die Rentenausgaben in Deutschland gemessen
+am Bruttoinlandsprodukt derzeit im oberen Mittelfeld. Der Beitragssatz zur GRV ist
+nahe am OECD-Durchschnitt. Für Durchschnittsverdienende weist das gesetzliche
+Rentensystem in Deutschland eine relativ niedrige zukünftige Nettoersatzrate von
+53 Prozent auf. Im OECD Mittel sind es 63 Prozent. Auch die Ersatzrate für
+Geringverdienende liegt nur wenig höher. Gleichzeitig ergibt sich in Deutschland
+wegen der relativ hohen Ausgaben in anderen Zweigen der Sozialversicherung,
+insbesondere für Gesundheit und Pflege, eine relativ hohe Belastung von
+Durchschnittsverdienenden durch Einkommensteuer und Sozialversicherungs-
+beiträge.
+Eine zusätzliche Herausforderung für eine zielgenaue Rentenpolitik ergibt sich
+daraus, dass der Bezug einer niedrigen gesetzlichen Rente keinen direkten
+                                                   - 12 -
+
+Rückschluss auf niedrige Alterseinkünfte erlaubt. Kleinstrenten können sich auch
+aufgrund sehr kurzer Beitragszeiten ergeben, die z. B. auf Wechsel in andere
+Alterssicherungssysteme wie die Beamtenversorgung zurückführbar sind.
+
+Betriebliche Altersversorgung und private Altersvorsorge
+
+Neben den umlagefinanzierten Renten der GRV gibt es verschiedene Formen
+ergänzender Altersvorsorge, insbesondere die betriebliche Altersversorgung (bAV)
+und die staatlich geförderte private Altersvorsorge, deren Bedeutung durch die ab
+2001 vorgenommenen Reformen gezielt gestärkt werden sollte. Gemeinsam ist ihnen,
+trotz vieler Unterschiede, die Finanzierung im Kapitaldeckungsverfahren. Die
+Beiträge werden angespart, verzinst und im Alter ausgezahlt, etwa in Form
+lebenslanger Rentenzahlungen. In der bAV geschieht dies zumeist mit Beteiligung
+der Arbeitgeber und durch Kollektivvereinbarungen. Zudem bietet die bAV fallweise
+auch Schutz bei Erwerbsminderung oder für Hinterbliebene.
+
+Ein Ausbau kapitalgedeckter Altersvorsorge kann die absehbare Anspannung bei der
+Finanzierung der gesetzlichen Renten kurzfristig nicht auflösen. Die Ansparzeit ist
+wegen des Zinseszinseffekts entscheidend für die Höhe der resultierenden
+Zusatzrenten. Beiträge zur ergänzenden Altersvorsorge stehen somit nicht zur
+sofortigen Finanzierung von Renten zur Verfügung. Sie müssen zusätzlich zu den
+Beiträgen zum bestehenden Rentensystem aufgebracht werden und verbessern die
+Alterseinkommen spürbar erst in zehn bis 15 Jahren. Dafür sind die Leistungen
+weniger von der demografischen Entwicklung in Deutschland abhängig, da die
+eingezahlten Beiträge der eigenen Altersvorsorge dienen und nicht zur Finanzierung
+der Leistungen von älteren Versicherten genutzt werden.
+
+Bei kapitalgedeckter Vorsorge besteht ein Spannungsverhältnis zwischen Rendite und
+Risiken. Höhere Renditen bringen meist höhere Risiken mit sich. Risikoarme
+Anlagestrategien erfordern einen Renditeverzicht. Durch breite, internationale
+Streuung, Lebenszyklusmodelle und lange Ansparzeiten lassen sich Risiken
+verringern. Risiken über Garantien zu verringern, hat sich hingegen nicht bewährt, da
+Garantien im Widerspruch zu renditeorientierten Anlagestrategien stehen.
+
+Wichtig für die effektive Höhe der Renditen sind zudem die Kosten, insbesondere für
+Vertrieb und Anlageverwaltung. In dieser Hinsicht hat die bAV einen strukturellen
+Vorteil, da hier Gruppenverträge für die Belegschaften ganzer Unternehmen oder
+Tarifbezirke geschlossen werden können. Bei Arbeitgebern mit geringer
+Beschäftigtenzahl tritt dieser Vorteil jedoch zurück. Vor allem die Attraktivität
+staatlich geförderter privater Altersvorsorge wurde in Deutschland durch hohe Kosten
+bisher merklich verringert.
+
+Die bAV ist im Kern Sache freiwilliger Vereinbarungen zwischen Arbeitgebern und
+Arbeitnehmenden. Die private Altersvorsorge ist freie Entscheidung jedes Einzelnen.
+                                                   - 13 -
+Die Verbreitung beider ergänzender Vorsorgeformen weist daher Lücken auf.
+Erhebungen im Auftrag des BMAS zeigen, dass im Jahr 2023 unter Personen im Alter
+ab 65 Jahren, die eine gesetzliche Rente bezogen, rund 33 Prozent zugleich
+Ansprüche aus bAV hatten und rund 32 Prozent Ansprüche aus ergänzender privater
+Vorsorge2, die ihr insgesamt verfügbares Einkommen jeweils deutlich erhöhten. Bei
+Personen im Erwerbsalter ist die Verbreitung deutlich höher. Im Jahr 2023 hatten
+62 Prozent der sozialversicherungspflichtig Beschäftigten im Alter von 25 bis
+66 Jahren eine bAV und/oder eine staatlich geförderte private Altersvorsorge (davon
+16 Prozent beides)3. Erkennbare Lücken bestehen jedoch bei Geringverdienenden
+bzw. Geringqualifizierten sowie bei Beschäftigten kleiner Unternehmen. Offen
+bleiben zudem der Umfang sowie Erträge und Kosten der ergänzenden Vorsorge. In
+dem Zusammenhang ist auch darauf hinzuweisen, dass die empirische Datenlage in
+diesem Bereich aktuell unzureichend ist. Eine evidenzbasierte, politische Steuerung
+wird dadurch erschwert.
+
+2 Alterssicherungsbericht 2024 (BT-Drs. 20/14086), Tabelle BC.37
+3 Alterssicherungsbericht 2024 (BT-Drs. 20/14086), Tabelle D.3.1.
+                                                   - 14 -
+
+III. Empfehlungen
+
+III.1 Kenngröße Gesamtversorgungsniveau
+
+Seit den 1990er Jahren hat sich das Leistungsziel der deutschen Alterssicherung
+grundlegend verändert. Während die Rentenpolitik zuvor stark dem Leitbild der
+Lebensstandardsicherung verpflichtet war, rückte seitdem zunehmend die langfristige
+Beitragsbegrenzung in der GRV in den Vordergrund. Seit der Riester-Reform im Jahr
+2001 sollte die Sicherung des Lebensstandards explizit nicht mehr allein durch die
+GRV, sondern durch ein Mehrsäulensystem erreicht werden. Seitdem ist eine stärkere
+Debatte darüber entbrannt, inwieweit dieses Ziel erreicht oder verfehlt wurde.
+
+Die Kommission hat den Auftrag, Reformvorschläge zur Lebensstandardsicherung im
+Alter gerade für kleine und mittlere Einkommen zu unterbreiten und dazu eine
+Kenngröße für ein Gesamtversorgungsniveau über alle drei Säulen der
+Alterssicherung zu entwickeln.
+
+Ein Gesamtversorgungsniveau mit einem angestrebten Zielwert konkret zu beziffern,
+erweist sich jedoch eher als politische denn als wissenschaftlich herleitbare
+Entscheidung. Gleichwohl setzt die Operationalisierung einer Kenngröße voraus, dass
+sie so weit wie möglich präzisiert wird, um als Orientierungsgröße für die politische
+Gestaltung dienen zu können.
+
+ Empfehlung 1
+ Die Kommission empfiehlt, als politische Zielgröße einer lebensstandardsich-
+ ernden Alterssicherung im Mehrsäulensystem eine Nettoersatzquote von
+ mindestens 70 Prozent nach Steuern anzusetzen.
+
+Ausgangslage
+
+Konkrete Zielgrößen für ein Gesamtversorgungsniveau sind weder normativ
+begründbar noch rechtlich fixiert. Historisch gilt das in den 1990er Jahren erreichte
+Rentenniveau von 70 Prozent nach Steuern (53 Prozent vor Steuern) als hinreichend
+zur Lebensstandardsicherung, ohne dass es sich dabei um eine explizite Zielgröße
+gehandelt hätte. International standardsetzende Instrumente geben unterschiedliche
+Mindestersatzquoten vor, die mit dem Haushaltskontext und dem betrachteten
+Leistungsumfang variieren. So definiert die Internationale Arbeitsorganisation
+Mindestersatzquoten von 40 bis 45 Prozent, die Europäische Ordnung der Sozialen
+Sicherheit Ersatzquoten von 50 bis 65 Prozent vor Steuern.
+                                                   - 15 -
+
+Unterschiedliche Zielersatzquoten für unterschiedliche Einkommensgruppen sind
+international verbreitet, wenngleich nicht als explizites Ziel, sondern in der Regel als
+implizite Folge der Ausgestaltung des Leistungsrechts.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt, für Durchschnittsverdienende eine Zielgröße für das
+Gesamtversorgungsniveau von mindestens 70 Prozent netto nach Steuern anzusetzen.
+Der Wert wird auch im internationalen Vergleich von vielen Staaten erreicht. Für
+Verdienende geringerer Einkommen sollte die Nettoersatzquote darüber liegen, um
+ein teilhabesicherndes Einkommen zu gewährleisten.
+
+Auswirkungen und Umsetzung
+
+Mit der Definition einer politisch angestrebten Zielersatzquote wird das politische
+Verständnis einer lebensstandardsichernden Altersversorgung transparent
+kommunizierbar.
+
+Die Kommission spricht sich gleichwohl dafür aus, bei der Bezugnahme auf
+formulierte Zielgrößen keine Steuerungsgrößen im Sinne bindender Automatismen zu
+schaffen, sondern diese und die damit verbundenen Kennziffern ausschließlich dafür
+zu nutzen, mögliche Handlungsbedarfe zu identifizieren (siehe Empfehlung 2).
+
+ Empfehlung 2
+ Die Kommission empfiehlt, als Kenngröße für die Leistungsfähigkeit des
+ Alterssicherungssystems neben dem Sicherungsniveau vor Steuern künftig
+ regelmäßig eine Nettoersatzquote (Ersatzrate nach Steuern) auszuweisen.
+ Die Nettoersatzquote soll anhand typisierter Modellfälle (z. B. Durchschnitts-
+ verdienende, Geringverdienende) und für unterschiedliche Rentenzugangsjahr-
+ gänge darstellen, wie viel Prozent des letzten verfügbaren Nettoeinkommens im
+ Erwerbsleben durch das verfügbare Nettoeinkommen im Ruhestand ersetzt wird.
+ Die Nettoersatzquote soll sowohl für die obligatorische erste Säule, als auch als
+ Gesamtversorgungsniveau im Zusammenspiel mit der freiwilligen zusätzlichen
+ Altersvorsorge und sozialpolitischen Maßnahmen, ausgewiesen werden.
+
+Ausgangslage
+
+Das Sicherungsniveau vor Steuern (Rentenniveau) beschreibt für den sogenannten
+Eckrentner das Verhältnis einer gesetzlichen Standardrente ­ bei 45 Beitragsjahren
+zum verfügbaren Durchschnittslohn der Beitragszahlenden. Es bildet einen
+Systemindikator für die Leistungsfähigkeit der GRV; seit Einführung der sogenannten
+                                                   - 16 -
+
+Haltelinie im Jahr 2019 ist es nicht mehr nur eine bloße Messgröße, sondern ein
+Steuerungsinstrument, das die Rentenanpassung leitet.
+
+Bei der Berechnung des Sicherungsniveaus wird zwar der Abzug der
+Sozialversicherungsbeiträge, nicht jedoch die steuerliche Belastung berücksichtigt.
+Da Renten in der Regel geringer ausfallen als das Erwerbseinkommen und der
+Übergang zur vollständigen nachgelagerten Besteuerung erst 2058 abgeschlossen sein
+wird, unterliegen sie einer geringeren Besteuerung. In der Bevölkerung wird das durch
+den Eckrentner ermittelte Sicherungsniveau oft falsch interpretiert, denn dieses gibt
+gerade keinen Aufschluss darüber, welches Nettoeinkommen nach dem Eintritt in den
+Ruhestand bleibt.
+
+Die Bezifferung eines Gesamtversorgungsniveaus über alle drei Säulen der
+Alterssicherung gestaltet sich für das deutsche System schwierig, da nur die erste
+Säule obligatorisch ausgestaltet ist. Im Rentenversicherungsbericht der
+Bundesregierung wird jährlich ein gemeinsames Versorgungsniveau aus GRV-Rente
+und Riester-Rente ausgewiesen, im Alterssicherungsbericht einmal pro
+Legislaturperiode auch ein Gesamtniveau unter Berücksichtigung der
+Steuerbelastung, jedoch ohne sozialpolitische Maßnahmen, wie z. B. Grundsicherung
+oder Wohngeld.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt, als Kenngröße für die Leistungsfähigkeit des
+Alterssicherungssystems neben dem Sicherungsniveau vor Steuern künftig
+regelmäßig eine Nettoersatzquote (Ersatzrate nach Steuern) auszuweisen.
+
+Anders als das Sicherungsniveau gibt die Nettoersatzquote eine bessere Orientierung
+hinsichtlich der eigenen Altersabsicherung und der möglichen Sicherungslücke zum
+Erhalt des Lebensstandards. Durch Berücksichtigung der steuerlichen Belastung zeigt
+die Nettoersatzquote nachvollziehbar auf, wieviel Prozent des letzten
+Nettoeinkommens aus der Erwerbsphase nach dem Renteneintritt bleibt.
+
+Bei der Berechnung der Kennziffer sollen folgende Maßgaben Berücksichtigung
+finden:
+
+      Darstellung sowohl für die obligatorische erste Säule (inkl. der Kapitalrente,
+      siehe Empfehlung 28), als auch im Zusammenspiel mit der freiwilligen
+      zusätzlichen Altersvorsorge, um Transparenz über die erreichbare Ersatzquote
+      aus allen drei Säulen zu schaffen.
+      Differenzierte Ausweisung für einen Durchschnittsverdienenden und einen
+      Modellfall mit einem geringen Verdienst (z. B. dem halben
+      Durchschnittsverdienst, in Anlehnung an Berechnungen der OECD).
+                                                   - 17 -
+
+      Modellhafte Darstellung typisierter Ansparverläufe in den freiwilligen
+      Systemen der zweiten und dritten Säule. Es müssen plausible Annahmen über
+      die Höhe der Beitragszahlung getroffen werden. Ansatzpunkte können die für
+      die staatliche Förderung festgelegten Einkommens- und Beitragsgrenzen
+      liefern.
+      Berücksichtigung weiterer renten- und sozialpolitischer Maßnahmen
+      (z. B. Grundrentenzuschlag, Grundsicherung, Wohngeld).
+      Darstellung unterschiedlicher Biografien anhand von Modellfällen,
+      z. B. Betrachtung von Erwerbsunterbrechungen wegen Kindererziehung oder
+      Arbeitslosigkeit, um die Bedeutung von Elementen des sozialen Ausgleichs zu
+      illustrieren.
+      Differenzierung nach Jahr des Rentenzugangs bzw. Geburtskohorte, solange die
+      Kapitalrente im Aufbau und eine flächendeckende Verbreitung der zweiten und
+      dritten Säule nicht erreicht ist, um unterschiedliche Anspardauern und
+      Beitragshöhen der freiwilligen Systeme abzubilden.
+      Zusätzliche Ausweisung als Bruttogröße zur Darstellung der Auswirkungen der
+      Steuerprogression.
+      Zusätzliche Ausweisung der Entwicklung der Nettoersatzquote während der
+      Rentenphase, zum Beispiel nach zehn und 20 Jahren Rentenbezug.
+      Ausschließliche Nutzung als Monitoring-Instrument, nicht als Steuerungsgröße
+      im Sinne eines Automatismus; die Kenngröße sollte jedoch wie aktuell in
+      § 154 Sechstes Buch Sozialgesetzbuch (SGB VI) verankert auf einen möglichen
+      Handlungsbedarf hinweisen.
+      Regelmäßige Berechnung und Veröffentlichung der Kennziffer zur Darstellung
+      der Entwicklung aller Säulen und der Wirkung von Reformen im Zeitverlauf
+      (z. B. im Alterssicherungsbericht oder im Rentenversicherungsbericht).
+
+Die Ersatzquote sollte zudem um weitere Modellindikatoren ergänzt werden:
+
+      Das Sicherungsniveau vor Steuern (Rentenniveau) bleibt ein wichtiges Maß für
+      die Leistungsfähigkeit der ersten Säule und sollte weiterhin als solches
+      verstanden und ausgewiesen werden.
+      Ein weiterer Indikator soll die Absicherung der Lebensrisiken Langlebigkeit,
+      Erwerbsminderung und Hinterbliebenenschutz abbilden, da die drei Säulen die
+      Risiken in unterschiedlichem Umfang abdecken.
+
+Auswirkungen und Umsetzung
+
+Die skizzierten Kenngrößen bieten Orientierung über die potenzielle
+Leistungsfähigkeit des Altersvorsorgesystems und liefern wichtiges
+Steuerungswissen für die Ausgestaltung von Reformoptionen. Durch die Darstellung
+der Leistungsindikatoren für verschiedene Einkommensgruppen und
+                                                   - 18 -
+
+Lebensbiografien beschreiben sie die Systemleistungsfähigkeit für unterschiedliche
+Bevölkerungsgruppen und die Absicherung verschiedener Lebensrisiken im Alter.
+
+Modellbasierte Systemindikatoren geben jedoch keine Auskunft über die tatsächliche
+Verbreitung und Höhe der Vorsorge in der Bevölkerung (siehe Empfehlung 3). Sie
+sind auch nicht geeignet, den Versicherten verlässliche Informationen über deren
+individuelle Ersatzquote zu geben (siehe Empfehlung 4). Abzugrenzen ist ebenfalls
+das individuelle, nicht geförderte Sparen sowie Vermögenswerte, die der
+Alterssicherung zuträglich sind, wie etwa Immobilien oder neben dem Rentenbezug
+erzieltes Erwerbseinkommen.
+
+ Empfehlung 3
+ Die Kommission empfiehlt, die Indikatorik für das empirische Monitoring der
+ Altersvorsorge in der Bevölkerung weiterzuentwickeln und dazu die administrative
+ Datenbasis zu verbessern.
+
+Ausgangslage
+
+Mit dem Alterssicherungsbericht und dem Rentenversicherungsbericht der
+Bundesregierung existiert ein umfangreiches Berichtswesen zur Darstellung der
+aktuellen Einkommenssituation von Rentnerhaushalten sowie der Altersvorsorge von
+Erwerbstätigen. Derzeit erfolgt dieses Monitoring überwiegend umfragebasiert, da
+insbesondere für die bAV, aber auch für das Zusammenwirken der drei Säulen, keine
+belastbaren administrativen Datensätze existieren. Diese Lücke kann durch
+Umfragedaten nur teilweise gefüllt werden. Sparbeiträge, Arbeitgeberbeiträge, die Art
+der Verträge und die abgedeckten Risiken, Kosten und Anlagestrukturen sind
+Befragten oft nicht bekannt, wären aber für die umfassende Beschreibung der
+Vorsorgesituation wichtig.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt, die tatsächliche Verbreitung und Höhe der Altersvorsorge
+in allen drei Säulen regelmäßig auch auf Basis amtlicher Daten in ihrem
+Zusammenwirken zu erfassen, zu berichten und hierzu die erforderliche
+Datengrundlage zu stärken.
+
+Für das empirische Monitoring soll ein Indikatorenkranz entwickelt werden:
+
+      Empirische Ersatzquote aus den drei Säulen der Altersvorsorge im Verhältnis
+      zum bisherigen individuellen Einkommen; für Erwerbstätige als erwartete
+      Ersatzquote basierend auf dem derzeitigen Vorsorgestand und unter Annahme
+      der künftigen Entwicklung, für Rentenbeziehende basierend auf dem
+      tatsächlichen Alterseinkommen.
+                                                   - 19 -
+
+      Aggregierter Teilhabeindikator als Verhältnis des durchschnittlichen
+      Alterseinkommens der aktuellen Seniorengeneration zum durchschnittlichen
+      Erwerbseinkommen der derzeit Erwerbstätigen.
+      Kompositionsindikator als Gewicht der drei Säulen am Alterseinkommen.
+      Grundsicherungsquote der Rentenbeziehenden.
+      Darstellung der tatsächlich abgedeckten Lebensrisiken der drei Säulen.
+      Subgruppenspezifische Darstellung nach Einkommen, Alter und für vulnerable
+      Gruppen (z. B. Alleinerziehende, Menschen mit Erwerbsminderung,
+      Langzeitarbeitslose, Teilzeitbeschäftigte).
+
+Die administrative Datenbasis für das empirische Monitoring soll verbessert werden:
+
+Statistik der Rentenbezugsmitteilungen
+
+Für aussagekräftige Auswertungen amtlicher Prozessdaten hinsichtlich individueller
+und kumulierter Leistungen der drei Säulen könnte die verpflichtende jährliche
+Meldung der Rentenleistungsträger an die Finanzämter im Rahmen der
+Rentenbezugsmitteilung um zusätzliche statistische Felder ergänzt und die Statistik
+der Rentenbezugsmitteilungen entsprechend weiterentwickelt werden, z. B. durch
+Kennzeichnung, bei welchen Leistungen es sich um betriebliche Rentenleistungen
+und bei welchen um geförderte private Rentenleistungen (Riester-Rente) handelt. Zu
+prüfen ist auch eine Einbeziehung und Kennzeichnung neuer Vorsorgeformen
+(z. B. Altersvorsorgedepot und gesetzliche Kapitalrente - siehe Empfehlung 28).
+
+Digitale Rentenübersicht
+
+Um die Vorsorgesituation der Erwerbstätigen basierend auf Prozessdaten zu erfassen,
+sollten die Daten der Digitalen Rentenübersicht für statistische Auswertungen
+zugelassen werden. Derzeit kann nur der Einzelne die Übersicht über seine Ansprüche
+erhalten; die Übersichten werden nicht ­ auch nicht anonymisiert - gespeichert. Eine
+Nutzung für statistische Zwecke sollte künftig ermöglicht werden, z. B. über einen
+regelmäßigen anonymisierten statistischen Datenabzug. Zudem sollte die Digitale
+Rentenübersicht um fehlende Vorsorgeformen ergänzt werden (siehe Empfehlung 4).
+
+Auswirkungen und Umsetzung
+
+Ein differenziertes und regelmäßiges empirisches Monitoring der tatsächlichen
+Altersvorsorge trägt dazu bei, im Zusammenspiel mit den Systemindikatoren (siehe
+Empfehlung 2) ein umfassendes Bild der Vorsorgesituation zu zeichnen.
+Sozialpolitischer Handlungsbedarf kann aus dem Vergleich der tatsächlichen
+Vorsorge mit den Systemindikatoren abgeleitet werden.
+                                                   - 20 -
+
+ Empfehlung 4
+ Um die individuelle Altersvorsorgeplanung über alle Säulen hinweg zu erleichtern,
+ empfiehlt die Kommission die Weiterentwicklung der Digitalen Rentenübersicht
+ als Informations- und Planungstool.
+ Zudem befürwortet die Kommission die Entwicklung einer lebensbegleitenden
+ Finanzbildungsstrategie.
+
+Ausgangslage
+
+Die Ausgestaltung der Altersvorsorge im Mehrsäulen-System ist komplex. Die
+wissenschaftliche Literatur zeigt eindeutige Zusammenhänge zwischen
+Renteninformationen, finanzieller Bildung, Altersvorsorgeplanung und
+Sparverhalten. Neben der Sparfähigkeit und der Ausgestaltung der institutionellen
+Rahmenbedingungen sollten daher auch diese Bereiche gezielt gestärkt werden. Die
+Digitale Rentenübersicht bietet hierfür bereits gute Voraussetzungen.
+
+Vorgeschlagene Maßnahme
+
+Die Digitale Rentenübersicht soll weiterentwickelt werden. Insbesondere sollen
+Zugangshürden abgebaut, die Darstellung verbessert und die Möglichkeiten der
+Nutzung als Altersvorsorgeplanungstool vorangetrieben werden. So könnte
+beispielsweise ein Zugang auch über ELSTER geprüft und in der Renteninformation
+explizit auf die Digitale Rentenübersicht hingewiesen werden. Die Integration
+weiterer Altersvorsorgesysteme (z. B. der berufsständischen Versorgung, der
+Beamtenversorgung sowie der vorgeschlagenen gesetzlichen Kapitalrente, siehe
+Empfehlung 28) in die Digitale Rentenübersicht soll forciert werden, z. B. durch die
+Verpflichtung der Anbieter zum Versand einer jährlichen Standmitteilung. Damit
+wäre automatisch eine Verpflichtung zur Anbindung an die Digitale Rentenübersicht
+verbunden. Auch Hinweise auf die abgedeckten Lebensrisiken sollten ergänzt werden.
+Die Darstellungsweise sollte sukzessive so weiterentwickelt werden, dass die Digitale
+Rentenübersicht zur Planungshilfe für Nutzende wird, z. B. durch systematische
+Fortschreibung von Ansprüchen in die Zukunft oder Darstellung von
+Zahlungsströmen über die Zeit.
+
+Die Kommission befürwortet zudem die Umsetzung einer Finanzbildungsstrategie für
+Deutschland, insbesondere im Hinblick auf die Altersvorsorgeplanung.
+Altersvorsorge ist vor allem beim Berufseinstieg, aber auch in kritischen
+Lebensphasen und beim Erwerbsaustritt von großer Relevanz und sollte daher
+qualitätsgesichert und auf verschiedene Lebensphasen zugeschnitten entwickelt und
+angeboten werden.
+                                                   - 21 -
+
+Auswirkungen und Umsetzung
+
+Die Maßnahmen tragen dazu bei, dass sich Menschen mit dem komplexen Thema
+Altersvorsorge auseinandersetzen. Unsicherheit in Bezug auf künftige Altersvorsorge
+kann abgebaut und Vertrauen in das Altersvorsorgesystem gestärkt werden.
+Vorausschauendes Planen und Handeln wird unterstützt, indem mögliche
+Vorsorgelücken sichtbar und Anpassungen im Erwerbs- und Vorsorgeverhalten
+möglich werden.
+                                                   - 22 -
+
+III.2 Renteneintritt, Rehabilitation und Prävention
+
+ Empfehlung 5
+ Die Kommission empfiehlt, die Regelaltersgrenze nach 2031 bei einem weiteren
+ Anstieg der Lebenserwartung moderat anzupassen. Die Regelaltersgrenze für den
+ Renteneintritt soll so an die Lebenserwartung gekoppelt werden, dass sich die
+ Änderungen der Lebenserwartung im Verhältnis 2:1 auf die Erwerbs- und die
+ Rentenphase aufteilen. Ergäbe sich eine Entwicklung der Lebenserwartung anhand
+ der aktuellen mittleren Annahmen des Statistischen Bundesamtes, würde das
+ bedeuten, dass die Regelaltersgrenze im Zeitraum zwischen 2031 und 2041
+ schrittweise um etwa sechs Monate von 67 auf 67,5 Jahre angehoben würde. Die
+ Kommission spricht sich für eine regelmäßige Überprüfung aus, ob die der
+ Anhebung der Regelaltersgrenze zugrundeliegenden Rahmenbedingungen und
+ Annahmen weiterhin zutreffen ­ sei es durch das Parlament oder sei es durch ein
+ Gremium wie z. B. den Sozialbeirat.
+
+Ausgangslage
+
+Altersgrenzen haben für die Wahl des Renteneintrittszeitpunkts eine wichtige
+Signalwirkung. Bis zum Jahr 2031 (Geburtsjahrgang 1964) wird die
+Regelaltersgrenze schrittweise auf 67 Jahre angehoben. Eine Erhöhung des
+Renteneintrittsalters trägt angesichts des demografischen Wandels zu einer Sicherung
+der finanziellen Stabilität der GRV bei. Eine Verlängerung des Erwerbslebens dämpft
+Beitragssatz und Bundeszuschuss und stabilisiert das Sicherungsniveau. Verlängerte
+Erwerbsleben führen zudem für sich genommen zu höheren individuellen
+Rentenansprüchen. Ferner wirkt eine Ausweitung der Erwerbstätigkeit Älterer positiv
+auf den Arbeitsmarkt und kann den Fachkräftemangel abmildern.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission schlägt für die Zeit nach 2031 (Geburtsjahrgänge 1965 und jünger)
+bei einem weiteren Anstieg der Lebenserwartung eine moderate Anpassung der
+Regelaltersgrenze vor. Die Anpassung der Altersgrenze soll regelbasiert erfolgen und
+für rentennahe Jahrgänge jeweils frühzeitig feststehen, um Planbarkeit zu schaffen
+und die Akzeptanz zu erhöhen. Die Kommission hält es für sachgerecht, einem
+Anpassungsmechanismus zu folgen, mit dem ein Jahr zugewonnene Lebenserwartung
+im Verhältnis 2:1 auf acht Monate längeres Arbeiten und vier Monate längeren
+Rentenbezug verteilt wird. Dadurch würde das heutige Verhältnis der bedingten
+Lebenserwartung bei Renteneintritt (ca. 20 Jahre) zur durchschnittlichen Dauer der
+Erwerbsphase (ca. 40 Jahre) etwa konstant gehalten.
+                                                   - 23 -
+
+Auf Basis der aktuellen (mittleren) Annahme des Statistischen Bundesamtes zur
+Entwicklung der Lebenserwartung wäre mit einer Erhöhung der Regelaltersgrenze um
+etwa sechs Monate alle zehn Jahre zu rechnen. Die Kommission plädiert dafür, die
+Regelaltersgrenze entsprechend den tatsächlichen Änderungen in der
+Lebenserwartung gemäß den Periodensterbetafeln für die Gesamtbevölkerung
+anzuheben. Auf dieser Basis sollte die Regelaltersgrenze jeweils mit einem Vorlauf
+von mindestens fünf Jahren festgelegt werden. Die Kommission spricht sich dafür
+aus, regelmäßig zu überprüfen, ob die Rahmenbedingungen und Annahmen, die der
+Anhebung der Regelaltersgrenze zugrunde liegen, weiterhin zutreffen. Dies kann
+beispielsweise durch Beschlussfassung im Parlament oder auf Empfehlung z. B. des
+Sozialbeirats erfolgen.
+
+Auswirkungen und Umsetzung
+
+      Die Maßnahme betrifft alle Versicherten in der GRV und soll wirkungsgleich
+      auf Beamte übertragen werden.
+      Wegen der großen Heterogenität von Gesundheit und Lebenserwartung und
+      deren Zusammenhängen mit Bildungsstand, Berufsgruppen, Einkommen und
+      Erwerbsverläufen wirkt diese Regelung individuell unterschiedlich.
+      Belastungen im Erwerbsverlauf sind vor allem durch Gesundheitsprävention
+      und Rehabilitationsmaßnahmen verschiedener Träger zu adressieren (siehe
+      Empfehlung 12). Zudem soll Unterschieden mit Hilfe von Härtefallregelungen
+      Rechnung getragen werden, falls Menschen aufgrund von gesundheitlichen
+      Einschränkungen nicht bis zur Regelaltersgrenze arbeiten können (siehe
+      Empfehlung 10).
+      Die Maßnahme wirkt stabilisierend auf die Finanzen der GRV, da zusätzliche
+      Beitragseinnahmen generiert und gleichzeitig die Rentenausgaben verringert
+      werden. Langfristig stehen den zusätzlichen Beitragseinnahmen jedoch auch
+      entsprechend höhere Renten gegenüber. Insgesamt werden der Anstieg des
+      Beitragssatzes und der Bundeszuschüsse sowie der Rückgang des
+      Rentenniveaus gedämpft. Die genaue Wirkung hängt von der Anpassung des
+      Erwerbsverhaltens ab. Falls der tatsächliche Renteneintritt parallel zur
+      Anhebung der Regelaltersgrenze zum Beispiel um sechs Monate verschoben
+      wird, kann mit einer Entlastung des Beitragssatzes um 0,35 bis
+      0,5 Prozentpunkte gerechnet werden. Gleichzeitig kann sich das
+      Sicherungsniveau um 0,3 bis 0,5 Prozentpunkte erhöhen. Eine stabilisierende
+      Wirkung ist bereits ab Mitte der 2030er Jahre zu erwarten und nimmt mit der
+      Zeit zu.
+      Die Maßnahme soll ab 2032 wirksam werden, wenn der Geburtsjahrgang 1965
+      das 67. Lebensjahr erreicht. Um den rentennahen Jahrgängen ausreichend
+      Planungssicherheit zu gewährleisten, ist eine sofortige Vorbereitung der
+                                                   - 24 -
+
+      Umsetzung erforderlich, da ein Vorlauf von fünf Jahren gewährleistet sein
+      sollte.
+
+ Empfehlung 6
+ Die Kommission empfiehlt, den abschlagsfreien Renteneintritt für besonders
+ langjährig Versicherte abzuschaffen.
+
+Ausgangslage
+Die Altersgrenze für den abschlagsfreien Rentenzugang für besonders langjährig
+Versicherte wurde für vor 1953 Geborene auf 63 Jahre abgesenkt und danach
+schrittweise auf 65 Jahre erhöht. Die letzten Schritte der Erhöhung laufen mit dem
+Rentenzugang 2030 aus und betreffen die Geburtsjahrgänge 1962 und 1963. Für die
+Geburtsjahrgänge 1964 und jünger ist der Rentenzugang für besonders langjährig
+Versicherte abschlagsfrei im Alter 65 möglich.
+Seit 2015 haben etwa 30 Prozent aller Altersrentenzugänge die Möglichkeit des
+abschlagsfreien vorgezogenen Rentenzugangs für besonders langjährig Versicherte
+genutzt. Ihre durchschnittliche Zugangsrente betrug 2025 1.677 Euro, damit lag sie
+rund ein Drittel höher als im Durchschnitt der Altersrente für langjährig Versicherte
+(Wartezeit 35 Jahre mit Abschlägen) mit 1.257 Euro.4 In der Kommission wurde
+diskutiert, ob es aus Aspekten der Anerkennung von Lebensleistung weiterhin einen
+abschlagsfreien früheren Rentenzugang für diejenigen geben sollte, die bereits früh
+angefangen haben zu arbeiten und langjährige Beitragszeiten aufweisen,
+beispielsweise nach 47 Beitragsjahren. Die Daten zeigen jedoch, dass von solchen
+Regelungen vor allem Besserverdienende, Gesündere und Männer profitieren,
+während Geringverdienende, Personen mit weniger stabilen Erwerbsverläufen und
+Frauen sie nicht in Anspruch nehmen (können). Die Abschlagsfreiheit führt faktisch
+zu höheren Renten zu Lasten der Versichertengemeinschaft. Da zudem keine Grenzen
+bei Hinzuverdienstmöglichkeiten bestehen, besteht ein zusätzlicher ökonomischer
+Anreiz, die Rente zum frühestmöglichen Zeitpunkt zu beziehen.
+
+Vorgeschlagene Maßnahme
+Die Kommission empfiehlt, den abschlagsfreien Renteneintritt für besonders
+langjährig Versicherte abzuschaffen. Ein abschlagsfreier vorgezogener Rentenbeginn
+ausschließlich nach Beitragsjahren soll zukünftig nicht mehr möglich sein.
+
+4 Statistik der DRV- Rentenzugang 2025
+                                                   - 25 -
+
+Auswirkungen und Umsetzung
+
+      Da die vorausgesetzten 45 Versicherungsjahre häufiger von Männern als von
+      Frauen, sowie von Personen mit höheren Einkommen, längeren
+      Versicherungsbiografien und besserer Gesundheit erreicht werden, wird die
+      Abschaffung des abschlagsfreien Rentenzugangs für besonders langjährig
+      Versicherte die bisher gewährten Begünstigungen nicht mehr ermöglichen.
+      Die Abschaffung des abschlagsfreien vorgezogenen Rentenzugangs kann die
+      Finanzen der GRV dauerhaft entlasten. Soweit die Personen, die die Rente für
+      besonders langjährig Versicherte beziehen, stattdessen ab demselben Zeitpunkt
+      die mit Abschlägen belegte vorgezogene Rente für langjährig Versicherte
+      beziehen würden, ergäben sich unmittelbare Einsparungen in Höhe von etwa
+      430 Millionen Euro pro Jahr des Rentenbezugs und pro Rentenzugangsjahrgang
+      (in Werten des Zugangs 2025). Die Einsparungen durch Abschläge wirken
+      verteilt über die gesamte Rentenbezugsdauer. Die stabilisierende Wirkung setzt
+      ab dem Jahr ein, in dem kein abschlagsfreier Zugang mehr möglich ist. Würden
+      alle Versicherten ihren Renteneintritt um ein Jahr aufschieben, ergäben sich
+      Einsparungen für die DRV von ca. 6,5 Milliarden Euro pro
+      Rentenzugangsjahrgang.
+      Zudem ist mit zusätzlichen Beitragseinnahmen zu rechnen, da zumindest ein
+      Teil der Betroffenen den Renteneintritt aufschiebt, dem Arbeitsmarkt länger zur
+      Verfügung steht und länger erwerbstätig sein dürfte. Die späteren
+      Rentenansprüche der Betroffenen erhöhen sich um die in den zusätzlichen
+      Jahren erworbenen Entgeltpunkte.
+      Künftig kann folglich nur mit Härtefallregelungen (siehe Empfehlung 10) oder
+      mit Abschlägen vorzeitig der Rentenzugang vollzogen werden. Sofern sie die
+      Voraussetzungen erfüllen, können Menschen mit geringen Rentenansprüchen
+      bei vorzeitigem Rentenzugang weiterhin den Grundrentenzuschlag erhalten, der
+      in den meisten Fällen deutlich höher ausfällt als die derzeit geltenden Abschläge.
+      Die Rente für besonders langjährig Versicherte soll unter Berücksichtigung des
+      verfassungsrechtlich gebotenen Vertrauensschutzes zum frühestmöglichen
+      Zeitpunkt abgeschafft werden.
+                                                   - 26 -
+
+ Empfehlung 7
+ Die Kommission empfiehlt, keine Regelung einzuführen, die einen Renteneintritt
+ allein nach Beitragsjahren vorsieht.
+
+Ausgangslage
+
+Die abschlagsfreie vorgezogene Rente für besonders langjährig Versicherte ist nicht
+nur an eine gewisse Zahl von Beitragsjahren, sondern auch an das Erreichen einer
+bestimmten Altersgrenze gebunden. Ohne eine solche zusätzliche Bedingung kann
+eine Rente nach Beitragsjahren entweder zu deutlich früheren Renteneintritten führen
+als nach geltendem Recht, oder sie muss eine sehr hohe Zahl an Beitragsjahren
+voraussetzen. Um abschlagsfreie Renteneintritte vor Vollendung des
+65. Lebensjahres auszuschließen, müssten z. B. 50 Beitragsjahre als
+Zugangsvoraussetzung festgelegt werden.
+
+Wie bei der Rente für besonders langjährig Versicherte wäre zudem auch bei der
+Rente nach Beitragsjahren zu erwarten, dass Menschen mit unterbrochenen
+Erwerbsbiografien, Frauen und Personen mit Migrationserfahrung benachteiligt
+würden (siehe Empfehlung 6). Akademikerinnen und Akademiker müssten zwar
+wegen ihres späteren Eintritts in den Arbeitsmarkt länger arbeiten, aber dasselbe
+würde auch für viele Menschen mit Erwerbsunterbrechungen gelten. Zudem könnte
+das bildungspolitisch problematische Signal gesendet werden, dass die Aufnahme
+eines Studiums zu einem späteren Renteneintritt führt.
+
+Das Argument, dass solch eine Regelung Unterschiede in der Lebenserwartung
+ausgleiche, ist nicht zutreffend, da Beitragsjahre nur ein sehr schlechter Indikator für
+psychische oder physische Belastungen und damit eine längere oder kürzere
+Lebenserwartung sind. Auch den Unterschieden in den Erwerbsbiografien und der
+Lebenserwartung zwischen Männern und Frauen würde solch eine Regelung nicht
+gerecht. Insgesamt wäre dies demnach keine zielgenaue Lösung zum Ausgleich
+sozialer Härten beruflich bedingter Belastungen.
+
+Abschlagsfreie Rentenzugänge vor der Regelaltersgrenze verletzen grundsätzlich das
+Prinzip, dass gleich hohe Beiträge zu gleich hohen Renten führen. Jemand, der eine
+bestimmte Summe an Entgeltpunkten über 45 Jahre erworben hat, erhielte eine höhere
+Rente als jemand, der die gleiche oder eine höhere Summe an Entgeltpunkten in
+kürzerer Zeit erworben hat.
+                                                   - 27 -
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt, keinen abschlagsfreien frühzeitigen Rentenbeginn
+ausschließlich nach Beitragsjahren zu ermöglichen. Ebenso wird empfohlen, generell
+keine Rente ausschließlich nach Beitragsjahren einzuführen.
+
+ Empfehlung 8
+ Die Kommission empfiehlt, die Altersgrenze für die Rente für langjährig
+ Versicherte zeitnah von 63 auf 64 Jahre zu erhöhen. Danach soll sie parallel zur
+ Entwicklung der Regelaltersgrenze angehoben werden. Das Renteneintrittsfenster
+ soll dadurch auch bei Anhebung der Regelaltersgrenze bei drei Jahren bleiben.
+
+Ausgangslage
+
+Im Jahr 2025 waren über 30 Prozent der Altersrentenzugänge mit Abschlägen belegt.
+Darunter entfielen rund 18 Prozent auf die Altersrente für langjährig Versicherte zum
+frühestmöglichen Renteneintrittsalter mit 63 Jahren. Durch die laufende Anhebung
+der Regelaltersgrenze von 65 auf 67 Jahre vergrößert sich das Renteneintrittsfenster
+für diese Rentenart von ursprünglich zwei auf vier Jahre. Damit erhöhen sich die
+Abschläge, die für den frühesten Renteneintritt anfallen.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt eine Anhebung der Altersgrenze für langjährig
+Versicherte und eine anschließende parallele Erhöhung zur Regelaltersgrenze (siehe
+Empfehlung 5). Die parallele Altersgrenzenanhebung soll für alle Altersrenten gelten.
+Damit werden das Renteneintrittsfenster und die maximale Höhe der Abschläge auch
+bei einer Anhebung der Regelaltersgrenze festgeschrieben. Das soll vermeiden, dass
+Versicherte einen zu frühen Rentenbeginn zulasten der Höhe ihrer Rente wählen. Dies
+könnte zu geringen Renten und zum vermeidbaren Bezug von
+Grundsicherungsleistungen führen. Internationale Erfahrungen zeigen, dass
+Versicherte ihre Rentenansprüche oft überschätzen und ihren Bedarf während der
+Rente unterschätzen.
+
+Auswirkungen und Umsetzung
+
+      Die Maßnahme wirkt bei versicherungsmathematisch korrekt berechneten
+      Abschlägen (siehe Empfehlung 9) neutral auf Beitragssatz, Bundeszuschuss und
+      Sicherungsniveau. Aus Sicht des Einzelnen wirkt sie bei einer Verlängerung des
+      Erwerbslebens rentenerhöhend, da zusätzliche Entgeltpunkte erworben werden.
+      Die Möglichkeiten, die Erwerbstätigkeit zu verlängern, werden allerdings von
+      der Lage am Arbeitsmarkt sowie von den individuellen Umständen beeinflusst.
+                                                   - 28 -
+
+      Die Umsetzung der Maßnahme sollte sofort beschlossen und mit einem Vorlauf
+      umgesetzt werden, der den rentennahen Jahrgängen ausreichend
+      Planungssicherheit gibt.
+
+ Empfehlung 9
+ Die Kommission empfiehlt, die Umrechnungsfaktoren bei vorgezogenem bzw.
+ aufgeschobenem Renteneintritt (Abschläge bzw. Zuschläge) weiterhin nach
+ versicherungsmathematischen Grundsätzen zu berechnen und regelmäßig zu
+ aktualisieren. Damit sollen die finanziellen Auswirkungen von vorzeitigen bzw.
+ späteren Renteneintritten für die Versichertengemeinschaft weiterhin neutral
+ bleiben.
+
+Ausgangslage
+
+Werden Renten vorzeitig bezogen, muss der monatliche Rentenzahlbetrag an eine
+verlängerte Rentenbezugsdauer angepasst werden. Das erfolgt durch Abschläge. Sind
+diese zu gering, erzeugt der vorgezogene Renteneintritt finanzielle Vorteile für den
+Einzelnen, die Kosten werden von der Versichertengemeinschaft getragen. Im
+Gegenzug kompensieren Zuschläge eine verkürzte Rentenbezugsdauer bei gegenüber
+der Regelaltersgrenze aufgeschobenem Rentenbeginn. Werden die
+Umrechnungsfaktoren budgetneutral bestimmt, so sind frühe oder späte
+Renteneintritte für die Versichertengemeinschaft über die erwartete Rentenbezugszeit
+hinweg neutral und ermöglichen den Versicherten, ihren Altersübergang flexibler zu
+gestalten.
+
+Für die Berechnung neutraler Zu- bzw. Abschläge sind anhaltende Veränderungen
+demografischer, ökonomischer und rechtlicher Rahmenbedingungen von Bedeutung.
+Veränderungen der Lebenserwartung, der gesetzlichen Altersgrenzen für den
+Rentenbeginn oder des tatsächlichen Renteneintrittsverhaltens beeinflussen zentrale
+Parameter der barwertneutralen Abschlagsberechnung. Ebenso spielen
+Entwicklungen am Arbeits- und Kapitalmarkt eine Rolle für den zugrunde
+zu legenden Diskontsatz.
+
+Die Deutsche Bundesbank hat Berechnungen durchgeführt, die zu ähnlichen
+Abschlägen wie im geltenden Recht bzw. zu geringfügig höheren Abschlägen führen.
+Auf dieser Basis sieht die Kommission derzeit keinen zwingenden Bedarf für eine
+Anpassung der Umrechnungsfaktoren.
+                                                   - 29 -
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt, die Umrechnungsfaktoren weiterhin nach
+versicherungsmathematischen Grundsätzen zu berechnen. Eine politische Setzung zur
+Steuerung des Rentenbeginns wird nicht befürwortet.
+
+Die Kommission empfiehlt, die Berechnung in regelmäßigen Abständen zu
+aktualisieren, um die Auswirkungen vorzeitiger bzw. aufgeschobener Renteneintritte
+auf die Versichertengemeinschaft auch bei einer Veränderung der
+Rahmenbedingungen neutral zu halten.
+
+Die Kommission sieht folgende Grundsätze als maßgeblich bei der Berechnung:
+
+      Berechnung als pauschaler, durchschnittlicher Satz für die gesamte
+      Rentenlaufzeit.
+      Berücksichtigung von Hinterbliebenenrenten.
+      Ansatz der Budgetneutralität zur Neutralisierung finanzieller Auswirkungen auf
+      die Versichertengemeinschaft.
+
+Auswirkungen und Umsetzung
+
+Die Überprüfung sollte in regelmäßigen Abständen (z. B. alle fünf Jahre) erfolgen.
+Eine eventuelle Anpassung der Umrechnungsfaktoren sollte mit entsprechendem
+zeitlichem Vorlauf verkündet werden, um Planungssicherheit für rentennahe
+Jahrgänge zu gewährleisten.
+
+ Empfehlung 10
+ Die Kommission empfiehlt, das zum Jahresbeginn 2026 eingeführte
+ Fallmanagement der Träger der GRV und die freiwillige, individuelle,
+ berufsbezogene Gesundheitsvorsorge für Versicherte ab Vollendung des 45.
+ Lebensjahrs, die die Bundesregierung flächendeckend umsetzen will,
+ wissenschaftlich eng zu begleiten und ggf. weiterzuentwickeln. Im Lichte der
+ Evaluation soll auch geprüft werden, ob ein zusätzlicher Check zu einem späteren
+ Alter (z. B. Ü 63) angeboten werden soll.
+ Die Kommission empfiehlt, für Versicherte, die bereits eine
+ Erwerbsminderungsrente beziehen und trotz gesundheitlicher Einschränkungen
+ wieder arbeiten möchten, den Wiedereingliederungsversuch attraktiver
+ auszugestalten. Sie schlägt vor, den Erprobungszeitraum von derzeit sechs
+ Monaten auf ein Jahr zu verlängern.
+ Die Kommission empfiehlt, dass Menschen in rentennahen Jahrgängen, die nach
+ einer individuellen Gesundheitsprüfung nachweislich nicht mehr in ihrem letzten
+ langjährig ausgeübten Berufsfeld erwerbstätig sein können, einen vereinfachten
+                                                   - 30 -
+
+ Zugang zu einer Rente erhalten sollten. Auf eine Verpflichtung zu beruflichen
+ Neu- und Anpassungsqualifizierungen sollte in dieser Altersgruppe verzichtet
+ werden.
+ Die Kommission empfiehlt, den Begriff der Erwerbsminderung zu überarbeiten
+ und dabei insbesondere die Vermittlungschancen von Personen zu
+ berücksichtigen, die nur drei Stunden am Tag erwerbsfähig sind.
+
+Ausgangslage
+
+Im Zuge der Diskussion um höhere Altersgrenzen darf nicht aus dem Blick geraten,
+dass zahlreiche Menschen aus gesundheitlichen Gründen nicht bis zur
+Regelaltersgrenze erwerbstätig sein können. Soweit sie die Voraussetzungen für den
+Bezug einer Erwerbsminderungsrente erfüllen, profitieren sie von
+Leistungsverbesserungen der letzten Jahre. Neue Erwerbsminderungsrenten fallen
+dadurch rund 60 Prozent höher aus als vor zehn Jahren.
+
+Menschen, die aufgrund gesundheitlicher Einschränkungen nicht in ihrem bisherigen
+Beruf arbeiten können, aber mehr als sechs Stunden am Tag auf dem allgemeinen
+Arbeitsmarkt tätig sein können, haben keinen Anspruch auf eine
+Erwerbsminderungsrente. Insbesondere kurz vor dem regulären Renteneintrittsalter
+bestehen bei einer eintretenden Arbeitslosigkeit kaum Chancen auf Vermittlung. Nach
+Auslaufen des Arbeitslosengeldanspruches (18 bzw. 24 Monate) sind Betroffene dann
+ggf. auf Grundsicherungsleistungen angewiesen, was auch angesichts der engen
+Vermögensfreigrenzen eine soziale Härte darstellt.
+
+Alle Bemühungen, gesundheitliche Risiken möglichst frühzeitig zu erkennen und
+durch Prävention und Rehabilitation zum Erhalt der Gesundheit beizutragen, sind von
+großer Bedeutung. Im Fokus der Bemühungen muss zudem eine altersgerechte
+Arbeitsplatzgestaltung stehen, die eine Weiterbeschäftigung bis zum Renteneintritt
+ermöglicht.
+
+Das Prinzip ,,Prävention vor Reha vor Rente" muss weiterhin gestärkt werden. Seit
+Jahresbeginn 2026 sieht das SGB VI ein Fallmanagement der Träger der GRV vor.
+Es kann unter anderem die Ermittlung des individuellen Rehabilitationsbedarfs
+umfassen, die Entwicklung und Koordinierung eines individuellen
+Rehabilitationsprozesses und die rechtskreisübergreifende Unterstützung
+Versicherter bei der Beantragung von Sozialleistungen und der Inanspruchnahme
+weiterer unterstützender Angebote. Das Fallmanagement befindet sich derzeit im
+Aufbau.
+
+Der Koalitionsvertrag der Bundesregierung sieht vor, den bisher in Modellprojekten
+erprobten Ü-45-Check, eine freiwillige, individuelle berufsbezogene
+Gesundheitsvorsorge für Versicherte ab Vollendung des 45. Lebensjahrs,
+                                                   - 31 -
+
+flächendeckend umzusetzen. Hierdurch können berufsbezogene Teilhabestörungen
+frühzeitig erkannt und geeignete Leistungen zur Prävention und Rehabilitation
+angeboten werden. Die Auswertung der Modellprojekte zum Ü-45-Check zeigt, dass
+Männer damit weit schwerer zu erreichen sind als Frauen und dass Personen mit
+niedriger Bildung und hohem Risiko, später eine Erwerbsminderungsrente zu
+beziehen, unterrepräsentiert sind (Präventionsdilemma).
+
+Von hoher Bedeutung ist auch die Zusammenarbeit zwischen den
+Krankenversicherungen und den Trägern der GRV. Wenn die Zeit des
+Krankengeldbezuges nicht genutzt wird, um in Zusammenarbeit mit der GRV die
+Möglichkeiten der Rehabilitation auszuloten und die Versicherten bei der
+Entwicklung weiterer beruflicher Perspektiven zu unterstützen, steigt die Gefahr, dass
+eine spätere Erwerbsminderungsrente nicht mehr vermeidbar ist.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt, das Fallmanagement und den flächendeckenden
+Ü-45-Check wissenschaftlich eng zu begleiten, zu evaluieren und ggf.
+weiterzuentwickeln. Dabei sollte die Kooperation zwischen den relevanten Akteuren
+einbezogen werden. Die Evaluation sollte auch erheben, wie weit das
+Präventionsdilemma überwunden werden kann. Im Lichte der Evaluation sollte
+geprüft werden, ob ein zusätzlicher Check zu einem späteren Alter (z. B. Ü 63)
+angeboten wird.
+
+Zudem sollte ein stärkerer Fokus auf denjenigen Menschen liegen, die bereits eine
+Erwerbsminderungsrente beziehen. Diese sollen bei der Aufnahme einer
+Erwerbstätigkeit unterstützt werden. Die Kommission empfiehlt, den seit 2023
+bestehenden Wiedereingliederungsversuch attraktiver auszugestalten. Ziel dieser
+Regelung ist es, Beziehenden von Erwerbsminderungsrenten die Sorge zu nehmen,
+bei einem gescheiterten Arbeitsversuch ihren Rentenanspruch zu verlieren. Um eine
+nachhaltige Rückkehr in den Arbeitsmarkt zu erleichtern, sollte der
+Erprobungszeitraum von derzeit sechs Monaten auf ein Jahr verlängert werden.
+
+Um mögliche soziale Härten abzumildern, sollte die Prüfung der Erwerbsminderung
+in den letzten Jahren vor dem Renteneintrittsalter um einen Tatbestand einer
+beruflichen Leistungseinschränkung nach individueller Gesundheitsprüfung erweitert
+werden. Diese Möglichkeit sollte an die Altersrente für schwerbehinderte Menschen
+(§ 37 SGB VI) angelehnt werden. Damit würde für Versicherte, die aufgrund
+gesundheitlicher Einschränkungen nicht mehr in ihrem letzten langjährig ausgeübten
+Berufsfeld erwerbstätig sein können, ein Rentenzugang abschlagsfrei zwei Jahre vor
+der Regelaltersgrenze und weitere drei Jahre vorzeitig mit Abschlägen ermöglicht
+werden. Bedingung für die Inanspruchnahme dieser Rentenart ist eine Wartezeit von
+mindestens 35 Jahren.
+                                                   - 32 -
+
+Die Kommission empfiehlt eine zeitnahe und regelmäßige Evaluation nach
+Inkrafttreten einer solchen Regelung.
+
+Auswirkungen und Umsetzung
+
+      Das Fallmanagement bietet aufgrund seiner rechtskreisübergreifenden
+      Ausgestaltung Chancen, Koordinations- und Schnittstellenprobleme zwischen
+      Sozialleistungsträgern, insbesondere zwischen GRV und gesetzlicher
+      Krankenversicherung (GKV), abzubauen.
+      Jede Erwerbsminderungsrente, die durch Prävention verhindert werden kann
+      bzw. bei der eine erfolgreiche Rückkehr in Beschäftigung erfolgt, bedeutet einen
+      Gewinn für die Betroffenen selbst, entlastet die GRV und stärkt zugleich die
+      Einnahmen der Sozialversicherungen sowie den Bundeshaushalt.
+      Erfahrungen mit der früheren Berufsunfähigkeitsrente in Deutschland und aus
+      anderen Ländern zeigen, dass bei solchen gesundheitsbezogenen Regelungen
+      das Risiko besteht, dass diese für eine betriebliche Frühverrentungspolitik zu
+      Lasten der Versicherungsgemeinschaft genutzt werden. Der Gesetzgeber sollte
+      daher die unbestimmten Rechtsbegriffe (z. B. Berufsfeld, langjährige Tätigkeit,
+      schwerwiegende gesundheitliche Einschränkung, rentennahe Jahrgänge) so
+      definieren, dass die Regelung zielgenau und rechtssicher ausgestaltet ist.
+      Durch eine zeitnahe und regelmäßige Evaluation kann die Wirksamkeit der
+      Maßnahmen überprüft werden.
+
+ Empfehlung 11
+ Die Kommission empfiehlt, Reformoptionen zu prüfen, welche die
+ Hinterbliebenenversorgung an die geänderten gesellschaftlichen Normen und
+ Rahmenbedingungen anpassen.
+
+Ausgangslage
+
+Die Hinterbliebenenrente ist eine zentrale Säule der GRV zur sozialen Absicherung
+nach dem Tod eines Versicherten. Sie ersetzt den wegfallenden Unterhalt und dient
+der Absicherung von Witwen, Witwern und Waisen.
+
+Die Ausgestaltung der Hinterbliebenenrente stammt aus einer Zeit, in der die
+Alleinverdienerehe das dominante Familienmodell in Westdeutschland war. Die
+gesellschaftlichen Normen und Rahmenbedingungen haben sich seitdem geändert.
+
+Der Anspruch auf eine große Witwen-/Witwerrente greift bereits mit knapp 47 Jahren
+und damit zu einer Zeit, in der die Sicherung des Lebensunterhalts durch eigene
+Erwerbstätigkeit erfolgen kann. Die bei der Witwen-/Witwerrente erfolgende
+Einkommensanrechnung kann Anreize setzen, die einer Aufnahme bzw. Ausweitung
+                                                   - 33 -
+
+der Erwerbstätigkeit entgegenstehen. Schwer zu begründen ist auch, dass es für den
+Anspruch auf eine Witwen-/Witwerrente ohne Belang ist, ob der hinterbliebene
+Partner Sorgearbeit für Kinder geleistet hat und dadurch beim Aufbau eigenständiger
+Alterssicherungsansprüche eingeschränkt war.
+
+Vorgeschlagene Maßnahme
+
+Eine Reform der Hinterbliebenenversorgung ist komplex und muss auf ihre
+Wirkungen hin sorgfältig geprüft werden. Die Kommission konnte dies in der ihr zur
+Verfügung stehenden knappen Zeit nicht leisten. Die Kommission schlägt vor, zeitnah
+einen Prozess aufzusetzen, der unterschiedliche Reformoptionen prüft.
+
+ Empfehlung 12
+ Die Kommission empfiehlt, Rehabilitation in Deutschland durch passende
+ Maßnahmen gezielt zu stärken, um Gesundheit, Teilhabe und die langfristige
+ Stabilität der sozialen Sicherungssysteme zu sichern. Die Kommission empfiehlt
+ ein Reha-Budget in der GRV, das sich an den tatsächlichen Versorgungsbedarfen
+ orientiert.
+
+Ausgangslage
+
+Angesichts des begrenzten Erwerbspersonenpotentials und Arbeitskräftemangels ist
+es essenziell, die Erwerbsfähigkeit von Versicherten zu erhalten oder
+wiederherzustellen und damit ein vorzeitiges Ausscheiden aus dem Arbeitsleben zu
+verhindern.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt ein Reha-Budget in der GRV, das sich an den
+tatsächlichen Versorgungsbedarfen orientiert.
+
+Auswirkung und Umsetzung
+
+Erfolgreiche Rehabilitationsmaßnahmen kommen sowohl den Betroffenen als auch
+Arbeitgebern und den Sozialversicherungssystemen zugute, da
+Erwerbsminderungsrenten vermieden und Fachkräfte im Arbeitsmarkt gehalten
+werden können.
+                                                   - 34 -
+
+ Empfehlung 13
+ Die Kommission empfiehlt, die Altersgrenze für die Inanspruchnahme von
+ Altersteilzeit von derzeit 55 Jahren auf 58 Jahre anzuheben und künftig an die
+ Regelaltersgrenze zu koppeln.
+ Altersteilzeit im Blockmodell soll nicht mehr länger möglich sein.
+
+Ausgangslage
+
+Altersteilzeit können Arbeitnehmende ab dem 55. Lebensjahr nutzen, wenn sie in den
+letzten fünf Jahren vor Beginn der Altersteilzeit wenigstens 1.080 Kalendertage
+sozialversicherungspflichtig beschäftigt waren. Beschäftigte und Arbeitgeber
+vereinbaren dies freiwillig im Arbeitsvertrag; häufig ermöglichen auch
+Betriebsvereinbarungen oder Tarifverträge Altersteilzeit. Ein Rechtsanspruch besteht
+nicht. Im Gleichverteilungsmodell wird die Arbeitszeit während der gesamten
+Laufzeit bis zum Renteneintritt auf die Hälfte reduziert.
+
+Im Blockmodell arbeiten die Beschäftigten in der ersten Hälfte der Altersteilzeit voll
+(Arbeitsphase), in der zweiten Hälfte hingegen gar nicht mehr (Freistellungsphase).
+Der daraus resultierende Einkommensverlust wird durch den Arbeitgeber teilweise
+ausgeglichen. Beim Blockmodell handelt es sich faktisch nicht um eine echte
+Teilzeitbeschäftigung, sondern eine arbeitsrechtlich ermöglichte Form der
+Frühverrentung, die sich zudem negativ auf die individuellen Rentenanwartschaften
+auswirkt. Zugleich nimmt es die Arbeitgeber aus der Verantwortung, die
+Beschäftigungsmöglichkeiten älterer Arbeitnehmender zu verbessern und die
+Arbeitsbedingungen altersgerecht auszugestalten.
+
+Vorgeschlagene Maßnahme
+
+Altersteilzeit im Blockmodell soll nicht länger ermöglicht werden, um
+Frühverrentungsanreize zu verringern und so zusätzliche Beschäftigungspotenziale
+von Älteren zu sichern.
+
+Das Teilzeitmodell kann dagegen beibehalten werden, da hier Ältere nicht frühzeitig
+aus dem Berufsleben austreten und Beschäftigungspotenziale gesichert werden.
+
+Die Altersgrenze sollte auf 58 Jahre angehoben und zukünftig an die
+Regelaltersgrenze gekoppelt werden, so dass die Altersteilzeit fließend in den
+Renteneintritt mündet.
+                                                   - 35 -
+
+Auswirkungen und Umsetzung
+
+      Einschränkungen bei der Altersteilzeit schränken die Privatautonomie der
+      Arbeitsvertragsparteien und der Tarifpartner ein. Dies ist jedoch durch die
+      Verbesserung der Erwerbsbeteiligung Älterer und einer möglichen Entlastung
+      der Sozialversicherungen gerechtfertigt.
+      Die Abschaffung des Blockmodells kann die Erwerbsbeteiligung älterer
+      Arbeitnehmenden steigern und wirkt damit dem Fachkräftemangel entgegen.
+      Die Verkürzung der Laufzeit der Altersteilzeit führt zu längeren Beitragszeiten
+      mit höheren Beiträgen und trägt damit zu einer Erhöhung der individuellen
+      Renten bei.
+                                                   - 36 -
+
+III.3 Finanzierung der gesetzlichen Rentenversicherung
+
+ Empfehlung 14
+
+ Die Kommission empfiehlt die Kopplung der Rentenentwicklung an die
+ Lohnentwicklung beizubehalten und zu regelbasierten jährlichen
+ Rentenanpassungen zurückzukehren, die automatisch auf Änderungen der
+ Demografie und der Erwerbstätigkeit reagieren. Zu diesem Zweck soll der
+ Nachhaltigkeitsfaktor der aktuellen Rentenanpassungsformel beibehalten
+ werden, dessen Anwendung derzeit bis 2031 ausgesetzt ist. Der Parameter ,,alpha"
+ im Nachhaltigkeitsfaktor soll zudem moderat auf 0,33 erhöht werden, um die
+ Lasten der demografischen Alterung ausgewogener als bisher zwischen Rentnern
+ und Beitragszahlern zu verteilen.
+
+ Die konkrete Implementierung dieser Dämpfungsfaktoren soll so erfolgen, dass
+ das Rentenniveau (inkl. gesetzlicher Kapitalrente) unter Berücksichtigung des
+ gesamten vorgeschlagenen Reformpakets weder für den Rentenbestand noch für
+ die künftigen Rentenzugänge geringer als nach dem geltenden Recht ausfällt.
+
+Ausgangslage
+
+Nach der Rentenanpassungsformel werden die Renten jedes Jahr an Änderungen der
+Bruttoentgelte je Arbeitnehmende, des Beitragssatzes in der allgemeinen
+Rentenversicherung (zuzüglich des erwarteten Anteils der Bruttoentgelte für die
+staatlich geförderte private Altersvorsorge) sowie des Rentnerquotienten angepasst.
+Maßgeblich sind jeweils Änderungen im Vorjahr gegenüber dem vorvergangenen
+Jahr. Ausgehend von den lohnorientierten Rentenanpassungen bewirkt die
+Berücksichtigung des Beitragssatzes (und des Altersvorsorgeanteils), dass
+Steigerungen der laufenden Aufwendungen für die Altersvorsorge die
+Rentenanpassungen dämpfen. Steigende Lasten der Beitragszahlenden, die aufgrund
+der Umlagefinanzierung die aktuellen Leistungen an die Rentenbeziehenden
+finanzieren, werden somit abgemildert. Die Berücksichtigung des Rentnerquotienten
+durch den sogenannten Nachhaltigkeitsfaktor dämpft die Rentenanpassungen
+zusätzlich, falls die Anzahl der Leistungsbeziehenden (normiert als
+Äquivalenzrentner) schneller steigt als die der Beitragszahlenden (normiert als
+Äquivalenzbeitragszahler). Dieser Mechanismus bewirkt eine automatische
+Selbststabilisierung des umlagefinanzierten Rentensystems, vor allem mit Blick auf
+ungünstige Effekte der demografischen Entwicklung und der
+Arbeitsmarktentwicklung für die Finanzierung des Systems.
+
+Die aus einem steigenden Rentnerquotienten resultierende Finanzierungslast wurde
+dabei ­ geregelt über den Parameter alpha (mit alpha = 0,25) ­ zwischen
+                                                   - 37 -
+
+Leistungsbeziehenden und Beitragszahlenden bisher so aufgeteilt, dass rund ein
+Viertel dieses Effekts durch Dämpfung der Rentenanpassungen, drei Viertel durch
+höhere Beitragszahlungen und daran ausgerichtete Anhebungen des allgemeinen
+Bundeszuschusses zur GRV ausgeglichen wird.
+
+Im Jahr 2018 wurde gesetzlich festgelegt, dass die Renten ­ gemessen am
+Sicherungsniveau netto vor Steuern einer Standardrente relativ zu den
+Durchschnittslöhnen ­ bis zum Jahr 2025 so angepasst werden, dass das Rentenniveau
+nicht unter 48 Prozent sinken soll. Im Dezember 2025 wurde diese Regelung bis zum
+Jahr 2031 verlängert. Seitdem diese Haltelinie greift, werden die Rentenanpassungen
+durch Beitragssatz- oder Nachhaltigkeitsfaktor nicht weiter gedämpft.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt, die Rentenanpassungsformel mit Beitragssatz- und
+Nachhaltigkeitsfaktor nach 2031 wieder in Kraft zu setzen. Der Nachhaltigkeitsfaktor
+soll moderat verstärkt werden, indem der Parameter alpha auf 0,33 heraufgesetzt wird.
+Im Beitragssatzfaktor der Rentenanpassungsformel soll der Beitragssatz zur
+gesetzlichen Kapitalrente (siehe Empfehlung 28) als Altersvorsorgeaufwand neben
+dem Beitragssatz zur umlagefinanzierten GRV berücksichtigt werden. Die konkrete
+Implementierung dieser Dämpfungsfaktoren soll so erfolgen, dass das Rentenniveau
+(inkl. gesetzlicher Kapitalrente) unter Berücksichtigung des gesamten
+vorgeschlagenen Reformpakets weder für den Rentenbestand noch für die künftigen
+Rentenzugänge geringer ausfällt als nach dem geltenden Recht, das ohne Reformen
+nach 2031 gültig wäre.
+
+Die steigende Finanzierungslast der demografischen Alterung wird durch die
+Verstärkung des Nachhaltigkeitsfaktors zukünftig durch stärker gedämpfte
+Rentenanpassungen von den Leistungsbeziehern mitgetragen. In der Gesamtschau der
+Reformen beteiligen sich dadurch auch die älteren Generationen stärker an der
+nachhaltigen Finanzierung des umlagefinanzierten Alterssicherungssystems, ohne, im
+Vergleich zum heutigen Recht, Einschnitte im Sicherungsniveau in Kauf nehmen zu
+müssen. Zudem bleibt weiterhin durch die Schutzklausel garantiert, dass es keine
+Rentenkürzungen gibt. Der empfohlene Mechanismus sorgt dafür, dass die Renten
+weniger stark erhöht werden, wenn die Anzahl der Rentenbeziehenden stärker steigt
+als die der Beitragszahlenden.
+                                                   - 38 -
+
+Auswirkungen und Umsetzung
+
+      Eine Anhebung des Parameters alpha auf 0,33 wirkt in der derzeit anlaufenden
+      Phase beschleunigter demografischer Alterung dämpfend auf den Beitragssatz
+      und die Bundeszuschüsse. Die Maßnahme senkt für sich genommen den
+      Beitragssatz bis 2040 um rund einen halben Prozentpunkt, bis 2060 um fast
+      einen Prozentpunkt.
+      Rentensteigerungen würden damit ab 2031 ohne sonstige Reformen stärker
+      gedämpft als auf Basis des geltenden Rechts. In Kombination mit weiteren
+      Reformempfehlungen der Alterssicherungskommission sollen die Dämpfungen
+      jedoch weniger stark ausfallen als ohne Reformen.
+      Betroffen sind alle Versicherten in der GRV. Die Empfehlungen der
+      Kommission, welche das Sicherungsniveau für Bestandsrentnerinnen und
+      -rentner gegenüber dem geltenden Recht stabilisieren und ab 2040 darüber
+      hinaus heben werden, wirken dem entgegen. Hierzu zählen insbesondere die
+      empfohlenen Maßnahmen beim Renteneintritt (siehe Empfehlung 5 bis
+      Empfehlung 10), und die Einbeziehung weiterer Gruppen in die
+      Versicherungspflicht (siehe Empfehlung 21 bis Empfehlung 26). Dämpfende
+      Wirkungen auf die Rentenleistungen für Menschen mit niedrigen
+      Alterseinkommen sollen zudem gezielt reduziert werden, etwa durch die
+      Einführung von Freibeträgen für alle gesetzlichen Renten bei der
+      Grundsicherung im Alter (siehe Empfehlung 19). Durch den Aufbau einer
+      zusätzlichen gesetzlichen Kapitalrente (siehe Empfehlung 28) sowie einem
+      Übergangsfaktor (siehe Empfehlung 15) wird das Rentenniveau für
+      Zugangsrentner bei 48 Prozent stabilisiert und perspektivisch für alle
+      Rentenbeziehenden gesteigert.
+
+Exkurs: Inflationsanpassung von Renten
+
+Intensiv diskutiert und einheitlich abgelehnt hat die Kommission eine
+Inflationsanpassung von Bestandsrenten.
+
+Sofern die Löhne stärker steigen als die Verbraucherpreise, könnte eine jährliche
+Inflationsanpassung den Anstieg der Rentenausgaben relativ schnell dämpfen. Dies
+hätte günstige Effekte für die Entwicklung des Beitragssatzes.
+
+Insbesondere Menschen mit langer Rentenbezugsdauer und niedrigem Einkommen ­
+hiervon sind vor allem Frauen betroffen ­ könnten jedoch durch solche Regelungen
+deutlich schlechter gestellt werden als unter dem geltenden Recht. Daneben stellen
+sich Fragen nach angemessenen Anpassungsregeln für Erwerbsminderungs- und
+Hinterbliebenenrenten. Zugunsten einer solchen Lösung ließe sich anführen, dass
+Anpassungen entsprechend dem Verbraucherpreisindex den Leistungsbeziehenden
+                                                   - 39 -
+
+dauerhaft mindestens die Kaufkraft ihrer beim Renteneintritt festgesetzten Bruttorente
+garantieren würden.
+
+Allerdings kann eine Inflationsanpassung der Bestandsrenten kurzfristig Risiken für
+die finanzielle Stabilität des Rentensystems mit sich bringen, wenn die Inflation
+oberhalb der Lohnentwicklung liegt. Erfahrungen aus dem Ausland zeigen, dass
+dieses Risiko erheblich sein kann. Angesichts in jüngerer Zeit stärker schwankender
+Inflationsraten und mittelfristiger Aussichten auf ein eher geringes Lohnwachstum
+dürfen diese Risiken nicht vernachlässigt werden. Daher spricht sich die Kommission
+für regelbasierte Rentenanpassungen aus, die die Auswirkungen der demografischen
+Entwicklung auf die Finanzen der GRV explizit und verlässlich berücksichtigen.
+
+ Empfehlung 15
+ Die Kommission empfiehlt die Einführung eines Übergangsfaktors bei der
+ Rentenberechnung. Dieser stellt für die Rentenneuzugänge ab 2032 sicher, dass
+ diejenigen, die vor allem durch eine kurze Ansparzeit noch nicht in ausreichendem
+ Maß von der gesetzlichen Kapitalrente (siehe Empfehlung 28) profitieren können,
+ einen Niveauzuschlag erhalten. Damit wird gewährleistet, dass das Rentenniveau
+ (inkl. gesetzlicher Kapitalrente) für die Rentenneuzugänge künftig mindestens so
+ hoch wie heute ausfällt.
+ Der Übergangsfaktor wird sukzessive abgeschmolzen, wenn die gesetzliche
+ Kapitalrente das Rentenniveau erhöht.
+ Die Kosten des Übergangsfaktors sollen aus Steuermitteln finanziert werden.
+
+Ausgangslage
+
+Mit der Einführung einer gesetzlichen Kapitalrente (siehe Empfehlung 28) legt die
+Kommission einen Vorschlag vor, mit dem mittel- bis langfristig für alle
+Rentenbeziehenden ein Sicherungsniveau in der gesetzlichen Rente erreicht wird, das
+über dem heutigen Wert liegt. Damit kann die gesetzliche Rente dauerhaft den
+zentralen Beitrag zur Lebensstandardsicherung im Alter leisten. Hinzu kommen
+Leistungen der bAV und der privaten Altersvorsorge.
+
+Die Kommission sieht jedoch, dass ein angemessenes Niveau auch für rentennahe
+Jahrgänge gesichert werden sollte, für die die Erträge aus der gesetzlichen
+Kapitalrente wegen einer geringen Ansparzeit noch nicht ausreichen, um das
+Rentenniveau im Rentenzugang auf dem heutigen Stand zu halten. Hierfür wird eine
+Übergangslösung benötigt.
+                                                   - 40 -
+
+Vorgeschlagene Maßnahme
+
+Die Haltelinie in ihrer jetzigen Gestaltung läuft 2031 aus.
+
+Für Rentenzugänge ab 2032 empfiehlt die Kommission einen Übergangsfaktor für die
+Niveausicherung von Zugangsrenten einzuführen. Mit diesem Faktor wird
+sichergestellt, dass das Rentenniveau beim Rentenzugang gegenüber heute nicht sinkt.
+Die laufenden Renten aus dem Umlageverfahren der betroffenen Jahrgänge werden ­
+wie für den gesamten Rentenbestand ­ entsprechend der geltenden
+Rentenanpassungsformel mit den Dämpfungsfaktoren jährlich erhöht. Damit wird
+gewährleistet, dass heute jüngere Versicherte beim Rentenzugang eine Rente auf dem
+gleichen Niveau erhalten wie die heute Älteren. Der Übergangszeitraum beginnt mit
+dem Auslaufen der Haltelinie ab 2032, er dauert bis ca. Mitte der 2040er Jahre an,
+wenn das Sicherungsniveau bei Rentenzugang durch die angesparte gesetzliche
+Kapitalrente stabilisiert und mit zunehmender Ansparzeit (deutlich) steigen wird.
+
+Der Übergangsfaktor für neue Zugangsrenten wächst auf bis die Auszahlungen der
+gesetzlichen Kapitalrente das Rentenniveau spürbar stabilisieren. Danach wird der
+Faktor entsprechend der Entwicklung der Kapitalrente abgeschmolzen, da das
+Zugangsniveau durch die Erträge aus der gesetzlichen Kapitalrente sukzessive
+stabilisiert und später sogar erhöht wird.
+
+Mit diesem Modell wird einerseits die langfristige finanzielle Tragfähigkeit gesichert
+und andererseits erreicht, dass das Rentenniveau inklusive der gesetzlichen
+Kapitalrente langfristig wieder über den heutigen Wert ansteigt.
+
+Auswirkungen und Umsetzung
+
+Das derzeitige Rentenniveau beim Rentenzugang wird übergangsweise für alle
+Versicherten gesichert, die noch nicht von den Erträgen der gesetzlichen Kapitalrente
+profitieren können. Für das Rentenniveau werden Renten aus dem Umlagesystem und
+der gesetzlichen Kapitalrente zusammen betrachtet.
+
+Die Kosten fallen mit dem Abschmelzen des Übergangsfaktors zunehmend geringer
+aus.
+                                                   - 41 -
+
+ Empfehlung 16
+ Die Kommission empfiehlt, am Grundsatz eines einheitlichen Beitragssatzes auf
+ Löhne und Gehälter festzuhalten. Zusätzliche Faktoren sollen bei der Festlegung
+ der Beitragssatzhöhe ebenso wenig berücksichtigt werden wie weitere
+ Einkunftsarten bei der Beitragsbemessung.
+ Darüber hinaus empfiehlt die Kommission, die bisherige Berechnung der
+ Beitragsbemessungsgrenze (BBG) in der GRV unverändert beizubehalten.
+
+Ausgangslage
+
+Die Beiträge zur GRV werden paritätisch von Arbeitnehmenden und Arbeitgebern
+getragen. Im Bereich geringfügiger Beschäftigung und im Übergangsbereich
+(Midijob) gelten abweichende Beitragsregelungen. Grundlage der
+Beitragsberechnung sind die beitragspflichtigen Arbeitsentgelte bei abhängig
+Beschäftigten bzw. Arbeitseinkommen bei Selbständigen, jeweils bis zur geltenden
+BBG. Individuelle Merkmale bleiben dabei unberücksichtigt. Weitere Einkunftsarten
+werden nicht herangezogen.
+
+Die BBG wird jährlich neu festgelegt und orientiert sich an der Entwicklung der
+Bruttolöhne und -gehälter (Lohnsteigerungsfaktor). Sie liegt etwa beim Zweifachen
+des Durchschnittsentgelts.
+
+Vorgeschlagene Maßnahme
+
+Ein einheitlicher Beitragssatz bedeutet, dass keine individuelle Differenzierung, etwa
+nach Entgelthöhe oder Kinderzahl, erfolgt. Die bisherigen abweichenden Regelungen
+im Mini- und Midijobbereich sollten abgeschafft werden (siehe Empfehlung 26).
+Sozialpolitische Aspekte werden innerhalb des Rentensystems an anderer Stelle
+berücksichtigt, beispielsweise durch den Grundrentenzuschlag oder die Anrechnung
+von Erziehungszeiten.
+
+Mit der BBG wird der in der GRV versicherbare Verdienst festgelegt. Die BBG
+fungiert damit zugleich als Beitrags- und Leistungsbemessungsgrenze. Eine
+Anhebung der BBG über die bisher verankerte Regelung hinaus würde lediglich
+kurzfristige Mehreinnahmen aus Beiträgen (Einführungsgewinne) generieren. Die
+damit verbundenen höheren Rentenanpassungen führen jedoch zu höheren
+Rentenausgaben. Zusätzlich entstünden mittel- bis langfristig höhere
+Rentenanwartschaften. Eine systematische Entlastung der GRV wäre damit nicht
+verbunden.
+
+Die Leistungen der GRV dienen in erster Linie dem Ersatz des Erwerbseinkommens,
+das im Alter wegfällt. Darüber hinaus versichert die GRV insbesondere das Risiko
+                                                   - 42 -
+
+von Einkommensverlusten infolge von Erwerbsminderung oder im Todesfall.
+Grundlage der Beitragsbemessung für Versicherungspflichtige sind daher die
+beitragspflichtigen Arbeitsentgelte von abhängig Beschäftigten bzw.
+Arbeitseinkommen von Selbständigen.
+
+Eine Einbeziehung weiterer Einkunftsarten versicherungspflichtiger Personen, die im
+Alter typischerweise nicht entfallen (z. B. Miet- und Pachteinkünfte oder
+Kapitaleinkünfte), würde dieser Systematik widersprechen. Leistungen der GRV
+haben hier keine Ersatzfunktion. Zudem würden zusätzliche Beiträge bei äquivalenter
+Berücksichtigung mittel- bis langfristig zugleich höhere Rentenanwartschaften
+begründen. Nach gewissen Einführungsgewinnen würde sich keine systematische
+Entlastung der GRV ergeben. Hinzu kämen negative Auswirkungen auf die Anreize
+zum privaten Vermögensaufbau und zur ergänzenden Altersvorsorge.
+
+Wenn zusätzlichen Beitragszahlungen, die aus einer verstärkten Anhebung der BBG
+oder der Einbeziehung weiterer Einkunftsarten resultieren, keine zusätzlichen
+Rentenanwartschaften gegenüberstehen würden, bedeutete dies eine Abkehr vom
+Äquivalenzprinzip. Die zusätzlichen Beitragszahlungen hätten in diesem Fall den
+Charakter einer Steuer, die nur von bereits versicherungspflichtigen Personen zu
+tragen wäre.
+
+Auswirkungen und Umsetzung
+
+Gegenüber dem geltenden Recht ergeben sich keine Auswirkungen auf bestimmte
+Personengruppen oder besondere Verteilungswirkungen.
+
+ Empfehlung 17
+ Die Kommission empfiehlt, eine nachvollziehbare Systematisierung und
+ transparente Darstellung von Leistungen der GRV, für die keine Beiträge entrichtet
+ wurden (nicht beitragsgedeckte Leistungen), weiterhin sicherzustellen.
+ Die Kommission empfiehlt klar abzugrenzen und in der Höhe zu prüfen, welche
+ der nicht beitragsgedeckten Leistungen innerhalb der Versichertengemeinschaft
+ der GRV zu tragen sind.
+ Leistungen, die eine gesamtgesellschaftliche Aufgabe erfüllen, sind perspektivisch
+ vollständig über Bundesmittel zu erstatten. Eine Begrenzung von Bundesmitteln
+ wird von der Kommission nicht befürwortet. Es wird empfohlen, die Bundesmittel
+ zukünftig als ,,Bundesanteil" statt als ,,Bundeszuschüsse" zu bezeichnen.
+                                                   - 43 -
+
+Ausgangslage
+
+In der öffentlichen Diskussion spielen die so genannten Bundeszuschüsse zur GRV
+eine große Rolle. Sie werden oft als Indiz dafür betrachtet, dass die GRV nicht in der
+Lage sei, die von den Versicherten mit ihren Beiträgen erworbenen Rentenansprüche
+aus ihren Beitragseinnahmen zu finanzieren.
+
+Diese Sichtweise verkennt jedoch, dass die GRV eine Vielzahl von Rentenzahlungen
+leistet, für die keine oder nur verringerte Beiträge geleistet wurden. Dabei handelt es
+sich um sozialpolitische Entlastungs- und Ausgleichsmaßnahmen, die der GRV von
+der Politik übertragen wurden. Beispiele hierfür sind die Höherbewertung von Zeiten
+der beruflichen Ausbildung und anderer Anrechnungszeiten, der
+Grundrentenzuschlag sowie die abschlagsfreie Gewährung vorzeitiger Renten oder
+die Anerkennung von Erziehungszeiten für Geburten vor 1992 (Mütterrente). Man
+spricht dabei von nicht beitragsgedeckten Leistungen
+
+Bei näherem Hinsehen lässt sich klar sagen, welche Leistungen der GRV nicht (allein)
+auf Basis früher geleisteter Beiträge bemessen werden und in diesem Sinn nicht
+beitragsgedeckt sind. Weniger klar ist, ob sie nicht trotzdem der Funktionsweise oder
+dem Schutzzweck der GRV als umlagefinanzierter Sozialversicherung entsprechen,
+so dass sie nicht eindeutig als versicherungsfremd einzustufen sind.
+
+Letztlich gibt es keine gesetzliche und auch keine eindeutige systematische
+Abgrenzung von nicht beitragsgedeckten oder von versicherungsfremden Leistungen
+der GRV. Die Bundesregierung legte dem Haushaltsausschuss des Deutschen
+Bundestages im Jahr 2024 eine Aufstellung nicht beitragsgedeckter Leistungen der
+GRV vor. Auf dieser Basis schätzt die DRV seither regelmäßig den Umfang dieser
+Leistungen. Im Jahr 2023 beliefen sie sich in einer ,,engen Abgrenzung" auf rund
+68 Milliarden Euro, in einer ,,erweiterten Abgrenzung" auf rund 124 Milliarden Euro.
+Dabei handelt es sich nicht um eine konzeptionelle, sondern um eine historisch
+bedingte Abgrenzung. Die sogenannten Bundeszuschüsse betrugen im selben Jahr
+rund 84 Milliarden Euro.5
+
+Die Differenz von bis zu 40 Milliarden Euro bedeutet, dass die Beitragszahlenden der
+GRV jedes Jahr einen hohen Betrag zur Finanzierung nicht beitragsgedeckter
+Aufgaben leisten. Soweit nicht beitragsgedeckte Leistungen primär
+gesamtgesellschaftliche Aufgaben erfüllen, bedürfen sie jedoch einer Finanzierung
+aus Steuermitteln und nicht aus Beitragseinnahmen. Anderenfalls ergibt sich eine
+versteckte Form der Besteuerung der Beitragszahlenden, die ­ anders als bei der
+
+5 Deutsche Rentenversicherung (2024). Nicht beitragsgedeckte Leistungen und Bundeszuschüsse 2023.
+    DRV Bund, Berlin
+                                                   - 44 -
+
+Einkommensbesteuerung ­ proportional zum Einkommen und ohne Freibeträge
+erfolgt.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt eindeutig abzugrenzen und zu quantifizieren, welche nicht
+beitragsgedeckten Leistungen dem Versicherungscharakter der GRV zuzuordnen sind
+und somit von den Versicherten getragen werden, und welche rein
+gesamtgesellschaftliche Aufgaben darstellen und über Steuermittel finanziert werden.
+Leistungen, die eine gesamtgesellschaftliche Aufgabe erfüllen, sind perspektivisch
+vollständig über Bundesmittel zu erstatten.
+
+Demgemäß sollen insbesondere künftige Erweiterungen bestehender oder die
+Einführung neuer nicht beitragsgedeckter Leistungen durch eine entsprechende
+Erhöhung der Bundesmittel für die GRV ausgeglichen werden, um die finanzielle
+Belastung der Versichertengemeinschaft zu vermeiden.
+
+Für ein verbessertes Verständnis, und entsprechend der tatsächlichen Funktion der
+Bundesmittel innerhalb des Umlagesystems, wird empfohlen, die Bundesmittel
+zukünftig als ,,Bundesanteil" statt als ,,Bundeszuschüsse" zu bezeichnen.
+
+Auswirkungen und Umsetzung
+
+Durch eine Anpassung des Bundeszuschusses wäre es in den kommenden Jahren
+möglich, das Trilemma von Beitragssatz, Rentenniveau und Bundeszuschuss, in die
+Richtung von niedrigeren Beitragssätzen und einem höheren Rentenniveau zu
+verändern. Sachgerecht und transparent könnte der Bundesanteil zur Finanzierung
+dadurch ansteigen.
+                                                   - 45 -
+
+III.4 Vermeidung von Altersarmut
+
+Die Kommission betont, dass eine langjährige Vollzeiterwerbstätigkeit unter
+Einbeziehung aller drei Säulen ein auskömmliches Einkommen im Alter oberhalb der
+Grundsicherung ermöglichen muss. Es muss sich auch im Alter auszahlen, gearbeitet
+zu haben. Das ist für die Akzeptanz des Alterssicherungssystems von entscheidender
+Bedeutung. Eine möglichst lückenlose Erwerbsbiografie ist der wichtigste Hebel zur
+Vermeidung von Altersarmut.
+
+Derzeit führt eine Vollzeittätigkeit mit Mindestlohn, selbst wenn sie über 45 Jahre
+ausgeübt wird, nicht zu einer Nettorente oberhalb des soziokulturellen Existenz- und
+Teilhabeminimums. Erst der Grundrentenzuschlag bewirkt, dass die gesetzliche Rente
+oberhalb der Grundsicherungsleistung liegt.
+
+Armutsbekämpfung ist eine gesamtgesellschaftliche Aufgabe, die vorrangig über die
+steuerfinanzierte Grundsicherung erfolgen sollte. Die Grundsicherung ist nach dem
+Bedarfsprinzip ausgerichtet. Sie ist nachrangig und setzt eine Einkommens- und
+Vermögensprüfung voraus. Dadurch ermöglicht sie eine zielgenaue
+Armutsbekämpfung und ist integraler Bestandteil des Alterssicherungssystems.
+
+ Empfehlung 18
+ Die Kommission empfiehlt, dass Bund, Länder und Kommunen verdeckte Armut
+ bekämpfen. Ziel muss sein, allen bedürftigen Bürgerinnen und Bürgern den
+ faktischen Zugang zum verfassungsrechtlich garantierten Existenzminimum zu
+ sichern. Die Kommission unterstützt die Vorschläge der Kommission zur
+ Sozialstaatsreform, das Sozialleistungsrecht einfacher und übersichtlicher zu
+ gestalten und die persönliche Beratung vor Ort und über digitale Zugangswege
+ auszubauen.
+
+Ausgangslage
+
+Für bedürftige Menschen in Deutschland gilt das Grundrecht auf Gewährleistung
+eines menschenwürdigen Existenzminimums. Es sichert ,,jedem Hilfebedürftigen
+diejenigen materiellen Voraussetzungen zu, die für seine physische Existenz und für
+ein Mindestmaß an Teilhabe am gesellschaftlichen, kulturellen und politischen Leben
+unerlässlich sind", so das Bundesverfassungsgericht. Für bedürftige Menschen im
+Rentenalter wird dieses Recht durch die Grundsicherung im Alter umgesetzt. Etwa
+vier Prozent der Menschen im Rentenalter erhalten Grundsicherungsleistungen. Unter
+den Beziehenden einer gesetzlichen Altersrente sind es etwa drei Prozent.
+
+Viele Menschen, die leistungsberechtigt sind, werden vom Hilfesystem jedoch nicht
+erreicht. Wenn diese Personen mit einem Einkommen unterhalb des soziokulturellen
+                                                   - 46 -
+
+Existenzminimums leben, sind sie verdeckt arm. Das betrifft auch Menschen, die
+aufgrund ihrer Erwerbsbiografie keine armutsfesten Renten haben und ihr
+Einkommen mit Grundsicherung aufstocken könnten. Sie stellen keinen Antrag, sei
+es aus Unkenntnis, Scham oder Überforderung. Auch der bewusste Verzicht kann eine
+Rolle spielen, wenn Menschen vermuten, nur kurzfristig bedürftig zu sein oder sehr
+geringe Ansprüche zu haben. Das Ausmaß der Nichtinanspruchnahme kann nur mit
+hohen Unsicherheiten abgeschätzt werden. Die Schätzungen schwanken zwischen
+40 und 70 Prozent.
+
+Vorgeschlagene Maßnahme
+
+Es muss der politische Anspruch sein, dass bedürftige Menschen nicht beim Zugang
+zur sozialen Absicherung scheitern. Das Sozialrecht enthält die Verpflichtung der
+Verwaltung, für die faktische Umsetzung der sozialen Rechte zu sorgen.
+
+Die Vision eines bürgerfreundlichen Sozialstaats, die die Kommission zur
+Sozialstaatsreform skizziert hat, kann einen Weg eröffnen, verdeckte Armut zu
+überwinden. Wer Anspruch auf Grundsicherung hat, soll sich jederzeit an eine örtliche
+Anlaufstelle wenden können, die zu allen Sozialleistungen kompetent berät. Die
+Mitarbeitenden dort ermutigen Hilfesuchende zur Antragstellung und unterstützen
+diese im Verwaltungsverfahren. Der Antrag sollte in kurzer Frist beschieden werden.
+
+Die Umsetzung der Vorschläge der Kommission zur Sozialstaatsreform wird Zeit
+brauchen. Auch im sozialrechtlichen Status quo muss verdeckte Armut bekämpft
+werden. Die Antragsformulare sind zu komplex und überfordern viele
+Antragstellende. Eine öffentlich zur Verfügung gestellte App könnte Antragstellende
+oder eine Unterstützungsperson mittels Filterfragen durch den Antrag lenken und
+sicherstellen, dass keine Informationen abgefragt werden, die für den konkreten Fall
+irrelevant sind. Zur Sensibilisierung über potenziell zustehende Hilfeansprüche
+könnten mit Einwilligung der Betroffenen soziale Dienste genutzt werden, mit denen
+Berechtigte ohnehin in Kontakt treten (Hausarzt oder -ärztin, Seniorenangebote,
+Ambulante Pflege).
+
+Dringend notwendig ist eine begleitende öffentliche Kommunikation. In der
+Armutsdebatte wird häufig der Umfang von Armut mit der Zahl der Personen mit
+Grundsicherungsbezug gleichgesetzt. Ein Anstieg der Zahl führt dann zum
+Fehlschluss einer wachsenden sozialen Schieflage, obwohl Armut wirksamer
+bekämpft wird.
+                                                   - 47 -
+
+Auswirkungen und Umsetzung
+
+Die Maßnahmen wirken zielgenau bei von Armut betroffenen Menschen. Sie erhöhen
+die Einkommen im untersten Dezil der Einkommensverteilung substanziell. Da mehr
+Frauen als Männer Grundsicherungsleistungen im Alter beziehen, haben sie zudem
+eine positive Wirkung auf die geschlechtsspezifische Verteilung der
+Alterseinkommen im untersten Einkommensbereich.
+
+Die fiskalischen Folgen einer vollständigen Überwindung der Nichtinanspruchnahme
+für den Bund als Träger der Grundsicherung sind nicht verlässlich bezifferbar. Sie
+ergeben sich aus dem geschätzten Anteil der nicht in Anspruch genommenen
+Leistungen und deren geschätzter Höhe. Damit verbundene Mehrkosten sind nicht
+Folge einer Leistungsausweitung, sondern der Durchsetzung des verfassungsrechtlich
+garantierten Existenzminimums.
+
+ Empfehlung 19
+ Die Kommission empfiehlt, die Anrechnungsregeln in der Grundsicherung im Alter
+ und bei Erwerbsminderung so zu gestalten, dass Personen, die
+ Sozialversicherungsbeiträge eingezahlt haben, im Alter mehr verfügbares
+ Einkommen haben als Personen, die keine oder geringe Beiträge geleistet haben.
+ Die Kommission empfiehlt daher, auch für Personen, die nicht
+ grundrentenzuschlagsberechtigt sind, einen Freibetrag für gesetzliche Renten
+ einzuführen und diesen bei der Konzeption des neuen Leistungssystems im
+ Rahmen der Umsetzung der Vorschläge der Kommission zur Sozialstaatsreform zu
+ berücksichtigen.
+
+Ausgangslage
+
+Auf die Grundsicherung im Alter wird nach derzeitiger Rechtslage bei der
+Berechnung des Hilfeanspruchs die gesetzliche Rente als Einkommen angerechnet
+(§ 82 SGB XII). Das führt dazu, dass viele Personen trotz einer langjährigen
+Berufstätigkeit im Alter nicht mehr Geld zur Verfügung haben, als wenn sie nie
+sozialversicherungspflichtig beschäftigt gewesen wären. Insbesondere trifft das
+Menschen, die nicht die Voraussetzungen für den Grundrentenzuschlag erfüllen,
+etwa, weil sie die notwendigen 33 Beitragsjahre nicht erreichen. Ihre Rentenbeiträge
+sind dann für ihre materielle Situation im Alter ohne jede Wirkung.
+                                                   - 48 -
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt die Einführung eines Freibetrags beim anzurechnenden
+Renteneinkommen für alle Grundsicherungsbeziehenden im Alter und bei
+Erwerbsminderung. Damit wird bewirkt, dass die während der Erwerbstätigkeit
+geleisteten Rentenbeiträge zu höheren verfügbaren Einkommen in der Rentenphase
+führen.
+
+Zu entscheiden ist die Ausgestaltung der Freibetragsregelung.
+
+Denkbar wäre, Leistungen der GRV in die bereits geltende Freibetragsregelung bei
+der Anrechnung der Einkommen aus zusätzlicher Altersvorsorge einzubeziehen. Die
+Freigrenze von 100 Euro und die Begrenzung des Freibetrags auf die Hälfte der
+Regelbedarfsstufe 1 bewirken dann jedoch, dass für Renteneinkommen, die anteilig
+angerechnet die Obergrenze (halbe Regelbedarfsstufe 1) übersteigen, eine höhere
+Bruttorente nicht mehr zu einem höheren verfügbaren Alterseinkommen führt.
+
+Um dies zu vermeiden, empfiehlt die Kommission, die Regelung in eine prozentuale
+Freibetragsregelung ab dem ersten Euro Bruttorente (z. B. 20 oder 30 Prozent) zu
+verändern und die Obergrenze auf zwei Drittel der Regelbedarfsstufe 1 zu erhöhen.
+
+Die Kommission verweist darauf, dass im Rahmen der Umsetzung der Vorschläge der
+Kommission zur Sozialstaatsreform, die unter anderem eine Zusammenlegung
+existenzsichernder und existenzunterstützender Leistungen wie Grundsicherung im
+Alter und Wohngeld vorschlägt, auch über die Freibeträge für Renten aus der GRV
+entschieden werden soll.
+
+Auswirkungen und Umsetzung
+
+Die Freibetragsregelung sichert für Personen, die Beiträge in die GRV entrichtet
+haben und im Alter Grundsicherungsleistungen beziehen, einen Abstand zu den
+Leistungen der Grundsicherung. Dies ist für die Akzeptanz eines
+Pflichtversicherungssystems von großer Bedeutung. Es profitieren alle, die die
+Bedürftigkeitsschwelle zur Grundsicherung nicht überschreiten, jedoch
+Rentenansprüche aus Entgeltpunkten gesammelt haben - sei es durch Beitragsjahre in
+der GRV oder rentenpolitische Zusatzleistungen (z. B. Mütterrente,
+Fremdrentenansprüche).
+
+Die Kosten, die der Bund zusätzlich zu tragen hat, sind abhängig von der
+Ausgestaltung der Freibetragsregelung. Bei Übertragung der bei
+Grundrentenzuschlagsberechtigten bereits gültigen Freibetragsregelung ergeben sich
+Kosten von ca. einer Milliarde Euro pro Jahr, bei einer prozentualen Regelung von
+20 Prozent bis zu zwei Drittel der Regelbedarfsstufe 1 von ca. 500 Millionen Euro.
+Die Schätzungen beziehen sich auf den aktuellen Bestand der Leistungsbeziehenden
+                                                   - 49 -
+
+oberhalb der Regelaltersgrenze. Da durch Freibeträge auch Personen hilfeberechtigt
+werden, die es im Status quo nicht sind, erhöhen sich die genannten Beträge.
+
+Bei einer Freibetragsregelung entsteht kein zusätzlicher bürokratischer Aufwand, da
+bei der Entscheidung über den Leistungsanspruch die Renteneinkommen ohnehin
+erfasst werden.
+
+ Empfehlung 20
+ Die Kommission empfiehlt, die mit dem Bürgergeldgesetz bis Ende 2026
+ ausgesetzte Regelung, nach der langzeitarbeitslose Menschen durch das Jobcenter
+ dazu verpflichtet werden können, vorzeitig mit Abschlägen in Rente zu gehen,
+ dauerhaft abzuschaffen.
+
+Ausgangslage
+
+Beziehende von Leistungen des SGB II (Grundsicherungsgeld) sind verpflichtet,
+Sozialleistungen anderer Träger in Anspruch zu nehmen und die dafür erforderlichen
+Anträge zu stellen, sofern dies zur Verminderung der Hilfebedürftigkeit erforderlich
+ist. Das Jobcenter kann den Antrag ersatzweise auch gegen den Willen des
+Leistungsbeziehenden vornehmen. Das gilt grundsätzlich auch für einen Antrag auf
+vorgezogene Altersrente.
+
+Mit der Einführung des Bürgergeldgesetzes wurde in das SGB II eine bis Ende 2026
+befristete Regelung aufgenommen, die jegliche Verpflichtung zur Beantragung einer
+vorgezogenen Rente ausschließt. Dadurch sollten ,,ältere erwerbsfähige Personen
+künftig nicht mehr durch Verweisung in die Rente wegen Alters dem Arbeitsmarkt
+entzogen [werden]. Zudem führt die Maßnahme zu einer erheblichen
+Verwaltungsvereinfachung."6. Mit der SGB-II-Reform von 2026 ist die zeitliche
+Befristung der Aussetzung nicht verändert worden, sodass nach derzeitiger
+Rechtslage ab 2027 die rechtliche Möglichkeit einer frühzeitigen Verrentung gegen
+den Willen von Empfängern des Grundsicherungsgelds wieder greifen wird.
+
+Vorgeschlagene Maßnahme
+
+Die Möglichkeit, eine frühzeitige Verrentung zu erzwingen, kann in der Praxis der
+Jobcenter dazu führen, dass Vermittlungsbemühungen bereits vor Erreichen der
+Altersgrenze für einen vorzeitigen Renteneintritt unterbleiben, weil die Verrentung
+eine zeitnahe Lösung des Falls anbietet. Das ist mit dem politischen Ziel, die
+Lebensarbeitszeit zu verlängern, nicht kompatibel und stellt eine unbillige Härte für
+
+6 BT-Drs. 20/3873, S. 55
+                                                   - 50 -
+
+Menschen dar, die zum Ende ihrer Berufstätigkeit langzeitarbeitslos werden. Da für
+einen vorzeitigen Renteneintritt mit aktuell 63 Jahren eine Wartezeit von
+35 Versicherungsjahren gefordert ist, sind davon besonders Personen mit längeren
+Erwerbsbiografien betroffen, bei denen Vermittlungsbemühungen erfolgreich sein
+können.
+
+Deshalb sind auch in rentennahen Jahrgängen intensive Bemühungen zur Vermittlung
+in Arbeit geboten. Beschäftigungsverhältnisse und Weiterbildungsangebote sollten so
+gestaltet sein, dass auch ältere Arbeitnehmende am Arbeitsmarkt teilhaben können.
+
+Auswirkungen und Umsetzung
+
+Die Maßnahme kann zeitnah umgesetzt werden. Sie führt in kurzer Frist zu einer
+zusätzlichen Erhöhung der Kosten für das Grundsicherungsgeld. Bei einer
+Vermittlung in eine Erwerbstätigkeit stehen dieser mögliche Einsparungen in der
+Grundsicherung im Alter entgegen, sowie zusätzliche Beiträge in der
+Sozialversicherung.
+                                                   - 51 -
+
+III.5 Einbeziehung weiterer Gruppen in die gesetzliche
+      Rentenversicherung
+
+ Empfehlung 21
+ Die Kommission sieht eine Erwerbstätigenversicherung, in die neben abhängig
+ Beschäftigten auch Selbständige, Beamte, Abgeordnete und Vorstände von
+ Aktiengesellschaften einbezogen sind, als Idealbild der Alterssicherung an.
+
+Mit einer Erwerbstätigenversicherung, in die neben abhängig Beschäftigten auch
+Selbständige, Beamte, Abgeordnete und Vorstände von Aktiengesellschaften
+einbezogen werden, würden nicht nur Sicherungslücken geschlossen, sondern auch
+Anpassungen der Alterssicherung an Veränderungen im Arbeitsmarkt erleichtert,
+einschließlich häufiger Wechsel zwischen verschiedenen Formen der
+Erwerbstätigkeit. Ein einheitliches Recht ließe sich auch besser politisch steuern.
+Auch könnte der als ungerecht wahrgenommenen Differenzierung in der
+Alterssicherung unterschiedlicher Berufsgruppen begegnet werden. Zudem könnte
+die Finanzlage der DRV durch Einführungsgewinne über einen möglicherweise
+langen Übergangszeitraum gestärkt werden. Da die DRV auch Lebensrisiken wie
+Erwerbsminderung abdeckt, würde zudem der Risikopool erweitert und die Resilienz
+des Umlagesystems verbessert.
+
+Angesichts der starken Pfadabhängigkeit des Systems der Alterssicherung wird das
+Idealbild einer Erwerbstätigenversicherung in absehbarer Zeit womöglich schwer zu
+erreichen sein. Es dient gleichwohl als Orientierung.
+
+ Empfehlung 22
+ Die Kommission empfiehlt, künftig alle nicht obligatorisch abgesicherten
+ Selbständigen, die ihre Tätigkeit ab einem Stichtag neu aufnehmen, verpflichtend
+ und ohne Opt-out in die GRV einzubeziehen.
+ Die Versicherungspflicht sollte auch alle Personen umfassen, die bereits jetzt eine
+ selbständige Beschäftigung ausüben. Ihnen soll jedoch ein voraussetzungsloses
+ Herausoptieren ermöglicht werden.
+
+Ausgangslage
+
+Versicherungspflichtig in der GRV sind bislang nur einzelne Gruppen von
+Selbständigen, etwa aus den Bereichen Landwirtschaft, Kunst oder Publizistik; dabei
+gelten unterschiedliche, an die Selbstständigkeit angepasste Finanzierungsregeln.
+Zwar betreibt nur ein kleiner Teil der Selbständigen keinerlei Altersvorsorge,
+verlässliche Daten zum Umfang privater Vorsorge fehlen jedoch. Freiberufler sind
+                                                   - 52 -
+
+meist über berufsständische Versorgungswerke ausreichend abgesichert. Dennoch
+sind viele Selbständige im Alter auf Grundsicherung (SGB XII) angewiesen.
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt, dass künftig alle nicht obligatorisch abgesicherten
+Selbständigen ab einem Stichtag verpflichtend, also ohne Möglichkeit zum Opt-out,
+in der GRV versichert werden sollen. Damit sollen potenzielle Schutzlücken in der
+Altersvorsorge geschlossen und die Lebensstandardsicherung im Alter auf
+individueller Ebene erleichtert werden. Zugleich wird die GRV als System gestärkt,
+wenn der Kreis der Versicherten breit gefasst wird.
+
+Die Verbeitragung soll sich am Regelbeitrag für die Pflichtversicherung von
+Handwerkern orientieren. Wahlweise könnten Selbständige auch einen Beitrag
+entrichten, der sich an ihrem steuerpflichtigen Einkommen orientiert, um eine
+wirtschaftliche Überlastung für jene zu vermeiden, deren Einkünfte deutlich unter der
+Bezugsgröße liegen.
+
+Um Gründungen zu erleichtern, soll eine Karenzzeit von drei Jahren gelten, in der nur
+der halbe Regelbeitrag zu entrichten ist. Eine Verkettung von Neugründungen soll
+keine weitere Karenzzeit ermöglichen; als neu kann folglich nur die erstmalige
+Aufnahme einer selbständigen Tätigkeit im Verlauf des Erwerbslebens gelten.
+
+Die Kommission plädiert dafür, auch Selbständige im Bestand in den Kreis der
+Pflichtversicherten einzubeziehen, die bei Einführung der Regelung bereits
+selbständig tätig sind. Ihnen sollte aber die Möglichkeit eines voraussetzungslosen
+Opt-out eingeräumt werden. Auf diese Weise würde bestehenden
+Altersvorsorgeverträgen Rechnung getragen werden.
+
+Auswirkungen und Umsetzung
+
+      Eine Pflichtversicherung für Selbständige würde zunächst Einführungsgewinne
+      erzeugen; der Beitragssatz könnte mittelfristig um 0,5Prozentpunkte sinken, das
+      Sicherungsniveau um bis zu 0,5 - 0,6 Prozentpunkte erhöht werden. Langfristig
+      relativieren sich diese Gewinne, weil Selbständige Anwartschaften aufbauen,
+      die später zu Leistungsansprüchen werden.
+      Eine Pflichtversicherung wird die Abgrenzung zwischen Arbeitnehmenden und
+      Selbständigen im Rentenrecht erleichtern.
+      Eine obligatorische Alterssicherung reduziert das Risiko der Altersarmut,
+      besonders für Selbständige mit schwankenden Einkommen, die bislang wenig
+      vorsorgen.
+      Die Empfehlung ist sofort und ohne Übergangsfristen umsetzbar.
+                                                   - 53 -
+
+ Empfehlung 23
+
+ Die Kommission empfiehlt, Reformen, die in der GRV erfolgt sind oder noch
+ vorgenommen werden, wirkungsgleich auf die Beamtenversorgung zu übertragen.
+ Zudem sollte die Zahl der Verbeamtungen deutlich reduziert werden. Bund und
+ Länder sollten sich verpflichten, ausreichende Rücklagen für die Pensionen zu
+ schaffen, um die Entscheidung der Verbeamtung finanzneutral im Hinblick auf die
+ Alterssicherungsaufwendungen zu gestalten.
+
+Ausgangslage
+
+Anders als die Leistungen der GRV bemisst sich die Beamtenversorgung nach den
+ruhegehaltsfähigen Bezügen aus dem letzten Amt, sofern dies vor der Pensionierung
+mindestens zwei Jahre lang ausgeübt worden ist. Der Ruhegehaltshöchstsatz von
+71,75 Prozent der ruhegehaltsfähigen Dienstbezüge wird nach 40 Jahren erreicht
+(1,79 Prozentpunkte pro Jahr). Die Diskrepanz zum Sicherungsniveau der GRV wird
+oft als ungerecht empfunden, wobei die Doppelfunktion der Beamtenversorgung als
+Regelabsicherung (wie in der GRV) und als zusätzliche Altersversorgung durch die
+Arbeitgeber (wie in der bAV) dabei unbeachtet bleibt.
+
+Die oft geforderte Eingliederung der Beamtinnen und Beamten in die GRV ist an hohe
+verfassungsrechtliche Hürden gebunden. Zum einen steht die Beamtenversorgung als
+,,hergebrachter Grundsatz des Berufsbeamtentums" (Artikel 33 Absatz 5
+Grundgesetz) unter verfassungsrechtlichem Schutz. Das Bundesverfassungsgericht
+hat den dabei zu beachtenden Grundsätzen insbesondere die Versorgung aus dem
+letzten Amt, die Beitragsfreiheit und die Amtsangemessenheit der Versorgung
+zugeordnet. Zum anderen liegt das Beamtenrecht ­ mit Ausnahme der Beamtinnen
+und Beamten des Bundes ­ in der Zuständigkeit der Länder. Eine bundesweite
+Vereinheitlichung der Alterssicherung der Beamtinnen und Beamten könnte sich
+daher über einen langen Zeitraum erstrecken oder ­ aus Gründen des Wettbewerbs
+um die Gewinnung von Personal für den öffentlichen Dienst ­ ganz unterbleiben.
+
+Die Versorgung von Personen im Beamten-, Richter- und Soldatenverhältnis sowie
+von Beschäftigten der Körperschaften, Anstalten und Stiftungen des öffentlichen
+Rechts wird aus den Haushalten der jeweiligen Dienstherren finanziert. Zusätzlich
+bilden der Bund und viele Länder Rücklagen für ihre Versorgungszusagen. Wegen
+der verfassungsrechtlich gebotenen Beitragsfreiheit der Beamtenversorgung müssten
+bei einer Einbeziehung der Beamtenverhältnisse in die GRV die
+Rentenversicherungsbeiträge durch den Dienstherrn voll getragen werden oder die
+Besoldung so angehoben werden, dass ein von Beamtinnen und Beamten selbst zu
+tragender Arbeitnehmeranteil des Rentenbeitrags kompensiert würde. Bund und
+Länder müssten in einer jahrzehntelangen Übergangsphase der Doppelbelastung
+                                                   - 54 -
+
+sowohl die Pensionen aller bisherigen Versorgungsempfangenden und Beamtinnen
+und Beamten als auch die Rentenbeiträge für die neuen Beamtinnen und Beamten
+finanzieren. Durch die höhere Lebenserwartung können auf Dauer auch zusätzliche
+Belastungen für die GRV entstehen. Eine nachhaltige finanzielle Entlastung der GRV
+wäre deshalb nicht möglich.
+
+Das Recht des öffentlichen Dienstes ist jedoch nicht veränderungsfest, sondern unter
+Beachtung der Grundsätze des Berufsbeamtentums fortzuentwickeln. Um den
+Gestaltungsspielraum des Gesetzgebers zu erweitern, wäre eine Verfassungsänderung
+zulässig. Zur Lösung der finanzpolitischen Probleme ist ein zweistufiges Modell
+denkbar, nach dem Beamtinnen und Beamte in der GRV pflichtversichert und die
+Differenz zur Versorgung aus dem letzten Amt als zweite Säule durch den Dienstherrn
+organisiert würde. Durch separierte Rentenkassen ließe sich zugleich vermeiden, dass
+durch die höhere Lebenserwartung von Beamtinnen und Beamten über die lange Sicht
+zusätzliche Belastungen für die GRV entstehen. Das umzusetzen wäre ebenso wie
+eine Verfassungsänderung Gegenstand eines langfristigen Prozesses.
+
+Vorgeschlagene Maßnahme
+
+Um die Belastung der öffentlichen Haushalte durch die Beamtenpensionen künftig zu
+verringern und Beamtinnen und Beamte in Reformen des sonstigen
+Alterssicherungssystems einzubeziehen, empfiehlt die Kommission verschiedene
+Maßnahmen.
+
+So sollten Bund und Länder die Anzahl ihrer Verbeamtungen deutlich einschränken.
+Der Funktionsvorbehalt (Ausübung hoheitsrechtlicher Befugnisse) sollte sich auf die
+hoheitlichen Aufgaben beschränken, die mit Grundrechtseingriffen im engeren Sinne
+verbunden sind, das heißt öffentliche Gewalt, Befehl und Zwang
+(Eingriffsverwaltung).
+
+Außerdem sollten sich Bund und Länder verpflichten, bei weiterhin vorgenommenen
+Verbeamtungen ausreichende Rücklagen für die späteren Pensionen zu schaffen.
+Dadurch würden zukünftige Versorgungslasten angemessen vorfinanziert und derzeit
+bestehende Fehlanreize bei Entscheidungen für Verbeamtungen vermieden.
+
+Alle bereits erfolgten sowie künftigen Anpassungen des Rentenrechts sollten
+wirkungsgleich auf die Beamtinnen und Beamten übertragen werden. Dies betrifft
+Änderungen der Regelaltersgrenze und der Rentenanpassung. So wurde das
+Rentenniveau seit dem Jahr 2000 durch Änderungen der Rentenanpassungsformel um
+rund zehn Prozent reduziert, der für Beamtenpensionen maßgebliche
+Ruhegehaltshöchstsatz lediglich um fünf Prozent. Dieser Unterschied sollte
+ausgeglichen werden.
+                                                   - 55 -
+
+Die Kommission plädiert zudem für eine Verlängerung der Wartezeit für die
+Versorgung aus dem letzten Amt von derzeit zwei Jahren auf fünf bis zehn Jahre. Im
+Vergleich zum Rentenrecht, bei dem die Rentenhöhe vom Entgeltverlauf während der
+gesamten Erwerbsbiografie abhängt, erscheint diese Regelung als besonders
+begünstigend. Zwar hatte das Bundesverfassungsgericht bereits die 1999
+beschlossene Verdoppelung der Wartezeit von einem auf zwei Jahre äußerst kritisch
+gesehen. Der Zeitablauf und die seither eingetretenen Änderungen der
+gesamtgesellschaftlichen Lage gebieten jedoch eine rechtliche Neubewertung.
+
+Auswirkungen und Umsetzung
+
+      Die Vorschläge zur wirkungsgleichen Übertragung von Reformen der GRV auf
+      die Beamtenversorgung betreffen neue Beamtinnen und Beamte ebenso wie
+      Personen, die bereits im Beamtenverhältnis stehen.
+      Die Einschränkung von Verbeamtungen und die Bildung ausreichender
+      Rücklagen für zukünftige Pensionsansprüche können ab sofort umgesetzt
+      werden.
+      Eine wirkungsgleiche Übertragung von Reformen im Bereich der GRV sollte
+      zeitnah vorgenommen werden.
+      Zeitnah könnte auch ein Prozess eingeleitet werden, um den Nachholbedarf
+      gegenüber bereits erfolgten Reformen der GRV, ggf. schrittweise, einzulösen.
+
+ Empfehlung 24
+ Die Kommission empfiehlt, Abgeordnete des Deutschen Bundestages und der
+ Landesparlamente in den Kreis der Pflichtversicherten in die GRV einzubeziehen.
+
+Ausgangslage
+
+Abgeordnete erhalten eine Altersentschädigung, die sich in der Regel nach der Dauer
+der Zugehörigkeit zum Parlament richtet. Es bestehen starke Unterschiede zwischen
+Bund und den einzelnen Ländern im Hinblick auf die Mindestdauer des Mandats, die
+Höhe der Versorgungsbezüge und das frühestmögliche Eintrittsalter. Wegen der
+geringen Anwartschaftszeiten und den als hoch wahrgenommenen Entschädigungen
+steht die Versicherungsfreiheit von Abgeordneten in der GRV in der Kritik.
+                                                   - 56 -
+
+Vorgeschlagene Maßnahme
+
+Die Kommission empfiehlt, Abgeordnete zeitnah in die GRV einzubeziehen. Um die
+dabei entstehende Versorgungslücke auszugleichen, soll eine Zusatzversorgung
+eingerichtet werden.
+
+Eine Alternative wäre mindestens eine wirkungsgleiche Übertragung der Dämpfung
+bei den Rentensteigerungen auf die Altersentschädigung von Abgeordneten.
+
+Auswirkungen und Umsetzung
+
+      Die vorgeschlagene Änderung wäre ab der nächsten Legislaturperiode
+      umsetzbar. Sie wäre vom Bund für die Abgeordneten des Bundestags, von den
+      Ländern für die Abgeordneten der Landtage umzusetzen, sodass die
+      Gleichstellung mit anderen gesetzlich Versicherten sich unter Umständen über
+      einen längeren Zeitraum erstrecken könnte.
+      Die Maßnahme betrifft alle Abgeordneten des Deutschen Bundestages und der
+      Landesparlamente.
+      Die Auswirkungen auf die finanzielle Entwicklung der GRV, etwa den
+      Beitragssatz und das Rentenniveau, sind angesichts der Anzahl von
+      Abgeordneten vernachlässigbar.
+
+ Empfehlung 25
+ Die Kommission empfiehlt, Vorstände von Aktiengesellschaften in den Kreis der
+ Pflichtversicherten in die GRV einzubeziehen.
+
+Ausgangslage
+Mitglieder der Vorstände von Aktiengesellschaften sind für ihre Vorstandstätigkeit
+nicht versicherungspflichtig in der GRV. Die Regelung wird begründet mit ihrer
+wirtschaftlich starken Stellung, durch die sie nicht des Schutzes der
+Solidargemeinschaft bedürfen.
+
+Vorgeschlagene Maßnahme
+Die Kommission empfiehlt, künftig auch Mitglieder des Vorstands von
+Aktiengesellschaften in die GRV einzubeziehen.
+Die Kommission sieht eine Erwerbstätigenversicherung als Idealbild der
+Alterssicherung an (siehe Empfehlung 21). Keine Gruppe müsste sich im Zuge von
+Reformdiskussionen über einzelne Teilsysteme benachteiligt fühlen.
+                                                   - 57 -
+
+Auswirkungen und Umsetzung
+
+      Die Maßnahme betrifft alle Vorstände von Aktiengesellschaften und kann
+      unmittelbar umgesetzt werden.
+      Die Auswirkungen auf die finanzielle Entwicklung der GRV sind angesichts der
+      geringen Anzahl von Vorstandsmitgliedern vernachlässigbar.
+
+ Empfehlung 26
+ Die Kommission empfiehlt, geringfügige Beschäftigungsverhältnisse (Minijobs)
+ ohne Opt-out-Möglichkeit in die GRV einzubeziehen und ihren steuer- und
+ sozialversicherungsrechtlichen Sonderstatus abzuschaffen. Ausnahmen sollten
+ nur noch für Schülerinnen und Schüler vorgesehen werden.
+ In der Folge erübrigt sich auch die gesonderte Berechnung der beitragspflichtigen
+ Einnahmen im Übergangsbereich (Midijobs).
+
+Ausgangslage
+
+Geringfügige Beschäftigungsverhältnisse (Minijobs) sind versicherungspflichtig in
+der GRV. Es besteht jedoch die Möglichkeit zum Opt-Out, die sehr oft genutzt wird.
+Zudem sind Arbeitnehmende auch von anderen Sozialbeiträgen und von der
+Einkommensteuer befreit, während die Arbeitgeber eine pauschale Abgabe
+entrichten. Der Gesetzgeber geht von einem fehlenden Sicherungsbedürfnis aus, da
+diese Beschäftigungsverhältnisse lediglich einen Hinzuverdienst darstellen.
+Tatsächlich bergen Minijobs ein erhebliches Armutsrisiko, insbesondere für Frauen.
+Die Entgeltgrenze beeinträchtigt ihre Anreize, die Erwerbstätigkeit auszudehnen,
+wenn der Betreuungsbedarf der Kinder altersbedingt zurückgeht. Minijobs werden
+dadurch zur dauerhaften, sozial kaum abgesicherten Beschäftigungsform. Die
+Fehlanreize werden durch das Zusammenwirken zwischen dem Opt-out aus der GRV,
+Versicherungsfreiheit in den sonstigen Zweigen der Sozialversicherung,
+Ehegattensplitting und begünstigter Familienversicherung in der GKV verstärkt.
+
+Um den Übergang aus Minijobs in eine sozialversicherungspflichtige Beschäftigung
+zu erleichtern, hat der Gesetzgeber zudem den Übergangsbereich (Midijobs)
+geschaffen. Für Beschäftigte mit einem Einkommen zwischen 603,01 Euro und
+2.000 Euro erfolgt ein Beitragsrabatt in der Sozialversicherung, der jedoch keine
+verringerten Rentenanwartschaften zur Folge hat. Die Entlastung von Beiträgen wird
+als wenig zielgenau kritisiert, da sie nicht nach Stundenlohn oder
+Haushaltseinkommen differenziert. Zudem birgt sie Fehlanreize zugunsten einer
+begrenzten Teilzeitbeschäftigung und hat erhebliche Mindereinnahmen für die
+Sozialversicherung zur Folge.
+                                                   - 58 -
+
+Vorgeschlagene Maßnahme
+
+Die Kommission schlägt vor, die Opt-out-Möglichkeit für Minijobs in der GRV zu
+beenden. Mit Rücksicht auf die Beschäftigungswirkungen und die Auswirkungen auf
+die Finanzen der Sozialversicherungszweige sowie das Steueraufkommen sollte der
+gesamte steuer- und sozialversicherungsrechtliche Sonderstatus von Minijobs
+abgeschafft werden. Lediglich für Schülerinnen und Schüler kann es Ausnahmen
+geben, da bei ihnen keine Gefahr einer Verstetigung der begrenzten
+Arbeitsmarktteilnahme besteht.
+
+Die Kommission schließt sich damit den Empfehlungen der FinanzKommission
+Gesundheit und der Kommission zur Sozialstaatsreform an, die beitragsrechtliche
+Begünstigung von Minijobs zu reduzieren, diese verstärkt in die Sozialversicherung
+zu überführen und Anreize für die Ausübung einer vollzeitnahen Beschäftigung zu
+setzen.
+
+In der Folge entfällt auch die Notwendigkeit für eine gesonderte Berechnung der
+beitragspflichtigen Einnahmen im Übergangsbereich (Midijobs).
+
+Auswirkungen und Umsetzung
+
+Die Maßnahme betrifft Personengruppen, die derzeit verstärkt geringfügig beschäftigt
+sind, insbesondere Studierende, Rentenbeziehende, Frauen im Erwerbsalter, sowie
+Beziehende von Grundsicherungsleistungen. Ihre Einbeziehung in die GRV ohne
+Opt-out-Möglichkeit trägt dazu bei, Armutsrisiken und geschlechtsspezifische
+Ungleichheiten zu reduzieren.
+
+Betroffen sind zudem Beschäftigte mit Einkommen im Übergangsbereich (Midijobs).
+Mit dem Wegfall des Übergangsbereichs würden Geringverdienende stärker mit
+Sozialversicherungsbeiträgen belastet. Die Kommission betont jedoch, dass
+Umverteilung und eine kohärente Entlastung von Geringverdienenden im Steuerrecht
+und durch steuerfinanzierte Leistungen zielgenauer zu erreichen sind.
+
+Die Maßnahmen können Erwerbsanreize stärken und über höhere Beiträge
+Mehreinnahmen in der GRV generieren.
+
+Die Empfehlung ist sofort und ohne Übergangsfristen umsetzbar.
+                                                   - 59 -
+
+III.6 Kapitalgedeckte Elemente
+
+ Empfehlung 27
+ Die Kommission empfiehlt eine Stärkung kapitalgedeckter Elemente in der
+ Alterssicherung. Sie sieht darin einen wichtigen Schritt, um das
+ Gesamtversorgungsniveau für Rentnerinnen und Rentner in Deutschland nicht nur
+ zu stabilisieren, sondern mittelfristig deutlich zu erhöhen.
+ Bei der Umsetzung sollte sich Deutschland an den besonders erfolgreichen
+ Vorbildern in anderen Ländern orientieren. Kapitalgedeckte Elemente erfahren
+ dort bei guter Organisation und verantwortungsvoller sowie transparenter
+ Governance breite Akzeptanz.
+
+Eine Stärkung kapitalgedeckter Elemente in der Alterssicherung hat vier wesentliche
+positive Folgen. Erstens können solche Elemente das Umlageverfahren in Zeiten des
+demografischen Wandels ergänzen, da sie weniger abhängig von der
+Bevölkerungsentwicklung in Deutschland Erträge für die Rentnerinnen und Rentner
+erwirtschaften. Zweitens können damit möglichst viele Menschen erreicht werden ­
+und besonders diejenigen, die bisher keinen Zugang zu Kapitalmärkten haben und
+daher von deren Entwicklung nicht profitieren können. Die Kommission sieht diesen
+sozialpolitischen Aspekt als besonders wichtig an. Drittens können zukünftige
+Rentnerinnen und Rentner an globalen Entwicklungen teilhaben und vom globalen
+Wirtschaftswachstum profitieren ­ gerade in Zeiten, in denen das
+Wirtschaftswachstum in anderen Teilen der Welt höher ist als in Deutschland.
+Viertens trägt die Stärkung kapitalgedeckter Elemente in der Alterssicherung zur
+Belebung des europäischen Kapitalmarkts bei und ermöglicht damit Innovation und
+Wachstum.7
+Wesentlich für die Realisierung der genannten positiven Wirkungen kapitalgedeckter
+Elemente und für die Vertrauensbildung sind folgende Qualitätskriterien:
+
+      die Abdeckung großer Teile der Bevölkerung,
+      eine hohe Qualität der Kapitalanlage mit möglichst niedrigen Kosten,
+      eine hohe Qualität der Anbieter einschließlich deren Governance,
+      eine möglichst gute Mitnahmemöglichkeit bei Arbeitsplatzwechseln.
+
+7 Siehe hierzu den Abschlussbericht der deutsch-französischen Initiative ,,Financing Innovative Ventures
+    in Europe ­ FIVE" (Jörg Kukies, Christian Noyer), Januar 2026
+                                                   - 60 -
+
+Es ist Aufgabe des Staates und der Regulierung, die hierfür notwendigen
+Rahmenbedingungen zu schaffen.
+
+Bei der Stärkung kapitalgedeckter Elemente sollte die angespannte wirtschaftliche
+Lage in Deutschland berücksichtigt werden. Arbeitnehmende sowie Arbeitgeber
+dürfen nicht unangemessen zusätzlich belastet werden, da höhere Lohnnebenkosten
+Investitionen ins Ausland lenken könnten.
+
+ Empfehlung 28
+ Die Kommission empfiehlt die Einführung einer obligatorischen kapitalgedeckten
+ Rentenkomponente im Rahmen der GRV (gesetzliche Kapitalrente). Dazu sollen
+ individuelle Kapitalkonten für die Beitragszahlenden eingerichtet werden.
+ Empfohlen wird ein paritätisch finanzierter zusätzlicher Beitragssatz von
+ zwei Prozent mit schrittweiser Einführung. Die Beiträge sollen nach schwedischem
+ Vorbild zentral verwaltet und am Kapitalmarkt angelegt werden.
+ Die Kapitalrente soll im Rahmen der Gesamtreform dazu beitragen, dass
+ längerfristig das Rentenniveau in der ersten Säule wieder spürbar ansteigt.
+
+Ausgangslage
+
+Bislang wird die GRV ausschließlich über das Umlagesystem finanziert. Die
+demografische Alterung wird das Verhältnis von Beitragszahlenden zu
+Rentenbeziehenden verschlechtern und in der Folge das Rentenniveau mindern.
+
+Vorgeschlagene Maßnahme
+
+Das Umlagesystem bleibt auch künftig Kernelement der ersten Säule. Um die
+Chancen des Kapitalmarkts für die Alterssicherung besser nutzen zu können, wird die
+Einführung einer kapitalgedeckten Komponente in der GRV empfohlen, angelehnt an
+das schwedische Modell der Prämienrente als internationales Vorbild.
+
+Es soll ein zusätzlicher Beitragssatz von zwei Prozent in die kapitalgedeckte
+gesetzliche Rente fließen, die Beiträge sollen paritätisch von Arbeitgebern und
+Arbeitnehmenden getragen werden. Die Einführung soll schrittweise in jährlichen
+Schritten von 0,5 Prozentpunkten für alle Altersgruppen erfolgen ­ idealerweise
+beginnend ab 2028 ­, damit die Gesamtabgabenlast nicht zu schnell und sprunghaft
+erhöht wird. Ein Teil des Beitragsanstiegs wird mittelfristig durch andere von der
+Kommission in diesem Bericht empfohlene Reformen ausgeglichen.
+
+Für die Kapitalanlage soll ein öffentlicher, international wettbewerbsfähiger Fonds
+(wie z. B. der Fonds zur Finanzierung der kerntechnischen Entsorgung ­ KENFO)
+etabliert werden. Wer nicht in diesen öffentlichen Fonds einzahlen will, soll aus einer
+                                                   - 61 -
+
+möglichst begrenzten Anzahl zertifizierter Anlagefonds weiterer Anbieter auswählen
+können, die denselben strengen Kriterien unterliegen müssen.
+
+Auswirkungen und Umsetzung
+
+Die Kapitalrente ergänzt das Umlageverfahren und erwirtschaftet Erträge, die weniger
+abhängig von der Bevölkerungsentwicklung in Deutschland sind. Durch die
+obligatorische Ausgestaltung können breite Bevölkerungsschichten an den ­ in der
+Rückschau über lange Zeiträume immer positiven ­ Entwicklungen der Kapitalmärkte
+partizipieren.
+
+Durch die Einführung der Kapitalrente ist davon auszugehen, dass das Rentenniveau
+in der ersten Säule längerfristig wieder spürbar ansteigt (siehe Abbildung 3).
+
+Für die Umsetzung sind folgende Punkte erfolgsentscheidend:
+
+      Das vorhandene Beitragseinzugsverfahren über die Arbeitgeber soll genutzt
+      werden. Damit steht ein bewährtes und unbürokratisches Verfahren zur
+      Verfügung, das zu keinem nennenswerten Mehraufwand für die
+      Beitragszahlenden führt.
+      Das angelegte Kapital muss vor einer (auch politischen) Zweckentfremdung
+      geschützt werden.
+      Die individuellen Kapitalkonten dürfen nicht mit Bankkonten oder
+      Wertpapierdepots verwechselt werden, denn sie können nicht vererbt werden.
+      Bei der gesetzlichen Kapitalrente handelt es sich um Sozialversicherung,
+      Risiken werden im Kollektiv ausgeglichen.
+      Die Kapitalanlage soll professionell erfolgen und langfristig orientiert sein. Das
+      Kapital muss möglichst breit gestreut angelegt werden, um die Ertragsrisiken
+      einzelner Anlagen, Anlageklassen, Branchen oder Länder auszugleichen. Das
+      verbleibende Risiko langfristiger Schwankungen der globalen Kapitalmärkte ist
+      beim langfristigen Anlagehorizont für die Alterssicherung begrenzt.
+      Im Vordergrund sollen die Renditeorientierung und die Chancen einer höheren
+      Alterssicherung stehen. Dabei sind politische Festlegungen zur Anlagepolitik
+      und ein Ausschluss bestimmter Länder oder Branchen zu vermeiden. Sehr wohl
+      können und sollen nach sorgfältiger Einzelfallprüfung unethische Investitionen
+      ausgeschlossen werden.
+      Um Vertrauen in die Kapitalanlage durch den öffentlichen Anbieter zu schaffen,
+      ist eine Unabhängigkeit der Anlageentscheidungen von politischer
+      Einflussnahme und die Besetzung eines professionellen Anlageausschusses
+      durch externe Fachleute unabdingbar.
+                                                   - 62 -
+
+      Zur Orientierung sollen Kosten von maximal zehn Basispunkten des
+      Kapitalstocks angestrebt werden ­ das heißt effektive Kosten von maximal
+      0,1 Prozent pro Jahr.
+      Die Wertentwicklung der Kapitalanlage muss transparent kommuniziert
+      werden, auch in schwierigen Marktphasen.
+      Die kapitalgedeckten sollen zusammen mit den umlagefinanzierten Leistungen
+      als lebenslange Rente ausgezahlt werden, um einen hohen Grad an Konformität
+      mit dem bestehenden System zu schaffen. Gleichzeitig müssen die beiden
+      Komponenten transparent gemacht werden.
+      Für die Verrentung sollen möglichst realitätsnahe Schätzungen der
+      Lebenserwartung verwendet werden.
+      Es ist zu prüfen, ob und wie das Risiko der Erwerbsminderung sowie Elemente
+      des sozialen Ausgleichs unter Berücksichtigung der Renditeorientierung
+      integriert werden können. Eine eventuelle Absicherung der
+      Hinterbliebenenversorgung in der Kapitalrente sollte nicht zu Lasten des
+      Versichertenkollektivs erfolgen.
+      Die Erhebung von Beiträgen in der Kapitalrente sollte zügig eingeleitet werden,
+      idealerweise ab 2028, damit sie die umlagefinanzierten Renten der GRV unter
+      Nutzung von Zinseszinseffekten möglichst schnell wirksam ergänzen kann.
+
+ Empfehlung 29
+ Die Kommission empfiehlt, im Jahr 2026 im Rahmen eines Sozialpartnerdialogs
+ konkrete Maßnahmen zu erarbeiten, die die Verbreitung der bAV insbesondere in
+ bisher unterversorgten Bereichen deutlich erhöhen und von beiden Sozialpartnern
+ mitgetragen werden. Diese Maßnahmen sollen im Anschluss in ein
+ Gesetzgebungsverfahren überführt werden. Eine annähernd flächendeckende
+ Verbreitung der bAV sollte perspektivisch angestrebt werden, um ein
+ lebensstandardsicherndes Gesamtversorgungsniveau der Alterssicherung für alle
+ Beschäftigten zu erreichen.
+
+Ausgangslage
+
+Die bAV ist ein wichtiger Baustein für ein gutes Gesamtversorgungsniveau. Durch
+die kollektive Organisation kann sie Effizienzvorteile realisieren und Kosten
+reduzieren. Zudem ermöglicht sie eine berufsgruppenspezifische Ausgestaltung.
+Durch das Zusammenwirken von Arbeitgebern und Arbeitnehmenden besteht ein
+hohes Maß an Vertrauen. Die bAV kann zudem ein wichtiges Instrument zur
+Mitarbeiterbindung sein und helfen, die Attraktivität des Arbeitgebers sowie von
+Arbeit insgesamt zu erhöhen.
+                                                   - 63 -
+
+Die Kommission sieht, dass mit den beiden Betriebsrentenstärkungsgesetzen bereits
+wichtige Schritte zur Verbreitung der bAV auf den Weg gebracht wurden. Dennoch
+ist der Verbreitungsgrad weiterhin nicht hoch genug. Dies gilt insbesondere bei KMU
+und bei Arbeitnehmenden mit geringem Einkommen.
+
+In Deutschland hatten Ende 2023 rund 18,1 Millionen sozialversicherungspflichtig
+Beschäftigte bei ihrem aktuellen Arbeitgeber eine aktive Betriebsrentenanwartschaft.
+Die Verbreitungsquote liegt zuletzt bei knapp 52 Prozent mit großen
+Verbreitungslücken insbesondere in kleinen und mittleren Unternehmen (KMU)
+sowie bei Beschäftigten mit geringeren Einkommen. In Betrieben mit weniger als
+zehn Beschäftigten liegt die Verbreitung bei lediglich 25 Prozent, in
+Großunternehmen erreicht der Verbreitungsgrad hingegen 86 Prozent. Nur rund
+34 Prozent der Beschäftigten mit einem Bruttolohn bis zu 2.500 Euro verfügen über
+eine bAV.8
+
+Das Zweite Betriebsrentenstärkungsgesetz (2026) beinhaltet eine Evaluation der
+teilweisen Öffnung der Sozialpartnermodelle. Das BMAS wird 2027 untersuchen, ob
+die Verbreitung der bAV erkennbar gestiegen ist. Sollte sich die Zahl der
+Beschäftigten, die an einem Sozialpartnermodell teilnehmen, bis dahin gegenüber
+2025 nicht verdoppelt haben, muss die Bundesregierung geeignete Maßnahmen
+vorschlagen, damit allen Unternehmen und ihren Beschäftigten der Zugang zu einem
+Sozialpartnermodell eröffnet wird.
+
+Da die Anzahl der Beschäftigten mit einem Sozialpartnermodell 2025 nur etwa
+40.000 Beschäftigte betrug, hält die Kommission das Ziel einer Verdoppelung vor
+dem Hintergrund der hohen Bedeutung der bAV zur Erreichung eines
+lebensstandardsichernden Gesamtversorgungsniveaus im Alter für nicht ausreichend
+ambitioniert. Eine Verdopplung ist deshalb als Mindestzielmarke anzusehen.
+
+Vorgeschlagene Maßnahme
+
+Um ein besseres Gesamtversorgungsniveau im Alter zu erreichen, muss es das Ziel
+sein, den Verbreitungsgrad der bAV zu erhöhen. Perspektivisch ist eine annähernd
+flächendeckende Verbreitung der bAV für alle Beschäftigten anzustreben.
+
+Es wird eine Vielzahl an Wegen diskutiert, um dieses Ziel zu erreichen. Dazu gehören
+unter anderem:
+
+      ein erleichterter Zugang zu Sozialpartnermodellen ­ und damit zur reinen
+      Beitragszusage ­ durch die voraussetzungslose Öffnung der
+      Sozialpartnermodelle für alle Arbeitgeber und Beschäftigten,
+
+8 Alterssicherungsbericht 2024 (BT-Drs. 20/14086), Teil D
+                                                   - 64 -
+
+      eine erleichterte Allgemeinverbindlichkeitserklärung von Tarifverträgen zur
+      bAV,
+      die Einführung von leichter zugänglichen Entgeltumwandlungsmodellen in der
+      bAV mit Opt-out-Möglichkeit für Arbeitnehmende,
+      die Einführung eines Obligatoriums in der zweiten Säule der Alterssicherung,
+      die Möglichkeit, dass Arbeitgeber (insbesondere KMU) im Rahmen von
+      altersvorsorgewirksamen Leistungen auf private Altersvorsorgedepots ihrer
+      Arbeitnehmenden einzahlen können, um die Altersvorsorge ihrer Beschäftigten
+      im Rahmen der dritten Säule zu fördern.
+
+Um einen von Arbeitgeber- und Arbeitnehmerverbänden im Grundsatz getragenen
+Kompromiss zu erreichen, empfiehlt die Kommission daher, noch im Jahr 2026 einen
+Sozialpartnerdialog durchzuführen, in dem konkrete Maßnahmen zur Erhöhung des
+Gesamtversorgungsniveaus im Alter über die bAV erarbeitet werden. Im Mittelpunkt
+des Dialogs sollte die stärkere Verbreitung der bAV insbesondere in unterversorgten
+Bevölkerungsgruppen stehen. Dabei ist auf eine ausreichende Beteiligung von
+Vertreterinnen und Vertretern aus KMU und aus Branchen mit geringer Verbreitung
+zu achten.
+
+Die von den Sozialpartnern mitgetragenen Maßnahmen sollten im Anschluss in ein
+konkretes Gesetzgebungsverfahren münden.
+
+Auswirkungen und Umsetzung
+
+Der Sozialpartnerdialog sollte zeitnah gestartet werden. Er bietet das Potenzial, zu
+tragfähigen Kompromisslösungen zwischen den Sozialpartnern zu gelangen, die den
+Verbreitungsgrad der bAV erhöhen.
+
+ Empfehlung 30
+ Die Kommission empfiehlt, durch Verbesserungen in den Bereichen
+ Bürokratieabbau, Portabilität, Rechtssicherheit, Kostenverteilung und
+ Geringverdienerförderung die Attraktivität der bAV zu erhöhen und den
+ Verbreitungsgrad zu steigern.
+
+Ausgangslage
+
+Über die in Empfehlung 29 genannten, im Rahmen des Sozialpartnerdialogs zu
+prüfenden Möglichkeiten zur Stärkung der bAV hinaus bestehen weitere
+Möglichkeiten. Die bAV ist historisch gewachsen und daher durch eine hohe
+strukturelle Differenzierung und Komplexität geprägt, die aus unterschiedlichen
+Durchführungswegen sowie der engen Verknüpfung arbeits-, steuer- und
+                                                   - 65 -
+
+sozialversicherungsrechtlicher Regelungen resultiert. Vor diesem Hintergrund besteht
+in mehreren Bereichen kurzfristiger Handlungsbedarf.
+Vorgeschlagene Maßnahme
+
+Kostenstruktur verbessern
+Die anfängliche Kostenbelastung (Frontloading) sollte reduziert werden, indem
+Abschlusskosten über die gesamte Laufzeit oder zumindest auf die ersten zehn Jahre
+verteilt werden. Dies verhindert renditeschwächende und fragmentierte
+Rumpfanwartschaften, welche durch geringe Portabilität und häufige
+Arbeitsplatzwechsel entstehen können.
+
+Geringverdienerförderung dynamisieren
+Die bestehende Förderung für Geringverdienende sollte regelmäßig dynamisiert
+werden, um ihren realen Wert und Anreizcharakter dauerhaft zu sichern und
+inflationsbedingte Abschwächungen zu vermeiden.
+
+Bürokratieabbau vorantreiben
+Die Bundesregierung sollte die 60 von der Arbeitsgemeinschaft für betriebliche
+Altersversorgung identifizierten Maßnahmen zum Bürokratieabbau prüfen und bis
+Ende 2026 einen Bürokratieabbauplan vorlegen.
+
+Rechtssicherheit erhöhen
+Für Änderungen bestehender Versorgungsregelungen sollte eine zeitnahe gerichtliche
+Überprüfung zur Regel werden, um langfristige Unsicherheiten und spätere
+Rechtsstreitigkeiten zu vermeiden.
+
+Rechtssicherheit beim Future Service
+Für zukünftige Dienstzeiten sollte eine flexiblere Anpassung von
+Versorgungszusagen nach arbeitsrechtlichen Grundsätzen geprüft werden, um
+mögliche Rechtsunsicherheiten zu reduzieren.
+
+Portabilität verbessern
+Übertragungsprozesse zwischen Versorgungsträgern sollten durch Standardisierung,
+digitale Schnittstellen und einheitliche Bewertungsverfahren vereinfacht werden,
+ohne zusätzliche Bürokratie zu schaffen.
+                                                   - 66 -
+
+Auswirkungen
+
+Die Maßnahmen führen zu einer strukturellen Modernisierung und Vereinfachung der
+bAV. Sie reduzieren administrative und regulatorische Belastungen, erhöhen die
+Rechtssicherheit, verbessern die Portabilität und stärken die Verbreitung insbesondere
+in KMU sowie bei Geringverdienenden. Insgesamt wird die Attraktivität der bAV
+durch effizientere, rechtssichere und praxistaugliche Rahmenbedingungen nachhaltig
+erhöht.
+
+ Empfehlung 31
+ Die Kommission empfiehlt, die Ausgestaltung der Frühstart-Rente mit der
+ gesetzlichen Kapitalrente zu verzahnen, um Synergien und besonders lange
+ Ansparzeiten zu ermöglichen. Doppelstrukturen sollten vermieden werden.
+
+Ausgangslage
+
+Mit der Frühstart-Rente soll noch 2026 eine staatlich geförderte kapitalgedeckte
+Zusatzvorsorge eingeführt werden, die es Eltern ermöglicht, für ihre Kinder zwischen
+sechs und 18 Jahren Kapital für die Altersvorsorge aufzubauen. Ziel ist zudem, die
+Finanzbildung von Kindern und Jugendlichen über alle Einkommensgruppen hinweg
+zu stärken.
+
+Die bisherige Planung der Bundesregierung sieht vor, die Frühstart-Rente für Kinder
+einzurichten, die das sechste Lebensjahr vollendet haben. Ab diesem Zeitpunkt
+können Eltern oder Erziehungsberechtigte ein individuelles Altersvorsorgedepot für
+ihr Kind eröffnen. Der Staat fördert dieses Depot mit einer monatlichen Prämie von
+zehn Euro, was über den Förderzeitraum von zwölf Jahren zu staatlichen
+Einzahlungen von 1.440 Euro führt. Für Eltern und Erziehungsberechtigte, die für ihr
+Kind kein Altersvorsorgedepot eröffnen, soll eine Standardlösung eines öffentlichen
+Trägers eingeführt werden, der das Geld für die Kinder bis zur Vollendung des
+18. Lebensjahres und darüber hinaus anlegt und verwahrt.
+
+Vorgeschlagene Maßnahme
+
+Die Frühstart-Rente soll mit der gesetzlichen Kapitalrente verzahnt werden, um damit
+Synergien und Kostenvorteile sowie eine möglichst lange Ansparphase zu
+ermöglichen. Synergiepotenzial besteht sowohl bei der Führung der Konten als auch
+bei der Kapitalanalage.
+
+Jedes Kind erhält mit dem sechsten Lebensjahr ein individuelles Kapitalkonto bei der
+GRV. Damit werden Doppelstrukturen bei den öffentlich verwalteten Kapitalkonten
+vermieden.
+                                                   - 67 -
+
+Bei der Kapitalanlage sind alternative Varianten denkbar, die zu prüfen sind. Nach
+derzeitiger Planung sollen Eltern und Erziehungsberechtigte für ihr Kind das Kapital
+für ein Altersvorsorgedepot abrufen können. Alternativ sollen sie den öffentlichen
+Fonds oder die zertifizierten Fonds der gesetzlichen Kapitalrente als Anlage wählen
+können. Auf jeden Fall sollte bei der Gestaltung des öffentlichen Fonds und der
+Auffanglösung darauf geachtet werden, dass auch hier keine Doppelstrukturen
+entstehen. Zudem könnte das mit der Frühstart-Rente aufgebaute Kapital mit
+18 Jahren in die gesetzliche Kapitalrente überführt werden, sollte es nicht vorab oder
+in einer Übergangsphase (z. B. zwischen 18 und 25 Jahren) für ein
+Altersvorsorgedepot abgerufen worden sein.
+
+Darüber hinaus sollte geprüft werden, ob der öffentliche Fonds für die gesetzliche
+Kapitalrente auch als öffentliches Angebot im Rahmen der geförderten privaten
+Altersvorsorge dienen kann und somit auch in diesem Bereich Doppelstrukturen
+vermieden werden können. Ggf. hierfür notwendige gesetzliche Anpassungen sollten
+vorgenommen werden. Mit dem Altersvorsorgereformgesetz wurde die
+Bundesregierung ermächtigt, eine Rechtsverordnung zur Umsetzung eines durch
+einen öffentlichen Träger angebotenen Standarddepot-Vertrags zu erlassen.
+
+Auswirkungen und Umsetzung
+
+      Eine effiziente Verzahnung zwischen Strukturen der gesetzlichen Kapitalrente
+      (Empfehlung 28), dem Altersvorsorgedepot und der Frühstart-Rente wird es
+      Personen ermöglichen, kosteneffiziente kapitalgedeckte Altersvorsorge vom
+      sechsten Lebensjahr bis zum Renteneintritt über einen langen Ansparzeitraum
+      aufzubauen.
+      Zusätzliche finanzielle Belastungen entstehen durch die Verzahnung nicht. Es
+      sind Effizienzgewinne durch die Vermeidung von Doppelstrukturen bei der
+      Kontenführung und beim Aufbau der Standardlösung zu erwarten.
+
+Die Möglichkeiten der Verzahnung sollten zeitnah diskutiert werden, da die
+Diskussionen zur Frühstart-Rente bereits im Gesetzgebungsprozess fortgeschritten
+sind. Ähnliches gilt für die Nutzung der durch das Altersvorsorgereformgesetz
+geschaffenen Verordnungsermächtigung.
+                                                   - 68 -
+
+ Empfehlung 32
+ Die Kommission empfiehlt ein enges, laufendes Monitoring der Wirkung der
+ bereits beschlossenen Reformen in der privaten, steuerlich geförderten
+ Altersvorsorge, insbesondere im Hinblick auf die Entwicklung der Verbreitung, die
+ angebotenen und gewählten Verträge, ihre Kosten und Renditechancen sowie die
+ Auswirkungen der staatlichen Förderung auf den Bundeshaushalt und ihre
+ Verteilungswirkungen.
+
+Ausgangslage
+
+Mit der Reform der Riester-Rente durch das Altersvorsorgereformgesetz wurde
+bereits eine substanzielle Reform der privaten Altersvorsorge im Jahr 2026 auf den
+Weg gebracht. Die Reform hat das Potenzial, die private Altersvorsorge wieder zu
+beleben, die Verbreitung zu erhöhen, die Kosten zu senken und das Renditepotenzial
+für den Aufbau der privaten Altersvorsorge zu erhöhen.
+
+Nach dem allgemeinen Teil der Begründung zum Altersvorsorgereformgesetz wird
+das Bundesministerium der Finanzen im Jahr 2031 prüfen, ob die Verbreitung der
+privaten Altersvorsorge gesteigert werden konnte und die Eigenbeiträge zur
+Altersvorsorge gestiegen sind, inwieweit die neuen Produkte der Altersvorsorge und
+insbesondere das Standarddepot von den Altersvorsorgenden angenommen wurden
+und ob durch weitere Veränderungen der rechtlichen Vorgaben und der steuerlichen
+Förderung ein stärkerer Anstieg der Verbreitung privater Altersvorsorge erreicht
+werden kann.
+
+Vorgeschlagene Maßnahme
+
+Die Entwicklung sollte mit einem engen Monitoring verfolgt werden. Insbesondere
+sollten die Verbreitung, die angebotenen und verkauften Verträge, ihre Kosten und
+Renditemöglichkeiten sowie die Auswirkungen der staatlichen Förderung auf den
+Bundeshaushalt und ihre Verteilungswirkungen beobachtet werden.
+
+Auswirkungen und Umsetzung
+
+Ein solches Monitoring versetzt erst in die Lage, fundiert überprüfen und evaluieren
+zu können, ob die Reform der privaten Altersvorsorge zur beabsichtigten Dynamik
+beim Aufbau der zusätzlichen Altersvorsorge führt. Auf mögliche Fehlentwicklungen
+kann zeitnah reagiert und ggf. weitere Schritte der Regulierung in die Wege geleitet
+werden.
+                                                   - 69 -
+
+III.7 Digitalisierung und Verwaltungsmodernisierung
+
+ Empfehlung 33
+ Die Kommission empfiehlt, die DRV organisatorisch so weiterzuentwickeln, dass
+ sie ihre Aufgaben künftig effizienter, schneller und bei gesicherter Flächenpräsenz
+ zugleich bürgernäher erfüllen kann.
+
+Ausgangslage
+
+Die heutige Struktur der DRV ist Ergebnis historisch gewachsener politischer
+Kompromisse, die zuletzt 2005 neu justiert wurden. Regionale Präsenz,
+Selbstverwaltung und institutionelle Balance wurden gesichert, eine übergreifend
+mandatierte Führung mit verbindlichem Durchgriff wurde jedoch nicht geschaffen.
+Stattdessen entstand eine Organisation mit 16 Trägern, davon 14 Regionalträgern und
+zwei Bundesträgern, darunter die DRV Bund, die gleichzeitig eigene Trägeraufgaben
+und trägerübergreifende Grundsatz- und Querschnittsaufgaben wahrnimmt.
+
+Diese Struktur war politisch erklärbar, passt aber nur begrenzt zu einer
+Rentenversicherung, deren Leistungen nach bundesweit einheitlichen Regeln erbracht
+werden. Die heutigen Trägerstrukturen, die doppelte Selbstverwaltung in Vorständen
+und Vertreterversammlungen und die Vielzahl an Gremien erfordern einen
+erheblichen Abstimmungsaufwand. DRV-weit finden geschätzt rund 500 Sitzungen
+pro Jahr statt. Hinzu kommen jährlich rund 150 trägerübergreifende
+Hauptamtsgremien, davon etwa 40 im IT-Bereich.
+
+Auch die Leitung ist hochgradig fragmentiert. Heute bestehen 16 Träger mit
+38 Geschäftsführungsmitgliedern, über 100 Vorstandsmitgliedern und fast
+500 Mitgliedern der Vertreterversammlungen. In trägerübergreifenden Fragen der
+GRV kann zudem nur gehandelt werden, wenn in den gemeinsamen Gremien eine
+Mehrheit von zwei Dritteln der Träger zustimmt. Im Konfliktfall fehlt damit eine
+eindeutig mandatierte Entscheidungsspitze.
+
+Die Steuerung der DRV ist schwerfällig und langsam. Entscheidungen werden auf
+dem kleinsten gemeinsamen Nenner getroffen und lassen sich oft nicht durchsetzen.
+Größenvorteile werden häufig nicht genutzt, weil die Träger vielfach eigenständig
+agieren. Aus dem gleichen Grund bleibt vorhandenes Synergiepotenzial, etwa im
+Rehabilitationsbereich, bei der Personalgewinnung oder im Immobilienmanagement,
+vielfach unausgeschöpft.
+
+Diese Steuerungs- und Effizienzdefizite legen nahe, dass bei der Verwaltung der GRV
+Wirtschaftlichkeitsreserven vorhanden sind. Auch wenn die Verwaltungsausgaben
+der GRV im Vergleich zu ihren Gesamtausgaben mit 1,3 Prozent gering sind, ist ihre
+Höhe in absoluten Zahlen mit rund 5,6 Milliarden Euro dennoch erheblich.
+                                                   - 70 -
+
+Vorgeschlagene Maßnahme
+
+Leitung der GRV straffen
+
+Die Kommission empfiehlt, die Leitungsaufgaben der GRV an einer Stelle bei der
+DRV Bund zu bündeln und damit die fragmentierte Führung der GRV zu beenden.
+Die Steuerung der GRV sollte durch eine zentrale Steuerungsinstanz erfolgen und auf
+einen Träger konzentriert werden, so wie dies mit der Bundesagentur für Arbeit
+z. B. auch in der Arbeitslosenversicherung der Fall ist. Die zentrale Steuerungsinstanz
+sollte für die regionalen Organisationseinheiten der GRV durchgriffs- und
+weisungsfähig sein und damit bundesweit einheitliche Standards durchsetzen können.
+
+Leistungserbringung über gemeinsame Serviceeinheiten zentraler und professioneller
+organisieren
+
+Die Kommission empfiehlt, die Leistungserbringung stärker zu bündeln und über
+gemeinsame Serviceeinheiten zu professionalisieren. Definierte Aufgaben könnten
+zukünftig durch eine gemeinsame Einheit erbracht werden, etwa Leistungen,
+Prozesse, IT-Services, Personalservices, Produktfunktionen und unterstützende
+Verwaltungsaufgaben. Dadurch ließen sich Größenvorteile nutzen, die Qualität
+vereinheitlichen, Doppelstrukturen abbauen, die IT-Strukturen verbessern und
+Effizienzen heben. Bürgerinnen und Bürger würden von einheitlichen Standards und
+besser zugänglichen digitalen sowie analogen Leistungen profitieren. Zudem muss die
+gesamte Struktur digitaler, einfacher und schneller werden. Sie muss auf eine
+effiziente und nutzerorientierte Verwaltung abstellen. Das heißt, dass Prozesse weiter
+automatisiert und digitale Angebote für Kundinnen und Kunden ausgebaut werden
+müssen. So sind bestehende rentenrechtliche Regelungen auf digitaltaugliche
+Vereinfachungsoptionen (Rechts- und Verfahrenserleichterungen) hin zu
+untersuchen. Ziel muss es sein, sozialpolitisch sachgerechte Lösungen zu finden, die
+die Nutzerperspektiven von Versicherten, Rentenbeziehenden und Arbeitgebern in
+den Mittelpunkt stellen und durch Digitalisierung sowie Entbürokratisierung auch zur
+Transparenz des Verwaltungshandelns beitragen. Als Beispiel ist hier die
+Rentenberechnung zu nennen. Hier sollten die einzelnen Elemente mit Blick auf die
+Lohnbezogenheit der Renten auf ihre Wirksamkeit und Erforderlichkeit hin überprüft
+werden. Das Recht der GRV muss an so vielen Stellen wie möglich vereinfacht
+werden.
+
+Regionale Ansprechbarkeit sichern
+
+Trotz zentraler Steuerung sollte die GRV weiter überwiegend durch regionale
+Organisationseinheiten verwaltet werden. Insbesondere gilt es, die Ansprechbarkeit
+der GRV vor Ort zu erhalten. Bürgernähe entsteht allerdings nicht durch eine Vielzahl
+rechtlich oder organisatorisch eigenständiger Träger, sondern durch verlässliche
+                                                   - 71 -
+
+Beratung, erreichbare Anlaufstellen, digitale Zugänge und sichtbare Präsenz in der
+Fläche. Regionale Auskunfts- und Beratungsstellen, lokale Sprechtage, örtlich
+verfügbare Versichertenberatung bzw. Versichertenälteste und Beratungsangebote
+per Telefon, Video oder auf dem Schriftweg bleiben auch in Zukunft unverzichtbar.
+
+Selbstverwaltung verschlanken
+
+Die Kommission empfiehlt, die historisch gewachsene doppelte Selbstverwaltung aus
+Vorstand und Vertreterversammlung auf ein Selbstverwaltungsorgan zu verschlanken
+und auf ihre wesentlichen Funktionen zu konzentrieren: Legitimation, Kontrolle,
+strategische Richtungsgebung und Interessenvertretung. Ziel ist, die
+Handlungsfähigkeit der Selbstverwaltung zu stärken und sie von übermäßiger
+Gremien-Komplexität zu entlasten. Vorbild könnte hier die gesetzliche
+Krankenversicherung sein, bei der das Nebeneinander von Vorstand und
+Vertreterversammlung bereits 1996 beendet wurde. Seitdem besteht mit dem
+Verwaltungsrat nur noch ein Selbstverwaltungsorgan.
+
+DRV Knappschaft-Bahn-See stärken
+
+Mit einer Zusammenführung der GRV zu einem Träger würden auch die bisher von
+der Deutschen Rentenversicherung Knappschaft-Bahn-See (DRV KBS)
+wahrgenommenen Aufgaben als Träger der allgemeinen und der knappschaftlichen
+Rentenversicherung künftig durch den gemeinsamen Rentenversicherungsträger
+wahrgenommen. Die zahlreichen übrigen heute von der DRV KBS übernommenen
+Aufgaben sollten weiter von ihr als eigenständige Verwaltung wahrgenommen
+werden. Sollte überlegt werden, das Beitragseinzugsverfahren zu bündeln, so würde
+sich die DRV KBS als zentrale Einzugsstelle anbieten. Schon heute führt die DRV
+KBS den Beitragseinzug für Minijobber durch.
+
+Auswirkungen und Umsetzung
+
+Die vorgeschlagenen Maßnahmen würden die DRV organisatorisch weniger
+fragmentiert, technologisch sicherer und konsequent bürgerorientiert aufstellen. Eine
+zentrale Steuerungsinstanz schafft verbindliche Standards, die auch umgesetzt
+werden, erhöht die Professionalität und Skalierbarkeit. Zugleich bleiben die
+überwiegend dezentrale Organisation der GRV und die regionale Ansprechbarkeit
+gesichert. Eine verschlankte Selbstverwaltung stärkt Entscheidungsfähigkeit,
+Umsetzungskraft und Umsetzungsgeschwindigkeit. Zugleich wird das System
+effizienter und damit dem Ziel der Staatsmodernisierungs-Agenda gerecht.
+
+Mit einer Reform der Organisationsstrukturen der DRV würde zugleich der
+Erwartung der Bürgerinnen und Bürger Rechnung getragen, dass bei
+                                                   - 72 -
+
+Ausgabenbegrenzungen bei den Leistungen der GRV auch im Bereich der
+Verwaltung Maßnahmen zur Kostenreduzierung ergriffen werden.
+                       - 73 -
+
+Abkürzungsverzeichnis
+
+bAV       betriebliche Altersversorgung
+BBG       Beitragsbemessungsgrenze
+BMAS      Bundesministerium für Arbeit und Soziales
+BT-Drs.   Bundestagsdrucksache
+bzw.      beziehungsweise
+ca.       circa
+CDU       Christlich Demokratische Union Deutschlands
+CSU       Christlich-Soziale Union in Bayern e. V.
+DRV       Deutsche Rentenversicherung
+DRV Bund  Deutsche Rentenversicherung Bund
+DRV KBS   Deutsche Rentenversicherung Knappschaft-Bahn-See
+ELSTER    Apronym für Elektronische Steuererklärung
+ggf.      gegebenenfalls
+GKV       gesetzliche Krankenversicherung
+GRV       gesetzliche Rentenversicherung
+inkl.     inklusive
+IT        Informationstechnik
+KENFO     Fonds zur Finanzierung der kerntechnischen Entsorgung
+KMU       kleine und mittlere Unternehmen
+MdB       Mitglied des Deutschen Bundestages
+OECD      Organization for Economic Co-operation and Development
+          (deutsch: Organisation für wirtschaftliche Zusammenarbeit und
+PhD       Entwicklung)
+SGB       Doktor der Philosophie
+SPD       Sozialgesetzbuch
+VWL       Sozialdemokratische Partei Deutschlands
+z. B.     Volkswirtschaftslehre
+          zum Beispiel
+                                                   - 74 -
+
+Anhang
+
+Die Modellberechnungen der Alterssicherungskommission dienen der Veran-
+schaulichung der möglichen Reformwirkungen. Sie ersetzen jedoch nicht die
+detaillierte Finanzberechnung, die im Rahmen eines Gesetzgebungsverfahrens
+erforderlich ist.
+
+Die Abschätzungen zum Reformpaket im Umlageverfahren umfassen insbesondere
+die Anhebung der Regelaltersgrenze, die Abschaffung der abschlagsfreien Rente für
+besonders langjährig Versicherte, die Anhebung der Altersgrenze für langjährig
+Versicherte von 63 auf 64 Jahre sowie die Einbeziehung von Selbständigen.
+
+Die Abschätzungen zum Gesamtpaket umfassen zusätzlich die Einführung der
+gesetzlichen Kapitalrente, die Verstärkung des Nachhaltigkeitsfaktors in der
+Rentenanpassungsformel (Erhöhung des Faktors alpha) sowie die Einführung eines
+Übergangsfaktors zur Stabilisierung des Zugangsrentenniveaus.
+
+In den nachfolgenden Abbildungen wird auf Basis verschiedener Modellrechnungen
+die Bandbreite möglicher Auswirkungen der Reformvorschläge dargestellt. Das
+Referenzszenario bildet dabei die Vorausberechnung der DRV Bund unter geltendem
+Recht (siehe Abbildung 1). Der grau hinterlegte Bereich stellt keinen Reformkorridor
+dar. Er veranschaulicht die über die verschiedenen Modelle hinweg maximal
+erwartete Wirkung im Vergleich zum Referenzszenario.
+             - 75 -
+
+Abbildung 2  Veranschaulichung der möglichen Entwicklung des Rentenniveaus
+             mit Reformvorschlägen für das Umlageverfahren (ohne
+             Kapitalrente, ohne Verstärkung des Nachhaltigkeitsfaktors, ohne
+             Übergangsfaktor)
+
+Quelle: Eigene Darstellung der Alterssicherungskommission auf Basis verschiedener Modellrechnungen
+
+Abbildung 3  Veranschaulichung der möglichen Entwicklung des
+             Zugangsrentenniveaus unter Berücksichtigung der vorgeschlagenen
+             Maßnahmen im Rahmen der Gesamtreform
+
+Dargestellt ist die mögliche Entwicklung des Rentenniveaus (ohne Maßnahmen) bzw. des Gesamtniveaus aus Umlage und
+Kapitaldeckung (Reformpaket gesamt) im Rentenzugang des jeweiligen Kalenderjahres. Die Reformen (gesetzliche Kapitalrente,
+Übergangsfaktor) führen dazu, dass ein einheitliches Niveau für den Rentenbestand nicht mehr ausweisbar ist.
+
+Quelle: Eigene Darstellung der Alterssicherungskommission auf Basis verschiedener Modellrechnungen
+             - 76 -
+
+Abbildung 4  Veranschaulichung des möglichen Beitragssatzverlaufs mit
+             Reformvorschlägen für das Umlageverfahren (ohne Kapitalrente,
+             ohne Verstärkung des Nachhaltigkeitsfaktors, ohne
+             Übergangsfaktor)
+
+Der Anstieg im Jahr 2028 unter geltendem Recht ergibt sich unabhängig von den Reformvorschlägen aus demografischen Gründen.
+Quelle: Eigene Darstellung der Alterssicherungskommission auf Basis verschiedener Modellrechnungen
+
+Abbildung 5  Veranschaulichung der möglichen Bandbreite des
+             Beitragssatzverlaufs unter Berücksichtigung der vorgeschlagenen
+             Maßnahmen
+
+Dargestellt ist die mögliche Entwicklung des Gesamtbeitragssatzes, der sich aus dem Beitrag zum Umlageverfahren unter Wirkung
+der vorgeschlagenen Maßnahmen (inkl. einer Erhöhung des Nachhaltigkeitsfaktors) und ­ für das Reformpaket gesamt ­ dem Beitrag
+zur gesetzlichen Kapitalrente ergibt. Die Beiträge zur gesetzlichen Kapitalrente werden zum Aufbau individueller Leistungsansprüche
+aus der Kapitaldeckung genutzt. Der Anstieg im Jahr 2028 unter geltendem Recht ergibt sich unabhängig von den Reformvorschlägen
+aus demografischen Gründen.
+
+Quelle: Eigene Darstellung der Alterssicherungskommission auf Basis verschiedener Modellrechnungen
+             - 77 -
+
+Abbildung 6  Veranschaulichung der möglichen Entwicklung des Anteils der
+             Bundeszuschüsse am BIP mit Reformvorschlägen für das
+             Umlageverfahren (ohne Kapitalrente, ohne Verstärkung des
+             Nachhaltigkeitsfaktors, ohne Übergangsfaktor)
+
+Quelle: Eigene Darstellung der Alterssicherungskommission auf Basis verschiedener Modellrechnungen
+
+Abbildung 7  Veranschaulichung der möglichen Entwicklung des Anteils der
+             Bundeszuschüsse am BIP unter Berücksichtigung der
+             vorgeschlagenen Maßnahmen im Rahmen der Gesamtreform
+
+Quelle: Eigene Darstellung der Alterssicherungskommission auf Basis verschiedener Modellrechnungen
+- 78 -
+                                                   - 79 -
+
+Impressum
+
+Herausgeber:
+Alterssicherungskommission
+c/o Bundesministerium für Arbeit und Soziales
+11017 Berlin
+
+info@bmas.bund.de
+www.bmas.de
+
+Stand
+Juni 2026
+
+Satz/Layout: BMAS, Berlin
+Titelbild: BMAS, Berlin
+Grafik: Eigene Darstellung der Alterssicherungskommission auf Basis verschiedener
+Modellrechnungen
+
+Wenn Sie aus der Publikation zitieren wollen, dann bitte mit genauer Angabe des
+Herausgebers, des Titels und des Stands der Veröffentlichung.
+- 80 -
+
