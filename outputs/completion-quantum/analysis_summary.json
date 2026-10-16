@@ -1,0 +1,325 @@
+{
+  "data": {
+    "source": "C:\\Users\\Ahmed Othman\\Downloads\\quantum-hackathon-finance-main\\quantum-hackathon-finance\\Database\\returns_6_industries_monthly.csv",
+    "estimation_months": 60,
+    "evaluation_months": 60
+  },
+  "classical_winners": {
+    "growth_oriented": "HiTec+Hlth+Utils",
+    "balanced": "HiTec+Hlth+Utils",
+    "risk_sensitive": "NoDur+Hlth+Utils"
+  },
+  "scenario_names": [
+    "base",
+    "return_stress",
+    "covariance_stress"
+  ],
+  "scenario_winners": {
+    "base": {
+      "growth_oriented": "HiTec+Hlth+Utils",
+      "balanced": "HiTec+Hlth+Utils",
+      "risk_sensitive": "NoDur+Hlth+Utils"
+    },
+    "return_stress": {
+      "growth_oriented": "HiTec+Hlth+Utils",
+      "balanced": "NoDur+Hlth+Utils",
+      "risk_sensitive": "NoDur+Hlth+Utils"
+    },
+    "covariance_stress": {
+      "growth_oriented": "HiTec+Hlth+Utils",
+      "balanced": "HiTec+Hlth+Utils",
+      "risk_sensitive": "HiTec+Hlth+Utils"
+    }
+  },
+  "holdout": [
+    {
+      "mandate": "growth_oriented",
+      "portfolio": "HiTec+Hlth+Utils",
+      "mean": 0.011062777777777777,
+      "volatility": 0.04577643127967794,
+      "worst_month": -0.09303333333333334
+    },
+    {
+      "mandate": "balanced",
+      "portfolio": "HiTec+Hlth+Utils",
+      "mean": 0.011062777777777777,
+      "volatility": 0.04577643127967794,
+      "worst_month": -0.09303333333333334
+    },
+    {
+      "mandate": "risk_sensitive",
+      "portfolio": "NoDur+Hlth+Utils",
+      "mean": 0.0064922222222222265,
+      "volatility": 0.04184369325730192,
+      "worst_month": -0.09670000000000001
+    }
+  ],
+  "sensitivity": {
+    "growth_oriented": [
+      {
+        "parameter": "HiTec shift",
+        "value": -0.01,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "HiTec shift",
+        "value": -0.005,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "HiTec shift",
+        "value": 0.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "HiTec shift",
+        "value": 0.005,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 0.5,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 1.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 5.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 20.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 50.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.0,
+        "winner": "Manuf+HiTec+Hlth"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.002,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.005,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.01,
+        "winner": "NoDur+Hlth+Utils"
+      }
+    ],
+    "balanced": [
+      {
+        "parameter": "HiTec shift",
+        "value": -0.01,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "HiTec shift",
+        "value": -0.005,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "HiTec shift",
+        "value": 0.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "HiTec shift",
+        "value": 0.005,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 0.5,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 1.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 5.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 20.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 50.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.0,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.002,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.005,
+        "winner": "HiTec+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.01,
+        "winner": "NoDur+Hlth+Utils"
+      }
+    ],
+    "risk_sensitive": [
+      {
+        "parameter": "HiTec shift",
+        "value": -0.01,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "HiTec shift",
+        "value": -0.005,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "HiTec shift",
+        "value": 0.0,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "HiTec shift",
+        "value": 0.005,
+        "winner": "NoDur+HiTec+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 0.5,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 1.0,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 5.0,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 20.0,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "risk weight",
+        "value": 50.0,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.0,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.002,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.005,
+        "winner": "NoDur+Hlth+Utils"
+      },
+      {
+        "parameter": "change penalty",
+        "value": 0.01,
+        "winner": "NoDur+Hlth+Utils"
+      }
+    ]
+  },
+  "quantum": {
+    "backend": "AerSimulator(statevector)",
+    "mandates": {
+      "growth_oriented": {
+        "best_portfolio": "HiTec+Hlth+Utils",
+        "x_mixer": {
+          "probability_best": 0.03179764489187579,
+          "probability_feasible": 0.6723320567565185,
+          "sampled_probability_best": 0.0546875,
+          "sampled_probability_feasible": 0.6875
+        },
+        "xy_mixer": {
+          "probability_best": 0.06164828101042305,
+          "probability_feasible": 1.0000000000000004,
+          "sampled_probability_best": 0.0,
+          "sampled_probability_feasible": 1.0
+        },
+        "shots": 128,
+        "reps": 1,
+        "starts": 1,
+        "admissible_count": 20,
+        "penalty": 0.01363521328813559
+      },
+      "balanced": {
+        "best_portfolio": "HiTec+Hlth+Utils",
+        "x_mixer": {
+          "probability_best": 0.03230619412623922,
+          "probability_feasible": 0.6298825423250147,
+          "sampled_probability_best": 0.0234375,
+          "sampled_probability_feasible": 0.5703125
+        },
+        "xy_mixer": {
+          "probability_best": 0.049847494360437755,
+          "probability_feasible": 0.9814180499746264,
+          "sampled_probability_best": 0.0078125,
+          "sampled_probability_feasible": 0.9609375
+        },
+        "shots": 128,
+        "reps": 1,
+        "starts": 1,
+        "admissible_count": 19,
+        "penalty": 0.011853502956685498
+      },
+      "risk_sensitive": {
+        "best_portfolio": "NoDur+Hlth+Utils",
+        "x_mixer": {
+          "probability_best": 0.028322564138041028,
+          "probability_feasible": 0.23138461166709673,
+          "sampled_probability_best": 0.015625,
+          "sampled_probability_feasible": 0.25
+        },
+        "xy_mixer": {
+          "probability_best": 0.09302626044611774,
+          "probability_feasible": 0.7524313539773232,
+          "sampled_probability_best": 0.28125,
+          "sampled_probability_feasible": 0.359375
+        },
+        "shots": 128,
+        "reps": 1,
+        "starts": 1,
+        "admissible_count": 7,
+        "penalty": 0.07066804063402383
+      }
+    }
+  }
+}

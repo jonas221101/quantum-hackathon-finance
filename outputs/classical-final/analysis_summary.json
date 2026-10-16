@@ -1,0 +1,35 @@
+{
+  "data": {
+    "source": "C:\\Users\\Ahmed Othman\\Downloads\\quantum-hackathon-finance-main\\quantum-hackathon-finance\\Database\\returns_6_industries_monthly.csv",
+    "estimation_months": 60,
+    "evaluation_months": 60
+  },
+  "classical_winners": {
+    "growth_oriented": "HiTec+Hlth+Utils",
+    "balanced": "HiTec+Hlth+Utils",
+    "risk_sensitive": "NoDur+Hlth+Utils"
+  },
+  "scenario_names": [
+    "base",
+    "return_stress",
+    "covariance_stress"
+  ],
+  "scenario_winners": {
+    "base": {
+      "growth_oriented": "HiTec+Hlth+Utils",
+      "balanced": "HiTec+Hlth+Utils",
+      "risk_sensitive": "NoDur+Hlth+Utils"
+    },
+    "return_stress": {
+      "growth_oriented": "HiTec+Hlth+Utils",
+      "balanced": "NoDur+Hlth+Utils",
+      "risk_sensitive": "NoDur+Hlth+Utils"
+    },
+    "covariance_stress": {
+      "growth_oriented": "HiTec+Hlth+Utils",
+      "balanced": "HiTec+Hlth+Utils",
+      "risk_sensitive": "NoDur+Manuf+Utils"
+    }
+  },
+  "quantum": {}
+}

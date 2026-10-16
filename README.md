@@ -1,108 +1,132 @@
-# Quantum Hackathon Finance
+# Keep or tilt? Sector choices for the German "Kapitalrente" fund, solved with QAOA
 
-This repo supports the finance track for the quantum hackathon challenge around the planned German public Kapitalrente initiative starting in 2027.
+TUM Quantum Hackathon (QuantWorld), Finance track, task "Portfolio decisions under changing assumptions".
+Route chosen: **Allocation** (pick 3 of 6 industries with a quantum algorithm).
 
-The chosen route is **Allocation**: select 3 of 6 industries at equal weight, formulate the problem as a QUBO / Ising model, and solve it with a quantum allocation method. The main comparison is **quantum vs quantum**:
+> **Honest headline:** with only 20 possible portfolios, a normal computer finds the exact answer instantly.
+> We make **no claim of quantum advantage**. What we deliver is a *checked* quantum encoding that cannot break
+> the rules, a clear decision per investor profile, and a map of what would change the answer.
 
-- our rule-preserving QAOA design vs the organiser's penalty-based QAOA
-- exact enumeration of all 20 portfolios as the answer key only
+---
 
-The presentation should lead with the committee decision, not a claim of
-quantum advantage: growth and balanced favour `HiTec+Hlth+Utils` in the base
-case, while risk-sensitive keeps `NoDur+Hlth+Utils`. The balanced result is
-fragile under stress and should be presented with a review flag. See
-[`docs/presentation_story.md`](docs/presentation_story.md) for the narrative
-and demo flow, and [`docs/progress_log.md`](docs/progress_log.md) for the
-current evidence and remaining work.
+## 1. The question in plain words
 
-## What was built
+It is 31 December 2019. A public fund holds a small "tilt" (satellite) part of its equity money in three US
+industries: **consumer staples (NoDur), healthcare (Hlth), utilities (Utils)**, one third each.
+Someone proposes to **swap NoDur for technology (HiTec)**.
 
-- A shared classical backbone in `src/` for loading data, splitting the estimation / evaluation windows, computing exact portfolio metrics, and enumerating the 20 candidate portfolios.
-- Regression tests in `tests/` that verify the frozen CSV checksum, the current/proposal baseline statistics, and the expected winning portfolios.
-- A local initiative summary in `docs/initiative_summary.md` that reflects the public 2027 framing.
-- A decisions log in `docs/decisions.md` so the team can track what was chosen, what was assumed, and what remains open.
+For each of three investor profiles (**growth, balanced, risk-sensitive**) we ask:
 
-## Current modelling assumptions
+> Which 3 of the 6 industries should the tilt hold, and is leaving the current holding justified,
+> given the binding rules, the cost of switching and the uncertainty in the numbers?
 
-- The client is the public Kapitalrente fund, not the private certified-fund alternative.
-- The age-cohort mapping (growth / balanced / risk-sensitive) is a lifecycle modelling assumption.
-- The 3-holdings rule is treated as structural in the allocation ansatz.
-- The tech cap is currently documented as a policy preference and can be enforced as either a hard filter or a soft penalty depending on the final narrative.
+Possible answers per profile: **Keep**, **Switch**, or **Review** (not enough evidence to decide).
+"Review" is a legitimate result, not a failure.
 
-## How to run
+## 2. The client
 
-Install dependencies:
+The **German federal government**, as the sponsor of the planned public fund for the
+**"gesetzliche Kapitalrente"** (recommended by the Alterssicherungskommission, June 2026; the fund is
+modelled on KENFO). The fund's independent investment committee decides, the insured people bear the losses.
 
-```powershell
-python -m pip install -r requirements.txt
+* The **core** of the fund is a broad index. Our 3-of-6 decision is the small **satellite tilt** on top.
+* Each insured person **actively chooses** a profile (growth / balanced / risk-sensitive). It is not set by age.
+  People who do not choose get a default. We assume **balanced** (open assumption).
+* All mandate numbers (risk weights, loss limits, caps) are **assumptions** taken from the organiser's config,
+  not figures from the commission.
+
+## 3. How the model decides (short version)
+
+* **Binding rules** (never traded against return): exactly 3 holdings, and a loss tolerance
+  (probability of a monthly loss above 8 % / 5 % / 3 % must be at most 10 %). Checked exactly.
+* **Preferences** (can be traded off): return, risk, cost of switching, and a soft cap on HiTec.
+* The quantum algorithm is **QAOA with a Dicke start state and an XY mixer**. It only ever visits portfolios
+  with exactly 3 holdings. We compare it with the organiser's penalty-based QAOA (quantum against quantum).
+  Exact enumeration of the 20 portfolios is only the **answer key**.
+
+More detail, in simple words: [docs/guide_plain_language.md](docs/guide_plain_language.md).
+
+## 3b. Result in one table (canonical run)
+
+| Profile | Verdict | Why |
+|---|---|---|
+| Growth | **Switch** to HiTec + Hlth + Utils | Same winner in all 3 scenarios; beats the current tilt in 89 % of 500 bootstrap resamples |
+| Balanced (default for non-choosers) | **Review** | Winner flips to the current tilt under the supplied return stress; proposal wins in 74 % of resamples |
+| Risk-sensitive | **Keep** NoDur + Hlth + Utils | Winner in all scenarios; passes the loss rule in 76 % of resamples |
+
+Switching needs proof: same winner in all scenarios **and** at least 70 % bootstrap support. Quantum against quantum
+(10 seeds, ideal simulation): our rule-preserving QAOA finds the exact best portfolio with median probability 0.77
+(risk-sensitive) against 0.05 for the organiser's penalty QAOA, and always returns valid portfolios. Balanced is a near-tie
+that both methods struggle with. **No quantum advantage is claimed.** Figures are in `results/canonical/figures/`
+(`fig_risk_return`, `fig_decision_map`, `fig_decision_map_cost`, `fig_bootstrap`, `fig_qaoa_comparison`, `fig_circuits`, `fig_holdout`).
+
+## 4. Documents
+
+| File | What it is |
+|---|---|
+| [docs/guide_plain_language.md](docs/guide_plain_language.md) | The whole project explained without jargon, with a glossary |
+| [docs/findings.md](docs/findings.md) | Findings note (max. 2 pages) |
+| [docs/decision_card.md](docs/decision_card.md) | A5 Decision Card |
+| [docs/responsibility.md](docs/responsibility.md) | Responsibility note: what is in the model, what is outside |
+| [docs/problem_formulation.md](docs/problem_formulation.md) | Formal model (single source of truth) |
+| [docs/decisions.md](docs/decisions.md) | Decision log, including where we did not follow an AI suggestion |
+| [docs/client_germany.md](docs/client_germany.md) | Research on the Kapitalrente and its fund |
+| [docs/deck/](docs/deck/) | Slide deck content |
+
+## 5. How to run
+
+Needs **Python 3.11**.
+
+```bash
+pip install -e .
+pip install -r requirements-dev.txt
+python -m pytest -q
+python scripts/run_all.py run --canonical
+python scripts/run_all.py run --set balanced.loss_threshold=0.04
+python scripts/run_all.py diff <runA> <runB>
 ```
 
-Run the regression tests:
+1. `pip install -e .` installs the package `qhf` from this repo.
+2. `pip install -r requirements-dev.txt` adds test and plotting tools.
+3. `python -m pytest -q` runs all tests (the quantum results are checked against exact enumeration).
+4. `run --canonical` runs the full pipeline with the agreed settings and fixed random seeds. Output goes to
+   `results/canonical/` (a `summary.json`, CSV tables and figures).
+5. `run --set ...` re-runs with **one assumption changed** (here: the balanced profile's loss threshold becomes
+   4 %). This is the "situation changes" use case.
+6. `diff <runA> <runB>` shows what changed between two runs: which verdict flipped, and why.
 
-```powershell
-python -m unittest discover -s tests -v
+All settings live in one config (`src/qhf/config.py`). Random seeds are fixed, so a second person gets the same numbers.
+
+## 6. Repo map
+
+```
+Database/                     supplied monthly returns (6 industries, 2015-2024) and organiser notebook
+docs/                         documentation (see table above)
+scripts/run_all.py            command line: run / diff
+src/qhf/
+  config.py                   all parameters in one place (profiles, penalties, seeds, windows)
+  data.py                     loads the returns, splits estimation (2015-19) and hold-out (2020-24)
+  scenarios.py                the 60 monthly scenarios plus the two supplied stresses
+  portfolio.py                returns, risk and loss probability of a 3-of-6 portfolio
+  exact.py                    enumerates all 20 portfolios: the answer key
+  bits.py                     bitstring helpers (which industries are held)
+  qubo.py                     writes the decision as a QUBO / Ising problem
+  circuits.py                 the quantum circuits (Dicke start, XY mixer, penalty baseline)
+  kernel.py                   fast simulation kernel for the circuits
+  qaoa.py                     QAOA loop: classical optimiser, seeds, depth p
+  decision.py                 turns results into Keep / Switch / Review
+  sensitivity.py              what-if sweeps, break-even points, bootstrap
+  evaluation.py               checks against the answer key; 2020-24 hindsight
+  plots.py                    all figures
+  cli.py                      command line behind scripts/run_all.py
+tests/                        pytest tests
+results/                      outputs of runs (canonical run in results/canonical/)
+sources/                      downloaded reference papers and reports
 ```
 
-Run the complete classical analysis and export CSV/JSON results:
+## 7. Limits (the short list)
 
-```powershell
-python cli.py --classical-only
-```
-
-Run the QAOA comparison on IBM's local Aer simulator:
-
-```powershell
-python cli.py
-```
-
-Run the full multi-depth, multi-seed benchmark (long-running):
-
-```powershell
-python cli.py --classical-only --benchmark --benchmark-seeds 10 --shots 1024
-```
-
-This writes `qaoa_benchmark.csv` with optimum probability, admissible
-probability, sampled admissibility, expected gap, and top-sample correctness
-for both the X-penalty and Dicke/XY methods. The default application run is
-intentionally a quick demo; the benchmark is the evidence run.
-
-Generate the same analysis plus a Markdown report:
-
-```powershell
-python cli.py --report
-```
-
-The quantum comparison reports both penalty-based X-mixer QAOA and
-constraint-preserving Dicke-state plus XY-mixer QAOA. The latter starts in the
-exactly-three-industries subspace and preserves that cardinality during the
-mixing layers.
-
-Launch the interactive dashboard:
-
-```powershell
-streamlit run app.py
-```
-
-The QAOA path requires `qiskit` and `qiskit-aer`. It uses IBM's local
-`AerSimulator` statevector simulator, not IBM Quantum cloud hardware or
-Runtime. No IBM Quantum account or API key is needed. The exact 20-portfolio
-enumeration remains the verifier and should be shown alongside probabilistic
-QAOA results. Cloud execution would require a separate credentialed
-`QiskitRuntimeService` backend integration.
-
-## Repository map
-
-- `src/` - data loading, config, scenario generation, exact evaluation, enumeration, and decision records.
-- `tests/` - regression checks for the frozen data and the baseline portfolio statistics.
-- `docs/` - problem framing, route comparison, solution plan, and client context.
-- `Database/` - frozen CSV and organiser reference notebook.
-- `cli.py` - end-to-end reproducible analysis command.
-- `app.py` - Streamlit dashboard.
-- `src/report.py` - Markdown report generator.
-- `outputs/` - generated CSV/JSON reports (not committed).
-
-## Notes
-
-- The organiser notebook remains the baseline to inspect, not copy.
-- The exact 20-portfolio enumeration is the verifier, not the main competitor.
-- If the final committee wording changes, the cap / preference treatment can be tightened in code later without changing the backbone.
+* 60 months of data; the 2015-19 tech rally drives the estimates.
+* US industries stand in for a global fund; no liquidity, ESG or tax data.
+* Equal weights and exactly 3 holdings are simplifications; the switching cost is a proxy, not a fee model.
+* Simulation on a laptop, no quantum hardware, no advantage claimed.

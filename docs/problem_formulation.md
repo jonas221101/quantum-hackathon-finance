@@ -17,9 +17,13 @@ given the binding rules, the switching cost and the uncertainty in the estimates
 ### 1.2 Possible outcomes per profile
 | Verdict | Meaning |
 |---|---|
-| **Keep** | Current portfolio is the admissible optimum, or no alternative beats it robustly |
-| **Switch to X** | X is the admissible optimum in the base case **and** under the supplied stresses |
-| **Review** | Optimum changes under a supplied stress / plausible estimate change, or evidence is missing. The committee must decide with a stated belief |
+| **Keep** | Current tilt is the admissible optimum in all 3 scenario sets **and** passes the loss rule in ≥ 70% of bootstrap resamples |
+| **Switch to X** | The same X is optimal in all 3 scenario sets, beats the current tilt by > ε, **beats it in ≥ 70% of resamples** and passes the loss rule in ≥ 70% of resamples |
+| **Review** | Anything else (optimum flips under a stress, weak resampling evidence, no admissible portfolio). Default action: hold; the committee decides with a stated belief |
+
+The burden of proof is on the change (MiFID-style cost-benefit logic), but keep also needs the admissibility check.
+Implemented in `src/qhf/decision.py`. **Current verdicts (canonical run):** growth = switch to HiTec+Hlth+Utils
+(beats current in 89% of resamples); balanced = review (flips under the supplied return stress); risk-sensitive = keep.
 
 ### 1.3 Who decides, who is affected
 - **Client: German federal government.** The fund is the public, KENFO-like fund for the gesetzliche Kapitalrente
@@ -88,16 +92,16 @@ With K = 3, the turnover term is linear: `½‖w − w⁰‖₁ = (1/3) Σ_{i �
 **Boundary convention:** "≤" with tolerance 1e-12, as in the organiser code. This decides the
 proposal at exactly 10.00% for the risk-sensitive profile, so the convention must be stated in the pitch.
 
-**Size of the admissible set (base case):**
+**Size of the admissible set (base case, H1 + H3; the cap is a preference since 16 Oct):**
 
-| Profile | H1 only | + H2 | + H3 | Binding rule that matters |
-|---|---|---|---|---|
-| growth | 20 | 20 | **20** | none |
-| balanced | 20 | 20 | **19** (Manuf+Enrgy+Hlth fails H3 at 11.67%) | barely |
-| risk-sensitive | 20 | 10 | **2** (NoDur+Hlth+Utils, NoDur+Manuf+Utils) | **H2 and H3 decide almost everything** |
+| Profile | H1 only | + H3 (loss rule) | Binding rule that matters |
+|---|---|---|---|
+| growth | 20 | **20** | none |
+| balanced | 20 | **19** (Manuf+Enrgy+Hlth fails at 7/60 breaches) | barely |
+| risk-sensitive | 20 | **7** (the proposal passes at exactly 6/60 = 10%) | **H3 removes 13 of 20** |
 
-Implication: for the risk-sensitive profile the *rules*, not the optimiser, make the decision. That is a
-finding to present, not a weakness to hide.
+Implication: for the risk-sensitive profile the loss rule removes most options, and risk aversion (λ = 20) decides
+among the rest. The cap preference only adds weight to the same answer.
 
 ---
 

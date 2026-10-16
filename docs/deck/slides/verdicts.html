@@ -1,0 +1,19 @@
+<section id="verdicts" data-transition="fade" data-section="What changes the answer, what hindsight says, and what is outside the model." style="background:#F6F3EC;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:28px">
+<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#17756F;font-weight:600">9 · The verdicts</p>
+<h2 style="font-family:'EB Garamond', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1">The change must prove itself</h2>
+<table style="font-size:26px;color:#14213D">
+<tr><th style="width:17%;text-align:left">Profile</th><th style="width:14%;text-align:left">Verdict</th><th style="width:27%;text-align:left">Portfolio</th><th style="width:42%;text-align:left">Evidence</th></tr>
+<tr><td>Growth</td><td><b>Switch</b></td><td>HiTec + Hlth + Utils</td><td>Same winner in 3 scenarios; beats current in 89 % of resamples</td></tr>
+<tr><td>Balanced</td><td><b>Review</b></td><td>Hold; committee decides</td><td>Return stress flips it; beats current in 74 %</td></tr>
+<tr><td>Risk-sensitive</td><td><b>Keep</b></td><td>NoDur + Hlth + Utils</td><td>Winner in 3 scenarios; passes loss rule in 76 %</td></tr>
+</table>
+<div style="display:flex;gap:40px;align-items:flex-start">
+<img src="/_blob/53eec0b91764bdeba955bb147e625f1e" alt="How often each portfolio is best across 500 bootstrap resamples, per profile" style="width:700px;height:350px;object-fit:contain;background:#FFFFFF;border-radius:12px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px">
+<p style="font-size:26px;line-height:1.35"><b>Switch</b> needs the same winner everywhere and at least 70 % of 500 resamples in favour. <b>Keep</b> needs the current tilt best and admissible in 70 %.</p>
+<p style="font-size:26px;line-height:1.35">Balanced is the assumed default, so the fragile answer lands on people who did not choose.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5A626B">10 · Canonical run. Bootstrap = resampling the 60 months (fig_bootstrap). Tech limit is a preference; same verdicts without it.</p>
+<aside>Verdict rule tightened after code review: burden of proof on the change. Growth switches. Balanced is review because the optimum flips under the supplied return stress and the proposal beats current in only 74 percent of resamples; default action is to hold. Risk-sensitive keeps; it passes the loss rule in 76 percent of resamples and in 12.6 percent no portfolio passes. With the tech limit penalty at zero the verdicts are identical.</aside>
+</section>

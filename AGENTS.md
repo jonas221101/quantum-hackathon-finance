@@ -150,7 +150,21 @@ Source material lives in `Kontext/` (PDFs). This file = digest. Read this first,
 
 ---
 
-## 4. Definition of done (per task)
+## 4. Code map (allocation route, `src/qhf/`)
+- Setup: `pip install -e .` and `pip install -r requirements-dev.txt`. Tests: `python -m pytest -q` (add `-m "not slow"` for the fast subset).
+- Run: `python scripts/run_all.py run --canonical` (full run → `results/canonical/`). Use `--fast` for a demo, `--set key=value` for the mid-hackathon change, and `diff <runA> <runB>` to see what changed.
+- Modules:
+  - `config` (all parameters), `data` (checksum + windows), `scenarios`
+  - `portfolio` (objective, loss rule), `exact` (answer key), `decision` (verdict, break-even), `sensitivity`, `evaluation` (2020–24)
+  - `bits`, `qubo`, `circuits` (Qiskit: Dicke, XY, cost), `kernel` (numpy twin of the circuits), `qaoa` (experiment)
+  - `plots`, `cli`
+- Invariants (all tested):
+  - QUBO energy == objective for all 64 states
+  - kernel == Qiskit statevector
+  - XY mixer conserves Hamming weight
+  - 2020–24 never changes a decision
+
+## 5. Definition of done (per task)
 1. Code runs from clean env, seeds fixed.
 2. Result checked vs brute force or exact solver on small instance.
 3. Feasibility of outputs checked.
