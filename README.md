@@ -71,7 +71,7 @@ that both methods struggle with. **No quantum advantage is claimed.** Figures ar
 | [docs/problem_formulation.md](docs/problem_formulation.md) | Formal model (single source of truth) |
 | [docs/decisions.md](docs/decisions.md) | Decision log, including where we did not follow an AI suggestion |
 | [docs/client_germany.md](docs/client_germany.md) | Research on the Kapitalrente and its fund |
-| [docs/deck/](docs/deck/) | Slide deck content (and `allocation_route_deck.pptx`) |
+| [docs/deck/](docs/deck/) | Slide deck: `Quantum Hackathon Finance – Project Plan 16-10.pptx` (sprint presentation, 19 slides) and the artifact deck source |
 | [docs/presentation_story.md](docs/presentation_story.md) | Pitch narrative and five-minute demo flow |
 | [docs/progress_log.md](docs/progress_log.md) | What is done, what evidence exists, what is open |
 | [docs/initiative_summary.md](docs/initiative_summary.md) | Short summary of the Kapitalrente initiative |
