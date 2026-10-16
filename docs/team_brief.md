@@ -59,7 +59,7 @@ Status: 15 Oct 2026 (sprint day 1). Detailed notes live in the GitHub repo under
 ## 4. Open questions
 
 ### Team decisions
-- Which route: A Risk (amplitude estimation), B Circuit (Toffoli logic plus Grover), C Allocation (QAOA with an XY mixer), or D Pipeline?
+- DECIDED 16 Oct: Allocation route (C). Client = German government (Kapitalrente fund), 3-of-6 = cohort satellite tilt.
 - Roles: finance lead, quantum lead, engineering lead, policy liaison.
 - Which responsibility issue do we build into the model with the GTPP advisers?
 
@@ -83,7 +83,7 @@ Status: 15 Oct 2026 (sprint day 1). Detailed notes live in the GitHub repo under
 
 ## 5. Next steps
 
-- Choose the route today.
+- Route chosen: Allocation (C). Formal problem in docs/problem_formulation.md.
 - Build the shared code: data, config, exact evaluation of all 20, decision record, diff tool.
 - Turn the notebook's numbers into tests.
 - Prepare the sprint presentation for 16 Oct: problem, client, architecture, plan, first results.

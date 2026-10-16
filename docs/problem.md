@@ -1,5 +1,9 @@
 # The actual problem and challenge
 
+> **Update 16 Oct 2026:** the team chose the **allocation route (C)**. The formal problem statement
+> (variables, objective, binding rules, solver, robustness design) is in `docs/problem_formulation.md`.
+> This file remains the plain-language background.
+
 Plain-language explanation for the whole team (finance, quantum, policy). All numbers were recomputed by us
 from `Database/returns_6_industries_monthly.csv` and the supplied mandate parameters.
 Per-route technical detail: `docs/routes.md`.
