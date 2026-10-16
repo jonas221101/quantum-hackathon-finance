@@ -61,6 +61,51 @@ if st.button("Run analysis", type="primary"):
         ].sort_values(f"score__{mandate}", ascending=False),
         use_container_width=True,
     )
+    st.subheader("Risk / return map")
+    st.caption(
+        "Each point is one of the 20 candidate portfolios. Higher mean and lower "
+        "volatility are generally preferable."
+    )
+    chart_data = table[
+        ["portfolio", "mean", "volatility", f"feasible__{mandate}"]
+    ].copy()
+    chart_data["status"] = chart_data[f"feasible__{mandate}"].map(
+        {True: "Feasible", False: "Not feasible"}
+    )
+    st.scatter_chart(
+        chart_data,
+        x="volatility",
+        y="mean",
+        color="status",
+        use_container_width=True,
+    )
+
+    st.subheader("Current versus recommended allocation")
+    current_name = "NoDur+Hlth+Utils"
+    recommended_name = result["classical_winners"][mandate]
+    comparison = table[table["portfolio"].isin([current_name, recommended_name])][
+        ["portfolio", "mean", "volatility", "worst_month", "turnover"]
+    ].set_index("portfolio")
+    st.bar_chart(comparison[["mean", "volatility"]], use_container_width=True)
+    st.dataframe(comparison, use_container_width=True)
+
+    st.subheader("Scenario recommendation stability")
+    scenario_table = pd.DataFrame(
+        [
+            {"scenario": name, "portfolio": winners[mandate]}
+            for name, winners in result["scenario_winners"].items()
+        ]
+    )
+    scenario_table["same_as_base"] = scenario_table["portfolio"].eq(
+        scenario_table.iloc[0]["portfolio"]
+    )
+    st.dataframe(scenario_table, use_container_width=True, hide_index=True)
+    st.bar_chart(
+        scenario_table.assign(
+            stable=scenario_table["same_as_base"].astype(int)
+        ).set_index("scenario")[["stable"]],
+        use_container_width=True,
+    )
     st.subheader("How to read the result")
     st.markdown(
         "- **Mean** measures average monthly return.\n"
