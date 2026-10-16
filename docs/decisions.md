@@ -5,6 +5,7 @@ Newest first.
 
 | Date | Decision | Alternatives considered | Reason | AI involvement |
 |---|---|---|---|---|
+| 2026-10-16 | **Merged `feature/quantum-finance-app`**: kept the Streamlit dashboard, Markdown report and presentation docs; ported them onto the tested `qhf` engine; retired the duplicate flat `src/*.py` engine and root `cli.py`; dropped `qiskit-aer` (qhf uses Qiskit's built-in sampler); moved its reference checks into pytest | Keep two parallel engines | One engine, one test suite, no conflicting numbers for graders | Merge executed by Claude on request; reviewed via PR |
 | 2026-10-16 | **Verdict rule:** switch needs the same optimum in all 3 scenario sets plus P_boot(candidate beats current) ≥ 70% and P_boot(candidate admissible) ≥ 70%; keep needs P_boot(current admissible) ≥ 70% | Gate on "candidate is the single best of 20 in ≥ 70% of resamples" (first implementation) | The code critique showed that gate can almost never pass with 20 near-tied options (growth only 29%); the pairwise question is the actual decision (growth 89%) | Fixed after a cheap-agent code review |
 | 2026-10-16 | Loss rule as an integer count (breaches ≤ ⌊α·60⌋); strict "<" reading reported separately | Float comparison | The risk-sensitive proposal sits exactly at 6/60 = 10% | — |
 | 2026-10-16 | New parameters: κ = 0.01 (cap preference), H = 1 month (τ horizon), s = 10% satellite share (whole-portfolio view only), exclusion set E, ε = 0 | — | Needed to make the cap a preference and to interpret τ for a tax-exempt public fund | — |

@@ -71,7 +71,10 @@ that both methods struggle with. **No quantum advantage is claimed.** Figures ar
 | [docs/problem_formulation.md](docs/problem_formulation.md) | Formal model (single source of truth) |
 | [docs/decisions.md](docs/decisions.md) | Decision log, including where we did not follow an AI suggestion |
 | [docs/client_germany.md](docs/client_germany.md) | Research on the Kapitalrente and its fund |
-| [docs/deck/](docs/deck/) | Slide deck content |
+| [docs/deck/](docs/deck/) | Slide deck content (and `allocation_route_deck.pptx`) |
+| [docs/presentation_story.md](docs/presentation_story.md) | Pitch narrative and five-minute demo flow |
+| [docs/progress_log.md](docs/progress_log.md) | What is done, what evidence exists, what is open |
+| [docs/initiative_summary.md](docs/initiative_summary.md) | Short summary of the Kapitalrente initiative |
 
 ## 5. How to run
 
@@ -97,12 +100,27 @@ python scripts/run_all.py diff <runA> <runB>
 
 All settings live in one config (`src/qhf/config.py`). Random seeds are fixed, so a second person gets the same numbers.
 
+`python scripts/run_all.py report` writes a Markdown committee report (`results/canonical/report.md`).
+
+### Dashboard
+
+```bash
+pip install -e ".[app]"
+streamlit run app.py
+```
+
+The dashboard has two tabs. **Canonical result** shows the verdict, the exact answer key, the quantum-vs-quantum
+comparison and the figures for the chosen profile, with downloads. **What if?** lets you change a mandate
+parameter (risk aversion, loss threshold, tolerance, cap preference, switching cost), reruns the decision live,
+and can run a quick QAOA comparison. It is built on the same tested `qhf` package.
+
 ## 6. Repo map
 
 ```
 Database/                     supplied monthly returns (6 industries, 2015-2024) and organiser notebook
 docs/                         documentation (see table above)
-scripts/run_all.py            command line: run / diff
+scripts/run_all.py            command line: run / diff / report
+app.py                        Streamlit dashboard (committee view + live what-if)
 src/qhf/
   config.py                   all parameters in one place (profiles, penalties, seeds, windows)
   data.py                     loads the returns, splits estimation (2015-19) and hold-out (2020-24)
@@ -118,6 +136,7 @@ src/qhf/
   sensitivity.py              what-if sweeps, break-even points, bootstrap
   evaluation.py               checks against the answer key; 2020-24 hindsight
   plots.py                    all figures
+  report.py                   Markdown committee report from a run's summary.json
   cli.py                      command line behind scripts/run_all.py
 tests/                        pytest tests
 results/                      outputs of runs (canonical run in results/canonical/)

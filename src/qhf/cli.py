@@ -24,6 +24,7 @@ from qhf.decision import NONE_ADMISSIBLE, break_even, decide  # noqa: E402
 from qhf.evaluation import holdout_table, rule_table  # noqa: E402
 from qhf.exact import NoAdmissiblePortfolio, optimum, rank_portfolios  # noqa: E402
 from qhf.portfolio import breach_count, label, selection, whole_portfolio_loss_probability  # noqa: E402
+from qhf.report import write_markdown_report  # noqa: E402
 from qhf.qaoa import (  # noqa: E402
     build_problem,
     circuit_resources,
@@ -277,16 +278,23 @@ def main(argv: list[str] | None = None) -> int:
     run_p.add_argument("--canonical", action="store_true", help="write to results/canonical (full default run only)")
     run_p.add_argument("--no-cvar", action="store_true", help="skip the CVaR-objective variant")
     run_p.add_argument("--out", default=str(REPO_ROOT / "results"), help="results root folder")
+    report_p = sub.add_parser("report", help="write a Markdown committee report for a run")
+    report_p.add_argument("run", nargs="?", default="canonical")
     diff_p = sub.add_parser("diff", help="compare two runs")
     diff_p.add_argument("run_a")
     diff_p.add_argument("run_b")
     args = parser.parse_args(argv)
 
+    root = REPO_ROOT / "results"
+    resolve = lambda r: Path(r) if Path(r).exists() else root / r  # noqa: E731
     if args.command == "diff":
-        root = REPO_ROOT / "results"
-        resolve = lambda r: Path(r) if Path(r).exists() else root / r  # noqa: E731
         for line in diff(resolve(args.run_a), resolve(args.run_b)):
             print(line)
+        return 0
+    if args.command == "report":
+        run_dir = resolve(args.run)
+        write_markdown_report(json.loads((run_dir / "summary.json").read_text(encoding="utf-8")), run_dir / "report.md")
+        print(f"report written to {run_dir / 'report.md'}")
         return 0
 
     if args.canonical and (args.fast or args.set or args.no_cvar):
