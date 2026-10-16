@@ -10,16 +10,60 @@ from src.config import MANDATES
 from src.data import DEFAULT_DATA_PATH
 
 
+MANDATE_LABELS = {
+    "growth_oriented": "Growth-oriented",
+    "balanced": "Balanced",
+    "risk_sensitive": "Risk-sensitive",
+}
+
+
+@st.cache_data(show_spinner=False)
+def _cached_analysis() -> dict:
+    """Cache the responsive classical dashboard analysis."""
+    return run_analysis(DEFAULT_DATA_PATH, include_quantum=False)
+
+
+def _decision_label(base: str, scenarios: list[str]) -> tuple[str, str, str]:
+    changed = [scenario for scenario in scenarios if scenario != base]
+    if any(portfolio != base for portfolio in changed):
+        return "REVIEW", "Review before trading", "#9a6700"
+    if base == "NoDur+Hlth+Utils":
+        return "KEEP", "Retain current tilt", "#176b4d"
+    return "SWITCH", f"Switch to {base}", "#176b4d"
+
+
+def _decision_card(mandate: str, base: str, scenario_rows: list[dict[str, str]]) -> None:
+    scenario_portfolios = [row["portfolio"] for row in scenario_rows]
+    status, action, color = _decision_label(base, scenario_portfolios)
+    stress_text = " · ".join(
+        f"{row['scenario'].replace('_', ' ').title()}: {row['portfolio']}"
+        for row in scenario_rows
+    )
+    st.markdown(
+        f"""
+        <div style="border:1px solid {color};border-left:8px solid {color};
+        border-radius:10px;padding:16px 20px;margin:12px 0;background:#fbfcfd">
+        <div style="font-size:14px;color:#52606d">{MANDATE_LABELS[mandate].upper()} MANDATE</div>
+        <div style="font-size:28px;font-weight:700;color:{color};margin:4px 0">{status}</div>
+        <div style="font-size:18px;font-weight:600">{action}</div>
+        <div style="font-size:13px;color:#52606d;margin-top:8px">{stress_text}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 st.set_page_config(page_title="Quantum Finance Allocation", layout="wide")
 st.title("A defensible quantum allocation decision")
 st.caption(
-    "Committee view: compare a rule-aware QAOA result with the exact classical "
-    "answer key."
+    "Committee view: inspect the exact classical answer key and its evidence."
 )
 
-mandate = st.selectbox("Mandate", list(MANDATES))
-run_quantum = st.checkbox("Run IBM Aer QAOA", value=False)
-
+mandate = st.selectbox(
+    "Mandate",
+    list(MANDATES),
+    format_func=lambda value: MANDATE_LABELS[value],
+)
 with st.expander("What this demo answers", expanded=True):
     st.markdown(
         "At the 31 Dec 2019 decision date, which **three of six industries** "
@@ -29,12 +73,16 @@ with st.expander("What this demo answers", expanded=True):
     )
     st.info(
         "The six-industry model is a challenge-sized satellite sleeve, not the "
-        "complete pension portfolio. No quantum advantage is claimed."
+        "complete pension portfolio. No quantum advantage is claimed. "
+        "The full QAOA benchmark is available from scripts\\run_all.py."
     )
 
 if st.button("Run analysis", type="primary"):
-    with st.spinner("Evaluating portfolios..."):
-        result = run_analysis(DEFAULT_DATA_PATH, include_quantum=run_quantum)
+    with st.spinner("Loading classical analysis..."):
+        st.session_state["analysis_result"] = _cached_analysis()
+
+if "analysis_result" in st.session_state:
+    result = st.session_state["analysis_result"]
     table = result["reference_table"].copy()
     base_portfolio = result["classical_winners"][mandate]
     stress_portfolios = [
@@ -42,15 +90,11 @@ if st.button("Run analysis", type="primary"):
         for name, winners in result["scenario_winners"].items()
         if name != "base"
     ]
-    if any(portfolio != base_portfolio for portfolio in stress_portfolios):
-        st.warning(
-            f"Decision framing: REVIEW. The base recommendation {base_portfolio} "
-            "changes under at least one supplied stress."
-        )
-    elif base_portfolio == "NoDur+Hlth+Utils":
-        st.success("Decision framing: KEEP the current allocation.")
-    else:
-        st.success(f"Decision framing: SWITCH to {base_portfolio}.")
+    scenario_rows = [
+        {"scenario": name, "portfolio": winners[mandate]}
+        for name, winners in result["scenario_winners"].items()
+    ]
+    _decision_card(mandate, base_portfolio, scenario_rows)
     st.subheader("Exact classical answer key")
     st.success(f"Base-case recommendation: {result['classical_winners'][mandate]}")
     st.caption(
@@ -58,10 +102,6 @@ if st.button("Run analysis", type="primary"):
         "than replacing it."
     )
     st.subheader("Scenario recommendations")
-    scenario_rows = [
-        {"scenario": name, "portfolio": winners[mandate]}
-        for name, winners in result["scenario_winners"].items()
-    ]
     st.dataframe(scenario_rows, use_container_width=True, hide_index=True)
     st.dataframe(
         table[
@@ -179,11 +219,12 @@ if st.button("Run analysis", type="primary"):
         "- **Mean** measures average monthly return.\n"
         "- **Volatility** measures monthly dispersion.\n"
         "- **Worst month** shows the largest observed monthly loss.\n"
-        "- **Feasible** means the portfolio passes the mandate's binding loss "
-        "tolerance; the HiTec limit is currently a model preference.\n\n"
+        "- **Admissible** means the portfolio has exactly three holdings and "
+        "passes the mandate's binding loss rule. The HiTec cap is a soft "
+        "preference in the canonical model, not a binding feasibility check.\n\n"
         "The balanced result is a base-case recommendation with sensitivity to "
         "stress assumptions. The risk-sensitive mandate is deliberately more "
-        "constrained."
+        "constrained, so a covariance-stress flip is a review signal."
     )
     st.download_button(
         "Download portfolio CSV",
@@ -201,28 +242,3 @@ if st.button("Run analysis", type="primary"):
         file_name="analysis_summary.json",
         mime="application/json",
     )
-    if run_quantum:
-        quantum = result["quantum"]["mandates"][mandate]
-        st.subheader("QAOA result on IBM Aer")
-        mixer_frame = pd.DataFrame({
-            "mixer": ["X penalty", "Dicke + XY"],
-            "statevector feasible probability": [
-                quantum["x_mixer"]["probability_feasible"],
-                quantum["xy_mixer"]["probability_feasible"],
-            ],
-            "sampled feasible probability": [
-                quantum["x_mixer"]["sampled_probability_feasible"],
-                quantum["xy_mixer"]["sampled_probability_feasible"],
-            ],
-        })
-        st.bar_chart(mixer_frame, x="mixer")
-        st.json(quantum)
-        st.warning(
-            "The XY mixer preserves the exactly-three-selection constraint. "
-            "The X mixer uses penalties and may sample invalid bitstrings."
-        )
-        st.info(
-            "QAOA is probabilistic: the probability fields show confidence in "
-            "the sampled decision. Exact enumeration remains the auditable "
-            "answer key."
-        )
