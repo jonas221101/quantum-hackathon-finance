@@ -73,7 +73,19 @@ if st.button("Run analysis", type="primary"):
                 f"score__{mandate}",
                 f"feasible__{mandate}",
             ]
-        ].sort_values(f"score__{mandate}", ascending=False),
+        ]
+        .sort_values(f"score__{mandate}", ascending=False)
+        .style.apply(
+            lambda row: [
+                "background-color: #174e35; color: white"
+                if row["portfolio"] == base_portfolio
+                else "background-color: #3d3d1f; color: white"
+                if row["portfolio"] == "HiTec+Hlth+Utils"
+                else ""
+                for _ in row
+            ],
+            axis=1,
+        ),
         use_container_width=True,
     )
     st.subheader("Risk / return map")
@@ -81,22 +93,33 @@ if st.button("Run analysis", type="primary"):
         "Each point is one of the 20 candidate portfolios. Higher mean and lower "
         "volatility are generally preferable."
     )
+    current_name = "NoDur+Hlth+Utils"
     chart_data = table[
         ["portfolio", "mean", "volatility", f"feasible__{mandate}"]
     ].copy()
     chart_data["status"] = chart_data[f"feasible__{mandate}"].map(
         {True: "Feasible", False: "Not feasible"}
     )
+    chart_data["portfolio_type"] = chart_data["portfolio"].map(
+        lambda value: "Current"
+        if value == current_name
+        else "Recommended"
+        if value == base_portfolio
+        else "Other"
+    )
     st.scatter_chart(
         chart_data,
         x="volatility",
         y="mean",
-        color="status",
+        color="portfolio_type",
         use_container_width=True,
+    )
+    st.caption(
+        f"Highlighted portfolios: current = {current_name}; "
+        f"recommended = {base_portfolio}. Feasibility is shown in the table."
     )
 
     st.subheader("Current versus recommended allocation")
-    current_name = "NoDur+Hlth+Utils"
     recommended_name = result["classical_winners"][mandate]
     comparison = table[table["portfolio"].isin([current_name, recommended_name])][
         ["portfolio", "mean", "volatility", "worst_month", "turnover"]
@@ -121,9 +144,21 @@ if st.button("Run analysis", type="primary"):
         ).set_index("scenario")[["stable"]],
         use_container_width=True,
     )
+    stable_count = int(scenario_table["same_as_base"].sum())
+    st.metric(
+        "Stress scenarios matching base",
+        f"{stable_count}/{len(scenario_table)}",
+        help="A mismatch means the committee decision should be reviewed.",
+    )
     st.subheader("Held-out evaluation (2020–2024)")
     st.caption("These returns are not used to choose the portfolio.")
-    st.dataframe(result["holdout"], use_container_width=True, hide_index=True)
+    st.dataframe(
+        result["holdout"].style.format(
+            {"mean": "{:.2%}", "volatility": "{:.2%}", "worst_month": "{:.2%}"}
+        ),
+        use_container_width=True,
+        hide_index=True,
+    )
     st.bar_chart(
         result["holdout"].set_index("portfolio")[["mean", "volatility"]],
         use_container_width=True,
