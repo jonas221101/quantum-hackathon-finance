@@ -70,6 +70,11 @@ Use the supplied project figures and dashboard evidence wherever possible:
 - circuit diagram
 - holdout figure
 
+Before displaying any figure, add a small source/unit caption. For example:
+“2015–2019 estimation data; monthly percent” or “ideal Qiskit Aer simulation;
+median over seeds.” Do not display raw decimal returns as if they were
+percentage values.
+
 Use restrained motion: highlight a bar, trace a timeline, reveal a portfolio,
 or zoom into a circuit. Do not generate generic stock footage, cartoon
 characters, fake quantum particles, unrelated city shots, or invented data.
@@ -77,12 +82,19 @@ characters, fake quantum particles, unrelated city shots, or invented data.
 If a source figure is not readable in video format, recreate only its layout
 and values from the source documents. Do not invent new values.
 
+Do not use a combined or dual-axis chart for mean return and volatility. Show
+them as separate labelled measures or use the supplied risk/return scatter.
+Do not turn bootstrap shares, QAOA `P(opt)`, or scenario stability into a
+generic label such as “confidence.” Name each metric precisely.
+
 Keep important charts visible long enough to read. Use large captions:
 
 - “Exact classical answer key”
 - “IBM Qiskit Aer simulator, running locally”
 - “No quantum advantage claimed”
 - “Exactly 3 of 6 industries”
+- “Admissible = exactly 3 holdings + passes loss rule”
+- “HiTec cap is a soft preference, not a binding rule”
 
 ## Audio and pacing requirements
 

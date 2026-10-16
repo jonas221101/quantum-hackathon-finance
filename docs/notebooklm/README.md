@@ -10,6 +10,7 @@ editor.
 2. `02_narration_script.md`
 3. `03_visual_storyboard.md`
 4. `04_notebooklm_generation_prompt.md`
+5. `docs/technical_implementation_guide.md`
 
 Also upload selected project evidence:
 
@@ -37,6 +38,12 @@ For visuals, provide the figures from:
 - Real project figures and dashboard captures, not cartoon filler.
 - Accessible explanations for a non-specialist audience.
 - A serious, honest treatment of finance and quantum computing.
+
+For technical reviewers, upload
+`docs/technical_implementation_guide.md` as the authority for formulas,
+binding rules, QAOA metrics, and visualization definitions. If an older
+presentation note conflicts with that guide, use the guide and
+`docs/problem_formulation.md`.
 
 The source pack deliberately does **not** contain video-generation code or a
 pre-generated video. It is editorial source material only.
