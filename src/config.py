@@ -17,6 +17,7 @@ class Mandate:
 @dataclass(frozen=True)
 class AllocationConfig:
     change_penalty: float = 0.002
+    cap_penalty: float = 0.002
     current_portfolio: tuple[str, ...] = CURRENT_PORTFOLIO
     proposal_portfolio: tuple[str, ...] = PROPOSAL_PORTFOLIO
 

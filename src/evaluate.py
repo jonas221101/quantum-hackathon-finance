@@ -22,6 +22,7 @@ class PortfolioMetrics:
     score: float | None = None
     loss_probability: float | None = None
     cap_ok: bool | None = None
+    cap_penalty: float = 0.0
     feasible: bool | None = None
 
 
@@ -90,6 +91,8 @@ def portfolio_score(
         metrics.mean
         - mandate.risk_weight * metrics.variance
         - allocation_config.change_penalty * metrics.turnover
+        - allocation_config.cap_penalty
+        * max(0.0, metrics.hitec_weight - mandate.hitec_cap)
     )
 
 
@@ -108,7 +111,7 @@ def evaluate_selection(
         else loss_probability(scenarios, selection, mandate.loss_threshold)
     )
     cap_ok = metrics.hitec_weight <= mandate.hitec_cap + 1e-12
-    feasible = cap_ok and (loss_prob is None or loss_prob <= mandate.tolerance + 1e-12)
+    feasible = loss_prob is None or loss_prob <= mandate.tolerance + 1e-12
     return PortfolioMetrics(
         selection=metrics.selection,
         mean=metrics.mean,
@@ -120,5 +123,7 @@ def evaluate_selection(
         score=score,
         loss_probability=loss_prob,
         cap_ok=cap_ok,
+        cap_penalty=allocation_config.cap_penalty
+        * max(0.0, metrics.hitec_weight - mandate.hitec_cap),
         feasible=feasible,
     )

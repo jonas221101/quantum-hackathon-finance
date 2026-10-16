@@ -4,8 +4,9 @@ import argparse
 from pathlib import Path
 
 from src.analysis import export_analysis, run_analysis
-from src.data import DEFAULT_DATA_PATH
+from src.data import DEFAULT_DATA_PATH, load_challenge_data
 from src.report import write_markdown_report
+from src.qaoa import benchmark_qaoa
 
 
 def main() -> None:
@@ -17,6 +18,9 @@ def main() -> None:
     parser.add_argument("--starts", type=int, default=2)
     parser.add_argument("--shots", type=int, default=1024)
     parser.add_argument("--report", action="store_true")
+    parser.add_argument("--benchmark", action="store_true")
+    parser.add_argument("--benchmark-reps", default="1,2,3,4")
+    parser.add_argument("--benchmark-seeds", type=int, default=10)
     args = parser.parse_args()
     result = run_analysis(
         args.data,
@@ -28,6 +32,17 @@ def main() -> None:
     export_analysis(result, args.output)
     if args.report:
         write_markdown_report(result, args.output / "analysis_report.md")
+    if args.benchmark:
+        data = load_challenge_data(args.data)
+        reps = tuple(int(value) for value in args.benchmark_reps.split(","))
+        benchmark = benchmark_qaoa(
+            data.estimation,
+            reps_values=reps,
+            seeds=tuple(range(args.benchmark_seeds)),
+            shots=args.shots,
+        )
+        benchmark.to_csv(args.output / "qaoa_benchmark.csv", index=False)
+        print(f"QAOA benchmark written to {args.output / 'qaoa_benchmark.csv'}")
     print("Classical winners:")
     for mandate, portfolio in result["classical_winners"].items():
         print(f"  {mandate}: {portfolio}")

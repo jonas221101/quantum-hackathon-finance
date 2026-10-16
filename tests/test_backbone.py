@@ -114,6 +114,9 @@ class BackboneTests(unittest.TestCase):
         )
         for winners in result["scenario_winners"].values():
             self.assertEqual(set(winners), set(MANDATES))
+        self.assertEqual(set(result["holdout"].columns), {
+            "mandate", "portfolio", "mean", "volatility", "worst_month"
+        })
 
     def test_dicke_initial_state_has_exact_cardinality(self) -> None:
         state = _dicke_state(6, 3)

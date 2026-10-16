@@ -38,6 +38,7 @@ def build_reference_table(
             "worst_month": base_metrics.worst_month,
             "hitec_weight": base_metrics.hitec_weight,
             "turnover": base_metrics.turnover,
+            "cap_penalty": base_metrics.cap_penalty,
         }
         for mandate in MANDATES.values():
             metrics = evaluate_selection(

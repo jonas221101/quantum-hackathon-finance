@@ -36,6 +36,21 @@ if st.button("Run analysis", type="primary"):
     with st.spinner("Evaluating portfolios..."):
         result = run_analysis(DEFAULT_DATA_PATH, include_quantum=run_quantum)
     table = result["reference_table"].copy()
+    base_portfolio = result["classical_winners"][mandate]
+    stress_portfolios = [
+        winners[mandate]
+        for name, winners in result["scenario_winners"].items()
+        if name != "base"
+    ]
+    if any(portfolio != base_portfolio for portfolio in stress_portfolios):
+        st.warning(
+            f"Decision framing: REVIEW. The base recommendation {base_portfolio} "
+            "changes under at least one supplied stress."
+        )
+    elif base_portfolio == "NoDur+Hlth+Utils":
+        st.success("Decision framing: KEEP the current allocation.")
+    else:
+        st.success(f"Decision framing: SWITCH to {base_portfolio}.")
     st.subheader("Exact classical answer key")
     st.success(f"Base-case recommendation: {result['classical_winners'][mandate]}")
     st.caption(
@@ -104,6 +119,24 @@ if st.button("Run analysis", type="primary"):
         scenario_table.assign(
             stable=scenario_table["same_as_base"].astype(int)
         ).set_index("scenario")[["stable"]],
+        use_container_width=True,
+    )
+    st.subheader("Held-out evaluation (2020–2024)")
+    st.caption("These returns are not used to choose the portfolio.")
+    st.dataframe(result["holdout"], use_container_width=True, hide_index=True)
+    st.bar_chart(
+        result["holdout"].set_index("portfolio")[["mean", "volatility"]],
+        use_container_width=True,
+    )
+    st.subheader("Sensitivity")
+    sensitivity = pd.DataFrame(result["sensitivity"][mandate])
+    st.dataframe(sensitivity, use_container_width=True, hide_index=True)
+    st.bar_chart(
+        sensitivity[sensitivity["parameter"] == "HiTec shift"].set_index("value")[
+            ["winner"]
+        ].assign(changed=lambda frame: frame["winner"].ne(base_portfolio).astype(int))[
+            ["changed"]
+        ],
         use_container_width=True,
     )
     st.subheader("How to read the result")

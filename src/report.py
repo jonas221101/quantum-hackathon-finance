@@ -13,7 +13,8 @@ def write_markdown_report(result: dict[str, Any], path: Path | str) -> None:
         "",
         "The analysis evaluates all 20 equal-weight portfolios formed by selecting "
         "three of six industries. Exact enumeration is the auditable verifier. "
-        "QAOA is run on IBM Aer with both an X mixer and a Dicke-initialized XY mixer.",
+        "QAOA is run on IBM's local AerSimulator with both a penalty X mixer and "
+        "a Dicke-initialized XY mixer. This is not IBM cloud hardware execution.",
         "",
         "## Data",
         "",
@@ -46,6 +47,12 @@ def write_markdown_report(result: dict[str, Any], path: Path | str) -> None:
             )
     lines.extend(
         [
+            "",
+            "## Held-out evaluation",
+            "",
+            "The 2020–2024 evaluation window is reported after the decision and "
+            "was not used to select the portfolios.",
+            "",
             "",
             "## Limitations",
             "",

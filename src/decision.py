@@ -30,14 +30,6 @@ def decide_selection(
         allocation_config=allocation_config,
     )
 
-    if metrics.cap_ok is False:
-        return DecisionRecord(
-            selection=selection,
-            mandate=mandate.name,
-            verdict="reject",
-            reason="HiTec cap exceeded",
-            metrics=metrics,
-        )
     if (
         metrics.loss_probability is not None
         and metrics.loss_probability > mandate.tolerance

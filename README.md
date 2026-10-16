@@ -55,6 +55,17 @@ Run the QAOA comparison on IBM's local Aer simulator:
 python cli.py
 ```
 
+Run the full multi-depth, multi-seed benchmark (long-running):
+
+```powershell
+python cli.py --classical-only --benchmark --benchmark-seeds 10 --shots 1024
+```
+
+This writes `qaoa_benchmark.csv` with optimum probability, admissible
+probability, sampled admissibility, expected gap, and top-sample correctness
+for both the X-penalty and Dicke/XY methods. The default application run is
+intentionally a quick demo; the benchmark is the evidence run.
+
 Generate the same analysis plus a Markdown report:
 
 ```powershell
@@ -72,10 +83,12 @@ Launch the interactive dashboard:
 streamlit run app.py
 ```
 
-The QAOA path requires `qiskit` and `qiskit-aer`. It uses the local IBM Aer
-statevector simulator, so no IBM Quantum account or API key is needed. The
-exact 20-portfolio enumeration remains the verifier and should be shown
-alongside probabilistic QAOA results.
+The QAOA path requires `qiskit` and `qiskit-aer`. It uses IBM's local
+`AerSimulator` statevector simulator, not IBM Quantum cloud hardware or
+Runtime. No IBM Quantum account or API key is needed. The exact 20-portfolio
+enumeration remains the verifier and should be shown alongside probabilistic
+QAOA results. Cloud execution would require a separate credentialed
+`QiskitRuntimeService` backend integration.
 
 ## Repository map
 

@@ -7,11 +7,15 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import minimize
 
-from .config import MANDATES
+from .config import AllocationConfig, MANDATES
 from .data import CURRENT_PORTFOLIO, INDUSTRIES
 
 
-def _portfolio_costs(returns: pd.DataFrame, mandate_name: str) -> np.ndarray:
+def _portfolio_costs(
+    returns: pd.DataFrame,
+    mandate_name: str,
+    allocation_config: AllocationConfig = AllocationConfig(),
+) -> np.ndarray:
     mandate = MANDATES[mandate_name]
     mu = returns.loc[:, list(INDUSTRIES)].mean().to_numpy()
     covariance = returns.loc[:, list(INDUSTRIES)].cov().to_numpy()
@@ -25,9 +29,31 @@ def _portfolio_costs(returns: pd.DataFrame, mandate_name: str) -> np.ndarray:
             mu @ weights
             - mandate.risk_weight * weights @ covariance @ weights
             - 0.002 * turnover
+            - allocation_config.cap_penalty
+            * max(0.0, weights[3] - mandate.hitec_cap)
         )
         costs.append(-score)
     return np.asarray(costs)
+
+
+def _admissible_masks(returns: pd.DataFrame, mandate_name: str) -> np.ndarray:
+    mandate = MANDATES[mandate_name]
+    masks: list[int] = []
+    for bits in range(2 ** len(INDUSTRIES)):
+        if bits.bit_count() != 3:
+            continue
+        selection = [INDUSTRIES[i] for i in range(len(INDUSTRIES)) if bits & (1 << i)]
+        losses = -returns.loc[:, selection].mean(axis=1)
+        if float((losses > mandate.loss_threshold).mean()) <= mandate.tolerance + 1e-12:
+            masks.append(bits)
+    return np.asarray(masks, dtype=int)
+
+
+def _penalized_costs(costs: np.ndarray, penalty: float) -> np.ndarray:
+    masks = np.arange(len(costs))
+    cardinality = np.array([mask.bit_count() for mask in masks])
+    hitec = np.array([(mask >> 3) & 1 for mask in masks])
+    return costs + penalty * (cardinality - 3) ** 2 + penalty * hitec
 
 
 def _build_circuit(costs: np.ndarray, params: np.ndarray, reps: int, *, measure: bool):
@@ -202,16 +228,16 @@ def _summarize_result(
     state: np.ndarray,
     counts: dict[str, int],
     best: int,
+    admissible: np.ndarray,
     shots: int,
 ) -> dict[str, float]:
-    valid = {sum(1 << i for i in combo) for combo in combinations(range(6), 3)}
     probabilities = np.abs(state) ** 2
     sampled_feasible = sum(
-        count for bits, count in counts.items() if int(bits[::-1], 2) in valid
+        count for bits, count in counts.items() if int(bits[::-1], 2) in set(admissible)
     )
     return {
         "probability_best": float(probabilities[best]),
-        "probability_feasible": float(probabilities[list(valid)].sum()),
+        "probability_feasible": float(probabilities[admissible].sum()),
         "sampled_probability_best": counts.get(
             format(best, f"0{len(INDUSTRIES)}b")[::-1], 0
         )
@@ -233,18 +259,25 @@ def run_ibm_aer_comparison(
     The exact enumeration remains the verifier; QAOA probabilities are reported
     for the best portfolio and for all valid 3-of-6 selections.
     """
-    valid = [sum(1 << i for i in combo) for combo in combinations(range(6), 3)]
     output: dict[str, Any] = {"backend": "AerSimulator(statevector)", "mandates": {}}
     for offset, mandate_name in enumerate(MANDATES):
-        costs = _portfolio_costs(returns, mandate_name)
-        state, params = _optimize(costs, reps, starts, seed + offset)
-        feasible = np.asarray(valid)
-        best = int(feasible[np.argmin(costs[feasible])])
-        counts = _aer_counts(costs, params, reps, shots)
-        x_summary = _summarize_result(costs, state, counts, best, shots)
-        xy_state, xy_params = _optimize_xy(costs, reps, starts, seed + 100 + offset)
-        xy_counts = _aer_counts_xy(costs, xy_params, reps, shots)
-        xy_summary = _summarize_result(costs, xy_state, xy_counts, best, shots)
+        financial_costs = _portfolio_costs(returns, mandate_name)
+        penalty = float(financial_costs.max() - financial_costs.min() + 1e-6)
+        x_costs = _penalized_costs(financial_costs, penalty)
+        state, params = _optimize(x_costs, reps, starts, seed + offset)
+        feasible = _admissible_masks(returns, mandate_name)
+        best = int(feasible[np.argmin(financial_costs[feasible])])
+        counts = _aer_counts(x_costs, params, reps, shots)
+        x_summary = _summarize_result(
+            financial_costs, state, counts, best, feasible, shots
+        )
+        xy_state, xy_params = _optimize_xy(
+            financial_costs, reps, starts, seed + 100 + offset
+        )
+        xy_counts = _aer_counts_xy(financial_costs, xy_params, reps, shots)
+        xy_summary = _summarize_result(
+            financial_costs, xy_state, xy_counts, best, feasible, shots
+        )
         output["mandates"][mandate_name] = {
             "best_portfolio": "+".join(
                 name for i, name in enumerate(INDUSTRIES) if best & (1 << i)
@@ -254,5 +287,57 @@ def run_ibm_aer_comparison(
             "shots": shots,
             "reps": reps,
             "starts": starts,
+            "admissible_count": int(len(feasible)),
+            "penalty": penalty,
         }
     return output
+
+
+def benchmark_qaoa(
+    returns: pd.DataFrame,
+    reps_values: tuple[int, ...] = (1, 2, 3, 4),
+    seeds: tuple[int, ...] = tuple(range(10)),
+    shots: int = 1024,
+) -> pd.DataFrame:
+    """Benchmark both mixers across depths and seeds against exact admissibility."""
+    rows: list[dict[str, Any]] = []
+    for mandate_name in MANDATES:
+        costs = _portfolio_costs(returns, mandate_name)
+        admissible = _admissible_masks(returns, mandate_name)
+        optimum = int(admissible[np.argmin(costs[admissible])])
+        for reps in reps_values:
+            for seed in seeds:
+                for method in ("x", "xy"):
+                    if method == "x":
+                        penalized = _penalized_costs(
+                            costs, float(costs.max() - costs.min() + 1e-6)
+                        )
+                        state, params = _optimize(penalized, reps, 1, seed)
+                        counts = _aer_counts(penalized, params, reps, shots)
+                    else:
+                        state, params = _optimize_xy(costs, reps, 1, seed)
+                        counts = _aer_counts_xy(costs, params, reps, shots)
+                    probabilities = np.abs(state) ** 2
+                    expected_gap = float(
+                        (probabilities[admissible] * (costs[admissible] - costs[optimum])).sum()
+                    )
+                    top = int(np.argmax(probabilities))
+                    rows.append(
+                        {
+                            "mandate": mandate_name,
+                            "method": method,
+                            "reps": reps,
+                            "seed": seed,
+                            "probability_optimum": float(probabilities[optimum]),
+                            "probability_feasible": float(probabilities[admissible].sum()),
+                            "expected_gap": expected_gap,
+                            "top_sample_is_optimum": top == optimum,
+                            "sampled_feasible": sum(
+                                count
+                                for bits, count in counts.items()
+                                if int(bits[::-1], 2) in set(admissible)
+                            )
+                            / shots,
+                        }
+                    )
+    return pd.DataFrame(rows)
