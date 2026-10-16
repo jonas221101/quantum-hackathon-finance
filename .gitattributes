@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Frozen dataset is hashed byte-for-byte: never convert line endings
+Database/*.csv -text

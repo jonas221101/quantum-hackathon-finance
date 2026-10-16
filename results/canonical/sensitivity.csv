@@ -1,0 +1,73 @@
+category,change,profile,optimum,same_as_base
+financial,"base (60 months, 1/60 each)",growth,HiTec+Hlth+Utils,True
+financial,supplied return stress (HiTec −0.5pp),growth,HiTec+Hlth+Utils,True
+financial,supplied covariance stress (corr 25% → +1),growth,HiTec+Hlth+Utils,True
+financial,HiTec mean -1.0pp,growth,NoDur+Hlth+Utils,False
+financial,HiTec mean +0.5pp,growth,HiTec+Hlth+Utils,True
+financial,Ledoit–Wolf covariance (loss table unchanged),growth,HiTec+Hlth+Utils,True
+cost assumption,switching cost × 0,growth,Manuf+HiTec+Hlth,False
+cost assumption,switching cost × 3,growth,HiTec+Hlth+Utils,True
+cost assumption,holding horizon 12 months,growth,HiTec+Hlth+Utils,True
+mandate,risk aversion × 0.5,growth,HiTec+Hlth+Utils,True
+mandate,risk aversion × 2,growth,HiTec+Hlth+Utils,True
+mandate,loss threshold -1pp,growth,HiTec+Hlth+Utils,True
+mandate,loss threshold +1pp,growth,HiTec+Hlth+Utils,True
+mandate,loss tolerance 5%,growth,HiTec+Hlth+Utils,True
+mandate,loss tolerance 15%,growth,HiTec+Hlth+Utils,True
+mandate,cap preference κ = 0,growth,HiTec+Hlth+Utils,True
+mandate,cap preference κ = 0.05,growth,HiTec+Hlth+Utils,True
+mandate,exclude Enrgy,growth,HiTec+Hlth+Utils,True
+financial,"base (60 months, 1/60 each)",balanced,HiTec+Hlth+Utils,True
+financial,supplied return stress (HiTec −0.5pp),balanced,NoDur+Hlth+Utils,False
+financial,supplied covariance stress (corr 25% → +1),balanced,HiTec+Hlth+Utils,True
+financial,HiTec mean -1.0pp,balanced,NoDur+Hlth+Utils,False
+financial,HiTec mean +0.5pp,balanced,HiTec+Hlth+Utils,True
+financial,Ledoit–Wolf covariance (loss table unchanged),balanced,HiTec+Hlth+Utils,True
+cost assumption,switching cost × 0,balanced,HiTec+Hlth+Utils,True
+cost assumption,switching cost × 3,balanced,NoDur+Hlth+Utils,False
+cost assumption,holding horizon 12 months,balanced,HiTec+Hlth+Utils,True
+mandate,risk aversion × 0.5,balanced,HiTec+Hlth+Utils,True
+mandate,risk aversion × 2,balanced,NoDur+HiTec+Utils,False
+mandate,loss threshold -1pp,balanced,HiTec+Hlth+Utils,True
+mandate,loss threshold +1pp,balanced,HiTec+Hlth+Utils,True
+mandate,loss tolerance 5%,balanced,HiTec+Hlth+Utils,True
+mandate,loss tolerance 15%,balanced,HiTec+Hlth+Utils,True
+mandate,cap preference κ = 0,balanced,HiTec+Hlth+Utils,True
+mandate,cap preference κ = 0.05,balanced,HiTec+Hlth+Utils,True
+mandate,exclude Enrgy,balanced,HiTec+Hlth+Utils,True
+financial,"base (60 months, 1/60 each)",risk_sensitive,NoDur+Hlth+Utils,True
+financial,supplied return stress (HiTec −0.5pp),risk_sensitive,NoDur+Hlth+Utils,True
+financial,supplied covariance stress (corr 25% → +1),risk_sensitive,NoDur+Hlth+Utils,True
+financial,HiTec mean -1.0pp,risk_sensitive,NoDur+Hlth+Utils,True
+financial,HiTec mean +0.5pp,risk_sensitive,NoDur+Hlth+Utils,True
+financial,Ledoit–Wolf covariance (loss table unchanged),risk_sensitive,NoDur+Hlth+Utils,True
+cost assumption,switching cost × 0,risk_sensitive,NoDur+Hlth+Utils,True
+cost assumption,switching cost × 3,risk_sensitive,NoDur+Hlth+Utils,True
+cost assumption,holding horizon 12 months,risk_sensitive,NoDur+Hlth+Utils,True
+mandate,risk aversion × 0.5,risk_sensitive,NoDur+Hlth+Utils,True
+mandate,risk aversion × 2,risk_sensitive,NoDur+Hlth+Utils,True
+mandate,loss threshold -1pp,risk_sensitive,NoDur+HiTec+Utils,False
+mandate,loss threshold +1pp,risk_sensitive,NoDur+Hlth+Utils,True
+mandate,loss tolerance 5%,risk_sensitive,none admissible,False
+mandate,loss tolerance 15%,risk_sensitive,NoDur+Hlth+Utils,True
+mandate,cap preference κ = 0,risk_sensitive,NoDur+Hlth+Utils,True
+mandate,cap preference κ = 0.05,risk_sensitive,NoDur+Hlth+Utils,True
+mandate,exclude Enrgy,risk_sensitive,NoDur+Hlth+Utils,True
+computational,"QAOA dicke_xy, all layers and seeds",growth,decoded = exact answer in 37% of runs,False
+computational,"QAOA dicke_xy, all layers and seeds",balanced,decoded = exact answer in 0% of runs,False
+computational,"QAOA dicke_xy, all layers and seeds",risk_sensitive,decoded = exact answer in 100% of runs,True
+computational,"QAOA dicke_xy_cvar, all layers and seeds",growth,decoded = exact answer in 67% of runs,False
+computational,"QAOA dicke_xy_cvar, all layers and seeds",balanced,decoded = exact answer in 43% of runs,False
+computational,"QAOA dicke_xy_cvar, all layers and seeds",risk_sensitive,decoded = exact answer in 100% of runs,True
+computational,"QAOA x_penalty, all layers and seeds",growth,decoded = exact answer in 17% of runs,False
+computational,"QAOA x_penalty, all layers and seeds",balanced,decoded = exact answer in 27% of runs,False
+computational,"QAOA x_penalty, all layers and seeds",risk_sensitive,decoded = exact answer in 17% of runs,False
+computational,"QAOA x_penalty_cvar, all layers and seeds",growth,decoded = exact answer in 43% of runs,False
+computational,"QAOA x_penalty_cvar, all layers and seeds",balanced,decoded = exact answer in 30% of runs,False
+computational,"QAOA x_penalty_cvar, all layers and seeds",risk_sensitive,decoded = exact answer in 50% of runs,False
+computational,"QAOA x_penalty_tuned, all layers and seeds",growth,decoded = exact answer in 73% of runs,False
+computational,"QAOA x_penalty_tuned, all layers and seeds",balanced,decoded = exact answer in 87% of runs,False
+computational,"QAOA x_penalty_tuned, all layers and seeds",risk_sensitive,decoded = exact answer in 77% of runs,False
+computational,"QAOA x_penalty_tuned_cvar, all layers and seeds",growth,decoded = exact answer in 87% of runs,False
+computational,"QAOA x_penalty_tuned_cvar, all layers and seeds",balanced,decoded = exact answer in 90% of runs,False
+computational,"QAOA x_penalty_tuned_cvar, all layers and seeds",risk_sensitive,decoded = exact answer in 100% of runs,True

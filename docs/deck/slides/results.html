@@ -1,0 +1,16 @@
+<section id="results" data-transition="fade" style="background:#F6F3EC;color:#14213D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<p style="font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#17756F;font-weight:600">8 · Quantum against quantum</p>
+<h2 style="font-family:'EB Garamond', Georgia, serif;font-size:64px;font-weight:600;line-height:1.1">Chance of sampling the exact best portfolio</h2>
+<div style="display:flex;gap:40px;align-items:flex-start">
+<img src="/_blob/2142340c1ac76e4ef8e81e39b30c8d87" alt="Median probability of the best portfolio for six QAOA variants and three profiles, with min-max bars" style="width:1020px;height:552px;object-fit:contain;background:#FFFFFF;border-radius:12px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px">
+<p style="font-size:24px;color:#5A626B">Six variants: organiser penalty, tuned penalty, ours (rule-preserving), each also with a CVaR objective. Median of 10 seeds, 3 layers. Guessing: 0.05.</p>
+<p style="font-size:26px;line-height:1.3"><b>Risk-sensitive:</b> ours 0.77 vs 0.05 (organiser), 0.07 (tuned)</p>
+<p style="font-size:26px;line-height:1.3"><b>Growth:</b> ours 0.23 (CVaR 0.25) vs 0.05, 0.09</p>
+<p style="font-size:26px;line-height:1.3"><b>Balanced:</b> near-tie. Ours 0.04, with CVaR 0.25</p>
+<p style="font-size:26px;line-height:1.3">Valid portfolios: <b>100 %</b> ours, 32–98 % penalty versions</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5A626B">9 · Ideal simulation. Seeds vary a lot (min–max bars). Exact enumeration is the answer key. No quantum advantage.</p>
+<aside>Quantum against quantum, ideal simulation, 10 seeds. Our design wins clearly for risk-sensitive and is better for growth. Balanced is a near-tie: the mean objective fails (0.04), the CVaR objective helps (0.25; the right answer is decoded in 90 percent of runs). Be honest: the tuned penalty also does well at the tie, but only about half of its samples are valid portfolios. Mean-cost optimisation does not maximise the probability of the best portfolio, and results vary between seeds.</aside>
+</section>
