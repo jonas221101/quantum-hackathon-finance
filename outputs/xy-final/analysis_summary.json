@@ -1,0 +1,93 @@
+{
+  "data": {
+    "source": "C:\\Users\\Ahmed Othman\\Downloads\\quantum-hackathon-finance-main\\quantum-hackathon-finance\\Database\\returns_6_industries_monthly.csv",
+    "estimation_months": 60,
+    "evaluation_months": 60
+  },
+  "classical_winners": {
+    "growth_oriented": "HiTec+Hlth+Utils",
+    "balanced": "HiTec+Hlth+Utils",
+    "risk_sensitive": "NoDur+Hlth+Utils"
+  },
+  "scenario_names": [
+    "base",
+    "return_stress",
+    "covariance_stress"
+  ],
+  "scenario_winners": {
+    "base": {
+      "growth_oriented": "HiTec+Hlth+Utils",
+      "balanced": "HiTec+Hlth+Utils",
+      "risk_sensitive": "NoDur+Hlth+Utils"
+    },
+    "return_stress": {
+      "growth_oriented": "HiTec+Hlth+Utils",
+      "balanced": "NoDur+Hlth+Utils",
+      "risk_sensitive": "NoDur+Hlth+Utils"
+    },
+    "covariance_stress": {
+      "growth_oriented": "HiTec+Hlth+Utils",
+      "balanced": "HiTec+Hlth+Utils",
+      "risk_sensitive": "NoDur+Manuf+Utils"
+    }
+  },
+  "quantum": {
+    "backend": "AerSimulator(statevector)",
+    "mandates": {
+      "growth_oriented": {
+        "best_portfolio": "HiTec+Hlth+Utils",
+        "x_mixer": {
+          "probability_best": 0.005824524988933269,
+          "probability_feasible": 0.024603807726804275,
+          "sampled_probability_best": 0.0,
+          "sampled_probability_feasible": 0.0703125
+        },
+        "xy_mixer": {
+          "probability_best": 0.06164828101042305,
+          "probability_feasible": 1.0000000000000004,
+          "sampled_probability_best": 0.0,
+          "sampled_probability_feasible": 1.0
+        },
+        "shots": 128,
+        "reps": 1,
+        "starts": 1
+      },
+      "balanced": {
+        "best_portfolio": "HiTec+Hlth+Utils",
+        "x_mixer": {
+          "probability_best": 0.06334628491421396,
+          "probability_feasible": 0.33503031620098334,
+          "sampled_probability_best": 0.0,
+          "sampled_probability_feasible": 0.3359375
+        },
+        "xy_mixer": {
+          "probability_best": 0.049847494360437755,
+          "probability_feasible": 1.0000000000000004,
+          "sampled_probability_best": 0.0078125,
+          "sampled_probability_feasible": 1.0
+        },
+        "shots": 128,
+        "reps": 1,
+        "starts": 1
+      },
+      "risk_sensitive": {
+        "best_portfolio": "NoDur+Hlth+Utils",
+        "x_mixer": {
+          "probability_best": 0.00897255248465566,
+          "probability_feasible": 0.05384816996235174,
+          "sampled_probability_best": 0.0078125,
+          "sampled_probability_feasible": 0.0390625
+        },
+        "xy_mixer": {
+          "probability_best": 0.08839496261905887,
+          "probability_feasible": 0.9999999999999996,
+          "sampled_probability_best": 0.2578125,
+          "sampled_probability_feasible": 1.0
+        },
+        "shots": 128,
+        "reps": 1,
+        "starts": 1
+      }
+    }
+  }
+}

@@ -82,4 +82,3 @@ def optimum(table: pd.DataFrame) -> pd.Series:
     if admissible.empty:
         raise NoAdmissiblePortfolio("no admissible portfolio: the loss rule excludes every selection")
     return admissible.iloc[0]
-
