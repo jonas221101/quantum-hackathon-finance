@@ -11,18 +11,37 @@ from src.data import DEFAULT_DATA_PATH
 
 
 st.set_page_config(page_title="Quantum Finance Allocation", layout="wide")
-st.title("Quantum Finance Allocation")
-st.caption("Classical verifier plus QAOA on IBM's local Aer simulator")
+st.title("A defensible quantum allocation decision")
+st.caption(
+    "Committee view: compare a rule-aware QAOA result with the exact classical "
+    "answer key."
+)
 
 mandate = st.selectbox("Mandate", list(MANDATES))
 run_quantum = st.checkbox("Run IBM Aer QAOA", value=False)
+
+with st.expander("What this demo answers", expanded=True):
+    st.markdown(
+        "At the 31 Dec 2019 decision date, which **three of six industries** "
+        "should the fund's satellite tilt hold? We compare all 20 equal-weight "
+        "portfolios, apply the mandate's loss rule, and keep Jan 2020-Dec 2024 "
+        "as held-out evaluation data."
+    )
+    st.info(
+        "The six-industry model is a challenge-sized satellite sleeve, not the "
+        "complete pension portfolio. No quantum advantage is claimed."
+    )
 
 if st.button("Run analysis", type="primary"):
     with st.spinner("Evaluating portfolios..."):
         result = run_analysis(DEFAULT_DATA_PATH, include_quantum=run_quantum)
     table = result["reference_table"].copy()
-    st.subheader("Recommendation")
-    st.success(f"Classical recommendation: {result['classical_winners'][mandate]}")
+    st.subheader("Exact classical answer key")
+    st.success(f"Base-case recommendation: {result['classical_winners'][mandate]}")
+    st.caption(
+        "This is the auditable reference. QAOA is evaluated against it, rather "
+        "than replacing it."
+    )
     st.subheader("Scenario recommendations")
     scenario_rows = [
         {"scenario": name, "portfolio": winners[mandate]}
@@ -42,6 +61,17 @@ if st.button("Run analysis", type="primary"):
         ].sort_values(f"score__{mandate}", ascending=False),
         use_container_width=True,
     )
+    st.subheader("How to read the result")
+    st.markdown(
+        "- **Mean** measures average monthly return.\n"
+        "- **Volatility** measures monthly dispersion.\n"
+        "- **Worst month** shows the largest observed monthly loss.\n"
+        "- **Feasible** means the portfolio passes the mandate's binding loss "
+        "tolerance; the HiTec limit is currently a model preference.\n\n"
+        "The balanced result is a base-case recommendation with sensitivity to "
+        "stress assumptions. The risk-sensitive mandate is deliberately more "
+        "constrained."
+    )
     st.download_button(
         "Download portfolio CSV",
         table.to_csv(index=False),
@@ -60,7 +90,7 @@ if st.button("Run analysis", type="primary"):
     )
     if run_quantum:
         quantum = result["quantum"]["mandates"][mandate]
-        st.subheader("IBM Aer result")
+        st.subheader("QAOA result on IBM Aer")
         mixer_frame = pd.DataFrame({
             "mixer": ["X penalty", "Dicke + XY"],
             "statevector feasible probability": [
@@ -79,6 +109,7 @@ if st.button("Run analysis", type="primary"):
             "The X mixer uses penalties and may sample invalid bitstrings."
         )
         st.info(
-            "QAOA is probabilistic. Exact enumeration is retained as the "
-            "auditable answer key."
+            "QAOA is probabilistic: the probability fields show confidence in "
+            "the sampled decision. Exact enumeration remains the auditable "
+            "answer key."
         )

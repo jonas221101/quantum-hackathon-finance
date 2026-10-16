@@ -106,6 +106,15 @@ class BackboneTests(unittest.TestCase):
             self.assertTrue((Path(directory) / "portfolio_reference.csv").exists())
             self.assertTrue((Path(directory) / "analysis_summary.json").exists())
 
+    def test_analysis_result_includes_dashboard_scenarios(self) -> None:
+        result = run_analysis(include_quantum=False)
+        self.assertEqual(
+            set(result["scenario_winners"]),
+            {"base", "return_stress", "covariance_stress"},
+        )
+        for winners in result["scenario_winners"].values():
+            self.assertEqual(set(winners), set(MANDATES))
+
     def test_dicke_initial_state_has_exact_cardinality(self) -> None:
         state = _dicke_state(6, 3)
         support = [index for index, amplitude in enumerate(state) if abs(amplitude)]
