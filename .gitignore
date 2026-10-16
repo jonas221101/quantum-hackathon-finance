@@ -1,7 +1,8 @@
 __pycache__/
-*.pyc
+*.py[cod]
 .venv/
 *.egg-info/
 .pytest_cache/
+outputs/
 results/*
 !results/canonical/
