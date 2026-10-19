@@ -110,8 +110,11 @@ def evaluate_selection(
         if scenarios is None
         else loss_probability(scenarios, selection, mandate.loss_threshold)
     )
+    loss_ok = loss_prob is None or loss_prob <= mandate.tolerance + 1e-12
     cap_ok = metrics.hitec_weight <= mandate.hitec_cap + 1e-12
-    feasible = loss_prob is None or loss_prob <= mandate.tolerance + 1e-12
+    # HiTec is a soft preference in the canonical model; only the loss rule
+    # determines admissibility after the exact-cardinality check upstream.
+    feasible = loss_ok
     return PortfolioMetrics(
         selection=metrics.selection,
         mean=metrics.mean,
