@@ -85,6 +85,34 @@ def test_overrides_validated_and_deterministic():
             apply_overrides(DEFAULT_CONFIG, [bad])
 
 
+def test_estimation_error_matches_break_even_and_bootstrap(scenarios, config, verdicts):
+    from qhf.sensitivity import estimation_error
+
+    balanced = config.profile("balanced")
+    summary, curve, resampled = estimation_error(scenarios["base"], balanced, config)
+    assert summary["break_even_hitec_shift"] == pytest.approx(
+        break_even(scenarios["base"], balanced, config, "hitec_shift", -0.02, 0.01)[0]["value"], abs=1e-9)
+    assert summary["advantage_base"] == pytest.approx(verdicts["balanced"].margin, abs=1e-15)
+    # same draws as the verdict's bootstrap, and the candidate is the proposal → identical share
+    assert summary["bootstrap_share_proposal_better"] == verdicts["balanced"].evidence.target_beats_current
+    assert len(resampled) == config.bootstrap_samples
+    assert -1 < summary["break_even_in_standard_errors"] < 0  # flips within one standard error of the HiTec mean
+    assert curve.advantage.is_monotonic_increasing
+
+
+def test_loss_limit_table_matches_rule_and_holdout(scenarios, evaluation, config):
+    from qhf.evaluation import loss_limit_table
+
+    options = {"current": selection(config.current, config), "proposal": selection(config.proposal, config)}
+    table = loss_limit_table(scenarios, evaluation, options, config).set_index(["profile", "portfolio", "window"])
+    edge = table.loc[("risk_sensitive", "proposal", "ex-ante: base")]
+    assert edge.breaches == 6 and edge.allowed_breaches == 6 and edge.passes  # exactly on the tolerance
+    assert not table.loc[("risk_sensitive", "proposal", "ex-ante: covariance stress")].passes
+    realised = table.xs("realised 2020–2024", level="window")
+    assert (realised.months == len(evaluation)).all()
+    assert realised.loc[("risk_sensitive", "current")].breaches == 12
+
+
 def test_replay_rule_hold_matches_buy_and_hold(evaluation, config):
     from qhf.evaluation import buy_and_hold_wealth
     from qhf.portfolio import weights
@@ -105,9 +133,11 @@ def test_cli_fast_run_is_reproducible_and_diffable(tmp_path):
     run_b = next((tmp_path / "b").iterdir())
     assert (run_a / "summary.json").read_text() == (run_b / "summary.json").read_text()
     summary = json.loads((run_a / "summary.json").read_text())
-    assert {"config", "config_hash", "fast", "exact", "verdicts", "break_even", "bootstrap", "quantum", "holdout", "whole_portfolio"} <= set(summary)
+    assert {"config", "config_hash", "fast", "exact", "verdicts", "break_even", "estimation_error", "bootstrap", "quantum",
+            "holdout", "whole_portfolio"} <= set(summary)
     for name in ["fig_risk_return", "fig_decision_map", "fig_decision_map_cost", "fig_bootstrap", "fig_qaoa_comparison",
-                 "fig_circuits", "fig_holdout"]:
+                 "fig_circuits", "fig_holdout", "fig_success_rate", "fig_estimation_error", "fig_loss_limits",
+                 "fig_loss_timeline"]:
         assert (run_a / "figures" / f"{name}.png").exists()
     assert main(["run", "--fast", "--set", "balanced.loss_threshold=0.04", "--out", str(tmp_path / "c")]) == 0
     run_c = next((tmp_path / "c").iterdir())

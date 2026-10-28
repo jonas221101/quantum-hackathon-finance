@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 
 from qhf.config import Config
+from qhf.portfolio import allowed_breaches, breach_count, label, weights
 from qhf.portfolio import turnover as turnover_vs_current
-from qhf.portfolio import weights
 
 
 def buy_and_hold_wealth(returns: pd.DataFrame, w: np.ndarray, initial_cost: float = 0.0) -> pd.Series:
@@ -73,4 +73,26 @@ def rule_table(evaluation: pd.DataFrame, portfolios: dict[str, np.ndarray], conf
             initial = config.change_penalty * turnover_vs_current(x, config)
             result = replay_rule(evaluation, weights(x, config), threshold, config.change_penalty, initial)
             rows.append({"portfolio": role, "rule": name, **result})
+    return pd.DataFrame(rows)
+
+
+def loss_limit_table(
+    scenarios: dict[str, np.ndarray], evaluation: pd.DataFrame, portfolios: dict[str, np.ndarray], config: Config
+) -> pd.DataFrame:
+    """Binding loss rule with fixed 1/K weights (its own definition): ex-ante scenario sets vs realised hold-out months."""
+    windows = {**{f"ex-ante: {name.replace('_', ' ')}": outcomes for name, outcomes in scenarios.items()},
+               f"realised {config.evaluation_start[:4]}–{config.evaluation_end[:4]}": evaluation.to_numpy()}
+    rows = []
+    for profile in config.profiles:
+        for role, x in portfolios.items():
+            for window, outcomes in windows.items():
+                breaches = breach_count(x, outcomes, profile.loss_threshold, config)
+                allowed = allowed_breaches(len(outcomes), profile.loss_tolerance)
+                rows.append({
+                    "profile": profile.name, "portfolio": role, "holdings": label(x, config), "window": window,
+                    "months": len(outcomes), "loss_threshold": profile.loss_threshold, "breaches": breaches,
+                    "allowed_breaches": allowed, "breach_share": breaches / len(outcomes),
+                    "loss_tolerance": profile.loss_tolerance, "passes": breaches <= allowed,
+                    "worst_month": float((outcomes @ weights(x, config)).min()),
+                })
     return pd.DataFrame(rows)

@@ -187,6 +187,8 @@ def run_metrics(problem: Problem, probs: np.ndarray, cost: np.ndarray, counts: d
         "financial_gap": float(probs @ financial_cost),
         "top_is_optimum": bool(probs[problem.optimum] > others.max() + 1e-12),  # strict: ties do not count
         "sampled_p_opt": counts.get(problem.optimum, 0) / shots,
+        "sampled_h1_share": sum(c for index, c in counts.items() if problem.h1[index]) / shots,
+        "sampled_admissible_share": sum(c for index, c in counts.items() if admissible[index]) / shots,
         "decoded_is_optimum": bool(decoded == problem.optimum),
     }
 
@@ -260,11 +262,13 @@ def random_floors(problems: dict[str, Problem]) -> dict[str, dict[str, float]]:
 def summarise(runs: pd.DataFrame, floors: dict[str, dict[str, float]]) -> pd.DataFrame:
     """Median and min–max over seeds, and the share of seeds doing worse than guessing among valid states."""
     metrics = ["p_opt", "p_opt_given_valid", "p_top2", "h1_mass", "h3_mass", "cap_mass", "gap", "financial_gap",
-               "sampled_p_opt", "nfev"]
+               "sampled_p_opt", "sampled_h1_share", "sampled_admissible_share", "nfev"]
     keys = ["profile", "method", "layers"]
     grouped = runs.groupby(keys)
     table = grouped[metrics].median().add_suffix("_median")
     table = table.join(grouped["p_opt"].min().rename("p_opt_min")).join(grouped["p_opt"].max().rename("p_opt_max"))
+    table = table.join(grouped["sampled_h1_share"].min().rename("sampled_h1_share_min"))
+    table = table.join(grouped["sampled_h1_share"].max().rename("sampled_h1_share_max"))
     floor = runs.profile.map({name: f["valid_states"] for name, f in floors.items()})
     table = table.join(runs.assign(below=runs.p_opt < floor).groupby(keys).below.mean().rename("share_below_random_floor"))
     table = table.join(grouped["top_is_optimum"].mean().rename("top_is_optimum_share"))

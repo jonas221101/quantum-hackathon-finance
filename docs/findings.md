@@ -18,7 +18,8 @@ candidate beating the current tilt in at least 70 % of 500 bootstrap resamples *
 | Risk-sensitive | **Keep** NoDur + Hlth + Utils | Winner in all 3 sets; admissible in 76 % of resamples |
 
 * The binding checks (exactly 3 holdings, loss tolerance) were verified exactly for every recommended portfolio.
-* **Balanced tipping points:** HiTec's monthly edge 0.37 points lower flips it to current (supplied stress: 0.5);
+* **Balanced tipping points:** HiTec's monthly edge 0.37 points lower flips it to current (supplied stress: 0.5). That is
+  only 0.63 standard errors of the estimated HiTec mean (0.58 points): the flip sits inside the estimation noise (`fig_estimation_error`);
   switching cost 0.0057 (about 3x the base 0.002); risk weight 7.5 (proposal gives way to NoDur+HiTec+Utils) and 14.9 (to current), against 5 used. Score margin is only 0.0012 per month.
 * The tech limit is a preference (penalty 0.01). Verdicts are identical with the penalty at zero.
 * Risk-sensitive: only 7 of 20 portfolios pass the loss rule. The proposal passes at exactly 6 of 60 months (10 %) and
@@ -32,7 +33,7 @@ candidate beating the current tilt in at least 70 % of 500 bootstrap resamples *
 
 * **Balanced profile.** It depends on one belief: does tech keep its edge over staples? The data cannot settle this.
 * **Boundary case.** The risk-sensitive proposal sits exactly on the tolerance (6 of 60 months). The verdict "keep" does not depend on it, but the wording of the rule decides admissibility.
-* **Tail risk was understated.** In 2020-24 the share of months with a loss above each profile's own threshold was 5 % (proposal) vs 3 % (current) for growth, 13 % vs 8 % for balanced and 20 % for both for risk-sensitive.
+* **Tail risk was understated.** In 2020-24 the share of months with a loss above each profile's own threshold (fixed 1/3 weights, the rule's own definition; `fig_loss_limits`) was 3 % for both portfolios for growth, 13 % (proposal, breaks the 10 % rule) vs 8 % (current) for balanced, and 20 % for both for risk-sensitive. Ex ante, all of these passed in the base scenario set.
 * **Hindsight is one path.** Including the switching cost, the proposal grew to 1.86 against 1.38 (drawdown −21 % vs −17 %). Rebalancing rules at 2 % or 5 % drift did not beat holding for the proposal. This does not prove the 2019 decision right or wrong.
 * **Default profile.** If non-choosers land on *balanced*, the fragile answer applies to people who may not have chosen it.
 * **Estimation vs computation.** Bootstrap shows how often each portfolio wins on other data; seeds show how steady the quantum search is. Reported separately.

@@ -1,5 +1,28 @@
 # Challenge Progress Log
 
+## 28 October 2026 — Draft plots for the slides and the sync with Eden
+
+### Completed
+
+- Re-ran the canonical pipeline (`python scripts/run_all.py run --canonical`, about 22 minutes, fixed seeds) and
+  checked that the existing numbers reproduce.
+- New slide figures in `results/canonical/figures/`:
+  - `fig_success_rate.png`: rule-preserving QAOA vs penalty QAOA (organiser and tuned), valid share of measured shots
+    and P(exact best portfolio) at p = 3.
+  - `fig_estimation_error.png`: balanced profile, proposal's score lead vs a shift in HiTec's expected return, with
+    ±1/±2 standard-error bands and the bootstrap distribution of the lead.
+  - `fig_loss_limits.png`, `fig_loss_timeline.png`: binding loss rule, ex-ante scenario sets vs realised 2020–24.
+- New tables: `estimation_error.csv`, `estimation_error_curve.csv`, `bootstrap_advantage.csv`, `loss_limits.csv`;
+  `quantum_runs.csv` now has `sampled_h1_share` and `sampled_admissible_share`.
+- Tests for all new functions (62 tests pass).
+- Briefing for the supervisor sync: `docs/sync_eden_2026-10-29.md`.
+
+### Open before the final pitch
+
+- Decide with Eden: story order, how strongly to word the quantum claim, where the hindsight loss-rule failure goes.
+- Put the new figures into the slide deck (`docs/deck/`) and re-upload the PNGs.
+- Split the 20-minute pitch so every member presents their own part.
+
 ## 16 October 2026 — Presentation and explainability pass
 
 ### Completed

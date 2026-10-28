@@ -11,8 +11,9 @@ import pandas as pd
 from sklearn.covariance import LedoitWolf
 
 from qhf.config import Config, Profile
-from qhf.decision import NONE_ADMISSIBLE, best_label
+from qhf.decision import NONE_ADMISSIBLE, best_label, bootstrap_draws
 from qhf.exact import NoAdmissiblePortfolio, rank_portfolios
+from qhf.portfolio import objective, selection, weights
 from qhf.scenarios import moments, return_stress
 
 
@@ -95,3 +96,40 @@ def decision_map(base: np.ndarray, profile: Profile, config: Config, axis: str) 
             rows.append({"risk_aversion": float(lam), axis: float(value),
                          "optimum": _safe(outcomes, replace(profile, risk_aversion=float(lam)), cfg)})
     return pd.DataFrame(rows)
+
+
+def proposal_advantage(outcomes: np.ndarray, profile: Profile, config: Config) -> float:
+    """Score of the current tilt minus that of the proposal (> 0: the proposal is better). Loss rule not included."""
+    mu, sigma = moments(outcomes, config.ddof)
+    current, proposal = selection(config.current, config), selection(config.proposal, config)
+    return objective(current, mu, sigma, profile, config) - objective(proposal, mu, sigma, profile, config)
+
+
+def estimation_error(base: np.ndarray, profile: Profile, config: Config) -> tuple[dict, pd.DataFrame, np.ndarray]:
+    """Proposal-vs-current advantage against the estimation error of the HiTec mean that drives it.
+
+    Returns a summary, the advantage along the HiTec mean shift and the advantage in every bootstrap resample
+    (the same draws as the verdict's bootstrap evidence).
+    """
+    a = config.analysis
+    shifts = np.linspace(*a.map_hitec_shift[:2], int(a.map_hitec_shift[2]))
+    curve = pd.DataFrame({"hitec_shift": shifts,
+                          "advantage": [proposal_advantage(return_stress(base, config, shift=float(s)), profile, config)
+                                        for s in shifts]})
+    resampled = np.array([proposal_advantage(sample, profile, config) for sample in bootstrap_draws(base, profile, config)])
+    stressed = config.index(config.return_stress_industry)
+    standard_error = float(base[:, stressed].std(ddof=config.ddof) / np.sqrt(len(base)))
+    slope = float(weights(selection(config.proposal, config), config)[stressed]
+                  - weights(selection(config.current, config), config)[stressed])  # d advantage / d shift
+    advantage = proposal_advantage(base, profile, config)
+    break_even_shift = -advantage / slope if slope else None
+    p05, p50, p95 = np.quantile(resampled, [0.05, 0.5, 0.95])
+    summary = {
+        "profile": profile.name, "advantage_base": advantage, "break_even_hitec_shift": break_even_shift,
+        "hitec_mean": float(base[:, stressed].mean()), "hitec_mean_standard_error": standard_error,
+        "break_even_in_standard_errors": None if break_even_shift is None else break_even_shift / standard_error,
+        "supplied_stress_in_standard_errors": config.return_stress_shift / standard_error,
+        "bootstrap_share_proposal_better": float(np.mean(resampled > 0)),
+        "bootstrap_advantage_p05": float(p05), "bootstrap_advantage_p50": float(p50), "bootstrap_advantage_p95": float(p95),
+    }
+    return summary, curve, resampled

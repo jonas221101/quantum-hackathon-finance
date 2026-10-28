@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass, replace
-from typing import Callable
+from typing import Callable, Iterator
 
 import numpy as np
 
@@ -65,15 +65,20 @@ def _profile_seed(profile: Profile, config: Config) -> np.random.SeedSequence:
     return np.random.SeedSequence([config.seed, digest])
 
 
+def bootstrap_draws(base: np.ndarray, profile: Profile, config: Config) -> Iterator[np.ndarray]:
+    """The 60 estimation months resampled with replacement; the same draws per profile for every consumer."""
+    rng = np.random.default_rng(_profile_seed(profile, config))
+    for _ in range(config.bootstrap_samples):
+        yield base[rng.integers(0, len(base), len(base))]
+
+
 def bootstrap_evidence(base: np.ndarray, profile: Profile, config: Config, target: str) -> Evidence:
     """Resample the 60 estimation months with replacement (same draws for every candidate)."""
-    rng = np.random.default_rng(_profile_seed(profile, config))
     current = selection(config.current, config)
     candidate = selection(tuple(target.split("+")), config)
     modal: dict[str, int] = {}
     beats = target_ok = current_ok = none = 0
-    for _ in range(config.bootstrap_samples):
-        sample = base[rng.integers(0, len(base), len(base))]
+    for sample in bootstrap_draws(base, profile, config):
         mu, sigma = moments(sample, config.ddof)
         winner = _safe_best(sample, profile, config)
         modal[winner] = modal.get(winner, 0) + 1

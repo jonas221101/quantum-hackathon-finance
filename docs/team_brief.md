@@ -1,5 +1,9 @@
 # Finance Team: Decisions, Parameters, Open Questions
 
+> **Historical (15 Oct).** Superseded where it conflicts with `docs/decisions.md`: since 16 Oct the profiles are chosen
+> actively (not age cohorts) and the HiTec cap is a preference (not a hard filter). Current numbers:
+> `results/canonical/summary.json`.
+
 Status: 15 Oct 2026 (sprint day 1). Detailed notes live in the GitHub repo under docs/.
 
 ## 1. Decisions made

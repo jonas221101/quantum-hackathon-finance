@@ -24,6 +24,10 @@ METHOD_NAMES = {
 }
 COLORS = {"x_penalty": "#9aa5b1", "x_penalty_tuned": "#5b6b7c", "dicke_xy": "#1f77b4",
           "x_penalty_cvar": "#c9ced4", "x_penalty_tuned_cvar": "#8a96a3", "dicke_xy_cvar": "#7fb3e0"}
+SHORT_METHOD_NAMES = {"x_penalty": "Penalty QAOA\n(organiser)", "x_penalty_tuned": "Penalty QAOA\n(tuned penalty)",
+                      "dicke_xy": "Rule-preserving\nQAOA (ours)"}
+ROLE_COLORS = {"current": "#2a78d6", "proposal": "#eb6834"}  # same entity colours on every slide figure
+INK, MUTED, BAND = "#0b0b0b", "#52514e", "#e4e3df"
 
 
 def _save(fig: plt.Figure, path: Path) -> None:
@@ -137,4 +141,141 @@ def holdout(evaluation: pd.DataFrame, portfolios: dict[str, np.ndarray], config:
     ax.set_ylabel("wealth per 1 invested (gross)")
     ax.set_title(f"Hindsight {config.evaluation_start} to {config.evaluation_end}, after switching cost (not used for the decision)")
     ax.legend(frameon=False, fontsize=8)
+    _save(fig, path)
+
+
+def _label_bars(ax: plt.Axes, bars, values, tops, fmt: str) -> None:
+    """Value above each bar, placed above its error bar so the two never overlap."""
+    for bar, value, top in zip(bars, values, tops):
+        ax.text(bar.get_x() + bar.get_width() / 2, top, fmt.format(value),
+                ha="center", va="bottom", fontsize=8, color=INK)
+
+
+def success_rate(summary: pd.DataFrame, floors: dict[str, dict[str, float]], config: Config, path: Path) -> None:
+    """Slide version of quantum vs quantum: measured valid shots and P(best) at the deepest layer, three main methods."""
+    methods = [m for m in SHORT_METHOD_NAMES if m in set(summary.method)]
+    deepest = int(summary.layers.max())
+    data = summary[(summary.layers == deepest) & summary.method.isin(methods)]
+    profiles = [name for name in floors if name in set(data.profile)]
+    fig, axes = plt.subplots(2, len(profiles), figsize=(12, 6.8), sharey="row")
+    rows = [("sampled_h1_share", "sampled_h1_share_min", "sampled_h1_share_max",
+             "valid portfolios among measured shots\n(exactly 3 of 6 holdings)", "{:.0%}"),
+            ("p_opt", "p_opt_min", "p_opt_max", "P(exact best portfolio)", "{:.2f}")]
+    for col, profile in enumerate(profiles):
+        part = data[data.profile == profile].set_index("method").loc[methods]
+        colors = [COLORS["dicke_xy"] if m == "dicke_xy" else COLORS["x_penalty"] for m in methods]
+        for row, (median, low, high, ylabel, fmt) in enumerate(rows):
+            ax = axes[row, col]
+            values = part[f"{median}_median"].to_numpy()
+            err = [values - part[low].to_numpy(), part[high].to_numpy() - values]
+            bars = ax.bar(range(len(methods)), values, 0.6, color=colors, yerr=err, capsize=3,
+                          error_kw={"ecolor": MUTED, "lw": 1})
+            _label_bars(ax, bars, values, np.maximum(values, part[high].to_numpy()) + 0.01, fmt)
+            ax.set_xticks(range(len(methods)), [SHORT_METHOD_NAMES[m] for m in methods], fontsize=8)
+            ax.spines[["top", "right"]].set_visible(False)
+            if col == 0:
+                ax.set_ylabel(ylabel)
+        floor = axes[1, col].axhline(floors[profile]["valid_states"], color=INK, ls=":", lw=1)
+        axes[0, col].set_title(profile.replace("_", "-"))
+    axes[1, 0].legend([floor], [f"random guess among valid portfolios ({floors[profiles[0]]['valid_states']:.2f})"],
+                      frameon=False, fontsize=8, loc="upper left")
+    axes[0, 0].set_ylim(0, 1.15)
+    axes[1, 0].set_ylim(0, 1.0)
+    fig.suptitle(f"Quantum vs quantum at p = {deepest}: median over {config.qaoa.seeds} seeds, whiskers = min–max "
+                 f"(ideal simulation, {config.qaoa.shots} shots per run)")
+    _save(fig, path)
+
+
+def estimation_error(summary: dict, curve: pd.DataFrame, resampled: np.ndarray, config: Config, path: Path) -> None:
+    """Break-even of the proposal against the estimation error of the HiTec mean, plus the bootstrap spread."""
+    se = summary["hitec_mean_standard_error"] * 100
+    fig, (left, right) = plt.subplots(1, 2, figsize=(12, 4.6), gridspec_kw={"width_ratios": [1.25, 1]})
+    for k, alpha in ((2, 0.45), (1, 0.9)):
+        left.axvspan(-k * se, k * se, color=BAND, alpha=alpha, lw=0,
+                     label=f"±{k} standard error{'s' if k > 1 else ''} of the HiTec mean (±{k * se:.2f} pp)")
+    left.axhline(0, color=MUTED, lw=0.8)
+    left.plot(curve.hitec_shift * 100, curve.advantage * 1e4, color=INK, lw=2)
+    left.axvline(config.return_stress_shift * 100, color=INK, ls=":", lw=1)
+    left.text(config.return_stress_shift * 100, left.get_ylim()[0], " supplied stress", fontsize=8, va="bottom",
+              ha="right", rotation=90, color=MUTED)
+    if summary["break_even_hitec_shift"] is not None:
+        x = summary["break_even_hitec_shift"] * 100
+        left.plot([x], [0], "o", color=ROLE_COLORS["proposal"], ms=8, zorder=3)
+        left.annotate(f"break-even {x:+.2f} pp\n= {summary['break_even_in_standard_errors']:+.2f} standard errors",
+                      (x, 0), xytext=(12, -38), textcoords="offset points", fontsize=8,
+                      arrowprops={"arrowstyle": "-", "color": MUTED})
+    left.set_xlabel("change in HiTec expected return (pp / month)")
+    left.set_ylabel("score advantage of proposal over current\n(bp / month, > 0 = switch looks better)")
+    left.set_title(f"{summary['profile']}: the verdict flips well inside the estimation error", fontsize=10)
+    left.legend(frameon=False, fontsize=8, loc="lower right")
+    better = resampled > 0
+    bins = np.linspace(resampled.min(), resampled.max(), 31) * 1e4
+    right.hist(resampled[better] * 1e4, bins=bins, color=ROLE_COLORS["proposal"], rwidth=0.9,
+               label=f"proposal better: {better.mean():.0%} of resamples")
+    right.hist(resampled[~better] * 1e4, bins=bins, color=ROLE_COLORS["current"], rwidth=0.9,
+               label=f"current better: {1 - better.mean():.0%}")
+    right.axvline(0, color=MUTED, lw=0.8)
+    right.axvline(summary["advantage_base"] * 1e4, color=INK, ls="--", lw=1,
+                  label=f"estimate on the 60 months: {summary['advantage_base'] * 1e4:+.1f} bp")
+    right.set_xlabel("score advantage of proposal over current (bp / month)")
+    right.set_ylabel(f"resamples (of {len(resampled)})")
+    right.set_title(f"Bootstrap: 5–95 % range {summary['bootstrap_advantage_p05'] * 1e4:+.1f} to "
+                    f"{summary['bootstrap_advantage_p95'] * 1e4:+.1f} bp; switch gate needs "
+                    f"{config.bootstrap_threshold:.0%}", fontsize=10)
+    right.set_ylim(0, right.get_ylim()[1] * 1.35)
+    right.legend(frameon=False, fontsize=8, loc="upper left")
+    for ax in (left, right):
+        ax.spines[["top", "right"]].set_visible(False)
+    _save(fig, path)
+
+
+def loss_limits(table: pd.DataFrame, config: Config, path: Path) -> None:
+    """Breach share of the binding loss rule: ex-ante scenario sets vs realised hold-out months, per profile."""
+    profiles = list(dict.fromkeys(table.profile))
+    windows = list(dict.fromkeys(table.window))
+    roles = list(dict.fromkeys(table.portfolio))
+    fig, axes = plt.subplots(1, len(profiles), figsize=(13, 4.8), sharey=True)
+    width = 0.8 / len(roles)
+    for ax, profile in zip(np.atleast_1d(axes), profiles):
+        part = table[table.profile == profile]
+        for k, role in enumerate(roles):
+            rows = part[part.portfolio == role].set_index("window").loc[windows]
+            xs = np.arange(len(windows)) + (k - (len(roles) - 1) / 2) * width
+            bars = ax.bar(xs, rows.breach_share, width * 0.92, color=ROLE_COLORS.get(role, MUTED),
+                          label=f"{role}: {rows.holdings.iloc[0]}")
+            for bar, n, months in zip(bars, rows.breaches, rows.months):
+                ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height(), f"{n}/{months}",
+                        ha="center", va="bottom", fontsize=7, color=INK)
+        tolerance = part.loss_tolerance.iloc[0]
+        ax.axhline(tolerance, color=INK, ls="--", lw=1, label=f"tolerance α = {tolerance:.0%} (≤ allowed)")
+        ax.axvspan(len(windows) - 1.5, len(windows) - 0.5, color=BAND, alpha=0.6, lw=0, zorder=0)
+        ax.set_xticks(range(len(windows)), [w.replace(": ", ":\n").replace("realised ", "realised\n") for w in windows],
+                      fontsize=8)
+        ax.set_title(f"{profile.replace('_', '-')}: loss > {part.loss_threshold.iloc[0]:.0%} in a month")
+        ax.spines[["top", "right"]].set_visible(False)
+    axes[0].set_ylabel("share of months breaching the loss threshold")
+    axes[0].legend(frameon=False, fontsize=8, loc="upper left", bbox_to_anchor=(0, 0.9))
+    fig.suptitle("Binding loss rule: what the 2015–19 scenarios promised vs what 2020–24 delivered "
+                 "(fixed 1/3 weights; shaded = hold-out, never a decision input)")
+    _save(fig, path)
+
+
+def loss_timeline(evaluation: pd.DataFrame, portfolios: dict[str, np.ndarray], config: Config, path: Path) -> None:
+    """Realised monthly returns of the two options against every profile's loss threshold."""
+    months = pd.to_datetime(evaluation.index)
+    fig, ax = plt.subplots(figsize=(11, 4.4))
+    for role, x in portfolios.items():
+        ax.plot(months, evaluation.to_numpy() @ weights(x, config) * 100, color=ROLE_COLORS.get(role, MUTED), lw=1.6,
+                marker="o", ms=3, label=f"{role}: {label(x, config)}")
+    for profile in config.profiles:
+        ax.hlines(-profile.loss_threshold * 100, months[0], months[-1], color=INK, ls="--", lw=0.8)
+        ax.text(months[-1] + pd.Timedelta(days=20), -profile.loss_threshold * 100,
+                f"−{profile.loss_threshold:.0%} {profile.name.replace('_', '-')}", va="center", fontsize=8, color=MUTED)
+    ax.axhline(0, color=MUTED, lw=0.6)
+    ax.set_ylabel("monthly return (%)")
+    ax.set_title(f"Realised months {config.evaluation_start} to {config.evaluation_end} vs each profile's loss threshold "
+                 "(hindsight only)")
+    ax.legend(frameon=False, fontsize=8, loc="upper left")
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.set_xlim(months[0], months[-1] + pd.Timedelta(days=260))
     _save(fig, path)

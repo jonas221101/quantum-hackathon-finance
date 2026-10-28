@@ -139,4 +139,6 @@ def test_small_experiment_is_deterministic_and_rule_preserving(problems, config)
     assert first.equals(second)
     dicke = first[first.method == "dicke_xy"]
     assert np.allclose(dicke.h1_mass, 1.0)
+    assert (dicke.sampled_h1_share == 1.0).all()  # every measured shot is a valid 3-of-6 portfolio
+    assert (first.sampled_admissible_share <= first.sampled_h1_share).all()
     assert ((first.p_opt >= 0) & (first.p_opt <= 1)).all()

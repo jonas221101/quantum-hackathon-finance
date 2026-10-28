@@ -21,7 +21,7 @@ from qhf.circuits import dicke_circuit, qaoa_circuit  # noqa: E402
 from qhf.config import DEFAULT_CONFIG, FAST_QAOA, REPO_ROOT, Config, apply_overrides, config_hash, config_to_dict  # noqa: E402
 from qhf.data import estimation_slice, evaluation_slice, load_returns  # noqa: E402
 from qhf.decision import NONE_ADMISSIBLE, break_even, decide  # noqa: E402
-from qhf.evaluation import holdout_table, rule_table  # noqa: E402
+from qhf.evaluation import holdout_table, loss_limit_table, rule_table  # noqa: E402
 from qhf.exact import NoAdmissiblePortfolio, optimum, rank_portfolios  # noqa: E402
 from qhf.portfolio import breach_count, label, selection, whole_portfolio_loss_probability  # noqa: E402
 from qhf.qaoa import (  # noqa: E402
@@ -34,7 +34,7 @@ from qhf.qaoa import (  # noqa: E402
     summarise,
 )
 from qhf.scenarios import moments, scenario_sets  # noqa: E402
-from qhf.sensitivity import decision_map, robustness_table, strict_convention_optima  # noqa: E402
+from qhf.sensitivity import decision_map, estimation_error, robustness_table, strict_convention_optima  # noqa: E402
 
 DIGITS = 10
 FAST_BOOTSTRAP_SAMPLES = 100
@@ -141,6 +141,12 @@ def run(config: Config, out_dir: Path, fast: bool) -> dict:
     robustness = robustness_table(scenarios, config)
     default = config.profile(config.default_profile)
     maps = {axis: decision_map(base, default, config, axis) for axis in ("hitec_shift", "change_penalty")}
+    errors = {p.name: estimation_error(base, p, config) for p in config.profiles}
+    _write_csv(pd.DataFrame([summary for summary, _, _ in errors.values()]), out_dir / "estimation_error.csv")
+    _write_csv(pd.concat([curve.assign(profile=name) for name, (_, curve, _) in errors.items()], ignore_index=True),
+               out_dir / "estimation_error_curve.csv")
+    _write_csv(pd.concat([pd.DataFrame({"profile": name, "resample": range(len(adv)), "advantage": adv})
+                          for name, (_, _, adv) in errors.items()], ignore_index=True), out_dir / "bootstrap_advantage.csv")
     timings["sensitivity"] = time.perf_counter() - tick
 
     mu, sigma = moments(base, config.ddof)
@@ -166,9 +172,12 @@ def run(config: Config, out_dir: Path, fast: bool) -> dict:
     holdout_portfolios = {"current": current, "proposal": proposal,
                           **{f"recommended_{name}": x for name, x in recommended.items()}}
     holdout = holdout_table(evaluation, holdout_portfolios, config)
-    rules = rule_table(evaluation, {"current": current, "proposal": proposal}, config)
+    options = {"current": current, "proposal": proposal}
+    rules = rule_table(evaluation, options, config)
     _write_csv(holdout, out_dir / "holdout.csv")
     _write_csv(rules, out_dir / "holdout_rules.csv")
+    limits = loss_limit_table(scenarios, evaluation, options, config)
+    _write_csv(limits, out_dir / "loss_limits.csv")
     whole = {p.name: {role: whole_portfolio_loss_probability(x, base, p, config)
                       for role, x in {"current": current, "proposal": proposal, "recommended": recommended[p.name]}.items()}
              for p in config.profiles}
@@ -180,7 +189,11 @@ def run(config: Config, out_dir: Path, fast: bool) -> dict:
     plots.bootstrap({k: v.evidence for k, v in verdicts.items()}, config, figures / "fig_bootstrap.png")
     plots.qaoa_comparison(quantum, figures / "fig_qaoa_comparison.png")
     plots.circuits(circuit_diagrams(problems, config), figures / "fig_circuits.png")
-    plots.holdout(evaluation, {"current": current, "proposal": proposal}, config, figures / "fig_holdout.png")
+    plots.holdout(evaluation, options, config, figures / "fig_holdout.png")
+    plots.success_rate(quantum, floors, config, figures / "fig_success_rate.png")
+    plots.estimation_error(*errors[config.default_profile], config, figures / "fig_estimation_error.png")
+    plots.loss_limits(limits, config, figures / "fig_loss_limits.png")
+    plots.loss_timeline(evaluation, options, config, figures / "fig_loss_timeline.png")
     timings["total"] = time.perf_counter() - tick
 
     summary = {
@@ -198,6 +211,7 @@ def run(config: Config, out_dir: Path, fast: bool) -> dict:
                          "is_default_profile": v.is_default_profile}
                      for k, v in verdicts.items()},
         "break_even": break_evens,
+        "estimation_error": {name: summary for name, (summary, _, _) in errors.items()},
         "bootstrap": {k: v.evidence.modal for k, v in verdicts.items()},
         "quantum": {
             "summary": quantum.to_dict(orient="records"),
@@ -212,7 +226,8 @@ def run(config: Config, out_dir: Path, fast: bool) -> dict:
                       "budget = equal restarts and maxiter per method; evaluations reported as nfev",
                       "no quantum-advantage claim: the options are enumerated exactly in milliseconds"],
         },
-        "holdout": {"buy_and_hold": holdout.to_dict(orient="records"), "rules": rules.to_dict(orient="records")},
+        "holdout": {"buy_and_hold": holdout.to_dict(orient="records"), "rules": rules.to_dict(orient="records"),
+                    "loss_limits": limits.to_dict(orient="records")},
         "whole_portfolio": whole,
     }
     summary = _round(summary)

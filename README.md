@@ -58,7 +58,8 @@ Switching needs proof: same winner in all scenarios **and** at least 70 % bootst
 (10 seeds, ideal simulation): our rule-preserving QAOA finds the exact best portfolio with median probability 0.77
 (risk-sensitive) against 0.05 for the organiser's penalty QAOA, and always returns valid portfolios. Balanced is a near-tie
 that both methods struggle with. **No quantum advantage is claimed.** Figures are in `results/canonical/figures/`
-(`fig_risk_return`, `fig_decision_map`, `fig_decision_map_cost`, `fig_bootstrap`, `fig_qaoa_comparison`, `fig_circuits`, `fig_holdout`).
+(`fig_risk_return`, `fig_decision_map`, `fig_decision_map_cost`, `fig_bootstrap`, `fig_qaoa_comparison`, `fig_circuits`, `fig_holdout`,
+and the slide versions `fig_success_rate`, `fig_estimation_error`, `fig_loss_limits`, `fig_loss_timeline`).
 
 ## 4. Documents
 
@@ -70,6 +71,7 @@ that both methods struggle with. **No quantum advantage is claimed.** Figures ar
 | [docs/responsibility.md](docs/responsibility.md) | Responsibility note: what is in the model, what is outside |
 | [docs/problem_formulation.md](docs/problem_formulation.md) | Formal model (single source of truth) |
 | [docs/decisions.md](docs/decisions.md) | Decision log, including where we did not follow an AI suggestion |
+| [docs/sync_eden_2026-10-29.md](docs/sync_eden_2026-10-29.md) | Draft results and open questions for the supervisor sync before the pitch |
 | [docs/client_germany.md](docs/client_germany.md) | Research on the Kapitalrente and its fund |
 | [docs/deck/](docs/deck/) | Slide deck content |
 
