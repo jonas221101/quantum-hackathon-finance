@@ -1,5 +1,7 @@
 # Initiative Summary
 
+> **Historical (16 Oct).** Superseded where it conflicts with the 28 Oct deck (`docs/deck/Quantum_Hackathon_28_10_updated.pptx`) and `docs/decisions.md`: profiles are chosen by each saver, the tech cap is a preference. Current numbers: `results/canonical/summary.json`.
+
 This project frames the challenge as part of a planned German public Kapitalrente initiative starting in 2027.
 
 ## Short version

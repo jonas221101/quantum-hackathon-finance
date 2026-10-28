@@ -1,5 +1,7 @@
 # Presentation Story: A Defensible Quantum Allocation Decision
 
+> **Historical (16 Oct).** Superseded where it conflicts with the 28 Oct deck (`docs/deck/Quantum_Hackathon_28_10_updated.pptx`) and `docs/decisions.md`: profiles are chosen by each saver, the tech cap is a preference. Current numbers: `results/canonical/summary.json`.
+
 ## One-line pitch
 
 We help an independent investment committee decide whether a public pension
