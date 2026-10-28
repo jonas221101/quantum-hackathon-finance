@@ -20,7 +20,9 @@
 ### Open before the final pitch
 
 - Decide with Eden: story order, how strongly to word the quantum claim, where the hindsight loss-rule failure goes.
-- Put the new figures into the slide deck (`docs/deck/`) and re-upload the PNGs.
+- Done 28 Oct: new figures are slides 10, 12 and 14 of `docs/deck/Quantum_Hackathon_28_10_updated.pptx`; plain-language explanations in the README, `docs/guide_plain_language.md` and the briefing (`docs/sync_eden_2026-10-29.md` / `.pdf`).
+- Check that Eden's questions 2 and 3 are covered (the deck's speaker notes mark only 1, 4, 5 and 6).
+- Record which model changes came from the Policy Practice Team advisers.
 - Split the 20-minute pitch so every member presents their own part.
 
 ## 16 October 2026 — Presentation and explainability pass

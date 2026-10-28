@@ -169,9 +169,28 @@ Ours returns **100 % valid portfolios**; the penalty versions 32–98 %. Results
 
 ![Quantum comparison](../results/canonical/figures/fig_qaoa_comparison.png)
 
-* **Hindsight (2020-24):** used only after the fact, never for the decision. Including the one-off switching cost, the proposal grew to 1.86 against 1.38 for the current holding, with a deeper drawdown (−21 % vs −17 %). The share of months with a loss above each profile's own threshold was 5 % vs 3 % (growth, 8 %), 13 % vs 8 % (balanced, 5 %) and 20 % for both (risk-sensitive, 3 %), higher than the 2015-19 estimates. Rebalancing at 2 % or 5 % drift did not beat simply holding for the proposal. One path proves nothing about whether the 2019 decision was right.
+* **Hindsight (2020-24):** used only after the fact, never for the decision. Including the one-off switching cost, the proposal grew to 1.86 against 1.38 for the current holding, with a deeper drawdown (−21 % vs −17 %). The share of months with a loss above each profile's own threshold (weights left to drift) was 5 % vs 3 % (growth, 8 %), 13 % vs 8 % (balanced, 5 %) and 20 % for both (risk-sensitive, 3 %), higher than the 2015-19 estimates; with fixed one-third weights, the rule's own definition, growth is 3 % for both and the rest is unchanged. Rebalancing at 2 % or 5 % drift did not beat simply holding for the proposal. One path proves nothing about whether the 2019 decision was right.
 
 ![Hold-out](../results/canonical/figures/fig_holdout.png)
+
+### The three slide pictures, in very simple words
+
+The deck calls the three profiles by names: **Lena** (growth), **Thomas** (balanced, placed there because he made no
+choice) and **Anna** (risk-sensitive).
+
+1. **Does the quantum circuit work?** (`fig_success_rate`, slide 12.) We ask each circuit 4,096 times for a basket. Ours
+   always answers with a legal basket of exactly three sectors. For Anna it names the best basket 78 times out of 100;
+   the organisers' circuit 5 times out of 100, which is blind guessing among 20 baskets. For Thomas, two baskets are
+   almost equally good and ours is no better than guessing.
+2. **Why does Thomas get "review"?** (`fig_estimation_error`, slide 10.) Tech's average return of 1.51 % a month comes
+   from only 60 months and could easily be 0.58 points off. Thomas's answer flips if tech earns just 0.37 points less,
+   which is smaller than that wobble. In 500 replays of history the switch wins 74 % of the time: a slightly bent coin,
+   not enough to move pension money.
+3. **Did the loss limit hold later?** (`fig_loss_limits` and `fig_loss_timeline`, slide 14.) Checked on 2020 to 2024,
+   which never fed a decision, with fixed one-third weights as the rule defines it: Lena stayed within her limit (2 loss
+   months of 60). For Thomas, his current basket stayed within it (5), the tech basket would have broken it (8). For
+   Anna, the 2015 to 2019 data promised 5 loss months and reality brought 12, twice the limit. The loss model, built on
+   calm years, was too optimistic.
 
 ## 8. Limits
 

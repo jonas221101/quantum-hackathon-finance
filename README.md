@@ -7,6 +7,15 @@ Route chosen: **Allocation** (pick 3 of 6 industries with a quantum algorithm).
 > We make **no claim of quantum advantage**. What we deliver is a *checked* quantum encoding that cannot break
 > the rules, a clear decision per investor profile, and a map of what would change the answer.
 
+### In 30 seconds
+
+A planned German pension fund holds a small slice in three calm US sectors. Someone proposes to swap one of them for
+technology. We answer for three savers: **Lena** (growth) should switch, **Anna** (risk-sensitive) should keep, and for
+**Thomas** (balanced, the default) the data cannot tell the two options apart, so the honest answer is *review: hold for
+now*. A normal computer finds the exact answer; our quantum circuit is built so it can never propose a basket that breaks
+the rules, and we test it against that exact answer. Slides: `docs/deck/Quantum_Hackathon_28_10_updated.pptx`.
+Briefing in plain words: [docs/sync_eden_2026-10-29.md](docs/sync_eden_2026-10-29.md) (also as PDF).
+
 ---
 
 ## 1. The question in plain words
