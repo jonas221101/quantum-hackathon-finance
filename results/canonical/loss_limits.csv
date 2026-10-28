@@ -1,0 +1,25 @@
+profile,portfolio,holdings,window,months,loss_threshold,breaches,allowed_breaches,breach_share,loss_tolerance,passes,worst_month
+growth,current,NoDur+Hlth+Utils,ex-ante: base,60,0.08,1,6,0.01666666667,0.1,True,-0.08106666667
+growth,current,NoDur+Hlth+Utils,ex-ante: return stress,60,0.08,1,6,0.01666666667,0.1,True,-0.08106666667
+growth,current,NoDur+Hlth+Utils,ex-ante: covariance stress,60,0.08,1,6,0.01666666667,0.1,True,-0.08801038374
+growth,current,NoDur+Hlth+Utils,realised 2020–2024,60,0.08,2,6,0.03333333333,0.1,True,-0.0967
+growth,proposal,HiTec+Hlth+Utils,ex-ante: base,60,0.08,0,6,0,0.1,True,-0.07076666667
+growth,proposal,HiTec+Hlth+Utils,ex-ante: return stress,60,0.08,0,6,0,0.1,True,-0.07243333333
+growth,proposal,HiTec+Hlth+Utils,ex-ante: covariance stress,60,0.08,1,6,0.01666666667,0.1,True,-0.08055329128
+growth,proposal,HiTec+Hlth+Utils,realised 2020–2024,60,0.08,2,6,0.03333333333,0.1,True,-0.09303333333
+balanced,current,NoDur+Hlth+Utils,ex-ante: base,60,0.05,2,6,0.03333333333,0.1,True,-0.08106666667
+balanced,current,NoDur+Hlth+Utils,ex-ante: return stress,60,0.05,2,6,0.03333333333,0.1,True,-0.08106666667
+balanced,current,NoDur+Hlth+Utils,ex-ante: covariance stress,60,0.05,3,6,0.05,0.1,True,-0.08801038374
+balanced,current,NoDur+Hlth+Utils,realised 2020–2024,60,0.05,5,6,0.08333333333,0.1,True,-0.0967
+balanced,proposal,HiTec+Hlth+Utils,ex-ante: base,60,0.05,3,6,0.05,0.1,True,-0.07076666667
+balanced,proposal,HiTec+Hlth+Utils,ex-ante: return stress,60,0.05,3,6,0.05,0.1,True,-0.07243333333
+balanced,proposal,HiTec+Hlth+Utils,ex-ante: covariance stress,60,0.05,4,6,0.06666666667,0.1,True,-0.08055329128
+balanced,proposal,HiTec+Hlth+Utils,realised 2020–2024,60,0.05,8,6,0.1333333333,0.1,False,-0.09303333333
+risk_sensitive,current,NoDur+Hlth+Utils,ex-ante: base,60,0.03,5,6,0.08333333333,0.1,True,-0.08106666667
+risk_sensitive,current,NoDur+Hlth+Utils,ex-ante: return stress,60,0.03,5,6,0.08333333333,0.1,True,-0.08106666667
+risk_sensitive,current,NoDur+Hlth+Utils,ex-ante: covariance stress,60,0.03,5,6,0.08333333333,0.1,True,-0.08801038374
+risk_sensitive,current,NoDur+Hlth+Utils,realised 2020–2024,60,0.03,12,6,0.2,0.1,False,-0.0967
+risk_sensitive,proposal,HiTec+Hlth+Utils,ex-ante: base,60,0.03,6,6,0.1,0.1,True,-0.07076666667
+risk_sensitive,proposal,HiTec+Hlth+Utils,ex-ante: return stress,60,0.03,7,6,0.1166666667,0.1,False,-0.07243333333
+risk_sensitive,proposal,HiTec+Hlth+Utils,ex-ante: covariance stress,60,0.03,9,6,0.15,0.1,False,-0.08055329128
+risk_sensitive,proposal,HiTec+Hlth+Utils,realised 2020–2024,60,0.03,12,6,0.2,0.1,False,-0.09303333333

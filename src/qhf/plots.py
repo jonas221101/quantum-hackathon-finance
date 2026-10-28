@@ -28,6 +28,8 @@ SHORT_METHOD_NAMES = {"x_penalty": "Penalty QAOA\n(organiser)", "x_penalty_tuned
                       "dicke_xy": "Rule-preserving\nQAOA (ours)"}
 ROLE_COLORS = {"current": "#2a78d6", "proposal": "#eb6834"}  # same entity colours on every slide figure
 INK, MUTED, BAND = "#0b0b0b", "#52514e", "#e4e3df"
+SE_BANDS = {1: "#d6d5cf", 2: "#ecebe7"}  # ±1 and ±2 standard errors
+HIST_BIN_BP = 4.0  # bootstrap histogram bin width; edges are aligned to zero
 
 
 def _save(fig: plt.Figure, path: Path) -> None:
@@ -190,8 +192,8 @@ def estimation_error(summary: dict, curve: pd.DataFrame, resampled: np.ndarray, 
     """Break-even of the proposal against the estimation error of the HiTec mean, plus the bootstrap spread."""
     se = summary["hitec_mean_standard_error"] * 100
     fig, (left, right) = plt.subplots(1, 2, figsize=(12, 4.6), gridspec_kw={"width_ratios": [1.25, 1]})
-    for k, alpha in ((2, 0.45), (1, 0.9)):
-        left.axvspan(-k * se, k * se, color=BAND, alpha=alpha, lw=0,
+    for k in (2, 1):
+        left.axvspan(-k * se, k * se, color=SE_BANDS[k], lw=0,
                      label=f"±{k} standard error{'s' if k > 1 else ''} of the HiTec mean (±{k * se:.2f} pp)")
     left.axhline(0, color=MUTED, lw=0.8)
     left.plot(curve.hitec_shift * 100, curve.advantage * 1e4, color=INK, lw=2)
@@ -207,9 +209,9 @@ def estimation_error(summary: dict, curve: pd.DataFrame, resampled: np.ndarray, 
     left.set_xlabel("change in HiTec expected return (pp / month)")
     left.set_ylabel("score advantage of proposal over current\n(bp / month, > 0 = switch looks better)")
     left.set_title(f"{summary['profile']}: the verdict flips well inside the estimation error", fontsize=10)
-    left.legend(frameon=False, fontsize=8, loc="lower right")
+    left.legend(frameon=True, facecolor="white", edgecolor="none", framealpha=1, fontsize=8, loc="lower right")
     better = resampled > 0
-    bins = np.linspace(resampled.min(), resampled.max(), 31) * 1e4
+    bins = np.arange(np.floor(resampled.min() * 1e4 / HIST_BIN_BP), np.ceil(resampled.max() * 1e4 / HIST_BIN_BP) + 1) * HIST_BIN_BP
     right.hist(resampled[better] * 1e4, bins=bins, color=ROLE_COLORS["proposal"], rwidth=0.9,
                label=f"proposal better: {better.mean():.0%} of resamples")
     right.hist(resampled[~better] * 1e4, bins=bins, color=ROLE_COLORS["current"], rwidth=0.9,

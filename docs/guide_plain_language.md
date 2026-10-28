@@ -161,11 +161,11 @@ An unchanged conclusion is also informative, as long as we say how we tested it.
 
 | Profile | Ours (Dicke + XY) | Organiser penalty QAOA | Tuned penalty |
 |---|---|---|---|
-| Risk-sensitive | **0.77** | 0.05 | 0.07 |
-| Growth | 0.23 (CVaR variant 0.25) | 0.05 | 0.09 |
+| Risk-sensitive | **0.78** | 0.05 | 0.07 |
+| Growth | 0.23 (CVaR variant 0.25) | 0.05 | 0.08 |
 | Balanced (near-tie) | 0.04 with the mean objective; 0.25 with CVaR | 0.06–0.15 | 0.15 |
 
-Ours returns **100 % valid portfolios**; the penalty versions 32–98 %. Results vary a lot between seeds (see the min-max bars in the figure), and optimising the mean cost does not maximise the chance of the best portfolio. For balanced, our CVaR variant decodes the right answer in 90 % of runs. In honesty: at the near-tie the tuned penalty also does well on probability, but with only about half of its samples valid. The exact enumeration is the answer key and no quantum advantage is claimed.
+Ours returns **100 % valid portfolios**; the penalty versions 32–98 %. Results vary a lot between seeds (see the min-max bars in the figure), and optimising the mean cost does not maximise the chance of the best portfolio. For balanced, our CVaR variant decodes the right answer in all 10 runs. In honesty: at the near-tie the tuned penalty also does well on probability, but with only about half of its samples valid. The exact enumeration is the answer key and no quantum advantage is claimed.
 
 ![Quantum comparison](../results/canonical/figures/fig_qaoa_comparison.png)
 

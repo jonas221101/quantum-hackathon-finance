@@ -14,7 +14,7 @@ A committee must know which kind of uncertainty it is looking at. We keep two ki
 | Source | Only 60 months of data. A different sample would give different averages | Random starting points, number of shots, circuit depth, mixer |
 | How we measure | **Bootstrap**: resample the 60 months at least 500 times, count how often each portfolio wins | **Seeds and shots**: repeat the quantum run many times (median and spread) |
 | What it means | The *world* is uncertain | The *tool* is unsteady |
-| Example | Balanced: two portfolios nearly tie, so resampling changes the winner | Median chance of sampling the best portfolio (risk-sensitive, 3 layers): 0.77, with seeds ranging 0.61-0.80; for balanced it is 0.04-0.25 depending on the objective |
+| Example | Balanced: two portfolios nearly tie, so resampling changes the winner | Median chance of sampling the best portfolio (risk-sensitive, 3 layers): 0.78, with seeds ranging 0.62-0.80; for balanced it is 0.04-0.25 depending on the objective |
 
 How this changes the recommendation: a verdict is **Switch** or **Keep** only if the exact answer holds in all supplied scenarios and in at least 70 % of 500 bootstrap resamples (switch: beats current and passes the loss rule; keep: current passes). Growth: 89 %; balanced: 74 % but the optimum flips under the return stress, so Review; risk-sensitive: 76 %. If estimation uncertainty is large (balanced), the verdict is **Review**, and no amount of quantum
 precision can fix that. The exact optimum is always computed, so the quantum search never decides a recommendation.

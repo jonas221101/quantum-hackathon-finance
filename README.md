@@ -55,7 +55,7 @@ More detail, in simple words: [docs/guide_plain_language.md](docs/guide_plain_la
 | Risk-sensitive | **Keep** NoDur + Hlth + Utils | Winner in all scenarios; passes the loss rule in 76 % of resamples |
 
 Switching needs proof: same winner in all scenarios **and** at least 70 % bootstrap support. Quantum against quantum
-(10 seeds, ideal simulation): our rule-preserving QAOA finds the exact best portfolio with median probability 0.77
+(10 seeds, ideal simulation): our rule-preserving QAOA finds the exact best portfolio with median probability 0.78
 (risk-sensitive) against 0.05 for the organiser's penalty QAOA, and always returns valid portfolios. Balanced is a near-tie
 that both methods struggle with. **No quantum advantage is claimed.** Figures are in `results/canonical/figures/`
 (`fig_risk_return`, `fig_decision_map`, `fig_decision_map_cost`, `fig_bootstrap`, `fig_qaoa_comparison`, `fig_circuits`, `fig_holdout`,

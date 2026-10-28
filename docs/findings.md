@@ -25,9 +25,9 @@ candidate beating the current tilt in at least 70 % of 500 bootstrap resamples *
 * Risk-sensitive: only 7 of 20 portfolios pass the loss rule. The proposal passes at exactly 6 of 60 months (10 %) and
   **fails under a strict "less than" reading**.
 * **Quantum against quantum** (ideal simulation, 10 seeds, 3 layers, median chance of the exact best portfolio; guessing 0.05):
-  risk-sensitive 0.77 (ours, Dicke + XY) vs 0.05 (organiser penalty QAOA) and 0.07 (tuned penalty); growth 0.23 (CVaR variant 0.25) vs 0.05 and 0.09;
-  balanced is a near-tie: ours 0.04 with the mean objective, 0.25 with CVaR (right answer decoded in 90 % of runs), penalty versions 0.06-0.15.
-  Ours always returns valid portfolios; penalty versions 32-98 %. Results vary a lot between seeds and optimising the mean cost does not maximise the chance of the best portfolio. Exact enumeration is the answer key.
+  risk-sensitive 0.78 (ours, Dicke + XY) vs 0.05 (organiser penalty QAOA) and 0.07 (tuned penalty); growth 0.23 (CVaR variant 0.25) vs 0.05 and 0.08;
+  balanced is a near-tie: ours 0.04 with the mean objective, 0.25 with CVaR (right answer decoded in all 10 runs), penalty versions 0.06-0.15.
+  Ours always returns valid portfolios (100 % of measured shots, `fig_success_rate`); penalty versions 32-98 %: a large penalty keeps shots valid but leaves P(best) at guessing level, a tuned one finds the signal but wastes half the shots. Results vary a lot between seeds and optimising the mean cost does not maximise the chance of the best portfolio. Exact enumeration is the answer key.
 
 ## What stays unresolved
 
@@ -56,5 +56,5 @@ candidate beating the current tilt in at least 70 % of 500 bootstrap resamples *
 
 ## Limits
 
-No quantum advantage: 20 options are solved exactly in milliseconds. Ideal simulation only (a shot-noise check exists in the results). Equal weights, K = 3 and the
+No quantum advantage: 20 options are solved exactly in milliseconds. Ideal simulation only (a shot-noise check exists in the results). Reproducibility: the exact and bootstrap results are bit-identical across machines; QAOA medians agree to about 0.01 (floating-point paths of the optimiser differ between platforms). Equal weights, K = 3 and the
 switching cost are simplifications. 2020-24 is hindsight only, never a decision input.
