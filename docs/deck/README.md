@@ -1,6 +1,23 @@
-# Slide deck
+**Final pitch deck for 30 October: `Pitch_Deck_30_10.pptx`** (22 slides, PDF preview `Pitch_Deck_30_10.pdf`). It is the
+team's MBB deck rebuilt in one design system, so every slide looks the same:
 
-**Pitch deck for 30 October: `MBB_Pitch_Presentation_reviewed.pptx`** (the team's MBB-style deck after a fact check, with redrawn charts and the saver portraits). Every change and the open points: [MBB_review.md](MBB_review.md). Charts: `python scripts/make_slide_figures.py` → `results/canonical/figures/slides/`. Portraits: `assets/`.
+* dark slides for the hook (slides 1 to 7) and the close (21, 22); light slides for the content (8 to 20);
+* on every light slide the same places: small blue label, title = the message, one takeaway bar, one source line, page number;
+* the three savers always in the same colours (Lena green, Thomas amber, Anna red), today's basket blue, tech basket orange;
+* native, editable PowerPoint charts (no screenshots) and speaker notes on every slide.
+
+Rebuild it from the canonical run with two commands (numbers are never typed in by hand):
+
+```bash
+python scripts/export_deck_data.py               # results/canonical -> results/canonical/deck_data.json
+npm install pptxgenjs@3.12.0                      # once
+node scripts/build_pitch_deck.js                  # -> docs/deck/Pitch_Deck_30_10.pptx
+```
+
+What changed against the MBB deck and why: [MBB_review.md](MBB_review.md), section "Final pass". Portraits and memes: `assets/`.
+
+**Fact-checked MBB deck: `MBB_Pitch_Presentation_reviewed.pptx`** (the team's original layout after the fact check, with
+redrawn charts and the saver portraits). Charts: `python scripts/make_slide_figures.py` → `results/canonical/figures/slides/`.
 
 **Earlier deck (28 Oct): `Quantum_Hackathon_28_10_updated.pptx`** (18 slides, PowerPoint). It is the team's 28 October deck with
 three new figure slides from the canonical run (slide 10 `fig_estimation_error`, slide 12 `fig_success_rate`, slide 14

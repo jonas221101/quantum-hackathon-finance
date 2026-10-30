@@ -1,0 +1,488 @@
+{
+ "baskets": [
+  {
+   "holdings": "HiTec+Hlth+Utils",
+   "mean": 1.019,
+   "vol": 3.051
+  },
+  {
+   "holdings": "NoDur+HiTec+Utils",
+   "mean": 0.946,
+   "vol": 2.887
+  },
+  {
+   "holdings": "Manuf+HiTec+Utils",
+   "mean": 1.017,
+   "vol": 3.182
+  },
+  {
+   "holdings": "NoDur+HiTec+Hlth",
+   "mean": 1.009,
+   "vol": 3.384
+  },
+  {
+   "holdings": "NoDur+Hlth+Utils",
+   "mean": 0.732,
+   "vol": 2.711
+  },
+  {
+   "holdings": "Manuf+Hlth+Utils",
+   "mean": 0.804,
+   "vol": 3.023
+  },
+  {
+   "holdings": "NoDur+Manuf+Utils",
+   "mean": 0.73,
+   "vol": 2.823
+  },
+  {
+   "holdings": "NoDur+Manuf+HiTec",
+   "mean": 1.007,
+   "vol": 3.532
+  },
+  {
+   "holdings": "Manuf+HiTec+Hlth",
+   "mean": 1.08,
+   "vol": 3.864
+  },
+  {
+   "holdings": "NoDur+Manuf+Hlth",
+   "mean": 0.793,
+   "vol": 3.367
+  },
+  {
+   "holdings": "Enrgy+HiTec+Utils",
+   "mean": 0.737,
+   "vol": 3.51
+  },
+  {
+   "holdings": "Enrgy+Hlth+Utils",
+   "mean": 0.524,
+   "vol": 3.362
+  },
+  {
+   "holdings": "NoDur+Enrgy+HiTec",
+   "mean": 0.727,
+   "vol": 3.799
+  },
+  {
+   "holdings": "NoDur+Enrgy+Utils",
+   "mean": 0.451,
+   "vol": 3.234
+  },
+  {
+   "holdings": "Enrgy+HiTec+Hlth",
+   "mean": 0.8,
+   "vol": 4.07
+  },
+  {
+   "holdings": "NoDur+Enrgy+Hlth",
+   "mean": 0.514,
+   "vol": 3.642
+  },
+  {
+   "holdings": "Manuf+Enrgy+Utils",
+   "mean": 0.522,
+   "vol": 3.583
+  },
+  {
+   "holdings": "Manuf+Enrgy+HiTec",
+   "mean": 0.798,
+   "vol": 4.302
+  },
+  {
+   "holdings": "NoDur+Manuf+Enrgy",
+   "mean": 0.512,
+   "vol": 3.873
+  },
+  {
+   "holdings": "Manuf+Enrgy+Hlth",
+   "mean": 0.585,
+   "vol": 4.163
+  }
+ ],
+ "current": "NoDur+Hlth+Utils",
+ "proposal": "HiTec+Hlth+Utils",
+ "verdicts": {
+  "growth": {
+   "verdict": "switch",
+   "bootstrap_candidate_beats_current": 0.886,
+   "bootstrap_current_admissible": 1.0,
+   "margin": 0.0020031389
+  },
+  "balanced": {
+   "verdict": "review",
+   "bootstrap_candidate_beats_current": 0.74,
+   "bootstrap_current_admissible": 0.998,
+   "margin": 0.0012201389
+  },
+  "risk_sensitive": {
+   "verdict": "keep",
+   "bootstrap_candidate_beats_current": 0.0,
+   "bootstrap_current_admissible": 0.764,
+   "margin": 0.0
+  }
+ },
+ "quantum": {
+  "layers": 3,
+  "methods": {
+   "x_penalty": {
+    "balanced": {
+     "legal": 0.982,
+     "best": 0.057
+    },
+    "growth": {
+     "legal": 0.983,
+     "best": 0.05
+    },
+    "risk_sensitive": {
+     "legal": 0.974,
+     "best": 0.05
+    }
+   },
+   "x_penalty_tuned": {
+    "balanced": {
+     "legal": 0.555,
+     "best": 0.147
+    },
+    "growth": {
+     "legal": 0.495,
+     "best": 0.083
+    },
+    "risk_sensitive": {
+     "legal": 0.319,
+     "best": 0.067
+    }
+   },
+   "dicke_xy": {
+    "balanced": {
+     "legal": 1.0,
+     "best": 0.038
+    },
+    "growth": {
+     "legal": 1.0,
+     "best": 0.232
+    },
+    "risk_sensitive": {
+     "legal": 1.0,
+     "best": 0.78
+    }
+   }
+  }
+ },
+ "lena_hist": {
+  "centres": [
+   -30.0,
+   -26.0,
+   -22.0,
+   -18.0,
+   -14.0,
+   -10.0,
+   -6.0,
+   -2.0,
+   2.0,
+   6.0,
+   10.0,
+   14.0,
+   18.0,
+   22.0,
+   26.0,
+   30.0,
+   34.0,
+   38.0,
+   42.0,
+   46.0,
+   50.0,
+   54.0,
+   58.0,
+   62.0
+  ],
+  "counts": [
+   2,
+   1,
+   2,
+   7,
+   8,
+   13,
+   11,
+   13,
+   30,
+   27,
+   43,
+   49,
+   55,
+   59,
+   39,
+   41,
+   33,
+   21,
+   18,
+   10,
+   8,
+   6,
+   3,
+   1
+  ],
+  "share_better": 0.886,
+  "estimate_bp": 20.0
+ },
+ "noise": {
+  "se": 0.58,
+  "thomas_flip": -0.37,
+  "lena_flip": -0.6,
+  "stress": -0.5,
+  "thomas_lead_bp": 12.2,
+  "thomas_share": 0.74,
+  "hitec_mean": 1.51,
+  "anna_gap_bp": -30.5
+ },
+ "loss_months": {
+  "growth": {
+   "current": [
+    1,
+    1,
+    1,
+    2
+   ],
+   "proposal": [
+    0,
+    0,
+    1,
+    2
+   ]
+  },
+  "balanced": {
+   "current": [
+    2,
+    2,
+    3,
+    5
+   ],
+   "proposal": [
+    3,
+    3,
+    4,
+    8
+   ]
+  },
+  "risk_sensitive": {
+   "current": [
+    5,
+    5,
+    5,
+    12
+   ],
+   "proposal": [
+    6,
+    7,
+    9,
+    12
+   ]
+  }
+ },
+ "loss_windows": [
+  "ex-ante: base",
+  "ex-ante: return stress",
+  "ex-ante: covariance stress",
+  "realised 2020\u20132024"
+ ],
+ "allowed": 6,
+ "thresholds": {
+  "growth": 0.08,
+  "balanced": 0.05,
+  "risk_sensitive": 0.03
+ },
+ "wealth": {
+  "months": [
+   "2020-01",
+   "2020-02",
+   "2020-03",
+   "2020-04",
+   "2020-05",
+   "2020-06",
+   "2020-07",
+   "2020-08",
+   "2020-09",
+   "2020-10",
+   "2020-11",
+   "2020-12",
+   "2021-01",
+   "2021-02",
+   "2021-03",
+   "2021-04",
+   "2021-05",
+   "2021-06",
+   "2021-07",
+   "2021-08",
+   "2021-09",
+   "2021-10",
+   "2021-11",
+   "2021-12",
+   "2022-01",
+   "2022-02",
+   "2022-03",
+   "2022-04",
+   "2022-05",
+   "2022-06",
+   "2022-07",
+   "2022-08",
+   "2022-09",
+   "2022-10",
+   "2022-11",
+   "2022-12",
+   "2023-01",
+   "2023-02",
+   "2023-03",
+   "2023-04",
+   "2023-05",
+   "2023-06",
+   "2023-07",
+   "2023-08",
+   "2023-09",
+   "2023-10",
+   "2023-11",
+   "2023-12",
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2024-08",
+   "2024-09",
+   "2024-10",
+   "2024-11",
+   "2024-12"
+  ],
+  "current": [
+   1.008,
+   0.9269,
+   0.8371,
+   0.9117,
+   0.9479,
+   0.9273,
+   0.9781,
+   0.9937,
+   0.9806,
+   0.9694,
+   1.0431,
+   1.0799,
+   1.0769,
+   1.0618,
+   1.1188,
+   1.1567,
+   1.1598,
+   1.17,
+   1.1933,
+   1.2162,
+   1.1528,
+   1.1942,
+   1.1531,
+   1.2416,
+   1.1914,
+   1.1809,
+   1.2397,
+   1.2042,
+   1.2201,
+   1.1692,
+   1.2204,
+   1.1931,
+   1.1047,
+   1.1867,
+   1.2557,
+   1.2326,
+   1.2218,
+   1.1741,
+   1.2115,
+   1.2482,
+   1.1865,
+   1.2265,
+   1.246,
+   1.2081,
+   1.1505,
+   1.1208,
+   1.1802,
+   1.2294,
+   1.2257,
+   1.2624,
+   1.3114,
+   1.2832,
+   1.3347,
+   1.3215,
+   1.3721,
+   1.4419,
+   1.4617,
+   1.4371,
+   1.4722,
+   1.3818
+  ],
+  "proposal": [
+   1.02,
+   0.9439,
+   0.8558,
+   0.9525,
+   1.005,
+   1.0054,
+   1.0645,
+   1.1089,
+   1.0793,
+   1.0693,
+   1.156,
+   1.1991,
+   1.2139,
+   1.2008,
+   1.2363,
+   1.2935,
+   1.2843,
+   1.3332,
+   1.3758,
+   1.4267,
+   1.3442,
+   1.4177,
+   1.4008,
+   1.4693,
+   1.3682,
+   1.3337,
+   1.4089,
+   1.2919,
+   1.3041,
+   1.2291,
+   1.3168,
+   1.2698,
+   1.1601,
+   1.227,
+   1.2984,
+   1.2493,
+   1.2812,
+   1.2415,
+   1.3154,
+   1.3402,
+   1.3462,
+   1.4081,
+   1.4433,
+   1.4113,
+   1.3356,
+   1.3101,
+   1.4193,
+   1.4836,
+   1.5085,
+   1.5811,
+   1.6351,
+   1.5798,
+   1.6849,
+   1.7388,
+   1.7553,
+   1.8185,
+   1.8583,
+   1.8436,
+   1.9139,
+   1.8588
+  ]
+ },
+ "drawdown": {
+  "current": -17,
+  "proposal": -21
+ },
+ "satellite_share": 0.1
+}
