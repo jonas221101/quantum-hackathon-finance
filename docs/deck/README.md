@@ -1,6 +1,8 @@
 # Slide deck
 
-**Latest deck: `Quantum_Hackathon_28_10_updated.pptx`** (18 slides, PowerPoint). It is the team's 28 October deck with
+**Pitch deck for 30 October: `MBB_Pitch_Presentation_reviewed.pptx`** (the team's MBB-style deck after a fact check, with redrawn charts and the saver portraits). Every change and the open points: [MBB_review.md](MBB_review.md). Charts: `python scripts/make_slide_figures.py` → `results/canonical/figures/slides/`. Portraits: `assets/`.
+
+**Earlier deck (28 Oct): `Quantum_Hackathon_28_10_updated.pptx`** (18 slides, PowerPoint). It is the team's 28 October deck with
 three new figure slides from the canonical run (slide 10 `fig_estimation_error`, slide 12 `fig_success_rate`, slide 14
 `fig_loss_limits`), refreshed quantum numbers on slide 11, the "Next steps" column on slide 15 and page numbers 2 to 18.
 What changed and why: `docs/sync_eden_2026-10-29.md`, section 7. Every number comes from `results/canonical/`.
