@@ -7,7 +7,7 @@ reproduce them from the canonical run.
 
 ## Factual errors fixed
 
-| Slide | What it said | What is true (and now on the slide) | Source |
+| Slide | What it said | What is true | Source |
 |---|---|---|---|
 | 12 | Core 85 %, satellite 15 % | Core 90 %, satellite 10 % (`satellite_share = 0.10`) | `src/qhf/config.py` |
 | 12 | Core = "MSCI World style" | A broad index, not modelled; we take it as given | README |
@@ -39,6 +39,19 @@ reproduce them from the canonical run.
 | 8 | "You have no clue about finances" (addresses the jury) | "We are students, not your financial advisers"; the joke stays | — |
 | 16 | Typo "eisfies" | "keeps the 3-sector rule" | — |
 
+## Pitch pass: less text, one message per slide
+
+After the fact check, slides 11 to 23 were cut down for a spoken pitch (the details above are what the speaker
+should be able to answer, not what the slide must show):
+
+* **Title = the message**, 26 pt, at most about ten words (for example "Thomas: the data cannot tell the two
+  baskets apart").
+* **Cards: 2 to 4 short lines in 17 to 18 pt** instead of 8 to 10 bullets in 9.5 pt; big numbers where a number is
+  the point (90 % / 10 % / 20 on slide 12; 100 % / 78 % / 4 % on slide 16).
+* **Key takeaway: one short sentence in 15 pt** (for example "Too close to call → hold.").
+* Portraits also on the results overview (slide 17), so each saver is recognisable at a glance.
+* Section labels shortened ("3. THE SAVERS"); sources kept, one line per slide.
+
 ## Charts redrawn (slides 14 to 21)
 
 All in the deck's colours (today's basket blue, tech basket orange, our circuit blue, the organisers' grey), Calibri-metric
@@ -56,7 +69,7 @@ font, values labelled on the chart.
 
 ## Team portraits
 
-The three portraits are on slide 13 (the saver cards) and on the story slides 18, 19 and 20, as round crops with a
+The three portraits are on slide 13 (the saver cards), the results overview (slide 17) and the story slides 18, 19 and 20, as round crops with a
 border in each saver's card colour: green = Lena, amber = Thomas, pink/red = Anna. Files: `docs/deck/assets/`.
 Swap them if the team meant a different pairing.
 
@@ -68,4 +81,4 @@ Swap them if the team meant a different pairing.
 3. Slide 22 labels the recommendations "REVISED" and "ADOPTED": say what was revised or adopted, and by whom (Policy
    Practice Team?).
 4. Hidden slides 1 and 3 and the meme slides (4, 5, 7, 10) were not changed.
-5. The deck has no speaker notes; the notes in `Quantum_Hackathon_28_10_updated.pptx` cover the same results.
+5. The deck has no speaker notes. With so little text on the slides, the speakers need them: the notes in `Quantum_Hackathon_28_10_updated.pptx` and the table above cover the same results.
